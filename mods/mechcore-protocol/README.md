@@ -1,10 +1,10 @@
 # 机核协议：伪人飞升 / Mechcore Protocol: Aug Ascension
 
-当前源码版本 **1.0.11**，适用于正式版 **0.46D / Steam Build 26525552**。已加载的 `ko` 和 `ko-KR` 翻译可互补缺失词条，缺译时回退到英语。[Steam 创意工坊](https://steamcommunity.com/sharedfiles/filedetails/?id=3831045337)
+当前源码版本 **1.0.12**，适用于正式版 **0.46D / Steam Build 26525552**。已加载的 `ko` 和 `ko-KR` 翻译可互补缺失词条，缺译时回退到英语。[Steam 创意工坊](https://steamcommunity.com/sharedfiles/filedetails/?id=3831045337)
 
 合成扩展、模组矩阵和伪人：机械飞升现整合为一个 Mod，共用一个入口、程序集和资源目录。需要单独安装并启用 [NicoKobo Forge](../nicokobo-forge/README.md)；[食品加工](../food-processing/README.md)和[自动化物流](../automated-logistics/README.md)保持独立。
 
-Version **1.0.11** lists both eligible storage bays in the Scavenging Robot recipe. Requires NicoKobo Forge.
+Version **1.0.12** revises the Lost and Found story and Grayline's dialogue. Requires NicoKobo Forge.
 
 ## 内容与操作
 
