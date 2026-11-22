@@ -1,0 +1,14 @@
+[h1]Logistique automatisée[/h1]
+
+Installez des modules de réapprovisionnement et d’éjection sur vos machines. Ils remplacent exactement les matériaux consommés et envoient les produits vers le réseau de ressources, les conteneurs voisins ou l’entrepôt principal.
+
+[list]
+[*]Les conteneurs du vide s’étendent jusqu’à cinq pages. La cuve conserve la composition réelle des liquides ; le réseau électrique stocke la charge fournie par les batteries. Les machines ont toujours besoin d’une batterie locale.
+[*]Le réapprovisionnement et la collecte se règlent séparément. Chargez le premier lot à la main. Qualité, gènes et liquides sont préservés ; si la destination est pleine, les produits restent dans la machine.
+[*]Prend en charge le four, le purificateur, l’imprimante 3D, l’hydroponie et d’autres équipements. Enregistrez la solution de l’hydroponie et choisissez manuellement la nourriture du distributeur.
+[*]Le terminal réseau s’ouvre avec H et affiche les stocks, l’eau, l’électricité, les réglages des machines et les causes d’attente.
+[/list]
+
+Nécessite [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3831025262]NicoKobo Forge[/url]. Fabriquez les modules à l’établi électromécanique ou au terminal de Forge. Protocole Mechcore et Transformation des aliments sont facultatifs ; leurs machines peuvent rejoindre le réseau.
+
+Ce mod suit le guide officiel, a passé le contrôle mod-scan et ne demande aucune autorisation supplémentaire. En cas de conflit avec un autre mod, contactez son auteur.

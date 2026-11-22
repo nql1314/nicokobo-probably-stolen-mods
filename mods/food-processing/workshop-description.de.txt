@@ -1,0 +1,28 @@
+[h1]Lebensmittelverarbeitung 2.0[/h1]
+
+Verarbeite Fisch, Fleisch und Ernten aus dem Hydroponikanbau zu neuen Waren für deinen Laden. Zwei Maschinen arbeiten über Nacht und bieten [b]64 Rezepte, 50 neue Speisen und Getränke sowie 2 neue medizinische Artikel[/b].
+
+[b]Benötigt [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3831025262]NicoKobo Forge[/url].[/b] Abonniere und aktiviere beide Mods und starte das Spiel neu. In einem neuen Spiel erhältst du ein Handbuch. Du findest es und die Maschinen auch in Jacksons Nachtladen.
+
+[h2]Zwei Maschinen, drei Rezeptstufen[/h2]
+
+[list]
+[*][b]Lebensmittelprozessor · 33 Rezepte[/b]. Trockne kleine Nährfrüchte oder bereite aus einem großen Fischfilet und einer großen Nährfrucht ein Essen für zwei zu. Die Maschine stellt auch Kunstfleisch, Tierfett und industrielles Fischfutter aus dem Grundspiel her.
+[*][b]Abfüllanlage · 31 Rezepte[/b]. Aus kleinen Fischfilets wird eine cremige Suppe, aus Koffeintabletten ein Gelee für die Nachtschicht. Auch Limonade und Energydrinks aus dem Grundspiel sind dabei. Beim Auspacken des Nomore-Sets erhältst du den ursprünglichen Injektor, den Verband und den medizinischen Alkohol zurück. Der Injektor behält seine Reinheit.
+[*]Maschinenqualität 0, 50 und 100 schaltet ★, ★★ und ★★★ frei. Der feste Aufschlag beträgt 25 %, 50 % bzw. 100 %. Je 100 Leistung kommt eine Charge hinzu. Höhere Effizienz spart Strom.
+[*][b]Lager erweitern[/b]. Zieh einen Metallbarren auf eine der Maschinen, um je eine Reihe im Ein- und Ausgabefach hinzuzufügen. Pro Maschine sind bis zu vier Erweiterungen möglich. Die Ausbaustufe wird gespeichert.
+[/list]
+
+[h2]Vorräte prüfen, Zutaten auffüllen, Ertrag ansehen[/h2]
+
+Das Handbuch trennt die Rezepte nach Maschine und führt medizinischen Bedarf separat auf. Suche nach Produkt, Zutat, Kategorie oder Marke und filtere nach Sternen. Helle Symbole zeigen, für welche Rezepte genug Zutaten für eine Charge verfügbar sind. Wähle an der Maschine ein Rezept und nutze [b]Zutaten auffüllen[/b], um fehlende Zutaten und geeignetes Wasser aus dem verfügbaren Vorrat einzufüllen.
+
+Die Automatik folgt der Rezeptpriorität. Ein fest gewähltes Rezept wartet auf Zutaten, Strom und Platz für das Ergebnis. Im Ausgabefach siehst du eine Vorschau der Produkte und Stückzahlen für die Nacht. Im Automatikmodus kannst du jede geplante Charge einzeln prüfen. Die Details zeigen Zutaten, Kalorien, Wasser und Strom.
+
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3831045864]Automatisierte Logistik[/url] ist optional und kann Zutaten für das gewählte Rezept nachliefern.
+
+[h2]Nährwert, Preis und Kühlung[/h2]
+
+Kalorien und Verarbeitungswert werden nach den tatsächlich verbrauchten Zutaten auf die Portionen verteilt. Weinbasierte Rezepte übernehmen den Alkoholgehalt des verwendeten Weins. Käse, Fischfutter und medizinische Artikel behalten ihre üblichen Funktionen. Der Mehrwert von verarbeitetem Futter und Serum sinkt mit den verbleibenden Kalorien bzw. Anwendungen. Geeignete Gerichte und Getränke lassen sich im Kühlschrank kühlen, manche Desserts einfrieren. Das wirkt sich auf den Verkaufspreis aus. Verunreinigte, mit Prionen infizierte und verdorbene Zutaten sind ausgeschlossen.
+
+Die Mod wurde nach dem offiziellen Leitfaden entwickelt und mit mod-scan geprüft. Sie benötigt keine zusätzlichen Berechtigungen, auch keinen externen Reflexionszugriff. Abseits der beschriebenen Änderungen bleibt das Grundspiel in der Regel unverändert. Bei Konflikten mit einer anderen Mod wende dich bitte zuerst an deren Autor.

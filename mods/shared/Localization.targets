@@ -1,0 +1,14 @@
+<Project>
+  <Target Name="GenerateModLocalization" BeforeTargets="CoreCompile" Condition="'$(ModLocalizationPackage)' != ''">
+    <PropertyGroup>
+      <ModLocalizationOutput Condition="'$(ModLocalizationOutput)' == ''">$(MSBuildProjectDirectory)/$(IntermediateOutputPath)ModLocalization</ModLocalizationOutput>
+    </PropertyGroup>
+    <Exec Command="pwsh -NoProfile -File &quot;$(MSBuildThisFileDirectory)../../tools/build/Sync-ModLocalization.ps1&quot; -Package &quot;$(ModLocalizationPackage)&quot; -OutputDirectory &quot;$(ModLocalizationOutput)&quot;" />
+    <ItemGroup>
+      <Compile Include="$(ModLocalizationOutput)/ModText.g.cs" />
+      <GeneratedLocalization Include="$(ModLocalizationOutput)/Localization/*.csv" Condition="'$(CopyModLocalization)' == 'true'" />
+    </ItemGroup>
+    <Copy SourceFiles="@(GeneratedLocalization)" DestinationFolder="$(OutDir)Localization" SkipUnchangedFiles="true"
+          Condition="'$(CopyModLocalization)' == 'true'" />
+  </Target>
+</Project>

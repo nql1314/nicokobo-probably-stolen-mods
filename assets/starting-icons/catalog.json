@@ -1,0 +1,10 @@
+{
+  "start": { "size": 19, "ink": "#292234" },
+  "perk": { "size": 36, "ink": "#FFFFFF" },
+  "icons": [
+    { "id": "pickpocket", "kind": "start", "output": "mods/definitely-stolen/Textures/Paper/pickpocket.png" },
+    { "id": "aug-start", "kind": "start", "output": "mods/aug-mechanical-ascension/Textures/Paper/aug-start.png" },
+    { "id": "streetwise", "kind": "perk", "output": "mods/definitely-stolen/Textures/Paper/streetwise.png" },
+    { "id": "habitual", "kind": "perk", "output": "mods/definitely-stolen/Textures/Paper/habitual.png" }
+  ]
+}

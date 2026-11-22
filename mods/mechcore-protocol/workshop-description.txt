@@ -1,0 +1,13 @@
+[h1]Mechcore Protocol: Aug Ascension[/h1]
+
+Combines Mechcore Synthesis, Module Matrix and Aug: Mechanical Ascension in one mod. Build industrial equipment and cybernetics, develop machine modules and follow the Lost and Found story as an Aug shopkeeper.
+
+Includes three industrial machines and Forge terminal recipes, manufactured materials and cybernetics, robots and utility devices; 18 active modules and nodes with six placement effects and continuous growth; the Aug starting scenario, survival, brain-computer interface, seven cybernetics, 13 workshop achievements, Grayline supply and four story endings.
+
+The Material Refiner handles all four glass recycling recipes; Mechcore no longer extends the native furnace. S26 Batch Smelting is retired and no longer stocked, while existing items remain readable in saves. Multi-batch processing and Continuous Acceleration, Efficiency and Calibration modules remain available. All five nodes have standalone descriptions, without duplicate ability text.
+
+Press G for recipe lookup. Open Nico Workshop by double-clicking its item, pressing N or dialing 1016.
+
+[b]Requires [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3831025262]NicoKobo Forge[/url], installed and enabled separately.[/b] Food Processing and Automated Logistics are optional. Disable the three replaced component packages before enabling this mod, then restart.
+
+This mod was developed following the official guide and has passed mod-scan checks. It requests no additional permissions, including external reflection access. Beyond the changes described on this page, it should generally leave base-game features unaffected. If a conflict occurs when using it alongside a third-party mod, please contact that mod's author first for help investigating.

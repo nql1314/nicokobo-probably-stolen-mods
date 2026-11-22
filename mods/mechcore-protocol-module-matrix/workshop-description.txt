@@ -1,0 +1,21 @@
+[b]组件旧介绍草稿：现已合入“机核协议 / Mechcore Protocol”，不再单独发布。当前介绍见 ../mechcore-protocol/workshop-description.txt。[/b]
+
+[h1]机核协议：模组矩阵 / Mechcore Module Matrix[/h1]
+
+[h2]简体中文[/h2]
+
+[b]Mod 版本：1.0.0[/b]
+
+为机器增加固定模组、随工序成长的连续模组、功能节点和机器专用模组，并利用摆放位置调整效果。
+
+[list]
+[*]19 件模组与节点，包含六种摆放效果。
+[*]连续模组在工作时成长，闲置时逐步回落；学习加速节点影响成长速度。
+[*]可与 Mechcore Synthesis 联动 K02 升级，与 Aug: Mechanical Ascension 联动认知涡轮。
+[/list]
+
+[b]前置：NicoKobo Forge。[/b]请分别安装并启用前置与本 Mod，然后重启游戏。联动内容需要对应 Mod。
+
+[h2]English[/h2]
+
+Version 1.0.0. Add fixed and continuous modules, nodes, machine modules and placement effects. Continuous modules grow with completed work and decay when idle. Optional integrations support K02 upgrades with Mechcore Synthesis and the cognitive turbo with Aug: Mechanical Ascension. Requires NicoKobo Forge.

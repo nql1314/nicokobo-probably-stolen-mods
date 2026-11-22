@@ -1,0 +1,129 @@
+1.0.8 - 2026-11-21
+
+[b]简体中文[/b]
+[list]
+[*]启用 Better Merchants 兼容补丁后，其夜间店铺支持商品刷新，并沿用成交保护和刷新收费设置。
+[*]重新到访夜间店铺时，会重置成交保护和刷新计数。
+[/list]
+
+[b]English[/b]
+[list]
+[*]The optional Better Merchants compatibility patch adds stock rerolls to its night shops, with the existing transaction protection and fee settings.
+[*]Revisiting a night shop resets transaction protection and the reroll count for the new visit.
+[/list]
+
+1.0.7 - 2026-11-15
+
+[b]简体中文[/b]
+[list]
+[*]商品刷新设置、费用提示和状态消息支持语言扩展 Mod 提供的语言。缺少的词条会回退到英语。
+[/list]
+
+[b]English[/b]
+[list]
+[*]Reroll settings, fee prompts and status messages support languages added by other mods. Missing entries fall back to English.
+[/list]
+
+1.0.6 - 2026-11-12
+
+[b]简体中文[/b]
+[list]
+[*]新增“刷新收费”选项，默认关闭。开启后，仅困难及以上难度的顾客和杰克逊夜间商店收费；同次来访每次成功刷新依次收取 10、20、30……信用点。
+[*]余额不足或刷新失败时保留原商品，不扣刷新费，也不提高下次费用。
+[*]适配游戏更新后变更的七处供货回调，恢复对应顾客的商品刷新。
+[/list]
+
+[b]English[/b]
+[list]
+[*]Added an optional reroll fee, off by default. On Hard and above, successful rerolls of a customer or Jackson's night shop cost 10, 20, 30 and so on credits during the same visit.
+[*]If funds are insufficient or the reroll fails, the original stock is kept and the fee is neither charged nor increased.
+[*]Updated seven stock callbacks to restore rerolls for the affected customers after the game update.
+[/list]
+
+1.0.5 - 2026-11-09
+
+[b]简体中文[/b]
+[list]
+[*]为商品刷新设置、快捷键说明、刷新结果和失败提示加入九种语言。
+[/list]
+
+[b]English[/b]
+[list]
+[*]Added nine languages to stock reroll settings, hotkey help, results and error messages.
+[/list]
+
+1.0.4 - 2026-11-02
+
+[b]简体中文[/b]
+[list]
+[*]刷新期间阻止供货回调自动弹出交易／批发页，修复刷新一次后无法连续刷新的问题；正常交易窗口和成交保护保留。
+[*]修复鉴定成功结算后仍能刷新剩余物品的问题。开启“成交后禁止刷新”时，鉴定结算会立即记录成交，不依赖重新打开交互窗口；被拒绝的估价不触发限制。
+[*]新增默认开启的“允许其他 Mod 回调刷新（有风险）”配置。开启后可重放已触发的 Mod 回调，支持被 Mod 包装的供货；可能重复奖励、扣费、推进剧情或丢失未重新生成的商品，非商品状态无法回滚。
+[/list]
+
+[b]English[/b]
+[list]
+[*]Blocked supply callbacks from automatically opening the trade or wholesale panel during a reroll, fixing the panel preventing subsequent rerolls. Normal trading and transaction protection are preserved.
+[*]Fixed paid appraisals allowing remaining stock to reroll. With “Block after transaction” enabled, an appraisal payout immediately records a transaction without reopening an interaction panel; rejected estimates do not trigger the lock.
+[*]Added the enabled-by-default “Allow Mod callbacks (risky)” setting to replay reached Mod callbacks, including wrapped suppliers. It may repeat rewards, charges or story effects, or lose goods that are not regenerated; non-stock changes cannot be rolled back.
+[/list]
+
+1.0.3 - 2026-10-31
+
+[b]简体中文[/b]
+[list]
+[*]补齐超科技走私犯等正式版顾客的 18 个供货回调，扩大可安全刷新的商品来源。
+[*]分类商人、鉴定物品拾荒者和彩票代表只重新生成商品，不重复顾客介绍、来访计数、首次赠品或剧情结算。
+[*]修复原生改键捕获及完成当帧触发商品刷新的问题，保留文字输入保护。
+[/list]
+
+[b]English[/b]
+[list]
+[*]Added 18 full-release supply callbacks, including the Hypertech Smuggler, to cover more safe stock sources.
+[*]Specialized merchants, the inspectable-goods scavenger and lottery representative only restock goods without replaying introductions, visit counters, first gifts or story effects.
+[*]Fixed rerolls firing during native key-binding capture and its completion frame, retaining text-input protection.
+[/list]
+
+1.0.2 - 2026-10-29
+
+[b]简体中文[/b]
+[list]
+[*]整理中英双语名称与简介，中文在前、英文在后，并同步工坊介绍。
+[/list]
+
+[b]English[/b]
+[list]
+[*]Updated the bilingual name, description and Workshop page, with Chinese before English.
+[/list]
+
+1.0.1 - 2026-10-29
+
+[b]简体中文[/b]
+[list]
+[*]修复普通出售后仍可刷新商品的问题。开启“成交后禁止刷新”时，买入或卖出后都会限制本次访问的刷新；取消出售不会触发限制。
+[*]修复称重区有物品时无法刷新的问题。关闭交易和议价窗口后即可刷新，窗口打开期间仍会阻止刷新。
+[*]改善与其他 Mod 的兼容性：发现顾客已执行的动作含有其他 Mod 回调、无法安全区分供货来源时，会保留全部商品并取消刷新。
+[*]减少对游戏流程的拦截。刷新相关商人的货物时，不再重复触发顾客介绍或扣除小卖部库存。
+[/list]
+
+[b]English[/b]
+[list]
+[*]Fixed rerolls remaining available after ordinary sales. With Block After Transaction enabled, purchases and sales both block further rerolls during the current visit. Cancelled sales do not trigger the restriction.
+[*]Fixed items on the weighing counter blocking rerolls after trade and bargaining panels were closed. Rerolls remain blocked while either panel is open.
+[*]Improved compatibility with other mods: if a customer's completed actions include callbacks from another mod and stock sources cannot be safely separated, all goods are kept and the reroll is cancelled.
+[*]Reduced interference with game methods. Refreshing the affected merchants no longer repeats customer introductions or deducts commissary stock.
+[/list]
+
+1.0.0 - 2026-10-29
+
+[b]简体中文[/b]
+[list]
+[*]首次适配游戏正式版内置 Mod 系统。默认按 F5 刷新当前顾客或杰克逊夜间商店的未购买商品，支持自定义组合快捷键。
+[*]保留当前顾客、交易条件及已购物品；生成失败或没有生成新货时恢复原库存。夜间商店继续遵循当前特殊供货事件。
+[/list]
+
+[b]English[/b]
+[list]
+[*]Initial release for the full game's built-in mod system. Press F5 to reroll unpurchased customer or Dr. Jackson night-shop stock. Custom key combinations are supported.
+[*]The current visitor, trade terms and purchased items are preserved. Failed or empty generation restores the original stock. Night-shop rerolls continue to respect the active special-stock event.
+[/list]

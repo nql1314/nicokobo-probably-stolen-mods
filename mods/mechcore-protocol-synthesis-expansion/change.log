@@ -1,0 +1,54 @@
+1.0.0 - 2026-10-31
+
+[b]简体中文[/b]
+[list]
+[*]加工机器的模组舱改为原版未扩容布局，制造、商店供货和掉落均从初始容量开始，使用“模组舱扩充”分两次升级，读档沿用原版扩容等级。
+[*]同步拒收物品补丁的 GameItem、bool 完整签名；定向检查不再将可选参数视为可省略的反射参数，避免启动时找不到补丁目标。
+[*]明确义体收购补丁的 GameItem 参数签名，修复原版新增重载后合成扩展初始化失败、机械飞升依赖显示红叉的问题。
+[*]拾荒机器人收集垃圾改用绿色开启／红色关闭的原生按钮，将“垃圾”标签独立放在按钮上方。
+[*]固定义体目录的图标栏宽度，让认知涡轮的长说明正常换行并与其他条目对齐。
+[*]提供材料加工设备、全域制造终端、义体、机器人与配方手册。
+[*]支持机器加工、玻璃回收以及拾荒机器人和便携采矿钻。
+[*]与模组矩阵联动 K02 升级配方，并通过 NicoKobo Forge 接入共享生产和供货服务。
+[*]使用正式版内置 ModLoader，需要独立的 NicoKobo Forge 前置。
+[*]当前首发整合 30 条加工配方、六件义体及材料加工、全域制造、机器人和采矿钻等功能设备。
+[/list]
+
+[b]English[/b]
+[list]
+[*]Prepared the first full-release version with material processing, universal manufacturing, 30 recipes, six implants and devices including robots and mining drills.
+[*]Preserves metal purity, batches, real power costs, space checks and failure compensation, with native furnace glass recycling and cross-mod manufacturing materials.
+[*]Integrated Matrix K02 rare upgrades, extra customer supplies and logistics production receipts.
+[*]Processing machines start with native unexpanded module bays and use both native expansions. Fixed-width implant icons improve wrapping of longer descriptions.
+[*]Fixed initialization and dependency errors after native method overloads were added, using the real native parameters for item buying and admission.
+[*]Scavenger robots retain work, collection and repair rules; garbage collection uses a green-on / red-off button. Equipment, machines and work states follow normal saves.
+[*]Uses the built-in full-release ModLoader and requires standalone NicoKobo Forge.
+[/list]
+
+1.2.0 - 2026-10-29（历史开发候选：K02／供货与互操作，未发布）
+- 接入矩阵提供的 K02 基础模组／节点二合一稀有升级，默认 13 种有效稀有产物，手册动态显示；复用原有扣料、15 基础电耗、空间检查与失败补偿。
+- 额外 NPC 供货接入矿料及第 22 天起的加工材料，三包共享总 Mod 权重 0.25，保留矿工整批只抽一次及 70%／15%／15% 配比。
+- 新增独立版本 1.0.0 的 Nicokobo.ContentInterop 共享依赖，公开当前配方、真实库存槽和生产前后实物回执，供后续物流本体接入。
+- manifest 列全两份 DLL 并声明供货回调定位所需的 reflection-external，未改变游戏扫描、信任或启用状态。
+- 普通熔炼与玻璃回收在选择配方前开放实物补料回调，失败不虚记消耗；与矩阵批量回调嵌套时保持逐批一次回执。
+- Release 编译与 373 项离线检查通过，实际 DLL 通过当前扫描器源码的离线检查；未打包、安装或进行游戏内验收。机械飞升、物流和肯定是偷的本体仍在后续迁移范围。
+
+1.1.0 - 2026-10-29（历史开发候选：终端／义体／设备，未发布）
+- 全域制造终端与原 10 条配方接入官方工程，沿用终端 ID，每晚限一批。
+- 迁移六件义体的持有效果、原生机器聚合与 NPC 交易适配；眼镜支持原七类物品的只读鉴定、实际扣电和状态缓存。
+- 迁移机器猫、义体保管箱、拾荒机器人、便携采矿钻及义体目录。
+- 机器人保留扫描仪等级、货舱形状、夜间去重、25 电消耗、损坏修复和电子元件升级；钻机保留玩家／机器人携带及完美钛合金升级。
+- 现共注册 26 个定义、28 张图标和 30 条配方，无 Forge DLL 依赖。
+- M04–M06 保留连续模组材料，等待模组矩阵正式版迁移；不改变原配方平衡。
+- 当前游戏 Release 编译与 279 项离线检查通过；未打包、安装或启动游戏，实际界面与存档重载待验收。
+
+历史开发候选 1.0.0 - 2026-10-29（历史开发候选：基础生产链，未发布）
+- 针对 0.46D / Steam Build 26274380 新增官方 IMod、manifest 与 netstandard2.1 工程。
+- 注册 9 种材料／组件、3 台机器、2 本手册和 14 张原图标，保留原稳定 ID。
+- 迁移 16 条加工配方及 4 条原版熔炉玻璃回收配方。
+- 保留纯度门槛、普通／高炉配比、加工优先级、性能批次、实际耗电与失败补偿。
+- 按当前正式版六级纯度表处理生产价值，完美纯度总倍率为 300%。
+- 接入官方资源、配置数据文件、掉落、杰克逊夜店和新局手册事件。
+- Release 编译与 100 项离线检查通过；食品加工在同一新构建复核 90 项通过。
+- 全域制造终端、义体、机器人、保管箱、采矿钻、额外供货及跨 Mod 联动待后续迁移。
+- 未打包、安装、启动游戏或进行扫描／实机存档验收。

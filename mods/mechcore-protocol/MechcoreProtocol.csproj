@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Version>1.0.11</Version>
+    <AssemblyName>MechcoreProtocol</AssemblyName>
+    <RootNamespace>MechcoreProtocol</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\shared\MechanicLocalizedPatches.cs" Link="MechanicLocalizedPatches.cs" />
+    <Compile Include="..\mechcore-protocol-synthesis-expansion\**\*.cs" Exclude="..\mechcore-protocol-synthesis-expansion\bin\**;..\mechcore-protocol-synthesis-expansion\obj\**" Link="Synthesis\%(RecursiveDir)%(Filename)%(Extension)" />
+    <Compile Include="..\mechcore-protocol-module-matrix\**\*.cs" Exclude="..\mechcore-protocol-module-matrix\bin\**;..\mechcore-protocol-module-matrix\obj\**" Link="Matrix\%(RecursiveDir)%(Filename)%(Extension)" />
+    <Compile Include="..\aug-mechanical-ascension\**\*.cs" Exclude="..\aug-mechanical-ascension\bin\**;..\aug-mechanical-ascension\obj\**" Link="Aug\%(RecursiveDir)%(Filename)%(Extension)" />
+    <Reference Include="Assembly-CSharp"><HintPath>$(GameManaged)\Assembly-CSharp.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="0Harmony"><HintPath>$(GameManaged)\0Harmony.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Newtonsoft.Json"><HintPath>$(GameManaged)\Newtonsoft.Json.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.CoreModule"><HintPath>$(GameManaged)\UnityEngine.CoreModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.TextRenderingModule"><HintPath>$(GameManaged)\UnityEngine.TextRenderingModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.UIModule"><HintPath>$(GameManaged)\UnityEngine.UIModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.IMGUIModule"><HintPath>$(GameManaged)\UnityEngine.IMGUIModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.InputLegacyModule"><HintPath>$(GameManaged)\UnityEngine.InputLegacyModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.UI"><HintPath>$(GameManaged)\UnityEngine.UI.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Unity.TextMeshPro"><HintPath>$(GameManaged)\Unity.TextMeshPro.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Unity.Localization"><HintPath>$(GameManaged)\Unity.Localization.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Unity.ResourceManager"><HintPath>$(GameManaged)\Unity.ResourceManager.dll</HintPath><Private>false</Private></Reference>
+  </ItemGroup>
+  <Import Project="..\shared\Nicokobo.Forge.Client\Client.props" />
+  <Target Name="SyncMechcoreResources" BeforeTargets="BeforeBuild">
+    <Exec Command="pwsh -NoProfile -File &quot;$(MSBuildProjectDirectory)\..\..\tools\build\Sync-MechcoreResources.ps1&quot;" />
+  </Target>
+</Project>

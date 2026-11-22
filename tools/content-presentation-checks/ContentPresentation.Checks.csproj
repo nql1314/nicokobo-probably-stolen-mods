@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType><TargetFramework>net8.0</TargetFramework>
+    <LangVersion>latest</LangVersion><Nullable>enable</Nullable><ImplicitUsings>enable</ImplicitUsings>
+    <ModLocalizationPackage>mechcore-protocol</ModLocalizationPackage>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../../mods/shared/ItemGraphCleanup.cs" Link="Production/ItemGraphCleanup.cs" />
+    <Compile Include="../../mods/shared/ModText.cs" Link="Production/ModText.cs" />
+    <Compile Include="../shared/NativeLocalizationPort.cs" Link="Ports/NativeLocalizationPort.cs" />
+    <Compile Include="../../mods/shared/Nicokobo.Forge.Client/RecipePresentation.cs" Link="Production/RecipePresentation.cs" />
+    <Compile Include="../../mods/shared/Nicokobo.Forge.Contracts/Recipes.cs" Link="Production/Recipes.cs" />
+    <Compile Include="../../mods/shared/Nicokobo.Forge.Contracts/Production.cs" Link="Production/Production.cs" />
+    <Compile Include="../../mods/shared/Nicokobo.Forge.Contracts/Supply.cs" Link="Production/Supply.cs" />
+    <Compile Include="../../mods/shared/Nicokobo.Forge.Contracts/Wire.cs" Link="Production/Wire.cs" />
+    <Compile Include="../../mods/shared/Nicokobo.Forge.Contracts/WindowInputCapture.cs" Link="Production/WindowInputCapture.cs" />
+    <Compile Include="../../mods/nicokobo-forge/Services/PresentationInputGuard.cs" Link="Production/PresentationInputGuard.cs" />
+    <Compile Include="../../mods/aug-mechanical-ascension/Official/OfficialItemOptions.cs" Link="Production/OfficialItemOptions.cs" />
+    <Compile Include="../../mods/aug-mechanical-ascension/AugText.cs" Link="Production/AugText.cs" />
+  </ItemGroup>
+  <Import Project="../../mods/shared/Localization.targets" />
+</Project>

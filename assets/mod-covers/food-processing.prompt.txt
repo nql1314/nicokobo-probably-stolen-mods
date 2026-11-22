@@ -1,0 +1,11 @@
+Generated with the built-in image_gen tool on 2026-11-12.
+Output: assets/mod-covers/food-processing.png
+Mod preview: mods/food-processing/preview.png
+Reference 1: local reference image used for composition.
+Reference 2: previous mod preview (title design).
+
+Use case: compositing.
+Asset type: replacement cover image for the Probably Stolen mod 食品加工 / Food Processing.
+Input image 1 is the latest gameplay screenshot and the main edit target. Input image 2 is the previous cover, only a reference for title design.
+Create one polished final cover, maintaining the latest screenshot's pixel-art aesthetic and recognizable actual game assets. Preserve the two teal-gray machines on the counter and the rich collection of food and drink icons in the bottom inventory grid, including their shapes, color and arrangement from image 1. Keep the small N plaque on the counter. Do not replace these with invented food or machines.
+Use the large empty purple shutter area in the top half for a beautifully integrated title, inspired by image 2: bold cream-colored Chinese text "食品加工", with smaller spaced uppercase English "FOOD PROCESSING" below it, subtle dark outline, industrial olive metal frame and very restrained amber accents. The Chinese title must be accurate and easily readable at thumbnail size. Keep comfortable margins, the whole title inside the shutter, never overlapping the machines. Modest contrast polish, crisp pixel edges, no painterly blur. The machines and full food collection should remain clearly visible. Preserve the composition and aspect ratio of image 1, roughly 1.17:1. No other promotional copy, version numbers, watermark, extra logos, people or additional objects. Opaque background.

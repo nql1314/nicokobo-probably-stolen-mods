@@ -1,0 +1,14 @@
+[h1]Protokół Mechcore: Wstąpienie Auga[/h1]
+
+Synteza, matryca modułów i mechaniczne wstąpienie w jednym modzie. Rozwijaj przemysł i ulepszaj moduły maszyn, twórz implanty, prowadź sklep jako Aug i wyjaśnij sprawę listów z biura rzeczy znalezionych.
+
+[list]
+[*]Trzy maszyny przemysłowe, recykling materiałów i szkła, sześć implantów, roboty, przenośna wiertarka i poradnik receptur.
+[*]18 modułów i węzłów, sześć efektów rozmieszczenia, ciągły rozwój, zdolności maszyn, ulepszenie K02 i turbina poznawcza.
+[*]Osobny scenariusz startowy, zdrowie i ryzyko zdemaskowania, leczenie i regeneracja elektroniczna, siedem implantów do wytworzenia, 13 osiągnięć warsztatu, dostawy Grayline i cztery zakończenia.
+[*]Szkło trafia do rafinera materiałów. Moduł wypalania partiami S26 nie działa i nie pojawia się w nowych dostawach; istniejące egzemplarze pozostają w zapisach. Receptury sprawdzisz klawiszem G, a warsztat Nico otworzysz przez N lub numer 1016.
+[/list]
+
+Wymaga [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3831025262]NicoKobo Forge[/url]. Przetwórstwo żywności i Automatyczna logistyka są opcjonalne. Wyłącz trzy wcześniejsze mody składowe, włącz Forge i ten mod, a następnie uruchom grę ponownie.
+
+Mod powstał zgodnie z oficjalnym poradnikiem, przeszedł kontrolę mod-scan i nie wymaga dodatkowych uprawnień. W razie konfliktu z innym modem skontaktuj się z jego autorem.

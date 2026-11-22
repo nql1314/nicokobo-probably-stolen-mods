@@ -1,0 +1,14 @@
+[h1]Aceleración[/h1]
+
+Ajusta la velocidad del diálogo, los clientes y la persiana. Suscríbete, activa el mod en el menú Mods, reinicia el juego y abre sus ajustes con el icono de engranaje.
+
+[list]
+[*]La escritura y la espera entre frases se ajustan por separado de 1× a 32×. También puedes mostrar el texto al instante.
+[*]La entrada y apertura y la salida y cierre se ajustan por separado de 1× a 8×.
+[*]El multiplicador global va de 0,5× a 10× y está desactivado de forma predeterminada. Se combina con los ajustes individuales y respeta la pausa.
+[*]Alt+= y Alt+- cambian la velocidad del diálogo; = y - cambian la de las animaciones. Ctrl+F8 cambia el preajuste, Ctrl+F9 alterna la velocidad global y Ctrl+Inicio restaura la original. Puedes reasignar todas las teclas.
+[/list]
+
+Usa los controles del juego base para avanzar en el diálogo.
+
+Este mod sigue la guía oficial, ha superado la comprobación de mod-scan y no solicita permisos adicionales. Si entra en conflicto con otro mod, consulta con el autor de ese mod.

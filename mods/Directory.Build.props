@@ -1,0 +1,16 @@
+<Project>
+  <PropertyGroup>
+    <GameDir Condition="'$(GameDir)' == '' And '$(PROBABLY_STOLEN_GAME_DIR)' != ''">$(PROBABLY_STOLEN_GAME_DIR)</GameDir>
+    <GameDir Condition="'$(GameDir)' == ''">F:\SteamLibrary\steamapps\common\Probably Stolen</GameDir>
+    <GameManaged Condition="'$(GameManaged)' == ''">$(GameDir)\Probably Stolen_Data\Managed</GameManaged>
+  </PropertyGroup>
+  <PropertyGroup Condition="Exists('$(MSBuildProjectDirectory)/manifest.xml')">
+    <ModLocalizationPackage>$([System.IO.Path]::GetFileName('$(MSBuildProjectDirectory)'))</ModLocalizationPackage>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)shared\ModText.cs" Link="Shared\ModText.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)shared\ConfigSectionLocalization.cs" Link="Shared\ConfigSectionLocalization.cs"
+             Condition="'$(ModLocalizationPackage)' != ''" />
+  </ItemGroup>
+  <Import Project="shared/Localization.targets" />
+</Project>

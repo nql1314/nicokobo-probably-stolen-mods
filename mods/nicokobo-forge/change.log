@@ -1,0 +1,209 @@
+﻿1.0.13 - 2026-11-16
+
+[b]简体中文[/b]
+[list]
+[*]悬停物品按 G 查询配方时，会核对带标签原料的具体要求，避免把仅有相同标签的物品误判为可用原料。
+[/list]
+
+[b]English[/b]
+[list]
+[*]The G-key recipe lookup checks the requirements for tagged ingredients against the hovered item before listing matching recipes.
+[/list]
+
+1.0.12 - 2026-11-15
+
+[b]简体中文[/b]
+[list]
+[*]Nico 工坊的成就与奖励、配方查询和设置支持语言扩展 Mod 提供的语言。缺少的词条会逐条回退到英语。
+[*]Mod 列表优先显示已加载的 Mod 名称译文。切换语言后，已打开的 Nico 工坊也会刷新。
+[/list]
+
+[b]English[/b]
+[list]
+[*]Nico Workshop achievements and rewards, recipe lookup and settings support languages added by other mods. Missing entries fall back to English.
+[*]The mod list uses translated names supplied by loaded mods. An open Nico Workshop refreshes when the language changes.
+[/list]
+
+1.0.11 - 2026-11-12
+
+[b]简体中文[/b]
+[list]
+[*]Nico 工坊的「立业有成」在买下店铺或还清房贷、取得店铺产权时记录。已经取得产权的旧存档，打开 Nico 工坊时会补记这项成就。
+[/list]
+
+[b]English[/b]
+[list]
+[*]Nico Workshop now records Established Proprietor when you buy the store outright or pay off its mortgage. Opening Nico Workshop also records the achievement in older saves where you already own the store.
+[/list]
+
+1.0.10 - 2026-11-12
+
+[b]简体中文[/b]
+[list]
+[*]修复 Mod 物品透明边缘无法起拖的问题。食品加工等 Mod 物品现在可从实际占用格内的透明区域拖动。
+[/list]
+
+[b]English[/b]
+[list]
+[*]Mod items, including those from Food Processing, can now be dragged from transparent areas inside their occupied cells.
+[/list]
+
+1.0.9 - 2026-11-12
+
+[b]简体中文[/b]
+[list]
+[*]新增「档案箱扩容」开关，默认开启。可在 Forge 的模组设置中关闭，重启游戏后生效。
+[*]关闭扩容后，旧存档有物品占用额外格子时会先自动整理。全部物品排进原版格子后恢复原版尺寸，整理失败时保留扩容和原摆放。
+[/list]
+
+[b]English[/b]
+[list]
+[*]Added an option to expand dossier capacity, enabled by default. Turn it off in the Forge mod settings and restart the game to apply.
+[*]With expansion off, loading an older save with items in extra slots triggers an automatic sort. If all items fit, the dossier returns to its original size. If sorting fails, the expanded size and layout are kept.
+[/list]
+
+1.0.8 - 2026-11-09
+
+[b]简体中文[/b]
+[list]
+[*]为 Mod 列表、制造终端、工坊成就、电话与配方界面加入九种语言。切换语言时，Mod 名称和原版物品名称随之更新。
+[*]电话选项超过原生按钮数量时会分页。
+[/list]
+
+[b]English[/b]
+[list]
+[*]Added nine languages to the mod list, crafting terminal, workshop achievements, phone and recipe screens. Mod names and base game item names update when the language changes.
+[*]Phone choices now split into pages when they exceed the number of available buttons.
+[/list]
+
+1.0.7 - 2026-11-07
+
+[b]简体中文[/b]
+[list]
+[*]当固定模组效果说明与物品自身说明相同时，只显示一次，避免节点提示重复。
+[/list]
+
+[b]English[/b]
+[list]
+[*]Show fixed module effect text only once when it matches the item's own description, avoiding duplicate node tooltips.
+[/list]
+
+1.0.6 - 2026-11-05
+
+[b]简体中文[/b]
+[list]
+[*]移除 Nico 工坊处理成就时对原生存档的主动拦截，避免工坊忙碌状态使游戏跳过保存。
+[/list]
+
+[b]English[/b]
+[list]
+[*]Removed the Nico Workshop's active block on native saving while achievement operations are in progress.
+[/list]
+
+1.0.5 - 2026-11-04
+
+[b]简体中文[/b]
+[list]
+[*]新增「启用 N 键打开成就」设置，默认开启。关闭后仍可拨打 1016 打开 Nico 工坊。
+[*]G 键和成就详情仅在有相关配方时打开查询。指向空处按 G 可浏览已登记的全部配方。
+[*]全域制造终端有可用配方时才加入博士供货和拾荒掉落。
+[/list]
+
+[b]English[/b]
+[list]
+[*]Added an enabled-by-default setting for the N key achievement shortcut. Dial 1016 to open Nico Workshop when the shortcut is disabled.
+[*]The G key and achievement details open recipe lookup only when relevant recipes exist. Point at empty space and press G to browse all registered recipes.
+[*]The Universal Manufacturing Terminal appears in Doctor stock and scavenging loot only when it has available recipes.
+[/list]
+
+1.0.4 - 2026-11-03
+
+[b]简体中文[/b]
+[list]
+[*]等待机械本地化表异步加载完成后，再安装固定模组能力和液体价值补丁，避免补丁初始化同步等待该表。
+[/list]
+
+[b]English[/b]
+[list]
+[*]Fixed module ability and liquid valuation patches now wait for the Mechanic localization table to finish loading asynchronously, avoiding a synchronous wait during patch initialization.
+[/list]
+
+1.0.3 - 2026-11-03
+
+[b]简体中文[/b]
+[list]
+[*]新增原生机器逐批分派边界；每批完成补料、电力事务结算及出料后再开始下一批。
+[*]修复共享电网供电时，批量熔炉因上一批扣电事务未释放而只加工一批的问题；失败时仅补偿当前批次，保留已完成批次。
+[*]保留机器原有生产回调及 Target，请同时更新机核协议至 1.0.2。
+[/list]
+
+[b]English[/b]
+[list]
+[*]Native machine batches now finish restocking, power settlement and output collection before the next batch begins.
+[*]Fixes batch furnaces stopping after one batch on shared-grid power because the previous debit transaction remained open. Failure restores only the current batch and preserves completed batches.
+[*]Preserves existing machine callbacks and their Targets. Update Mechcore Protocol to 1.0.2 at the same time.
+[/list]
+
+1.0.2 - 2026-11-03
+
+[b]简体中文[/b]
+[list]
+[*]液体价值账本改用有固定容量的多项缓存，减少不同容器交替读取时的重复 JSON 编解码。
+[*]继续核对实时容量、全部组分及账本文本；内容变化或外部编辑会重新验证，缓存不持有游戏物品或 Unity 对象。
+[/list]
+
+[b]English[/b]
+[list]
+[*]Liquid value ledgers use bounded multi-entry caches to avoid repeated JSON work when alternating between different containers.
+[*]Live capacity, every component and ledger text remain checked. Changed or externally edited data is revalidated; cached entries retain no game items or Unity objects.
+[/list]
+
+1.0.1 - 2026-11-02
+
+[b]简体中文[/b]
+[list]
+[*]保留机器原有的生产回调，减少与其他 Mod 读取或扩展机器加工行为时的冲突。
+[*]夜间、加速器及调试加工继续执行补料、出料与失败电力补偿；自定义机器在第二阶段进料斗工作前完成加工。
+[*]统一手动加工入口，请同时更新自动化物流至 1.0.1。
+[/list]
+
+[b]English[/b]
+[list]
+[*]Preserves original machine production callbacks to reduce conflicts with other mods that inspect or extend machine processing.
+[*]Night, booster and debug processing retain restocking, output collection and failed-work power compensation. Custom machines finish before the second hopper stage.
+[*]Unifies manual processing. Update Automated Logistics to 1.0.1 at the same time.
+[/list]
+
+1.0.0 - 2026-10-31
+
+[b]简体中文[/b]
+[list]
+[*]全域制造终端的模组舱改为原版未扩容布局，制造、商店供货和掉落均从初始容量开始，使用“模组舱扩充”分两次升级，读档沿用原版扩容等级。
+[*]工坊标题与页面切换合并为带主题图标的顶部标签栏，当前页以青色文字和底线标示；NicoKobo 标识置于标题前，官网 nicokobo.com 置于右上角，移除底部品牌栏与多余留白。
+[*]工坊名片说明显示官网 nicokobo.com，以及按 N 或拨打电话 1016 打开工坊的提示；移除名片双击激活效果，附言改为“为游戏添加特殊的成就路线”。
+[*]移除“成就解锁网络”标题与名片上的“已禁用”提示；载入名片后刷新说明与附言，使已有名片显示当前文案。
+[*]原版十项成就全部重绘为统一像素风图标：水牌、大鼠、金属锭、酒瓶、工具箱、扫描仪、金币、店铺、声望徽记和通关奖章；星图中央显示奖章。
+[*]工坊和配方查询接入窗口输入拦截，覆盖点击、双击、原生射线及关闭后的鼠标松开；工坊刷新不释放当前手势，关闭配方后继续保护工坊。
+[*]成就仅在打开对应标签页时校验；关闭、保存和库存变动不扫描，已有达成记录保留，通关事件单独记录。
+[*]恢复“原版”十项成就星图、达成记录和奖励；立业有成领取后恢复本周目 NPC 收购预算翻倍。
+[*]工坊分组标题移到固定栏，节点状态增加底色与间距；配方查询显示在工坊上层，刷新成就时保持可见。
+[*]Nico 工坊改为赛博风解锁网络：原创电路底板、切角金属节点框、物品图标、前置箭头与状态配色；详细说明移到独立滚动栏，修复多行按钮文字重叠。
+[*]补齐档案箱至少 16×16 的原位扩容，保留原版升级的 17 列；首次保存前收纳开局文档，历史分支不重新整理。
+[*]提供独立的 NicoKobo Forge 前置，支持内容包共享配方、生产回执、机器物流、供电与供货服务。
+[*]提供固定模组能力和 G 配方查询所需的公共接口；内容包保留各自的物品、配置和存档身份。
+[*]使用正式版内置 ModLoader，按独立 Mod 安装和启用。
+[*]完善复制槽身份、奖励收据及液体与机器持久化读写，保留原生物品身份和普通保存流程。
+[/list]
+
+[b]English[/b]
+[list]
+[*]Prepared the first full-release standalone NicoKobo Forge prerequisite with service protocol 1; content mods retain their own gameplay, configuration, items and save identities.
+[*]Centralized machine catalogs, cross-stack selection, whole-batch space checks, transfers, liquids and valuation, power, nightly queues, supply and fixed abilities.
+[*]Provides G recipe lookup, universal manufacturing and shared workshop, phone, visitor-dialogue and reading-window implementations.
+[*]Nico Workshop restores ten vanilla-goal achievements, real reward claims and per-run persistence. Goals are checked on opening their page while existing qualifications and claims remain. The business achievement restores the run's doubled NPC buying budget.
+[*]The workshop uses unified pixel icons, an unlock graph, themed tabs and a separate scrolling details area. Recipe lookup remains above it, with native pointer capture through clicks, double-clicks and window close.
+[*]The workshop card explains the N and phone 1016 routes, refreshes its text after loading and no longer uses double-click activation.
+[*]Universal manufacturing starts with the native module bay. Dossiers expand in place to at least 16×16, retain the native 17-column upgrade and collect opening documents before the first new-run save.
+[*]Improved copied-slot identity, reward receipts and liquid / machine persistence while retaining native item identities and normal saves.
+[*]Uses the built-in full-release ModLoader as an independently installed and enabled prerequisite, without the Demo loader.
+[/list]

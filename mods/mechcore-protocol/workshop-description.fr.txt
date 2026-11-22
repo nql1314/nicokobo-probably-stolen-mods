@@ -1,0 +1,14 @@
+[h1]Protocole Mechcore : Ascension d’un Aug[/h1]
+
+La synthèse, la matrice de modules et l’ascension mécanique réunies dans un seul mod. Développez votre industrie, faites évoluer vos modules, fabriquez des implants et tenez boutique en tant qu’Aug tout en enquêtant sur les lettres des objets trouvés.
+
+[list]
+[*]Trois machines industrielles, recyclage des matériaux et du verre, six implants, des robots, une perceuse portative et un guide de recettes.
+[*]18 modules et nœuds, six effets de placement, progression continue, capacités de machine, amélioration K02 et turbine cognitive.
+[*]Départ dédié, santé et risque d’être démasqué, soins et récupération électronique, sept implants à fabriquer, 13 succès d’atelier, livraisons de Grayline et quatre fins.
+[*]Le verre est recyclé dans le raffineur de matériaux. Le module de cuisson par lots S26 est désactivé et n’est plus fourni ; les objets des anciennes sauvegardes restent présents. Consultez les recettes avec G et ouvrez l’atelier Nico avec N ou en appelant le 1016.
+[/list]
+
+Nécessite [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3831025262]NicoKobo Forge[/url]. Transformation des aliments et Logistique automatisée sont facultatifs. Désactivez les trois anciens mods autonomes, activez Forge et ce mod, puis relancez le jeu.
+
+Ce mod suit le guide officiel, a passé le contrôle mod-scan et ne demande aucune autorisation supplémentaire. En cas de conflit avec un autre mod, contactez son auteur.

@@ -1,0 +1,28 @@
+[h1]Przetwórstwo żywności 2.0[/h1]
+
+Przerabiaj ryby, mięso i plony z upraw hydroponicznych na nowe towary do sklepu. Dwie maszyny pracują w nocy. Do wyboru masz [b]64 przepisy, 50 nowych potraw i napojów oraz 2 nowe artykuły medyczne[/b].
+
+[b]Wymaga [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3831025262]NicoKobo Forge[/url].[/b] Zasubskrybuj oba mody, włącz je i uruchom grę ponownie. W nowej rozgrywce otrzymasz poradnik. Poradnik i maszyny można też znaleźć w nocnym sklepie Jacksona.
+
+[h2]Dwie maszyny, trzy poziomy przepisów[/h2]
+
+[list]
+[*][b]Maszyna do przetwarzania żywności · 33 przepisy[/b]. Susz małe owoce odżywcze lub zrób obiad dla dwojga z dużego filetu i dużego owocu. Możesz też produkować mięso syntetyczne, tłuszcz zwierzęcy i przemysłową karmę dla ryb z podstawowej gry.
+[*][b]Rozlewarka · 31 przepisów[/b]. Małe filety przydadzą się do kremowej zupy rybnej, a tabletki kofeinowe do galaretki na nocną zmianę. Zrobisz też napój gazowany i energetyk z podstawowej gry. Po otwarciu zestawu Nomore odzyskasz oryginalny wstrzykiwacz, bandaż i alkohol medyczny. Wstrzykiwacz zachowuje swoją czystość.
+[*]Jakość maszyny na poziomie 0, 50 i 100 odblokowuje odpowiednio ★, ★★ i ★★★. Stałe narzuty wynoszą 25%, 50% i 100%. Każde 100 punktów wydajności daje dodatkową partię. Wyższa efektywność obniża zużycie prądu.
+[*][b]Rozbudowa magazynu[/b]. Przeciągnij sztabkę metalu na jedną z maszyn, aby dodać po jednym rzędzie w polu wsadu i odbioru. Każdą maszynę można rozbudować cztery razy. Poziom rozbudowy jest zapisywany.
+[/list]
+
+[h2]Sprawdź zapasy, uzupełnij składniki i zobacz plan produkcji[/h2]
+
+Poradnik dzieli przepisy według maszyn i ma osobną zakładkę na artykuły medyczne. Możesz szukać według produktu, składnika, kategorii i marki oraz filtrować według gwiazdek. Podświetlone ikony wskazują, na co wystarczy dostępnych składników na jedną partię. Wybierz przepis w maszynie i naciśnij [b]Uzupełnij składniki[/b], aby pobrać brakujące składniki i wodę odpowiedniej jakości na jedną partię.
+
+Tryb automatyczny działa według priorytetu przepisów. Wybrany ręcznie przepis czeka na składniki, zasilanie i miejsce na gotowe produkty. Pole wyjściowe pokazuje przewidywany wynik całej nocy. W trybie automatycznym możesz przeglądać każdą planowaną partię, w tym składniki, kalorie, wodę i zużycie prądu.
+
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3831045864]Automatyczna logistyka[/url] jest opcjonalna i może dostarczać składniki do wybranego przepisu.
+
+[h2]Kalorie, wartość i chłodzenie[/h2]
+
+Kalorie i wartość zależą od rzeczywiście zużytych składników i są dzielone między porcje. Przepisy z winem uwzględniają jego faktyczną zawartość alkoholu. Ser, karma dla ryb i artykuły medyczne mają zwykłe zastosowania. Dodatkowa wartość przetworzonej karmy i surowic maleje w miarę zużywania kalorii lub dawek. Schłodzenie odpowiednich napojów i dań lub zamrożenie wybranych deserów w lodówce wpływa na ich cenę. Skażone, zakażone prionami i zepsute składniki są odrzucane.
+
+Mod powstał zgodnie z oficjalnym poradnikiem i został sprawdzony przez mod-scan. Nie wymaga dodatkowych uprawnień, także dostępu przez refleksję do zewnętrznego kodu. Poza opisanymi zmianami podstawowa gra zwykle działa tak jak wcześniej. W razie konfliktu z innym modem skontaktuj się najpierw z jego autorem.

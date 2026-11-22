@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod>
+  <ID>nicokobo.item-manager</ID>
+  <Name>物品管理器 / Nico' Item Manager</Name>
+  <Author>NicoKobo</Author>
+  <ModVersion>1.3.9</ModVersion>
+  <Description>浏览筛选物品、查看用途，并编辑模组、液体、电池、耐久、护甲、武器、使用次数、食物与标签。专用配置和已有数值直接显示，支持浮点数值。常见标签按物品或类型匹配中英文名称与说明，悬停可查看原始键。支持实时预览、独立生成按钮、导出和界面缩放。
+Home 开关面板，Esc 返回或关闭。选择物品查看或编辑，再点击 Spawn 生成。右键背包或自己桌面的自有物品并选择「物品管理」，也可悬停后按 End。两项快捷键均可在 Mod 设置中修改。
+Browse and filter items, inspect uses, and edit modules, liquids, batteries, durability, armor, weapons, uses, food and tags. Specialized settings and existing numeric values are shown directly, including floating-point values. Common tags have Chinese and English names and descriptions matched by item or type, with original keys in tooltips. Includes live previews, a separate spawn button, export and UI scaling.
+Home toggles the panel. Esc goes back or closes it. Select an item to inspect or edit it, then use Spawn to create it. Right-click an owned item in your backpack or on your desktop and choose Manage item, or hover over it and press End. Both shortcuts can be changed in mod settings.</Description>
+  <GameVersions><Version>0.46D</Version></GameVersions>
+  <Prerequisites />
+  <Assemblies><Assembly>NicoItemManager.dll</Assembly></Assemblies>
+  <Capabilities />
+</Mod>

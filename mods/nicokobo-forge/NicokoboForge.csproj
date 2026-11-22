@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework><LangVersion>latest</LangVersion>
+    <Version>1.0.13</Version><AssemblyName>Nicokobo.Forge</AssemblyName>
+    <Nullable>enable</Nullable><ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\shared\ItemGraphCleanup.cs" Link="Core\ItemGraphCleanup.cs" />
+    <Compile Include="..\shared\NativeItemText.cs" Link="Core\NativeItemText.cs" />
+    <Compile Include="..\shared\MechanicLocalizedPatches.cs" Link="Core\MechanicLocalizedPatches.cs" />
+    <Compile Include="..\shared\Nicokobo.Forge.Client\RecipePresentation.cs" Link="Core\RecipePresentation.cs" />
+    <Compile Include="..\shared\Nicokobo.ContentInterop\*.cs" Link="Core\%(Filename)%(Extension)" />
+    <Compile Include="..\shared\Nicokobo.Forge.Contracts\*.cs" Link="Contracts\%(Filename)%(Extension)" />
+    <Reference Include="Newtonsoft.Json"><HintPath>$(GameManaged)\Newtonsoft.Json.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Unity.TextMeshPro"><HintPath>$(GameManaged)\Unity.TextMeshPro.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.UIModule"><HintPath>$(GameManaged)\UnityEngine.UIModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Assembly-CSharp"><HintPath>$(GameManaged)\Assembly-CSharp.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="0Harmony"><HintPath>$(GameManaged)\0Harmony.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.CoreModule"><HintPath>$(GameManaged)\UnityEngine.CoreModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.InputLegacyModule"><HintPath>$(GameManaged)\UnityEngine.InputLegacyModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.TextRenderingModule"><HintPath>$(GameManaged)\UnityEngine.TextRenderingModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.UI"><HintPath>$(GameManaged)\UnityEngine.UI.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Unity.Localization"><HintPath>$(GameManaged)\Unity.Localization.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Unity.ResourceManager"><HintPath>$(GameManaged)\Unity.ResourceManager.dll</HintPath><Private>false</Private></Reference>
+  </ItemGroup>
+</Project>

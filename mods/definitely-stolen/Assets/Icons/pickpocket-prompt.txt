@@ -1,0 +1,7 @@
+Tool: built-in imagegen; transparent background.
+Historical illustration draft only. The current menu icon is authored in assets/starting-icons/pickpocket.svg and exported with tools/assets/export-starting-icons.py. Do not use this raster draft as the menu icon source.
+Historical raster draft: Assets/Icons/pickpocket-source.png. Retained only as an art record.
+Current source: assets/starting-icons/pickpocket.svg (repository root).
+Current export: python tools/assets/export-starting-icons.py --icon pickpocket (repository root).
+
+Use case: stylized-concept. Create one production game UI icon for the 'Pickpocket' starting career in Probably Stolen, a dark space-station shopkeeping pixel-art game. Subject: a clearly readable dark teal fingerless-gloved hand lifting a single brass coin from the open mouth of a small worn cyan-blue belt pouch. One coherent compact silhouette, hand and coin in the upper half, pouch lower half. Authentic crisp low-resolution pixel art designed on a 32 by 32 logical pixel grid, nearest-neighbor large pixel blocks, hard stepped edges, no antialiasing or gradients. Limited 8-color palette: deep eggplant outline/shadows, muted teal and pale desaturated cyan highlights, small warm brass-gold coin accent, a few skin-colored fingertip pixels. Centered square composition, occupy about 85 percent of width AND height, very small equal padding. No text, no border or tile frame, no background decoration, no glow, no extra objects. It must read clearly at 32px and 64px in a native pixel-game menu. Actual transparent alpha background.

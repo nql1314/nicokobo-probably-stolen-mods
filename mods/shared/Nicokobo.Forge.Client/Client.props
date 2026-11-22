@@ -1,0 +1,8 @@
+<Project>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)..\ItemGraphCleanup.cs" Link="Forge\ItemGraphCleanup.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)..\NativeItemText.cs" Link="Forge\NativeItemText.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)*.cs" Link="Forge\%(Filename)%(Extension)" />
+    <Compile Include="$(MSBuildThisFileDirectory)..\Nicokobo.Forge.Contracts\*.cs" Link="Forge\%(Filename)%(Extension)" />
+  </ItemGroup>
+</Project>

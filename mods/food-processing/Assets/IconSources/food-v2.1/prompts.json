@@ -1,0 +1,110 @@
+[
+  {
+    "key": "dried_nutrifruit",
+    "width": 2,
+    "height": 2,
+    "source": "Assets/IconSources/food-v2.1/dried_nutrifruit.png",
+    "tool": "built-in image_gen",
+    "transparent_background": true,
+    "prompt": "Use case: game inventory sprite for Probably Stolen. Draw ONE industrial space-station inventory object in very low-resolution 2D pixel art. Subject: A squat rust-orange heat-sealed food pouch with a clear inset window showing three golden dried potato-like nutrifruit slices. Crimped edges, muted cream top band and dark olive seam. Square silhouette. Style: crisp chunky square pixel clusters, muted dusty palette, charcoal-purple outer contour, three tones of shading, upper-left highlight, modest top/front three-quarter angle. Treat it as 32 × 32 pixels enlarged by nearest-neighbor; keep the silhouette and design readable at that size. Center the complete object with transparent margins and true alpha on every side. No scenery, surface, shadow outside the object, text, numbers, logos, watermarks, frames, checkerboard or additional objects. No vector outlines, photo texture, smooth gradients, or glossy 3D."
+  },
+  {
+    "key": "bloomberry_jam",
+    "width": 2,
+    "height": 2,
+    "source": "Assets/IconSources/food-v2.1/bloomberry_jam.png",
+    "tool": "built-in image_gen",
+    "transparent_background": true,
+    "prompt": "Use case: game inventory sprite for Probably Stolen. Draw ONE industrial space-station inventory object in very low-resolution 2D pixel art. Subject: A small squared squat glass preserves jar of dark plum jam, muted brass screw cap and an off-white paper strip with two dark berry dots. The jam should read purple through dark brown-purple glass. Square silhouette. Style: crisp chunky square pixel clusters, muted dusty palette, charcoal-purple outer contour, three tones of shading, upper-left highlight, modest top/front three-quarter angle. Treat it as 32 × 32 pixels enlarged by nearest-neighbor; keep the silhouette and design readable at that size. Center the complete object with transparent margins and true alpha on every side. No scenery, surface, shadow outside the object, text, numbers, logos, watermarks, frames, checkerboard or additional objects. No vector outlines, photo texture, smooth gradients, or glossy 3D."
+  },
+  {
+    "key": "meal_cap_cream_soup",
+    "width": 2,
+    "height": 2,
+    "source": "Assets/IconSources/food-v2.1/meal_cap_cream_soup.png",
+    "tool": "built-in image_gen",
+    "transparent_background": true,
+    "prompt": "Use case: game inventory sprite for Probably Stolen. Draw ONE industrial space-station inventory object in very low-resolution 2D pixel art. Subject: A short ochre and ivory metal soup tin with a simple beige mushroom cap pictured on the front and a flat silver pull-tab lid. The lid is closed. Square silhouette. Style: crisp chunky square pixel clusters, muted dusty palette, charcoal-purple outer contour, three tones of shading, upper-left highlight, modest top/front three-quarter angle. Treat it as 32 × 32 pixels enlarged by nearest-neighbor; keep the silhouette and design readable at that size. Center the complete object with transparent margins and true alpha on every side. No scenery, surface, shadow outside the object, text, numbers, logos, watermarks, frames, checkerboard or additional objects. No vector outlines, photo texture, smooth gradients, or glossy 3D."
+  },
+  {
+    "key": "fish_cream_soup",
+    "width": 2,
+    "height": 2,
+    "source": "Assets/IconSources/food-v2.1/fish_cream_soup.png",
+    "tool": "built-in image_gen",
+    "transparent_background": true,
+    "prompt": "Use case: game inventory sprite for Probably Stolen. Draw ONE industrial space-station inventory object in very low-resolution 2D pixel art. Subject: A short slate-blue and cream insulated soup cup with a closed crimped silver lid, a broad blue panel, and a tiny flat silver fish silhouette printed on it. Tapered takeaway shape with a wide lid. Style: crisp chunky square pixel clusters, muted dusty palette, charcoal-purple outer contour, three tones of shading, upper-left highlight, modest top/front three-quarter angle. Treat it as 32 × 32 pixels enlarged by nearest-neighbor; keep the silhouette and design readable at that size. Center the complete object with transparent margins and true alpha on every side. No scenery, surface, shadow outside the object, text, numbers, logos, watermarks, frames, checkerboard or additional objects. No vector outlines, photo texture, smooth gradients, or glossy 3D."
+  },
+  {
+    "key": "pan_fried_fish",
+    "width": 2,
+    "height": 1,
+    "source": "Assets/IconSources/food-v2.1/pan_fried_fish.png",
+    "tool": "built-in image_gen",
+    "transparent_background": true,
+    "prompt": "Use case: game inventory sprite for Probably Stolen. Draw ONE industrial space-station inventory object in very low-resolution 2D pixel art. Subject: A wide shallow charcoal meal tray holding one golden-brown standard pan-fried fish fillet, tapering to one side with a thin crisp dark gray skin stripe. Low profile, horizontal silhouette; one fillet only. Style: crisp chunky square pixel clusters, muted dusty palette, charcoal-purple outer contour, three tones of shading, upper-left highlight, modest top/front three-quarter angle. Treat it as 32 × 16 pixels enlarged by nearest-neighbor; keep the silhouette and design readable at that size. Center the complete object with transparent margins and true alpha on every side. No scenery, surface, shadow outside the object, text, numbers, logos, watermarks, frames, checkerboard or additional objects. No vector outlines, photo texture, smooth gradients, or glossy 3D."
+  },
+  {
+    "key": "thick_cut_fish_duo",
+    "width": 3,
+    "height": 2,
+    "source": "Assets/IconSources/food-v2.1/thick_cut_fish_duo.png",
+    "tool": "built-in image_gen",
+    "transparent_background": true,
+    "prompt": "Use case: game inventory sprite for Probably Stolen. Draw ONE industrial space-station inventory object in very low-resolution 2D pixel art. Subject: One broad dark slate rectangular two-compartment premium ready-meal tray, holding a single large golden thick-cut fish steak with a silver-gray skin rim on one side and roasted ochre potato-like nutrifruit wedges with a few mushrooms on the other. Shallow three-quarter angle, horizontal silhouette. Style: crisp chunky square pixel clusters, muted dusty palette, charcoal-purple outer contour, three tones of shading, upper-left highlight, modest top/front three-quarter angle. Treat it as 48 × 32 pixels enlarged by nearest-neighbor; keep the silhouette and design readable at that size. Center the complete object with transparent margins and true alpha on every side. No scenery, surface, shadow outside the object, text, numbers, logos, watermarks, frames, checkerboard or additional objects. No vector outlines, photo texture, smooth gradients, or glossy 3D."
+  },
+  {
+    "key": "fillerweed_meat_patty",
+    "width": 2,
+    "height": 1,
+    "source": "Assets/IconSources/food-v2.1/fillerweed_meat_patty.png",
+    "tool": "built-in image_gen",
+    "transparent_background": true,
+    "prompt": "Use case: game inventory sprite for Probably Stolen. Draw ONE industrial space-station inventory object in very low-resolution 2D pixel art. Subject: One browned round meat patty flecked with muted sage green strands, sitting inside a low open rectangular olive-gray paper sleeve. Broad low profile, unmistakable round griddled patty, horizontal composition. Style: crisp chunky square pixel clusters, muted dusty palette, charcoal-purple outer contour, three tones of shading, upper-left highlight, modest top/front three-quarter angle. Treat it as 32 × 16 pixels enlarged by nearest-neighbor; keep the silhouette and design readable at that size. Center the complete object with transparent margins and true alpha on every side. No scenery, surface, shadow outside the object, text, numbers, logos, watermarks, frames, checkerboard or additional objects. No vector outlines, photo texture, smooth gradients, or glossy 3D."
+  },
+  {
+    "key": "mushroom_cream_steak",
+    "width": 3,
+    "height": 2,
+    "source": "Assets/IconSources/food-v2.1/mushroom_cream_steak.png",
+    "tool": "built-in image_gen",
+    "transparent_background": true,
+    "prompt": "Use case: game inventory sprite for Probably Stolen. Draw ONE industrial space-station inventory object in very low-resolution 2D pixel art. Subject: A compact dark burgundy ready-meal tray with one rectangular grilled reddish-brown steak, a band of pale cream sauce and two clearly identifiable tan sliced mushroom caps. Horizontal silhouette, one tray, no side garnish or loose objects. Style: crisp chunky square pixel clusters, muted dusty palette, charcoal-purple outer contour, three tones of shading, upper-left highlight, modest top/front three-quarter angle. Treat it as 48 × 32 pixels enlarged by nearest-neighbor; keep the silhouette and design readable at that size. Center the complete object with transparent margins and true alpha on every side. No scenery, surface, shadow outside the object, text, numbers, logos, watermarks, frames, checkerboard or additional objects. No vector outlines, photo texture, smooth gradients, or glossy 3D."
+  },
+  {
+    "key": "galaxy_duo_punch",
+    "width": 1,
+    "height": 2,
+    "source": "Assets/IconSources/food-v2.1/galaxy_duo_punch.png",
+    "tool": "built-in image_gen",
+    "transparent_background": true,
+    "prompt": "Use case: game inventory sprite for Probably Stolen. Draw ONE industrial space-station inventory object in very low-resolution 2D pixel art. Subject: One narrow old-fashioned spouted drink pouch. Muted muted blueberry purple upper half and peach orange lower half, two simple small fruit circles, matte cream cap, folded bottom. Tall 1:2 silhouette. Style: crisp chunky square pixel clusters, muted dusty palette, charcoal-purple outer contour, three tones of shading, upper-left highlight, modest top/front three-quarter angle. Treat it as 16 × 32 pixels enlarged by nearest-neighbor; keep the silhouette and design readable at that size. Center the complete object with transparent margins and true alpha on every side. No scenery, surface, shadow outside the object, text, numbers, logos, watermarks, frames, checkerboard or additional objects. No vector outlines, photo texture, smooth gradients, or glossy 3D."
+  },
+  {
+    "key": "nightshift_jelly",
+    "width": 2,
+    "height": 1,
+    "source": "Assets/IconSources/food-v2.1/nightshift_jelly.png",
+    "tool": "built-in image_gen",
+    "transparent_background": true,
+    "prompt": "Use case: game inventory sprite for Probably Stolen. Draw ONE industrial space-station inventory object in very low-resolution 2D pixel art. Subject: A squat broad silver tear-off sachet containing fruit energy jelly. Midnight navy and amber package, one tiny amber crescent as a simple pictogram, dark crimped sides. Front face at modest three-quarter angle. Horizontal silhouette. Style: crisp chunky square pixel clusters, muted dusty palette, charcoal-purple outer contour, three tones of shading, upper-left highlight, modest top/front three-quarter angle. Treat it as 32 × 16 pixels enlarged by nearest-neighbor; keep the silhouette and design readable at that size. Center the complete object with transparent margins and true alpha on every side. No scenery, surface, shadow outside the object, text, numbers, logos, watermarks, frames, checkerboard or additional objects. No vector outlines, photo texture, smooth gradients, or glossy 3D."
+  },
+  {
+    "key": "antiseptic_cotton_pack",
+    "width": 1,
+    "height": 1,
+    "source": "Assets/IconSources/food-v2.1/antiseptic_cotton_pack.png",
+    "tool": "built-in image_gen",
+    "transparent_background": true,
+    "prompt": "Use case: game inventory sprite for Probably Stolen. Draw ONE industrial space-station inventory object in very low-resolution 2D pixel art. Subject: One tiny square pale mint medical swab sachet with wide white margins, crimped edge, and a simple off-white square cotton-pad pictogram. Readable at 16 pixels, minimal blocky shape. Style: crisp chunky square pixel clusters, muted dusty palette, charcoal-purple outer contour, three tones of shading, upper-left highlight, modest top/front three-quarter angle. Treat it as 16 × 16 pixels enlarged by nearest-neighbor; keep the silhouette and design readable at that size. Center the complete object with transparent margins and true alpha on every side. No scenery, surface, shadow outside the object, text, numbers, logos, watermarks, frames, checkerboard or additional objects. No vector outlines, photo texture, smooth gradients, or glossy 3D."
+  },
+  {
+    "key": "nomore_care_kit",
+    "width": 2,
+    "height": 2,
+    "source": "Assets/IconSources/food-v2.1/nomore_care_kit.png",
+    "tool": "built-in image_gen",
+    "transparent_background": true,
+    "prompt": "Use case: game inventory sprite for Probably Stolen. Draw ONE industrial space-station inventory object in very low-resolution 2D pixel art. Subject: One compact square off-white and muted mauve rigid medical kit with a dark navy latch and a tiny neutral mauve line pictogram suggesting a capped injector. Closed hard-shell clamshell, square footprint, no cross or lettering. Style: crisp chunky square pixel clusters, muted dusty palette, charcoal-purple outer contour, three tones of shading, upper-left highlight, modest top/front three-quarter angle. Treat it as 32 × 32 pixels enlarged by nearest-neighbor; keep the silhouette and design readable at that size. Center the complete object with transparent margins and true alpha on every side. No scenery, surface, shadow outside the object, text, numbers, logos, watermarks, frames, checkerboard or additional objects. No vector outlines, photo texture, smooth gradients, or glossy 3D."
+  }
+]

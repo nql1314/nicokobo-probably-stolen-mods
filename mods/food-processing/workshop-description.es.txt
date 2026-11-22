@@ -1,0 +1,28 @@
+[h1]Procesamiento de alimentos 2.0[/h1]
+
+Aprovecha el pescado, la carne y las cosechas hidropónicas para surtir tu tienda. Dos máquinas trabajan de noche con [b]64 recetas, 50 alimentos y bebidas nuevos y 2 suministros médicos nuevos[/b].
+
+[b]Requiere [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3831025262]NicoKobo Forge[/url].[/b] Suscríbete a los dos mods, actívalos y reinicia el juego. En una partida nueva recibes la guía de procesamiento. También puedes buscarla, junto con las máquinas, en la tienda nocturna de Jackson.
+
+[h2]Dos máquinas, tres niveles de recetas[/h2]
+
+[list]
+[*][b]Procesadora de alimentos · 33 recetas[/b]. Deshidrata frutas nutritivas pequeñas o prepara una cena para dos con un filete de pescado grande y una fruta nutritiva grande. También puedes elaborar carne sintética, grasa animal y pienso industrial para peces del juego base.
+[*][b]Embotelladora · 31 recetas[/b]. Prepara crema de pescado con filetes pequeños y gelatina para el turno de noche con pastillas de cafeína. También puedes hacer refrescos y bebidas energéticas del juego base. Al abrir el kit Nomore, recuperas el inyector, la venda y el alcohol medicinal originales. El inyector conserva su pureza.
+[*]La calidad de máquina de 0, 50 y 100 desbloquea ★, ★★ y ★★★, respectivamente. Los recargos fijos son del 25 %, 50 % y 100 %. Cada 100 puntos de rendimiento añaden un lote. Una mayor eficiencia reduce el consumo eléctrico.
+[*][b]Ampliación del almacenamiento[/b]. Arrastra un lingote de metal a cualquiera de las máquinas para añadir una fila tanto a la entrada como a la salida. Cada máquina admite hasta cuatro ampliaciones. El nivel se guarda con la partida.
+[/list]
+
+[h2]Consulta las existencias, carga la máquina y revisa la producción[/h2]
+
+La guía organiza las recetas por máquina y separa los suministros médicos. Puedes buscar por producto, ingrediente, categoría o marca y filtrar por estrellas. Los iconos iluminados indican que hay ingredientes disponibles para un lote. Selecciona una receta en la máquina y pulsa [b]Completar ingredientes[/b] para cargar desde las existencias los ingredientes y el agua adecuada que falten para un lote.
+
+El modo automático sigue el orden de prioridad. Una receta seleccionada espera si faltan ingredientes, electricidad o espacio de salida. La casilla de salida muestra los productos y las cantidades previstas para la noche. En modo automático puedes consultar cada lote y ver sus ingredientes, calorías, agua y consumo eléctrico.
+
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3831045864]Logística automatizada[/url] es opcional y puede reponer los ingredientes de la receta elegida.
+
+[h2]Nutrición, valor y refrigeración[/h2]
+
+Las raciones se reparten las calorías y el valor de los ingredientes que se usaron. Las recetas con vino conservan su graduación real. El queso, el pienso y los suministros médicos conservan los usos del juego base. El valor añadido del pienso procesado y de los sueros baja al consumir sus calorías o sus usos. Refrigera las bebidas y platos compatibles o congela ciertos postres en el frigorífico para modificar su precio. No se pueden procesar ingredientes contaminados, con priones o en mal estado.
+
+Este mod sigue la guía oficial y se ha comprobado con mod-scan. No solicita permisos adicionales, incluido el acceso por reflexión a código externo. Fuera de los cambios descritos, el juego base suele funcionar igual. Si hay un conflicto con otro mod, consulta primero con su autor.

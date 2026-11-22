@@ -1,0 +1,14 @@
+[h1]Gestionnaire d’objets de Nico[/h1]
+
+Catalogue, éditeur et générateur d’objets pour Probably Stolen. Recherchez par nom, identifiant ou catégorie, y compris dans les mods chargés. La touche Home (Début) ouvre ou ferme le panneau ; elle est configurable.
+
+[list]
+[*]Modifiez prix, caractéristiques et attributs : pureté du métal, modules, charge, durabilité, calories ou fraîcheur. L’éditeur de liquides offre 47 options ; modifier la quantité préserve les proportions du mélange.
+[*]Créez des objets par 1 ou par 5, d’abord sur votre table puis dans le sac si elle est pleine. Les préréglages nommés restent disponibles entre les sauvegardes et après redémarrage.
+[*]Faites un clic droit sur un objet qui vous appartient sur la table ou dans le sac et choisissez « Gérer l’objet ». Vous pouvez aussi survoler l’objet et appuyer sur Fin. Videz les conteneurs au préalable. La suppression demande une confirmation.
+[*]Prévisualisez l’apparence, l’encombrement et la valeur ; exportez le catalogue en Markdown ou JSON.
+[/list]
+
+Abonnez-vous au mod, activez-le dans le menu Mods, puis relancez le jeu.
+
+Ce mod suit le guide officiel, a passé le contrôle mod-scan et ne demande aucune autorisation supplémentaire. En cas de conflit avec un autre mod, contactez son auteur.

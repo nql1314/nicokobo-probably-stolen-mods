@@ -1,0 +1,16 @@
+[h1]Stock Reroll[/h1]
+
+Reroll unpurchased goods from the current customer or Dr. Jackson's night shop while keeping the visitor, trade terms and purchased items. Rerolls are blocked after a transaction by default; this can be changed in the in-game Mods settings. If a reroll cannot be performed safely, the original goods are kept.
+
+[b]Mod compatibility option[/b]
+
+"Allow Mod callbacks (risky)" in the Mods settings is enabled by default. Enabling it replays the current customer's reached callbacks from other Mods, including wrapped suppliers such as Mechcore Protocol's thief stock. It may repeat rewards, charges or story effects, or lose Mod goods that are not regenerated. Failed generation can restore inventory, but non-stock changes cannot be rolled back. Disable this option if you do not want these callbacks replayed; the existing transaction setting still controls rerolls after a transaction.
+
+[b]Hotkeys[/b]
+[list]
+[*]Press [b]F5[/b] to reroll stock by default.
+[*]Change [b]Hotkey[/b] in the Mods settings. Ctrl, Alt and Shift combinations such as [b]Ctrl+R[/b] are supported; use [b]None[/b] to disable the shortcut.
+[*]Rerolls are blocked while trade or bargaining panels are open. The shortcut is ignored while typing, during native key binding capture, and on the frame capture ends.
+[/list]
+
+This mod was developed following the official guide and has passed mod-scan checks. It requests no additional permissions, including external reflection access. Beyond the changes described on this page, it should generally leave base-game features unaffected. If a conflict occurs when using it alongside a third-party mod, please contact that mod's author first for help investigating.

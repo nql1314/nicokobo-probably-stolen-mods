@@ -1,0 +1,59 @@
+[
+  {
+    "folder": "nicokobo-forge",
+    "manifestId": "nicokobo.forge",
+    "name": "NicoKobo Forge",
+    "id": 270,
+    "requiresForge": false
+  },
+  {
+    "folder": "mechcore-protocol",
+    "manifestId": "nicokobo.mechcore_protocol",
+    "name": "Mechcore Protocol: Aug Ascension",
+    "id": 403,
+    "requiresForge": true
+  },
+  {
+    "folder": "food-processing",
+    "manifestId": "nicokobo.food_processing",
+    "name": "Food Processing",
+    "id": 482,
+    "requiresForge": true
+  },
+  {
+    "folder": "automated-logistics",
+    "manifestId": "nicokobo.automated_logistics",
+    "name": "Automated Logistics",
+    "id": 836,
+    "requiresForge": true
+  },
+  {
+    "folder": "definitely-stolen",
+    "manifestId": "nicokobo.definitely_stolen",
+    "name": "Definitely Stolen",
+    "id": 732,
+    "requiresForge": true
+  },
+  {
+    "folder": "nico-item-manager",
+    "manifestId": "nicokobo.item-manager",
+    "name": "Nico's Item Manager",
+    "id": 43,
+    "requiresForge": false,
+    "fileGroupId": "8328222"
+  },
+  {
+    "folder": "speed-up",
+    "manifestId": "nicokobo.speed-up",
+    "name": "Speed Up",
+    "id": 62,
+    "requiresForge": false
+  },
+  {
+    "folder": "stock-reroll",
+    "manifestId": "nicokobo.stock-reroll",
+    "name": "Stock Reroll",
+    "id": 256,
+    "requiresForge": false
+  }
+]

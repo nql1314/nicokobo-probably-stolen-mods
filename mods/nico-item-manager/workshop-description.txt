@@ -1,0 +1,25 @@
+[h1]Nico's Item Manager[/h1]
+
+Find items, edit their attributes, spawn copies, and manage owned items in your backpack or on your desktop. Enable the mod in Mods and restart the game.
+
+[b]Features[/b]
+[list]
+[*]Item catalog: Search by ID, Chinese or English name, or category. View icons, prices and descriptions, including items from loaded mods.
+[*]Attribute editing: Edit numeric values, unit prices and tags, including decimals, tag additions/removals, enabled states and ingot purity. Common fields include names, units and tooltips.
+[*]Specialized editors: Module stats, tiers, two effects and shapes; battery charge, tool durability, armor, firearm condition and stats, remaining uses, food calories and freshness.
+[*]Liquid settings: Adjust capacity and volume, empty or fill containers. Choose from 47 options, including pure alcohol, acid, base, extracts and existing mixtures. Volume changes preserve proportions; presets replace the contents.
+[*]Spawning and remembered settings: Spawn one or five copies. Desktop first falls back to the backpack; backpack-only is also available. Each item's edits are retained during the current game session and can be reset.
+[*]Custom items: Save multiple named presets, spawn from them, edit, update, save copies or delete. Presets are shared across saves and persist after restarting.
+[*]Right-click an owned item in your backpack or on your desktop and choose Manage item, or hover over it and press End. Edit attributes, copy a chosen quantity or the whole stack, or confirm deletion.
+[*]Copying owned items: Copies retain current tags, appraisal features, values, text and appearance with independent identities and windows. Apply pending edits and empty containers first. Choose desktop-first or backpack-only placement using native receiving and stacking rules.
+[*]Preview and export: See appearance, footprint, value and descriptions as you edit. Export the catalog as Markdown/JSON and adjust UI scale in settings.
+[/list]
+
+[b]Controls and notes[/b]
+[list]
+[*]Home toggles the panel. Esc goes back or closes it. You can change the Home and End shortcuts in mod settings and combine them with modifier keys.
+[*]Click a catalog entry to edit it. Only Spawn buttons create items. Hover the preview icon for the full description.
+[*]Edits to an existing item affect the whole stack. Closing discards unapplied changes. Empty containers before deletion; move equipment and items in containers or working slots to your backpack or desktop first.
+[/list]
+
+Developed following the official guide and checked with mod-scan. No additional permissions are requested, including external reflection access. Beyond the features above, base-game behavior should generally remain unchanged. For conflicts with third-party mods, contact their authors first for help investigating.

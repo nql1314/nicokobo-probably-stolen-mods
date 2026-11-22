@@ -1,0 +1,22 @@
+[b]组件旧介绍草稿：现已合入“机核协议 / Mechcore Protocol”，不再单独发布。当前介绍见 ../mechcore-protocol/workshop-description.txt。[/b]
+
+[h1]机核协议：合成扩展 / Mechcore Synthesis[/h1]
+
+[h2]简体中文[/h2]
+
+[b]Mod 版本：1.0.0[/b]
+
+从矿料和基础零件开始建立生产线，制造高级材料、机器、义体和辅助设备。
+
+[list]
+[*]三台自有机器：材料精炼机、机电工作台、精密装配机；另向 Forge 的全域制造终端提供 10 条配方。
+[*]金属、组件与玻璃回收配方，以及用于查看配方的手册。
+[*]义体、机器猫、保管箱、拾荒机器人和便携采矿钻。
+[*]安装模组矩阵后可使用部分连续模组材料和 K02 升级联动。
+[/list]
+
+[b]前置：NicoKobo Forge。[/b]请分别安装并启用前置与本 Mod，然后重启游戏。适用于正式版内置 ModLoader。
+
+[h2]English[/h2]
+
+Version 1.0.0. Build a production chain for advanced materials, machines, cybernetics and utility devices. Adds the Material Refiner, Synthesizer and Precision Assembler, plus 10 recipes for the Universal Manufacturing Terminal provided by NicoKobo Forge. Includes recipe guides, glass recycling, a scavenging robot and a portable mining drill. Requires NicoKobo Forge; some recipes and K02 upgrades also use Mechcore Module Matrix.

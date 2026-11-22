@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod>
+  <ID>nicokobo.stock-reroll-better-merchants</ID>
+  <Name>商品刷新：更好的商人兼容补丁 / Stock Reroll: Better Merchants Compatibility</Name>
+  <Author>NicoKobo</Author>
+  <ModVersion>1.0.0</ModVersion>
+  <Description>允许商品刷新在 Better Merchants 的夜间店铺使用。需要同时启用商品刷新和 Better Merchants。
+Enables Stock Reroll in Better Merchants' night shops. Requires Stock Reroll and Better Merchants.</Description>
+  <GameVersions><Version>0.46D</Version></GameVersions>
+  <Prerequisites>
+    <Mod>nicokobo.stock-reroll</Mod>
+    <Mod>better_merchants</Mod>
+  </Prerequisites>
+  <Assemblies><Assembly>BetterMerchantsStockReroll.dll</Assembly></Assemblies>
+  <Capabilities />
+</Mod>

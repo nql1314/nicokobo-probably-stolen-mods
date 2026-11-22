@@ -1,0 +1,26 @@
+[h1]Automated Logistics[/h1]
+
+Restock the materials your machines actually consume and collect their finished products. Six logistics items provide restocking, output collection, void storage, liquid storage, shared power and a terminal opened with H.
+
+[b]Requires [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3831025262]NicoKobo Forge[/url], installed and enabled separately.[/b] Mechcore Protocol and Food Processing are optional integrations.
+
+[list]
+[*]Supports furnaces, purifiers, moisture farms, desequencers and compatible content-pack machines.
+[*]Printers: Restock consumed materials and collect completed outputs, including metal/CNC and melee batch modes. Chips, progress and final quality remain native.
+[*]Purifiers: Collect at the machine's current purity limit, or select a pure-water target in the terminal.
+[*]Evaporators: Collect native distillate only. Feed vessels and concentrate stay in place; feed is loaded manually. Native evaporation may continue without a distillate vessel.
+[*]Hydroponics: Record a feed specification, replenish actual liquid consumption and collect crops and returned seeds. Genetics remain intact; planting stays manual.
+[*]Feed dispensers: Restock each device with manually selected food types within the native 40,000 kcal capacity and auto-blend rules. No logistics module or battery is needed; pause restocking in the terminal or Mod settings.
+[*]DNA manipulators: Collect disks already in the native eject slot. Working slots and genetic operations remain under player control.
+[*]Each Void Container page starts at 100 cells and expands to 400. Each storage expansion kit adds 1 tab to that container, up to 5. Liquid storage starts at 10 L and expands to 1000 L; shared power starts at 5000 kJ and expands to 16000 kJ.
+[/list]
+
+Enable Forge and this mod, then restart the game. Each run grants one Network Terminal when warehouse space is available. Craft logistics modules at the electromechanical workbench, or Forge's universal manufacturing terminal when that workbench is unavailable. Install the modules and a real battery, load the first batch manually, and keep spare materials in the resource network, adjacent containers or warehouse. Each module recipe produces two: common electronic parts ×1 plus metal ingot ×1 for restocking, or common electronic parts ×1 plus wire ×2 for collection.
+
+Use H to manage machines, inspect inventories and view water/power statistics. Record hydroponic feed before use and again after changing its vessel or solution. Hold Alt and drag the matching empty container or high-purity ingot onto a void device to expand it. Matching devices share capacity upgrades; containers and tanks hold separate contents, while grids share stored energy.
+
+Storage expansion kits add tabs only to the selected Void Container. Alt upgrades expand every page of every Void Container. All pages participate in logistics and inventory statistics, support native tab renaming and sample-based gathering per page, and retain their contents, names and tab count in saves.
+
+Automation does not grant extra production cycles. Machines retain their native output rules and require local batteries; grid payments use one source at a time and respect physical capacity. Stored-energy batteries are recognized by their native energy-cell category. Disposable batteries can deposit energy but cannot be recharged. Hypertech cells inside a Void Grid generate their current output at the end of each night, once per cell per day, with upgrades increasing generation and overflow discarded. Cells installed in machines retain their native per-use output limits. Build and offline checks have passed; in-game operation, full printer outputs and cross-process reloads remain unverified.
+
+This mod was developed following the official guide and has passed mod-scan checks. It requests no additional permissions, including external reflection access. Beyond the changes described on this page, it should generally leave base-game features unaffected. If a conflict occurs when using it alongside a third-party mod, please contact that mod's author first for help investigating.

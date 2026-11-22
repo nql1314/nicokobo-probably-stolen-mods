@@ -1,0 +1,109 @@
+1.0.5 - 2026-11-21
+
+[b]简体中文[/b]
+[list]
+[*]选择“自制反应堆”开局天赋时，开局直接获得并启用虚空电网。已有该天赋的存档也可启用电网，现有设备会接入电力网络。
+[*]虚空存储、虚空水箱和虚空电网的制造配方会在满足各自解锁条件后开放。
+[/list]
+
+[b]English[/b]
+[list]
+[*]The Makeshift Reactor starting perk now grants and activates a Void Power Grid at the start. Existing saves with the perk can also unlock the network and connect an existing grid.
+[*]Void Storage, Void Tank and Void Power Grid recipes become available once their respective unlock conditions are met.
+[/list]
+
+1.0.4 - 2026-11-15
+
+[b]简体中文[/b]
+[list]
+[*]物流终端、设备提示和设置会读取当前语言的翻译，包括语言扩展 Mod 提供的语言。缺少的词条会逐条回退到英语。
+[/list]
+
+[b]English[/b]
+[list]
+[*]The logistics terminal, device tooltips and settings use translations for the active language, including languages added by other mods. Missing entries fall back to English.
+[/list]
+
+1.0.3 - 2026-11-09
+
+[b]简体中文[/b]
+[list]
+[*]为物流模组、虚空设备、H 终端和机器补货与收取状态加入九种语言。
+[*]修复与改写机器数字输入框的 Mod 共用时，虚空存储重命名输入受限的问题。
+[/list]
+
+[b]English[/b]
+[list]
+[*]Added nine languages to logistics modules, void devices, the H terminal and machine restock and collection status.
+[*]Fixed text entry when renaming void storage alongside mods that replace machine inputs with numeric fields.
+[/list]
+
+1.0.2 - 2026-11-03
+
+[b]简体中文[/b]
+[list]
+[*]先完成原生充电回调，再将电池电量转入电网，按回调结束前的实际充电量记录发电统计。
+[*]液体转移补丁等待机械本地化表加载完成后再安装。
+[/list]
+
+[b]English[/b]
+[list]
+[*]Battery energy is queued for grid transfer after the native charging callback, so generation statistics record the actual charge before it moves into the grid.
+[*]The liquid transfer patch waits for the Mechanic localization table to load before installation.
+[/list]
+
+1.0.1 - 2026-11-02
+
+[b]简体中文[/b]
+[list]
+[*]修复一次性电池扣电后仍显示满电图标的问题，读档时同步旧电池图标；电网提示明确标注已存电量，转存失败回滚后记录原因。
+[*]电网按原生电池类别识别储电电池，支持一次性电池存电并保留不可充电限制；超科技能量单元入网后每晚按当前输出量发电，升级提高产量，同一单元每天只结算一次，溢出不保留。
+[*]手动加工接入新版 Forge 的统一生产入口，保留机器原回调对象，继续执行物流和失败电力补偿；请同时更新 Forge 至 1.0.1。
+[*]自动喂食器支持按原生 40,000 kcal 容量连续补粮；只补每台设备手动指定过的粮食，可分多次加入不同种类。
+[*]补粮沿用原生自动混粮开关和真实入仓、混粮接口，无需物流模组或电池；满仓或放不下一份时等待消耗。
+[*]Mod 配置新增“自动喂食器补粮”总开关，默认开启；关闭后暂停物流补粮，保留各设备的粮食清单和启停设置。
+[*]终端显示热量、粮食清单及补给来源，支持暂停、记录仓内粮食和清空清单；指定种类保存在现有 v6 周目数据中。
+[/list]
+
+[b]English[/b]
+[list]
+[*]Disposable battery icons now reflect remaining charge, including after loading existing saves. Grid tooltips label stored energy explicitly, and failed transfers report their rollback reason.
+[*]The grid recognizes stored-energy batteries by their native category, including disposable cells without allowing recharging. Hypertech cells in the grid generate their current output once per night; upgrades increase generation, receipts persist per cell and day, and overflow is discarded.
+[*]Manual work uses the updated Forge production entry point while preserving machine callbacks, logistics and power compensation. Update Forge to 1.0.1 at the same time.
+[*]Feed dispensers repeatedly replenish only manually selected food types within their native 40,000 kcal capacity, with separate selections for each device.
+[*]Uses native auto-blend, physical loading and blending without logistics modules or batteries. Full storage or insufficient capacity for one item waits for consumption.
+[*]Added a global “Feed dispenser restocking” Mod setting, enabled by default. Disabling it pauses restocking while retaining each dispenser's food selection and individual switch.
+[*]The terminal displays calories, selected foods and sources, and can pause, record loaded foods or clear the selection. Food selections persist in existing v6 run data.
+[/list]
+
+1.0.0 - 2026-10-31
+
+[b]简体中文[/b]
+[list]
+[*]提供补货模组、弹出模组、网络终端、虚空容器、虚空水罐和虚空电网六种物品，以及五条制造配方。
+[*]机器按实际消耗补回同规格原料，按资源网络、同区域四周容器、主仓库的顺序取料和收取成品；液体转移保留原容器、真实组分及价值。
+[*]支持熔炉、净水器、水分收集器、密码解序器、3D 打印机、蒸发器、水培和 DNA 操纵器，以及可选内容包提供的生产设备。
+[*]净水器可选择按机器纯度上限或纯水等级收取；打印保留芯片、进度和最终品质；蒸发只收蒸馏液；水培按记录规格补液、不自动播种；DNA 只收原生弹出槽磁盘。
+[*]虚空容器、水罐和电网随对应人脉升级解锁，支持制造后续设备、Alt 拖放扩容、实体库存操作和按样本归集。同类设备共享容量升级，各容器与水罐分别持有内容，电网共享储电。
+[*]虚空容器支持原版存储区扩建套件，每个套件为当前容器增加 1 页，最多 5 页；各页接入物流、统计和原生存档，支持原生重命名及逐页按样本归集，Alt 扩容对全部页生效。
+[*]共享电网存储电池实际交出的电量，保留本地电池 25% 阈值、容量和整笔支付规则；Hypertech 电池沿用原生单次输出限制，支持电鳗按有效周边格数发电。
+[*]H 终端提供库存搜索与筛选、物品详情、水电统计、机器独立开关、来源与等待原因、净水目标、水培补液规格、命名及原生机器开窗。
+[*]保留原生生产机会、批次数和物品状态；周目保存机器设置、补液样本、待补数量、网络内容及领取和发电收据。
+[*]使用正式版内置 ModLoader，需要独立 NicoKobo Forge 前置；首次公开版本统一为 1.0.0。
+[*]统一终端、状态读写与历史分支使用的 v6 存档键；清除终端误显示的禁用标记，并修复切场景后的右键菜单清理异常。
+[*]移除虚空容器、水罐和电网提示中的“已禁用”标签，保留不可出售限制并拒绝放入回收箱。
+[*]修复水罐动态图标像素不可读引发的界面命中检测异常。
+[*]完善满输出、无实际消耗、补料欠额及重复收取的边界处理，保留真实物品与液体账目。
+[/list]
+
+[b]English[/b]
+[list]
+[*]Prepared the first full-release version with restock and eject modules, a network terminal, Void Containers, Void Tanks and a Void Grid, plus five manufacturing recipes.
+[*]Replenishes matching inputs from actual consumption and collects outputs through the resource network, nearby containers and main storage. Liquid transfers preserve containers, real components and value.
+[*]Supports native furnaces, purifiers, moisture farms, desequencers, printers, evaporators, hydroponics and DNA machines, plus compatible content devices, within their native processing and collection limits.
+[*]Void Containers support pages, expansion, native renaming and sample collection. Tanks store their own liquids; the grid shares charge, accounts for energy actually delivered and respects battery limits.
+[*]The H terminal provides inventory filters, details, water and power statistics, per-machine switches, source and wait reasons, purifier targets and hydroponic refill settings.
+[*]Unified v6 persistence for settings, liquid samples, outstanding inputs, network contents and collection / generation receipts, including capacity and repeated-transfer guards.
+[*]Fixed unreadable dynamic tank icons causing UI alpha-hit-test errors. Removed misleading Disabled labels while keeping resale and recycling restrictions.
+[*]Uses the built-in full-release ModLoader and requires standalone NicoKobo Forge.
+[/list]

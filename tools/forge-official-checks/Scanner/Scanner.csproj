@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType><TargetFramework>net8.0</TargetFramework><ImplicitUsings>enable</ImplicitUsings><Nullable>disable</Nullable>
+    <GameManaged Condition="'$(GameManaged)' == ''">F:\SteamLibrary\steamapps\common\Probably Stolen\Probably Stolen_Data\Managed</GameManaged>
+  </PropertyGroup>
+  <Target Name="RequireGameScannerSource" BeforeTargets="PrepareForBuild">
+    <Error Condition="'$(GameCodeDir)' == '' Or !Exists('$(GameCodeDir)/ModScanner.cs')" Text="Pass -p:GameCodeDir with the Assembly-CSharp source directory for the game build under test." />
+  </Target>
+  <ItemGroup>
+    <Compile Include="$(GameCodeDir)\ModScanner.cs;$(GameCodeDir)\ModScanResult.cs;$(GameCodeDir)\ModScanFinding.cs;$(GameCodeDir)\ModCapability.cs" Link="Game/%(Filename)%(Extension)" />
+    <Compile Include="$(GameCodeDir)\ModSteamRules.cs" Condition="Exists('$(GameCodeDir)\ModSteamRules.cs')" Link="Game/ModSteamRules.cs" />
+    <Compile Include="$(GameCodeDir)\ModSteamUse.cs" Condition="Exists('$(GameCodeDir)\ModSteamUse.cs')" Link="Game/ModSteamUse.cs" />
+    <Reference Include="DseCecil"><HintPath>$(GameManaged)\DseCecil.dll</HintPath></Reference>
+    <Reference Include="0Harmony"><HintPath>$(GameManaged)\0Harmony.dll</HintPath></Reference>
+    <Reference Include="Newtonsoft.Json"><HintPath>$(GameManaged)\Newtonsoft.Json.dll</HintPath></Reference>
+  </ItemGroup>
+</Project>

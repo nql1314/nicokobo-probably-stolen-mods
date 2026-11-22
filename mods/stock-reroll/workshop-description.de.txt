@@ -1,0 +1,12 @@
+[h1]Angebot erneuern[/h1]
+
+Erneuere das ungekaufte Angebot des aktuellen Kunden und von Jacksons Nachtladen. Kunde, Handelsbedingungen und gekaufte Gegenstände bleiben erhalten. Standardmäßig ist das Neuwürfeln nach einem Geschäft gesperrt; das lässt sich im Mods-Menü ändern.
+
+[list]
+[*]Standardtaste: F5. Eine Tastenkombination oder None zum Abschalten ist möglich. Während Handel, Feilschen, Texteingabe oder Tastenbelegung ist die Funktion gesperrt.
+[*]Die Unterstützung für Waren anderer Mods ist standardmäßig an. Dabei werden deren Aktionen erneut ausgeführt; das kann Belohnungen, Kosten oder Handlungsschritte wiederholen. Bei einem Fehler lassen sich die Waren wiederherstellen, andere Änderungen aber nicht. Bei Bedarf kannst du diese Option abschalten.
+[/list]
+
+Abonniere die Mod, aktiviere sie im Mods-Menü und starte das Spiel neu.
+
+Diese Mod wurde nach dem offiziellen Leitfaden entwickelt, hat mod-scan bestanden und benötigt keine zusätzlichen Berechtigungen. Bei Konflikten mit einer anderen Mod wende dich an deren Autor.

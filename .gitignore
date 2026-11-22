@@ -1,0 +1,58 @@
+# 本地凭据、发布状态和私有资料
+/.local/
+.env
+.env.*
+!.env.example
+*.pem
+*.pfx
+*.p12
+*.key
+*.dpapi
+/config/steam-workshop-account.json
+
+# 旧位置，兼容迁移前的工作副本
+/.steam-workshop/
+/tools/steamcmd/
+
+# 系统、编辑器和本地工具状态
+Thumbs.db
+Desktop.ini
+.DS_Store
+*.tmp
+*.swp
+*.bak
+.vs/
+.vscode/
+.idea/
+*.suo
+*.user
+*.code-workspace
+/.codebuddy/
+.serena/
+.git-retained/
+/.playwright-cli/
+/.playwright-mcp/
+
+# .NET / C# 生成文件和发布包
+[Bb]in/
+[Oo]bj/
+_build/
+/dist/
+*.cache
+*.deps.json
+*.runtimeconfig.json
+project.assets.json
+*.csproj.nuget.*
+
+# Python 生成文件和本地环境
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+
+# 本地工作数据与旧工具目录
+/artifacts/
+/work/
+/$batch/
+output/
+packages/

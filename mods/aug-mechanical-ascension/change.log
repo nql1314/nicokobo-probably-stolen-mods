@@ -1,0 +1,30 @@
+1.0.0 - 2026-10-31
+
+[b]简体中文[/b]
+[list]
+[*]食品加工改为可选联动；未安装时隐藏 K04 修补胶配方并过滤相关灰线商品，常规医疗修补、工坊与主线不依赖该包。
+[*]仅打开机械飞升成就页时校验，界面刷新读取缓存；移除后台物品观察和保存扫描，保留已有达成及领取记录。
+[*]调整红外视觉、人工脚踝、睡眠压缩模块、全息通讯器、合成声带和拟态皮肤奖励；机械飞升改为脑机接口 ×1＋神经核心模组（无限制）×1，保留飞升效果。
+[*]混合奖励整份交付；已发放脑机接口按实际数量记录，旧领取记录与未完成交付回执保留。
+[*]工坊四条义体成就链围绕机械飞升放射展开，保留原有前置与领取顺序。
+[*]工坊按商店场景判断可用状态，N 与名片共用打开入口；新增拨打 1016 转入工坊，更新名片和开局提示。
+[*]提供机械飞升开局、健康与暴露、身体修补、脑机接口和七件义体。
+[*]接入 Nico 工坊、成就、灰线供货和“失物招领”调查剧情。
+[*]支持植皮修补胶、工坊配方查询及认知涡轮与模组矩阵的联动。
+[*]使用正式版内置 ModLoader；需要 NicoKobo Forge、合成扩展和模组矩阵。
+[*]保护剧情证物与脑机接口，保留真实交易、库存空间及物品身份校验。
+[*]“世界之外”结局信件使用清理过的本地系统用户名，移除 Steam 昵称读取、程序集引用与权限声明。
+[*]正常保存制造、交易、奖励与剧情收据，并支持原生复制槽身份重绑。
+[/list]
+
+[b]English[/b]
+[list]
+[*]Food Processing is now optional. Missing K04 hides its repair-gel recipes and related Grayline stock is filtered; native medical repairs, the workshop and main story do not require the package.
+[*]Prepared the first full-release version with the Aug start, health and exposure, body repairs, a neural interface and seven implants.
+[*]Integrated Nico Workshop, four implant achievement chains, Grayline supplies and the Lost and Found investigation, including skin-repair gel, recipe lookup and Matrix / Cognitive Turbo cooperation.
+[*]Achievements are checked when their page opens and refresh from cached results. Existing qualifications and claims are preserved; revised implant and ascension rewards are delivered together.
+[*]Open the workshop in the shop with N or phone 1016. Manufacturing, trade, reward and story receipts follow normal saves, with identity rebinding for native copied slots.
+[*]Protected story evidence and neural interfaces while retaining real trade, inventory-space and item-identity checks.
+[*]The Beyond the World letter uses a sanitized local system username; Steam nickname access, the assembly reference and capability declaration were removed.
+[*]Uses the built-in full-release ModLoader and requires NicoKobo Forge, Mechcore Synthesis and Module Matrix.
+[/list]

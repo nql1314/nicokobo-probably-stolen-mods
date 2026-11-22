@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod>
+  <ID>nicokobo.automated_logistics</ID><Name>自动化物流 / Automated Logistics</Name><Author>NicoKobo</Author><ModVersion>1.0.5</ModVersion>
+  <Description>按实际消耗自动补料、收取成品，用虚空仓储、水罐、共享电网和 H 终端管理生产。需要 NicoKobo Forge。
+Restock consumed materials, collect finished products, and manage void storage, liquids and shared power from the H-key terminal. Requires NicoKobo Forge.</Description>
+  <GameVersions><Version>0.46D</Version></GameVersions>
+  <Assemblies><Assembly>Nicokobo.AutomatedLogistics.dll</Assembly></Assemblies>
+  <Prerequisites><Mod>nicokobo.forge</Mod></Prerequisites>
+  <Capabilities />
+</Mod>

@@ -1,0 +1,93 @@
+1.0.9 - 2026-11-15
+
+[b]简体中文[/b]
+[list]
+[*]设置和倍速提示支持语言扩展 Mod 提供的语言。缺少的词条会回退到英语。
+[*]修复加速对话时，乔治奥（Georgio）的离店对白可能重复触发或误送走下一位顾客的问题。
+[/list]
+
+[b]English[/b]
+[list]
+[*]Settings and speed messages support languages added by other mods. Missing entries fall back to English.
+[*]Fixed a dialogue timing issue where Georgio’s farewell could run twice or dismiss the next customer while dialogue speed-up was active.
+[/list]
+
+1.0.8 - 2026-11-09
+
+[b]简体中文[/b]
+[list]
+[*]移除 Mod 的点击气泡推进功能，改用游戏自带的点击推进。
+[*]设置、快捷键和倍速提示现在支持九种语言。
+[/list]
+
+[b]English[/b]
+[list]
+[*]Removed the mod's click-to-advance feature. Use the base game's dialogue controls.
+[*]Settings, hotkeys and speed messages now support nine languages.
+[/list]
+
+1.0.7 - 2026-11-04
+
+[b]简体中文[/b]
+[list]
+[*]全局倍速上限由 5 倍提高到 10 倍。
+[/list]
+
+[b]English[/b]
+[list]
+[*]Raised the global speed limit from 5× to 10×.
+[/list]
+
+1.0.6 - 2026-10-31
+
+[b]简体中文[/b]
+[list]
+[*]快捷键在原生改键捕获期间及捕获完成当帧保持屏蔽，避免一次输入同时完成改键和改变加速配置。
+[*]保留普通输入框与物品管理器搜索框的文字输入保护，修复主菜单全局倍速快捷键仍改变配置的问题。
+[/list]
+
+[b]English[/b]
+[list]
+[*]Hotkeys remain suppressed during native key-binding capture and its completion frame, preventing the captured input from also changing speed settings.
+[*]Retained text-input protection for standard fields and the Item Manager search box; global-speed hotkeys no longer change settings in the main menu.
+[/list]
+
+1.0.5 - 2026-10-30
+[b]简体中文[/b]
+[list]
+[*]调整语言读取时机：加载模组时不再读取游戏语言，设置文案在显示时才读取。
+[*]快捷键与倍率提示仅在局内生效，主菜单不再响应快捷键或显示倍率。
+[/list]
+
+[b]English[/b]
+[list]
+[*]Changed when the mod reads the game language: no language lookup during mod startup; settings labels read it only when displayed.
+[*]Hotkeys and speed indicators now work only during gameplay. They no longer respond or appear in the main menu.
+[/list]
+
+1.0.4 - 2026-10-29
+- 更新中英双语名称和简介，中文在前、英文在后。
+- 非中文语言界面出现 Mod 中文名称或描述空白时，可安装独立的 Chinese Font Fix / 中文字体补丁。
+- Updated the bilingual name and description, with Chinese before English.
+- For blank Chinese mod names or descriptions in non-Chinese interfaces, install the standalone Chinese Font Fix mod.
+
+1.0.3 - 2026-10-29
+- 移除模组名称与简介的动态翻译，改用清单文字，避免触发加载器扫描拦截。
+- Removed dynamic translation of the mod name and description; the manifest text is used instead to avoid the loader scan rejection.
+
+1.0.2 - 2026-10-29
+- 游戏内模组名称与简介随游戏语言显示中文或英文。
+- 更新工坊中英文介绍，修复换行显示为转义字符的问题。
+- The in-game mod name and description now follow the game's language (Chinese or English).
+- Updated the Chinese/English Workshop description and fixed visible newline escape sequences.
+
+1.0.1 - 2026-10-29
+- 缩小加速影响范围：只调整店内／电话对话气泡和当前行走路径，移除不必要的立即关门补丁。
+- 减少与其他 Mod 的冲突：保留已有动画速度和新写入的值；全局倍速遇到外部改速时让出控制，重新开关可恢复。
+- 关闭加速或设为 1 倍时保留原时序，减少对对话状态和气泡点击状态的改动。
+- 精简 README 和工坊介绍，统一功能说明与快捷键列表。
+
+1.0.0 - 2026-10-28
+- 首次迁移至正式版内置模组系统，通过游戏 Mods 菜单启用和配置。
+- 提供对话打字、句间等待、顾客与卷帘门加速，以及可选的气泡点击推进和局内全局倍速。
+- 支持自定义快捷键、三档局部预设、一键恢复原速和倍率提示。

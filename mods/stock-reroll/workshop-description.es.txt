@@ -1,0 +1,12 @@
+[h1]Renovación del surtido[/h1]
+
+Renueva los artículos sin comprar del cliente actual y de la tienda nocturna de Jackson. Se conservan el cliente, las condiciones de intercambio y los artículos comprados. De forma predeterminada no se puede renovar tras una transacción; puedes cambiarlo en el menú Mods.
+
+[list]
+[*]Tecla predeterminada: F5. Puedes asignar una combinación o usar None para desactivarla. No funciona durante una transacción, un regateo, la escritura o la asignación de teclas.
+[*]La compatibilidad con el stock de otros mods está activada de forma predeterminada. Repite sus acciones, lo que puede duplicar recompensas, cobros o pasos de la historia. Si falla, solo se restauran los artículos. Desactiva la opción si prefieres no repetir esas acciones.
+[/list]
+
+Suscríbete, activa el mod en el menú Mods y reinicia el juego.
+
+Este mod sigue la guía oficial, ha superado la comprobación de mod-scan y no solicita permisos adicionales. Si entra en conflicto con otro mod, consulta con el autor de ese mod.

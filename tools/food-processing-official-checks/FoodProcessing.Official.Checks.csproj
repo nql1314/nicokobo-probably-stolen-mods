@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <CheckEolTargetFramework>false</CheckEolTargetFramework>
+    <GameDir Condition="'$(GameDir)' == ''">F:\SteamLibrary\steamapps\common\Probably Stolen</GameDir>
+    <GameManaged>$(GameDir)\Probably Stolen_Data\Managed</GameManaged>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../shared/ModLocalizationChecks.cs" Link="ModLocalizationChecks.cs" />
+    <Compile Include="../../mods/food-processing/FoodStateValue.cs" Link="Mod/FoodStateValue.cs" />
+    <Compile Include="../../mods/food-processing/FoodStorageExpansion.cs" Link="Mod/FoodStorageExpansion.cs" />
+    <Compile Include="../../mods/food-processing/FoodCareKit.cs" Link="Mod/FoodCareKit.cs" />
+    <Compile Include="../../mods/food-processing/FoodText.cs" Link="Mod/FoodText.cs" />
+    <Compile Include="../shared/IndustrialFishFeedPort.cs" Link="Ports/IndustrialFishFeedPort.cs" />
+    <Compile Include="../shared/ItemGraphCleanupPorts.cs" Link="Ports/ItemGraphCleanupPorts.cs" />
+    <Compile Include="../../mods/shared/ItemGraphCleanup.cs" Link="Shared/ItemGraphCleanup.cs" />
+    <Compile Include="../../mods/shared/NativeItemText.cs" Link="Shared/NativeItemText.cs" />
+    <Compile Include="../shared/NativeLocalizationPort.cs" Link="Ports/NativeLocalizationPort.cs" />
+    <Compile Include="../../mods/shared/ModText.cs" Link="Mod/ModText.cs" />
+    <Compile Include="../../mods/nicokobo-forge/Services/ProductionBatch.cs" Link="Forge/ProductionBatch.cs" />
+    <Compile Include="../../mods/nicokobo-forge/Services/ProductionValue.cs" Link="Forge/ProductionValue.cs" />
+    <Compile Include="../../mods/nicokobo-forge/Services/MachineTransaction.cs" Link="Forge/MachineTransaction.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\mods\food-processing\Definitions\*.cs" Link="Mod\Definitions\%(Filename)%(Extension)" />
+    <Compile Include="..\..\mods\food-processing\Domain\*.cs" Link="Mod\Domain\%(Filename)%(Extension)" />
+    <Compile Include="..\..\mods\food-processing\FoodProduction.cs" Link="Mod\FoodProduction.cs" />
+    <Compile Include="..\..\mods\food-processing\FoodRecipeValue.cs" Link="Mod\FoodRecipeValue.cs" />
+    <Compile Include="..\..\mods\food-processing\FoodIngredients.cs" Link="Mod\FoodIngredients.cs" />
+    <Compile Include="..\..\mods\food-processing\FoodIngredientStock.cs" Link="Mod\FoodIngredientStock.cs" />
+    <Compile Include="..\..\mods\food-processing\FoodRefrigeration.cs" Link="Mod\FoodRefrigeration.cs" />
+    <Compile Include="..\..\mods\food-processing\FoodInterop.cs" Link="Mod\FoodInterop.cs" />
+    <Compile Include="..\..\mods\shared\Nicokobo.ContentInterop\*.cs" Exclude="..\..\mods\shared\Nicokobo.ContentInterop\RecipeQuery.cs;..\..\mods\shared\Nicokobo.ContentInterop\NativeSupplyHooks.cs" Link="Interop\%(Filename)%(Extension)" />
+    <Compile Include="..\shared\NativeSupplyHookPort.cs" Link="Interop\NativeSupplyHookPort.cs" />
+    <Reference Include="Newtonsoft.Json"><HintPath>$(GameManaged)\Newtonsoft.Json.dll</HintPath></Reference>
+    <Reference Include="0Harmony"><HintPath>$(GameManaged)\0Harmony.dll</HintPath></Reference>
+    <Reference Include="DseCecil"><HintPath>$(GameManaged)\DseCecil.dll</HintPath></Reference>
+  </ItemGroup>
+  <ItemGroup><Compile Include="..\..\mods\shared\Nicokobo.Forge.Contracts\*.cs" Link="Contracts\%(Filename)%(Extension)" /></ItemGroup>
+  <PropertyGroup><ModLocalizationPackage>food-processing</ModLocalizationPackage><CopyModLocalization>true</CopyModLocalization></PropertyGroup>
+  <Import Project="../../mods/shared/Localization.targets" />
+</Project>

@@ -1,0 +1,140 @@
+{
+  "Generator": "Built-in imagegen",
+  "Reference": "output/theft-1.2.0/portrait-style-preview.jpg",
+  "Canvas": [
+    384,
+    576
+  ],
+  "Foot": [
+    192,
+    562
+  ],
+  "Portraits": [
+    {
+      "Role": "aquacultureTechnician",
+      "Variant": 0,
+      "SourceImage": "%USERPROFILE%\\.codex\\generated_images\\01a18650-3c34-7443-b847-8bf906e60915\\exec-f3cce42d-20be-4c7b-9db6-f4b4558e6468.png",
+      "Output": "Textures/Paper/aquacultureTechnician.png",
+      "Prompt": "Use case: stylized-concept. Asset type: single full-body transparent NPC cutout for Probably Stolen, same hand-painted muted-color graphic-novel style as the three reference NPCs. Reference is STYLE ONLY, not an edit target. Create ONE new aquaculture technician: middle-aged East Asian man with short dark hair, teal waterproof work jacket over khaki overalls, worn rubber boots, small tool belt, carrying a compact fish-feed bag in one hand and a handheld water test meter in the other. Neutral three-quarter view facing slightly right, relaxed natural standing posture looking at the meter. Adult realistic body proportions matching reference, detailed outlined face, desaturated teal/brown palette, painterly cel shading, slightly gritty utilitarian space-station clothing. Entire body including both shoes visible with generous transparent padding on all sides; centered silhouette, same flat readable presentation as reference. Portrait canvas 1024x1536. Background must be genuinely transparent alpha; no floor, no shadow, no scenery, no labels, no text, no borders. This image is role aquacultureTechnician variant 0, distinct original character."
+    },
+    {
+      "Role": "aquacultureTechnician",
+      "Variant": 1,
+      "SourceImage": "%USERPROFILE%\\.codex\\generated_images\\01a18650-3c34-7443-b847-8bf906e60915\\exec-2fbec25f-7ed6-4f3b-87a4-233f2bd39e23.png",
+      "Output": "Textures/Paper/aquacultureTechnician-01.png",
+      "Prompt": "Use case: stylized-concept. Asset type: ONE full-body NPC cutout for Probably Stolen. Match the reference's muted-color hand-painted graphic novel illustration, realistic adult proportions, fine outlined face, painterly cel shading, worn utilitarian space-station work clothes. Reference is STYLE ONLY. Neutral three-quarter view facing slightly right, natural standing posture, entire body and both shoes visible, centered silhouette with generous transparent padding on all sides. Portrait canvas 1024x1536. Genuinely transparent alpha background; no floor, no shadow, no scenery, no labels, no writing, no borders. A single original character only. Subject: A woman in her thirties with short auburn hair and practical goggles resting on her head, teal waterproof vest over grey sleeves, olive work trousers and rubber boots. She holds a compact water sample tube rack and checks a small test meter at waist height. A feed pouch on her belt."
+    },
+    {
+      "Role": "aquacultureTechnician",
+      "Variant": 2,
+      "SourceImage": "%USERPROFILE%\\.codex\\generated_images\\01a18650-3c34-7443-b847-8bf906e60915\\exec-c8aac82d-17d9-4eea-9830-ed6b99c00125.png",
+      "Output": "Textures/Paper/aquacultureTechnician-02.png",
+      "Prompt": "Use case: stylized-concept. Asset type: ONE full-body NPC cutout for Probably Stolen. Match the reference's muted-color hand-painted graphic novel illustration, realistic adult proportions, fine outlined face, painterly cel shading, worn utilitarian space-station work clothes. Reference is STYLE ONLY. Neutral three-quarter view facing slightly right, natural standing posture, entire body and both shoes visible, centered silhouette with generous transparent padding on all sides. Portrait canvas 1024x1536. Genuinely transparent alpha background; no floor, no shadow, no scenery, no labels, no writing, no borders. A single original character only. Subject: A stocky older man with dark skin, close grey beard, cap, rolled sleeves, faded teal apron over brown work clothes and rubber boots. Holds a small sealed fish feed sack against his hip and a folded pool inspection sheet in his other hand."
+    },
+    {
+      "Role": "clinicCourier",
+      "Variant": 0,
+      "SourceImage": "%USERPROFILE%\\.codex\\generated_images\\01a18650-3c34-7443-b847-8bf906e60915\\exec-f12161cd-7b38-4c77-9e9f-98d854a5e235.png",
+      "Output": "Textures/Paper/clinicCourier.png",
+      "Prompt": "Use case: stylized-concept. Asset type: ONE full-body NPC cutout for Probably Stolen. Match the reference's muted-color hand-painted graphic novel illustration, realistic adult proportions, fine outlined face, painterly cel shading, worn utilitarian space-station work clothes. Reference is STYLE ONLY. Neutral three-quarter view facing slightly right, natural standing posture, entire body and both shoes visible, centered silhouette with generous transparent padding on all sides. Portrait canvas 1024x1536. Genuinely transparent alpha background; no floor, no shadow, no scenery, no labels, no writing, no borders. A single original character only. Subject: A young East Asian woman with short dark hair, muted teal courier jacket, grey cargo trousers and sturdy walking shoes. A small medical shoulder satchel with a simple pale cross, holding a compact sealed dressing package and checking a delivery slip without writing."
+    },
+    {
+      "Role": "clinicCourier",
+      "Variant": 1,
+      "SourceImage": "%USERPROFILE%\\.codex\\generated_images\\01a18650-3c34-7443-b847-8bf906e60915\\exec-db25a2d5-df60-4d78-a5b2-e1b2f3fad6f1.png",
+      "Output": "Textures/Paper/clinicCourier-01.png",
+      "Prompt": "Use case: stylized-concept. Asset type: ONE full-body NPC cutout for Probably Stolen. Match the reference's muted-color hand-painted graphic novel illustration, realistic adult proportions, fine outlined face, painterly cel shading, worn utilitarian space-station work clothes. Reference is STYLE ONLY. Neutral three-quarter view facing slightly right, natural standing posture, entire body and both shoes visible, centered silhouette with generous transparent padding on all sides. Portrait canvas 1024x1536. Genuinely transparent alpha background; no floor, no shadow, no scenery, no labels, no writing, no borders. A single original character only. Subject: A middle-aged man with short chestnut hair and slight stubble, faded grey-blue jacket over teal scrubs, dark utility trousers and worn trainers. Carries a small insulated medical delivery bag with a simple pale cross, and a wrapped box of dressings."
+    },
+    {
+      "Role": "clinicCourier",
+      "Variant": 2,
+      "SourceImage": "%USERPROFILE%\\.codex\\generated_images\\01a18650-3c34-7443-b847-8bf906e60915\\exec-3f2fc3be-b1eb-4579-a544-50331580258e.png",
+      "Output": "Textures/Paper/clinicCourier-02.png",
+      "Prompt": "Use case: stylized-concept. Asset type: ONE full-body NPC cutout for Probably Stolen. Match the reference's muted-color hand-painted graphic novel illustration, realistic adult proportions, fine outlined face, painterly cel shading, worn utilitarian space-station work clothes. Reference is STYLE ONLY. Neutral three-quarter view facing slightly right, natural standing posture, entire body and both shoes visible, centered silhouette with generous transparent padding on all sides. Portrait canvas 1024x1536. Genuinely transparent alpha background; no floor, no shadow, no scenery, no labels, no writing, no borders. A single original character only. Subject: A dark-skinned woman with tightly tied hair and an attentive face, practical teal zip jacket, beige work trousers and dark walking boots. Holds a small medical satchel with a pale cross and two sealed supply packets at her waist."
+    },
+    {
+      "Role": "hydroponicGrower",
+      "Variant": 0,
+      "SourceImage": "%USERPROFILE%\\.codex\\generated_images\\01a18650-3c34-7443-b847-8bf906e60915\\exec-ca236d53-c5f0-43cb-b8cc-b240cf58512b.png",
+      "Output": "Textures/Paper/hydroponicGrower.png",
+      "Prompt": "Use case: stylized-concept. Asset type: ONE full-body NPC cutout for Probably Stolen. Match the reference's muted-color hand-painted graphic novel illustration, realistic adult proportions, fine outlined face, painterly cel shading, worn utilitarian space-station work clothes. Reference is STYLE ONLY. Neutral three-quarter view facing slightly right, natural standing posture, entire body and both shoes visible, centered silhouette with generous transparent padding on all sides. Portrait canvas 1024x1536. Genuinely transparent alpha background; no floor, no shadow, no scenery, no labels, no writing, no borders. A single original character only. Subject: A slim young East Asian woman with tied-back black hair, faded green work shirt, patched tan overalls and muddy boots, with a small shoulder satchel containing seed packets. Holds a small potted hydroponic plant and a seed packet at her waist, inspecting her harvest."
+    },
+    {
+      "Role": "hydroponicGrower",
+      "Variant": 1,
+      "SourceImage": "%USERPROFILE%\\.codex\\generated_images\\01a18650-3c34-7443-b847-8bf906e60915\\exec-14a14cf3-064f-4ed8-abad-0e5dd42aaf27.png",
+      "Output": "Textures/Paper/hydroponicGrower-01.png",
+      "Prompt": "Use case: stylized-concept. Asset type: ONE full-body NPC cutout for Probably Stolen. Match the reference's muted-color hand-painted graphic novel illustration, realistic adult proportions, fine outlined face, painterly cel shading, worn utilitarian space-station work clothes. Reference is STYLE ONLY. Neutral three-quarter view facing slightly right, natural standing posture, entire body and both shoes visible, centered silhouette with generous transparent padding on all sides. Portrait canvas 1024x1536. Genuinely transparent alpha background; no floor, no shadow, no scenery, no labels, no writing, no borders. A single original character only. Subject: A middle-aged man with curly dark hair and light stubble, loose olive sweater, beige utility trousers, dark sturdy boots and canvas seed satchel. He holds two small produce bags with seed packets peeking out, glancing toward the right."
+    },
+    {
+      "Role": "hydroponicGrower",
+      "Variant": 2,
+      "SourceImage": "%USERPROFILE%\\.codex\\generated_images\\01a18650-3c34-7443-b847-8bf906e60915\\exec-e9eaad53-6816-4675-99de-a804e3e312cd.png",
+      "Output": "Textures/Paper/hydroponicGrower-02.png",
+      "Prompt": "Use case: stylized-concept. Asset type: ONE full-body NPC cutout for Probably Stolen. Match the reference's muted-color hand-painted graphic novel illustration, realistic adult proportions, fine outlined face, painterly cel shading, worn utilitarian space-station work clothes. Reference is STYLE ONLY. Neutral three-quarter view facing slightly right, natural standing posture, entire body and both shoes visible, centered silhouette with generous transparent padding on all sides. Portrait canvas 1024x1536. Genuinely transparent alpha background; no floor, no shadow, no scenery, no labels, no writing, no borders. A single original character only. Subject: An elderly woman with silver hair in a low bun, faded ochre jacket over a moss-green apron, patched dark trousers and work shoes. She holds a tray with one small green crop and a few paper seed envelopes."
+    },
+    {
+      "Role": "plantBreeder",
+      "Variant": 0,
+      "SourceImage": "%USERPROFILE%\\.codex\\generated_images\\01a18650-3c34-7443-b847-8bf906e60915\\exec-57c989d3-4236-483f-9c8a-3cb8690091f6.png",
+      "Output": "Textures/Paper/plantBreeder.png",
+      "Prompt": "Use case: stylized-concept. Asset type: ONE full-body NPC cutout for Probably Stolen. Match the reference's muted-color hand-painted graphic novel illustration, realistic adult proportions, fine outlined face, painterly cel shading, worn utilitarian space-station work clothes. Reference is STYLE ONLY. Neutral three-quarter view facing slightly right, natural standing posture, entire body and both shoes visible, centered silhouette with generous transparent padding on all sides. Portrait canvas 1024x1536. Genuinely transparent alpha background; no floor, no shadow, no scenery, no labels, no writing, no borders. A single original character only. Subject: A woman in her thirties with shoulder-length auburn hair, a sage-green lab jacket over a grey high-collar shirt, dark utility trousers, clean but worn boots. Holds a small plant sample container and a few palm-sized blank DNA disks; seed pouch on belt."
+    },
+    {
+      "Role": "plantBreeder",
+      "Variant": 1,
+      "SourceImage": "%USERPROFILE%\\.codex\\generated_images\\01a18650-3c34-7443-b847-8bf906e60915\\exec-19bb708e-3ba8-485d-8248-c695d92730e5.png",
+      "Output": "Textures/Paper/plantBreeder-01.png",
+      "Prompt": "Use case: stylized-concept. Asset type: ONE full-body NPC cutout for Probably Stolen. Match the reference's muted-color hand-painted graphic novel illustration, realistic adult proportions, fine outlined face, painterly cel shading, worn utilitarian space-station work clothes. Reference is STYLE ONLY. Neutral three-quarter view facing slightly right, natural standing posture, entire body and both shoes visible, centered silhouette with generous transparent padding on all sides. Portrait canvas 1024x1536. Genuinely transparent alpha background; no floor, no shadow, no scenery, no labels, no writing, no borders. A single original character only. Subject: An older East Asian man with swept-back silver hair and round glasses, muted olive research coat with practical pockets, charcoal trousers and brown boots. Holds a compact plant analyser and a small seed envelope, studying the analyser."
+    },
+    {
+      "Role": "plantBreeder",
+      "Variant": 2,
+      "SourceImage": "%USERPROFILE%\\.codex\\generated_images\\01a18650-3c34-7443-b847-8bf906e60915\\exec-b5a90841-e982-4331-8172-969943176fbd.png",
+      "Output": "Textures/Paper/plantBreeder-02.png",
+      "Prompt": "Use case: stylized-concept. Asset type: ONE full-body NPC cutout for Probably Stolen. Match the reference's muted-color hand-painted graphic novel illustration, realistic adult proportions, fine outlined face, painterly cel shading, worn utilitarian space-station work clothes. Reference is STYLE ONLY. Neutral three-quarter view facing slightly right, natural standing posture, entire body and both shoes visible, centered silhouette with generous transparent padding on all sides. Portrait canvas 1024x1536. Genuinely transparent alpha background; no floor, no shadow, no scenery, no labels, no writing, no borders. A single original character only. Subject: A young dark-skinned man with short neat curls, moss-green utility vest over cream sleeves, dark work trousers and brown shoes, a satchel for plant samples. Carries a clear specimen tube with a small green sprout and a palm-sized blank disk."
+    },
+    {
+      "Role": "printTechnician",
+      "Variant": 0,
+      "SourceImage": "%USERPROFILE%\\.codex\\generated_images\\01a18650-3c34-7443-b847-8bf906e60915\\exec-b0fcf0d3-c4fe-47bd-ba06-c830121984d2.png",
+      "Output": "Textures/Paper/printTechnician.png",
+      "Prompt": "Use case: stylized-concept. Asset type: ONE full-body NPC cutout for Probably Stolen. Match the reference's muted-color hand-painted graphic novel illustration, realistic adult proportions, fine outlined face, painterly cel shading, worn utilitarian space-station work clothes. Reference is STYLE ONLY. Neutral three-quarter view facing slightly right, natural standing posture, entire body and both shoes visible, centered silhouette with generous transparent padding on all sides. Portrait canvas 1024x1536. Genuinely transparent alpha background; no floor, no shadow, no scenery, no labels, no writing, no borders. A single original character only. Subject: A man in his thirties with short dark hair, red-brown mechanic overalls over a grey shirt, worn work boots and goggles pushed onto his forehead. Holds a small machined metal sample and a palm-sized printer chip, with a few screwdrivers on his belt."
+    },
+    {
+      "Role": "printTechnician",
+      "Variant": 1,
+      "SourceImage": "%USERPROFILE%\\.codex\\generated_images\\01a18650-3c34-7443-b847-8bf906e60915\\exec-5ce63284-1024-408c-83a7-59de21f90da5.png",
+      "Output": "Textures/Paper/printTechnician-01.png",
+      "Prompt": "Use case: stylized-concept. Asset type: ONE full-body NPC cutout for Probably Stolen. Match the reference's muted-color hand-painted graphic novel illustration, realistic adult proportions, fine outlined face, painterly cel shading, worn utilitarian space-station work clothes. Reference is STYLE ONLY. Neutral three-quarter view facing slightly right, natural standing posture, entire body and both shoes visible, centered silhouette with generous transparent padding on all sides. Portrait canvas 1024x1536. Genuinely transparent alpha background; no floor, no shadow, no scenery, no labels, no writing, no borders. A single original character only. Subject: A confident woman with close-cut dark hair and protective glasses, faded rust-orange utility jacket, graphite trousers, leather work boots, tool belt. She inspects a small printed component in a gloved hand while holding a compact caliper."
+    },
+    {
+      "Role": "printTechnician",
+      "Variant": 2,
+      "SourceImage": "%USERPROFILE%\\.codex\\generated_images\\01a18650-3c34-7443-b847-8bf906e60915\\exec-dcc4a45c-1ad6-4936-b1d5-de059cb65fcf.png",
+      "Output": "Textures/Paper/printTechnician-02.png",
+      "Prompt": "Use case: stylized-concept. Asset type: ONE full-body NPC cutout for Probably Stolen. Match the reference's muted-color hand-painted graphic novel illustration, realistic adult proportions, fine outlined face, painterly cel shading, worn utilitarian space-station work clothes. Reference is STYLE ONLY. Neutral three-quarter view facing slightly right, natural standing posture, entire body and both shoes visible, centered silhouette with generous transparent padding on all sides. Portrait canvas 1024x1536. Genuinely transparent alpha background; no floor, no shadow, no scenery, no labels, no writing, no borders. A single original character only. Subject: An older bald man with a neat white moustache, rolled grey sleeves beneath faded reddish-brown overalls and scuffed work boots. Carries a small tool pouch and a box of printer consumables at waist height."
+    },
+    {
+      "Role": "waterQualityInspector",
+      "Variant": 0,
+      "SourceImage": "%USERPROFILE%\\.codex\\generated_images\\01a18650-3c34-7443-b847-8bf906e60915\\exec-83178adc-1ab1-4258-9c62-24633a961a1c.png",
+      "Output": "Textures/Paper/waterQualityInspector.png",
+      "Prompt": "Use case: stylized-concept. Asset type: ONE full-body NPC cutout for Probably Stolen. Match the reference's muted-color hand-painted graphic novel illustration, realistic adult proportions, fine outlined face, painterly cel shading, worn utilitarian space-station work clothes. Reference is STYLE ONLY. Neutral three-quarter view facing slightly right, natural standing posture, entire body and both shoes visible, centered silhouette with generous transparent padding on all sides. Portrait canvas 1024x1536. Genuinely transparent alpha background; no floor, no shadow, no scenery, no labels, no writing, no borders. A single original character only. Subject: An East Asian woman with dark brown hair in a loose bun, blue-grey utility coat, teal undershirt, dark work trousers and practical boots. Carries a small handheld water scanner and a rack of tiny clear sample vials at waist height."
+    },
+    {
+      "Role": "waterQualityInspector",
+      "Variant": 1,
+      "SourceImage": "%USERPROFILE%\\.codex\\generated_images\\01a18650-3c34-7443-b847-8bf906e60915\\exec-8520e67a-a783-48e4-ba97-95c0d891b5f5.png",
+      "Output": "Textures/Paper/waterQualityInspector-01.png",
+      "Prompt": "Use case: stylized-concept. Asset type: ONE full-body NPC cutout for Probably Stolen. Match the reference's muted-color hand-painted graphic novel illustration, realistic adult proportions, fine outlined face, painterly cel shading, worn utilitarian space-station work clothes. Reference is STYLE ONLY. Neutral three-quarter view facing slightly right, natural standing posture, entire body and both shoes visible, centered silhouette with generous transparent padding on all sides. Portrait canvas 1024x1536. Genuinely transparent alpha background; no floor, no shadow, no scenery, no labels, no writing, no borders. A single original character only. Subject: A slim middle-aged man with square glasses and short sandy hair, faded blue-green field jacket, beige trousers, brown shoes, sample case on a shoulder strap. He checks a small water test strip against a blank color comparison card."
+    },
+    {
+      "Role": "waterQualityInspector",
+      "Variant": 2,
+      "SourceImage": "%USERPROFILE%\\.codex\\generated_images\\01a18650-3c34-7443-b847-8bf906e60915\\exec-66be8427-7f51-4a32-808f-dcbed093506c.png",
+      "Output": "Textures/Paper/waterQualityInspector-02.png",
+      "Prompt": "Use case: stylized-concept. Asset type: ONE full-body NPC cutout for Probably Stolen. Match the reference's muted-color hand-painted graphic novel illustration, realistic adult proportions, fine outlined face, painterly cel shading, worn utilitarian space-station work clothes. Reference is STYLE ONLY. Neutral three-quarter view facing slightly right, natural standing posture, entire body and both shoes visible, centered silhouette with generous transparent padding on all sides. Portrait canvas 1024x1536. Genuinely transparent alpha background; no floor, no shadow, no scenery, no labels, no writing, no borders. A single original character only. Subject: A dark-skinned older woman with short grey curls, rolled sleeves beneath a blue-grey waterproof vest, olive trousers and worn boots. Holds a compact scanner and a sealed water sample bottle, poised to write on a small blank pad."
+    }
+  ]
+}

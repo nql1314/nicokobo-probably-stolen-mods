@@ -1,0 +1,85 @@
+{
+  "reference_game_build": 26525552,
+  "images": {
+    "cheese_noodles.png": {
+      "tool": "built-in image_gen",
+      "transparent_background": true,
+      "prompt": "Edit one transparent game inventory sprite. Image 1 is the exact approved Mushroom Noodle cup to use as a product family template. Keep its standing upright tall tapered silhouette, main paper label position and proportions, horizontal top edge, shallow centered opening, visible front face, and short dark bottom rim. Match the exact viewpoint, size and native pixel clustering; make only a new flavor variation. Image 2 shows the current other flavor's identity and colors for reference. Draw one center-aligned complete cup from directly in front, same top rim height and approximate width-to-height as Image 1, slight view of a shallow opening just above the rim. Bring some pretty color with clean main color blocks and a small coordinated accent, no brightly scattered highlights. Coarse pixeled art as seen at native 32x32, true transparent alpha, comfortable clear margins. No clutter, tiny noodles speckles, brush noise, invented typography, second side or rotated object. Cheese Noodles. Print a simple warm ochre cheese-wedge mark in a cream rectangular paper panel of the same proportions as the mushroom cup's label. Deep warm clay red and wheat-papery body, one gray-ivory lid lip and broad slightly darker shading on one side. Make the visible shallow surface a pale golden noodle sweep in two grouped shapes with a narrow shaded ochre rim in front, not a noisy pattern. Use an earthy yellow-orange with a small rusty brown band. Retain the food's own warm palette."
+    },
+    "noodle-cups.png": {
+      "tool": "built-in image_gen",
+      "transparent_background": true,
+      "prompt": "Edit one transparent 2D pixel-art sprite atlas for Probably Stolen, visually designed as a station noodle range, with related lidded cups and distinct label layouts. Image 1 is the exact editable atlas, each sprite and its slot are an individual subject within this single sheet. Image 2 is the reference of actual shipped game sprites; borrow their material shading, restrained palette, nostalgic utilitarian packaging and coarse pixel scale. Redesign each sprite at the same grid position. Use precisely 3 equally spaced columns and two equally spaced rows. Preserve the layout and roughly the reference item's silhouette and size class. Each item must be isolated in the center of its own cell, with very generous transparent gaps and easily separable complete silhouettes. Background genuinely transparent throughout. Omit all grid marks, borders, titles and captions.\nArt direction. Full front elevation with perfectly level top and bottom edges, 0-degree roll and yaw, no visible side face, a very thin lid edge for depth if appropriate. At native scale this should look hand-pixeled in 16 to 48 pixels: clean clustered squares, warm slate outlines, modest lighting, restrained pigment. Base colors are muted but with a darker edge for definition, a lighter label paper, and one distinct accent per design. Give every sprite an actual packaging composition with a main figure, a secondary ink band or seam, readable negative space, and 2-3 broad tones of material shading. Use clear visual rhythm from asymmetric label placement and foil seams where described. Keep modest patina in a few larger pixels at edges rather than covering surfaces in noise. Graphic motifs must feel like coherent designs, not assorted ingredient illustrations or identical blank labels. No bright gloss, noisy highlights, high-chroma color, gradients, blur, shadows outside the sprites, checkerboard, extraneous objects, watermarks or writing.\nLayout in reading order:\ntop left — Cheese Noodles. Squat muted wheat cup. The cream label uses a single cheese wedge cut out of a split rust-ochre color field. One thin silver seal and a short batch-stamp mark anchor the front.\ntop middle — Mushroom Noodles. Upright sage cup with an ivory vertical paper spine off center and a simple mushroom-cap stencil in a gray-green arch. Calm dark base trim, matte ridged lid edge.\ntop right — Beer Stew Noodles. Wide deep brick and umber tub. Wide horizontal kraft sleeve carrying one stylized lidded stew pot emblem. A subtly notched top lip and a tiny muted pale strip below the seal.\nbottom left — Meat Sauce Noodles. Stocky warm gray paper cup with a faded burgundy center label. One broad cream noodle swirl in the label, a near-black shallow foot and a small printed edge stripe. Horizontal seal.\nbottom middle — Fish Floss Noodles. Teal-gray takeout cup with a short taper and dusty cream cap. Give it a single broad breaking-wave logo enclosed in a circular pale paper panel, cool side shading, and two short package marks near the foot.\nbottom right — Eel and Cheese Noodles. Low, wide midnight-blue premium tub. Pale gray horizontal rim, muted brass seal stripe, and a single sinuous eel silhouette inside a weathered cream panel with generous negative space."
+    },
+    "takeaway-and-supplies.png": {
+      "tool": "built-in image_gen",
+      "transparent_background": true,
+      "prompt": "Edit one transparent 2D pixel-art sprite atlas for Probably Stolen, visually designed as retail pouches, personal dishes, and a muted industrial medical case. Image 1 is the exact editable atlas, each sprite and its slot are an individual subject within this single sheet. Image 2 is the reference of actual shipped game sprites; borrow their material shading, restrained palette, nostalgic utilitarian packaging and coarse pixel scale. Redesign each sprite at the same grid position. Use precisely 3 equally spaced columns and two equally spaced rows. Preserve the layout and roughly the reference item's silhouette and size class. Each item must be isolated in the center of its own cell, with very generous transparent gaps and easily separable complete silhouettes. Background genuinely transparent throughout. Omit all grid marks, borders, titles and captions.\nArt direction. Full front elevation with perfectly level top and bottom edges, 0-degree roll and yaw, no visible side face, a very thin lid edge for depth if appropriate. At native scale this should look hand-pixeled in 16 to 48 pixels: clean clustered squares, warm slate outlines, modest lighting, restrained pigment. Base colors are muted but with a darker edge for definition, a lighter label paper, and one distinct accent per design. Give every sprite an actual packaging composition with a main figure, a secondary ink band or seam, readable negative space, and 2-3 broad tones of material shading. Use clear visual rhythm from asymmetric label placement and foil seams where described. Keep modest patina in a few larger pixels at edges rather than covering surfaces in noise. Graphic motifs must feel like coherent designs, not assorted ingredient illustrations or identical blank labels. No bright gloss, noisy highlights, high-chroma color, gradients, blur, shadows outside the sprites, checkerboard, extraneous objects, watermarks or writing.\nLayout in reading order:\ntop left — Large Jerky. Square warm gray-kraft vacuum pack with level crimped seams and a smoked ink label above a broad window. One flat warm rust jerky slab, its texture summarized as two angular fiber lines. A small contrasting ivory paper tab.\ntop middle — Dried Nutrifruit. A square matte burnt-sienna pouch, clean wide folded top and structured border. A single arched translucent window shows two overlapping disks drawn as one large simple ochre silhouette. Offset faded olive label tab, no extra food.\ntop right — Nomore Care Kit. Upright square medical clamshell, frontal ivory gray-mauve face with two stepped edge details and a horizontal case seam. One purposeful deep slate latch and a small mono injector-like graphic inside a raised paper panel. Matte and utilitarian, no text.\nbottom left — Fish Cream Soup. A sealed tapered slate-blue soup cup with a silver level crimped rim. A cut-paper fish crest as a single cream print on a fine charcoal placket; cool gray base shading and a minimal contrast stripe suggesting insulated container.\nbottom middle — Galaxy Sundae. Wide muted blue-gray ice cream tub with a shallow vanilla-colored ice cream peak in one broad shape. One dusty plum ribbon across the scoop, a half-arch pale mark on its level tub face and well-defined paper rim. Design as native dessert, sparse ornament.\nbottom right — Vanilla Wine Float. Upright dusty-violet tapered cup containing a quiet cream scoop partly overlapping the horizontal rim. A solid slightly lighter mauve paper sleeve embossed with one clock-like orbital half arc. Dark horizontal band, broad glass and paper shading."
+    },
+    "fish_floss_noodles.png": {
+      "tool": "built-in image_gen",
+      "transparent_background": true,
+      "prompt": "Edit one transparent game inventory sprite. Image 1 is the exact approved Mushroom Noodle cup to use as a product family template. Keep its standing upright tall tapered silhouette, main paper label position and proportions, horizontal top edge, shallow centered opening, visible front face, and short dark bottom rim. Match the exact viewpoint, size and native pixel clustering; make only a new flavor variation. Image 2 shows the current other flavor's identity and colors for reference. Draw one center-aligned complete cup from directly in front, same top rim height and approximate width-to-height as Image 1, slight view of a shallow opening just above the rim. Bring some pretty color with clean main color blocks and a small coordinated accent, no brightly scattered highlights. Coarse pixeled art as seen at native 32x32, true transparent alpha, comfortable clear margins. No clutter, tiny noodles speckles, brush noise, invented typography, second side or rotated object. Fish Floss Noodles. Print a simple warm-ivory crest like a fish tail meeting a broad wave on a navy-slate panel, with the same placement and paper area as the mushroom label. Matte sea-green and slate-blue cup body with a pale gray lid rim, subtle tan stripe. At the shallow visible opening, let a single small pale amber arc of fish floss suggest the topping. Distinct layered color blocks of teal, blue-gray, warm cream and a tiny clay orange accent."
+    },
+    "fish_fiber_salad.png": {
+      "tool": "built-in image_gen",
+      "transparent_background": true,
+      "prompt": "Precisely edit the attached Probably Stolen low-resolution item sprite. It is a square dark charcoal takeaway tray with a narrow graphite rim, green salad and the same beige fish pieces, burnt-orange accents and pale topping pictured. Change ONLY its viewing orientation: turn the tray so that the upper and lower rim edges are completely horizontal, the left and right sides are symmetrical, and the tray faces the viewer centered from an only slightly elevated straight-on position. Preserve the roughly square tray silhouette (around 1.15:1 wide), contents, proportions, spacing, original palette and recognizable original dish presentation. Keep all of the original recognizable visible fish and vegetables on the dark tray rather than covering them. No new containers, labels, garnish, ingredients, decorative graphics, plate redesign or color grading. Match low-resolution crisp 32x32 game pixel art, no extra shading or photo texture. One full centered sprite with generous true transparent alpha all around."
+    },
+    "nightshift_jelly.png": {
+      "tool": "built-in image_gen",
+      "transparent_background": true,
+      "prompt": "Precisely edit the attached Probably Stolen low-resolution Night Shift Jelly pixel-art sprite. Change ONLY its orientation: render that same navy foil sachet straight from the front, the long top and bottom perfectly horizontal and the two crimped ends vertical. Keep its original silvery gray crimped top rim, dark navy center, angular amber line with the little upward hook toward the right, original palette, size and construction. Keep the original length-to-height about 2.3:1. Make the same label motif lie on the flat front. No new logo, different wrapper, change of color, text, wider margins on one end, 3/4 face, perspective skew, redesign or secondary objects. Match low-resolution crisp 32x16 pixel art, with the complete packet centered on truly transparent alpha."
+    }
+  },
+  "sprites": [
+    {
+      "key": "cheese_noodles",
+      "width": 2,
+      "height": 2,
+      "source": "Assets/IconSources/food-v2.2-front-view/cheese_noodles.png"
+    },
+    {
+      "key": "meat_sauce_noodles",
+      "width": 2,
+      "height": 2,
+      "crop": [
+        0,
+        512,
+        512,
+        1024
+      ],
+      "source": "Assets/IconSources/food-v2.2-front-view/noodle-cups.png"
+    },
+    {
+      "key": "fish_floss_noodles",
+      "width": 2,
+      "height": 2,
+      "source": "Assets/IconSources/food-v2.2-front-view/fish_floss_noodles.png"
+    },
+    {
+      "key": "nomore_care_kit",
+      "width": 2,
+      "height": 2,
+      "crop": [
+        1024,
+        0,
+        1536,
+        512
+      ],
+      "source": "Assets/IconSources/food-v2.2-front-view/takeaway-and-supplies.png"
+    },
+    {
+      "key": "fish_fiber_salad",
+      "width": 2,
+      "height": 2,
+      "source": "Assets/IconSources/food-v2.2-front-view/fish_fiber_salad.png"
+    },
+    {
+      "key": "nightshift_jelly",
+      "width": 2,
+      "height": 1,
+      "source": "Assets/IconSources/food-v2.2-front-view/nightshift_jelly.png"
+    }
+  ]
+}

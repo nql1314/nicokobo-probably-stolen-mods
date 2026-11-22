@@ -1,0 +1,28 @@
+[h1]Food Processing 2.0[/h1]
+
+Give the fish, meat, crops and snacks on your shelves a second use. Two overnight machines offer [b]64 recipes, 50 custom foods and drinks, and 2 custom medical supplies[/b].
+
+[b]Requires [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3831025262]NicoKobo Forge[/url].[/b] Subscribe to both mods, enable them and restart the game. New runs start with a Food Processing Guide; you can also look for it and the machines at Jackson’s night shop.
+
+[h2]What can you make?[/h2]
+
+[list]
+[*][b]Food Processor · 33 recipes[/b]. Dry small Nutrifruit, make a dinner for two with a large fish fillet and large fruit, or fry up fillerweed meat patties. You can also make base-game Peat, animal fat and industrial fish feed.
+[*][b]Liquid Bottler · 31 recipes[/b]. Turn small fish fillets into chowder, use caffeine pills in Night Shift Jelly, or make base-game Soda and Energy Drink. Unpack a Nomore Care Kit to recover the original injector, basic bandage and rubbing alcohol. The injector keeps its original purity.
+[*][b]Three recipe tiers[/b]. Machine quality of 0, 50 and 100 unlocks ★, ★★ and ★★★ respectively. Each tier has a fixed processing markup of 25%, 50% or 100%. Every 100 performance adds a batch. Higher efficiency saves power.
+[*][b]Expand storage[/b]. Drop a metal ingot onto either machine to add one row to both its input and output grids. Each machine can gain up to four rows and keeps its upgrade level in the save.
+[/list]
+
+[h2]Pick a recipe, fill the machine, preview the night[/h2]
+
+Browse the guide by machine or look under medical supplies. Search by ingredient, product, category or brand, and filter by stars. The recipe icons show whether your available stock can cover a batch. In the machine window, you can sort ready recipes first and use [b]Fill ingredients[/b] to load missing ingredients and suitable water for one batch.
+
+Choose automatic processing to follow recipe priority, or select a recipe and keep it until you change it. A selected recipe waits for supplies, power and room for the output. The output slot previews overnight products and total quantities; in automatic mode you can browse the planned batches. Open the details for ingredients, calories, water and power. Available stock and previews are estimates; production still needs power and output space.
+
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3831045864]Automated Logistics[/url] is optional and can keep the selected recipe supplied.
+
+[h2]Nutrition, value and refrigeration[/h2]
+
+Portions share the calories and processing value of the actual ingredients. Wine-based recipes carry over the alcohol strength of the wine used. Native cheese, feed and medical items keep their usual uses; the added value of processed feed and serums falls as calories or charges are used. Chill compatible drinks and meals or freeze selected desserts in the base-game fridge to change their sale value. Processing rejects contaminated, prion-infected and spoiled ingredients.
+
+Developed following the official guide and checked with mod-scan. This mod requests no additional permissions, including external reflection access. It generally leaves base-game features outside the changes above unaffected. If it conflicts with a third-party mod, please contact that mod’s author first.

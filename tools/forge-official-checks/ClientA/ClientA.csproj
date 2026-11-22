@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><TargetFramework>net10.0</TargetFramework><ImplicitUsings>enable</ImplicitUsings><Nullable>enable</Nullable></PropertyGroup>
+  <ItemGroup><ProjectReference Include="..\GamePorts\GamePorts.csproj" /><Compile Include="..\ClientProbe.cs" Link="ClientProbe.cs" /></ItemGroup>
+  <ItemGroup>
+    <Compile Include="../../../mods/shared/ModText.cs" Link="Client/ModText.cs" />
+    <Compile Include="../../../mods/shared/ItemGraphCleanup.cs" Link="Client/ItemGraphCleanup.cs" />
+    <Compile Include="../../../mods/shared/Nicokobo.Forge.Client/ForgeClient.cs;../../../mods/shared/Nicokobo.Forge.Client/Api.cs;../../../mods/shared/Nicokobo.Forge.Client/FixedModuleAbilities.cs;../../../mods/shared/Nicokobo.Forge.Client/RecipePresentation.cs" Link="Client/%(Filename)%(Extension)" />
+    <Compile Include="../../../mods/shared/Nicokobo.Forge.Contracts/Recipes.cs;../../../mods/shared/Nicokobo.Forge.Contracts/Production.cs;../../../mods/shared/Nicokobo.Forge.Contracts/Supply.cs;../../../mods/shared/Nicokobo.Forge.Contracts/Wire.cs;../../../mods/shared/Nicokobo.Forge.Contracts/Conversations.cs;../../../mods/shared/Nicokobo.Forge.Contracts/Phone.cs;../../../mods/shared/Nicokobo.Forge.Contracts/Workshop.cs;../../../mods/shared/Nicokobo.Forge.Contracts/PresentationWire.cs" Link="Contracts/%(Filename)%(Extension)" />
+  </ItemGroup>
+</Project>

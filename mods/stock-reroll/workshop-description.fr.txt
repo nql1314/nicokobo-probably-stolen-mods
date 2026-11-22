@@ -1,0 +1,12 @@
+[h1]Renouvellement du stock[/h1]
+
+Renouvelez les articles non achetés du client actuel et de la boutique nocturne de Jackson. Le client, les conditions d’échange et les articles achetés restent en place. Par défaut, le renouvellement est bloqué après une transaction ; ce réglage se modifie dans le menu Mods.
+
+[list]
+[*]Raccourci par défaut : F5. Vous pouvez choisir une combinaison de touches ou None pour le désactiver. Il est bloqué pendant une transaction, une négociation, la saisie ou la configuration des touches.
+[*]Le support des stocks d’autres mods est activé par défaut. Leurs actions sont rejouées, ce qui peut répéter une récompense, un coût ou une étape du scénario. En cas d’échec, seuls les articles peuvent être restaurés. Désactivez l’option si vous ne souhaitez pas rejouer ces actions.
+[/list]
+
+Abonnez-vous au mod, activez-le dans le menu Mods, puis relancez le jeu.
+
+Ce mod suit le guide officiel, a passé le contrôle mod-scan et ne demande aucune autorisation supplémentaire. En cas de conflit avec un autre mod, contactez son auteur.

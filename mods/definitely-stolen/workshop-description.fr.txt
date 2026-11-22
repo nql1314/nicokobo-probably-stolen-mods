@@ -1,0 +1,13 @@
+[h1]Forcément volé[/h1]
+
+Commencez comme pickpocket ou débloquez le vol grâce à un talent. La nuit, cherchez des cibles dans trois lieux, volez des objets à des personnes exerçant 31 métiers et rapportez votre butin à la boutique.
+
+[list]
+[*]Vol manuel ou automatique, maîtrise, vigilance, renseignements et six événements nocturnes.
+[*]Chaque réapprovisionnement du voleur a 5 % de chances d’inclure une grenade fumigène du jeu de base. Si vous êtes repéré, une grenade portée est consommée : vous gardez le butin et les vols cessent pour la nuit. Les effets sur la réputation, l’expérience et la notoriété restent en vigueur.
+[*]Rangez le butin dans l’inventaire normal de sortie. Les anciennes fumigènes de fuite gardent leur effet, mais ne sont plus vendues ni trouvées en butin.
+[/list]
+
+Nécessite [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3831025262]NicoKobo Forge[/url]. Activez les deux mods et relancez le jeu.
+
+Ce mod suit le guide officiel, a passé le contrôle mod-scan et ne demande aucune autorisation supplémentaire. En cas de conflit avec un autre mod, contactez son auteur.

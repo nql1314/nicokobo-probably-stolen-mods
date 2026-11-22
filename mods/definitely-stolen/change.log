@@ -1,0 +1,99 @@
+1.0.4 - 2026-11-15
+
+[b]简体中文[/b]
+[list]
+[*]开局、行动面板、夜间提示和设置会读取当前语言的翻译，包括语言扩展 Mod 提供的语言。缺少的词条会逐条回退到英语。
+[/list]
+
+[b]English[/b]
+[list]
+[*]The starting scenario, action panel, night messages and settings use translations for the active language, including languages added by other mods. Missing entries fall back to English.
+[/list]
+
+1.0.3 - 2026-11-12
+
+[b]简体中文[/b]
+[list]
+[*]扒窃成功、失手未暴露、失手暴露增加的风声分别降至 2、1、10 点。
+[*]暴露时安保声望固定扣 1 点，目标所属阵营按地点另扣；目标属于安保时，两笔扣分叠加。行动面板显示对应的声望代价。
+[*]暴露时，随身携带的当晚赃物按实际价值计入原版罪案记录。用烟雾弹保住赃物仍会留下记录。
+[*]减少反复检查赃物归属时的库存开销。
+[/list]
+
+[b]English[/b]
+[list]
+[*]Successful pickpocketing, unnoticed failures and getting caught now add 2, 1 and 10 heat, respectively.
+[*]Getting caught costs 1 Security reputation plus a location-based deduction for the target's faction. Both deductions apply if the target belongs to Security. The action panel shows the applicable reputation costs.
+[*]When caught, the actual value of tonight's stolen goods still on you counts toward the base game's crime record, even if a Smoke Grenade lets you keep the loot.
+[*]Reduced inventory overhead when repeatedly checking ownership of stolen goods.
+[/list]
+
+1.0.2 - 2026-11-09
+
+[b]简体中文[/b]
+[list]
+[*]为摸包客开局、职业、夜间地点、事件和扒窃界面加入九种语言。
+[/list]
+
+[b]English[/b]
+[list]
+[*]Added nine languages to the pickpocket start, occupations, night locations, events and theft interface.
+[/list]
+
+1.0.1 - 2026-11-02
+
+[b]简体中文[/b]
+[list]
+[*]脱身烟幕弹退出供货和掉落候选池，保留物品、资源及旧存档中的效果。
+[*]到店小偷每次供货独立按 5% 概率追加一枚原版烟雾弹，使用原版物品及柜台摆放规则。
+[*]原版烟雾弹新增扒窃自动脱身效果：随身携带时，暴露自动消耗一枚、保留当晚赃物并停止当晚偷窃；声望、经验与风声代价照常结算。保留原版用途及旧脱身烟幕弹兼容，并更新中英文提示。
+[/list]
+
+[b]English[/b]
+[list]
+[*]Removed Escape Smoke Grenades from stock and loot pools while retaining the item, assets and effects for existing saves.
+[*]Each thief stock refresh has an independent 5% chance to add one native Smoke Grenade, using the base game's item and counter placement rules.
+[*]Native Smoke Grenades now also trigger automatic theft escape when carried outside: discovery consumes one, retains tonight's loot and ends theft for the night, while reputation, XP and heat penalties remain. Native uses and existing Escape Smoke Grenades remain supported, with updated bilingual tooltips.
+[/list]
+
+1.0.0 - 2026-10-31
+
+[b]简体中文[/b]
+[list]
+[*]定时刷新赃物下拉框时保留所选 UID，列表变化后按物品身份恢复选择，避免误弃第一件物品。
+[*]移除无效空返店调用和正式版未使用的旧辅助路径，保留提交成功后的原生返店。
+[*]提供摸包客开局、顺手牵羊和惯偷天赋，以及三个夜间扒窃地点。
+[*]包含 31 种常规职业、六种夜间事件、熟练度、情报和脱身烟幕弹。
+[*]支持原生外出库存和正式版 Mod 配置，需要独立的 NicoKobo Forge 前置。
+[*]脱身烟幕弹由小偷供货并进入杂货掉落池；暴露时消耗一枚保住赃物并停止当晚偷窃，声望、经验与风声代价仍结算。
+[*]补充原版烟雾弹的中英文用途提示，含蓄说明其干扰瞄准的作用。
+[*]保留已生成目标、物品身份、携带与返店收据，并支持正常保存和原生复制槽。
+[/list]
+
+[b]English[/b]
+[list]
+[*]Prepared the first full-release version with the Pickpocket start, Streetwise and Habitual Thief traits, and theft in three night locations.
+[*]Includes 31 regular occupations, special targets, six night events, proficiency, intel and native item candidates.
+[*]Supports manual timing and automatic rolls, practice, per-target success zones and exposure penalties through native carry inventories and normal saves.
+[*]Escape Smoke Grenades are sold by thieves and join the household loot pool. One is consumed on discovery to retain loot and stop further theft that night, while reputation, XP and heat penalties remain.
+[*]Fixed loot selection jumping to the first entry after refreshes by retaining the item UID; committed returns use the native route.
+[*]Added bilingual flavor descriptions for the native smoke grenade, hinting at its interference with aim.
+[*]Preserves generated targets, item identity and carry / return receipts, with native copied-slot support; requires standalone NicoKobo Forge.
+[/list]
+
+1.2.0 - 历史开发候选（未发布）
+- 新增养殖技术员、水培种植户、打印技师、水质化验员、基因育种员和医疗配送员；补齐 18 张透明立绘与脚底锚点。
+- 新增 19 个正式版候选 ID，补齐七个既有职业；普通职业核心物品仅在随身候选生成时使用双倍权重，成功取物及稀有权重沿用原规则。
+- 夜间扩池与摸包客开局准入分开，保留原有开局来源和 500 资产预算。
+- 注册商贩补货夜、水培丰收夜、技工换班夜、货运到站夜、技术展销夜和治安临检夜；由原生每日流程抽取，三区事件与目标同时固定。
+- schema 5 保存地区事件快照；旧夜晚无新增事件修正，旧目标、情报、进行中动作和随机状态保持原样。
+- 种子、作物、饲料、DNA 磁盘及金属锭复用原生图保存；保留旧轻量作物／金属模板语义，固定营养果种子候选恢复时的已记录基础价。
+- Release 编译和 8,657 项离线检查通过；本轮未打包、安装或执行原生游戏验收，地区收益与操作体验待实测。
+
+1.1.0 - 历史开发候选（未发布）
+- 迁至正式版 Unity Mono、官方 IMod、ModConfig、起始方案/天赋、三个夜间地点和 CustomUI。
+- 保留 1.0.9 的完整规则、候选、鱼状态、83 张立绘、9 张背景、烟幕弹和稳定身份。
+- 以原生携带图和 ES3 内存特性表替代 Forge；正常保存前暂存官方周目状态。
+- 校验旧 schema 与旧键，保留收据和可验证的原生复制槽身份重绑。
+- 共享供货使用 Nicokobo.ContentInterop 1.0.0；不带旧 Forge/MelonLoader/Il2Cpp 依赖。
+- Release 编译与离线定向检查通过；原生激活、UI 和保存重载由主任务继续验收。

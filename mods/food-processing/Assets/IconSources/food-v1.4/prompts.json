@@ -1,0 +1,227 @@
+[
+  {
+    "key": "nutrifruit_soda",
+    "width": 1,
+    "height": 2,
+    "source": "Assets/IconSources/food-v1.4/nutrifruit_soda.png",
+    "tool": "built-in image_gen",
+    "transparent_background": true,
+    "prompt": "Use case: stylized-concept. Asset type: ONE inventory item sprite for Probably Stolen. Native game look: very low-resolution hand-pixelled 2D sprite, limited muted dusty colors, charcoal-purple one-pixel contour, 3-tone shading, strong simple silhouette, modest three-quarter top/front view. Think a literal 32-pixel retro inventory object enlarged with nearest-neighbor; big crisp square pixel clusters, not hundreds of tiny details. Upper-left highlights. All food stays inside its packaging. Genuine transparent background, centered, 10% clear margin. NO text, company badge, logo, stars, watermark, ground shadow, scenery, frame, second view or sprite sheet. No photographic texture, smooth gradients, glossy 3D or vector styling. Subject: A compact olive-green aluminum soda can with an orange fruit pictogram, dull cream rim and a muted orange diagonal band. Tall 2:3 silhouette, weathered station vending-machine packaging. Final inventory footprint: 32 × 48 pixels; design for readability at that size."
+  },
+  {
+    "key": "glowberry_soda",
+    "width": 1,
+    "height": 2,
+    "source": "Assets/IconSources/food-v1.4/glowberry_soda.png",
+    "tool": "built-in image_gen",
+    "transparent_background": true,
+    "prompt": "Use case: stylized-concept. Asset type: ONE inventory item sprite for Probably Stolen. Native game look: very low-resolution hand-pixelled 2D sprite, limited muted dusty colors, charcoal-purple one-pixel contour, 3-tone shading, strong simple silhouette, modest three-quarter top/front view. Think a literal 32-pixel retro inventory object enlarged with nearest-neighbor; big crisp square pixel clusters, not hundreds of tiny details. Upper-left highlights. All food stays inside its packaging. Genuine transparent background, centered, 10% clear margin. NO text, company badge, logo, stars, watermark, ground shadow, scenery, frame, second view or sprite sheet. No photographic texture, smooth gradients, glossy 3D or vector styling. Subject: A compact dusky-purple aluminum soda can with three tiny magenta berry dots, a pale cyan collar and dull cream rim. Tall 2:3 silhouette, modest colors without glow. Final inventory footprint: 32 × 48 pixels; design for readability at that size."
+  },
+  {
+    "key": "pilk_latte",
+    "width": 1,
+    "height": 2,
+    "source": "Assets/IconSources/food-v1.4/pilk_latte.png",
+    "tool": "built-in image_gen",
+    "transparent_background": true,
+    "prompt": "Use case: stylized-concept. Asset type: ONE inventory item sprite for Probably Stolen. Native game look: very low-resolution hand-pixelled 2D sprite, limited muted dusty colors, charcoal-purple one-pixel contour, 3-tone shading, strong simple silhouette, modest three-quarter top/front view. Think a literal 32-pixel retro inventory object enlarged with nearest-neighbor; big crisp square pixel clusters, not hundreds of tiny details. Upper-left highlights. All food stays inside its packaging. Genuine transparent background, centered, 10% clear margin. NO text, company badge, logo, stars, watermark, ground shadow, scenery, frame, second view or sprite sheet. No photographic texture, smooth gradients, glossy 3D or vector styling. Subject: One slim cream and tan takeaway coffee carton, dark brown lower third, folded cream top and a simple tiny coffee bean pictogram. Very simple tall 1:2 silhouette. Final inventory footprint: 16 × 32 pixels; design for readability at that size."
+  },
+  {
+    "key": "chocolate_pilk",
+    "width": 2,
+    "height": 3,
+    "source": "Assets/IconSources/food-v1.4/chocolate_pilk.png",
+    "tool": "built-in image_gen",
+    "transparent_background": true,
+    "prompt": "Use case: stylized-concept. Asset type: ONE inventory item sprite for Probably Stolen. Native game look: very low-resolution hand-pixelled 2D sprite, limited muted dusty colors, charcoal-purple one-pixel contour, 3-tone shading, strong simple silhouette, modest three-quarter top/front view. Think a literal 32-pixel retro inventory object enlarged with nearest-neighbor; big crisp square pixel clusters, not hundreds of tiny details. Upper-left highlights. All food stays inside its packaging. Genuine transparent background, centered, 10% clear margin. NO text, company badge, logo, stars, watermark, ground shadow, scenery, frame, second view or sprite sheet. No photographic texture, smooth gradients, glossy 3D or vector styling. Subject: One squat chocolate-brown milk carton with folded ivory top, muted pale blue side panel and a small dark chocolate square pictogram. Tall 2:3 silhouette. Final inventory footprint: 32 × 48 pixels; design for readability at that size."
+  },
+  {
+    "key": "springwater_coffee",
+    "width": 1,
+    "height": 2,
+    "source": "Assets/IconSources/food-v1.4/springwater_coffee.png",
+    "tool": "built-in image_gen",
+    "transparent_background": true,
+    "prompt": "Use case: stylized-concept. Asset type: ONE inventory item sprite for Probably Stolen. Native game look: very low-resolution hand-pixelled 2D sprite, limited muted dusty colors, charcoal-purple one-pixel contour, 3-tone shading, strong simple silhouette, modest three-quarter top/front view. Think a literal 32-pixel retro inventory object enlarged with nearest-neighbor; big crisp square pixel clusters, not hundreds of tiny details. Upper-left highlights. All food stays inside its packaging. Genuine transparent background, centered, 10% clear margin. NO text, company badge, logo, stars, watermark, ground shadow, scenery, frame, second view or sprite sheet. No photographic texture, smooth gradients, glossy 3D or vector styling. Subject: One narrow premium black coffee bottle, smoky dark brown glass, cream screw cap and understated muted silver label band with a tiny blue water drop. Simple tall 1:2 silhouette. Final inventory footprint: 16 × 32 pixels; design for readability at that size."
+  },
+  {
+    "key": "dockside_shandy",
+    "width": 1,
+    "height": 2,
+    "source": "Assets/IconSources/food-v1.4/dockside_shandy.png",
+    "tool": "built-in image_gen",
+    "transparent_background": true,
+    "prompt": "Use case: stylized-concept. Asset type: ONE inventory item sprite for Probably Stolen. Native game look: very low-resolution hand-pixelled 2D sprite, limited muted dusty colors, charcoal-purple one-pixel contour, 3-tone shading, strong simple silhouette, modest three-quarter top/front view. Think a literal 32-pixel retro inventory object enlarged with nearest-neighbor; big crisp square pixel clusters, not hundreds of tiny details. Upper-left highlights. All food stays inside its packaging. Genuine transparent background, centered, 10% clear margin. NO text, company badge, logo, stars, watermark, ground shadow, scenery, frame, second view or sprite sheet. No photographic texture, smooth gradients, glossy 3D or vector styling. Subject: One short amber beer bottle with a dull red crown cap, faded cream horizontal label and a simple pale bubble pictogram. Squat rounded silhouette, cheap utilitarian packaging. Final inventory footprint: 32 × 32 pixels; design for readability at that size."
+  },
+  {
+    "key": "coffee_beer",
+    "width": 1,
+    "height": 2,
+    "source": "Assets/IconSources/food-v1.4/coffee_beer.png",
+    "tool": "built-in image_gen",
+    "transparent_background": true,
+    "prompt": "Use case: stylized-concept. Asset type: ONE inventory item sprite for Probably Stolen. Native game look: very low-resolution hand-pixelled 2D sprite, limited muted dusty colors, charcoal-purple one-pixel contour, 3-tone shading, strong simple silhouette, modest three-quarter top/front view. Think a literal 32-pixel retro inventory object enlarged with nearest-neighbor; big crisp square pixel clusters, not hundreds of tiny details. Upper-left highlights. All food stays inside its packaging. Genuine transparent background, centered, 10% clear margin. NO text, company badge, logo, stars, watermark, ground shadow, scenery, frame, second view or sprite sheet. No photographic texture, smooth gradients, glossy 3D or vector styling. Subject: One squat very dark brown beer bottle, copper crown cap, tan rectangular label with a dark coffee bean pictogram. Earthy and restrained, easy to distinguish from amber beer. Final inventory footprint: 32 × 32 pixels; design for readability at that size."
+  },
+  {
+    "key": "reserve_spritz",
+    "width": 2,
+    "height": 2,
+    "source": "Assets/IconSources/food-v1.4/reserve_spritz.png",
+    "tool": "built-in image_gen",
+    "transparent_background": true,
+    "prompt": "Use case: stylized-concept. Asset type: ONE inventory item sprite for Probably Stolen. Native game look: very low-resolution hand-pixelled 2D sprite, limited muted dusty colors, charcoal-purple one-pixel contour, 3-tone shading, strong simple silhouette, modest three-quarter top/front view. Think a literal 32-pixel retro inventory object enlarged with nearest-neighbor; big crisp square pixel clusters, not hundreds of tiny details. Upper-left highlights. All food stays inside its packaging. Genuine transparent background, centered, 10% clear margin. NO text, company badge, logo, stars, watermark, ground shadow, scenery, frame, second view or sprite sheet. No photographic texture, smooth gradients, glossy 3D or vector styling. Subject: One squat dark green sparkling-wine bottle, short cork with muted gold foil collar, plain small cream diamond label. Rich wine-red liquid hint and restrained premium packaging. Final inventory footprint: 32 × 32 pixels; design for readability at that size."
+  },
+  {
+    "key": "vanilla_wine_float",
+    "width": 2,
+    "height": 2,
+    "source": "Assets/IconSources/food-v1.4/vanilla_wine_float.png",
+    "tool": "built-in image_gen",
+    "transparent_background": true,
+    "prompt": "Use case: stylized-concept. Asset type: ONE inventory item sprite for Probably Stolen. Native game look: very low-resolution hand-pixelled 2D sprite, limited muted dusty colors, charcoal-purple one-pixel contour, 3-tone shading, strong simple silhouette, modest three-quarter top/front view. Think a literal 32-pixel retro inventory object enlarged with nearest-neighbor; big crisp square pixel clusters, not hundreds of tiny details. Upper-left highlights. All food stays inside its packaging. Genuine transparent background, centered, 10% clear margin. NO text, company badge, logo, stars, watermark, ground shadow, scenery, frame, second view or sprite sheet. No photographic texture, smooth gradients, glossy 3D or vector styling. Subject: One short clear violet cocktail cup with a single pale vanilla ice-cream scoop floating at the top, small amber bubbles inside and a muted gold rim. Compact dessert drink, no straw or garnish. Final inventory footprint: 32 × 32 pixels; design for readability at that size."
+  },
+  {
+    "key": "cheese_noodles",
+    "width": 2,
+    "height": 2,
+    "source": "Assets/IconSources/food-v1.4/cheese_noodles.png",
+    "tool": "built-in image_gen",
+    "transparent_background": true,
+    "prompt": "Use case: stylized-concept. Asset type: ONE inventory item sprite for Probably Stolen. Native game look: very low-resolution hand-pixelled 2D sprite, limited muted dusty colors, charcoal-purple one-pixel contour, 3-tone shading, strong simple silhouette, modest three-quarter top/front view. Think a literal 32-pixel retro inventory object enlarged with nearest-neighbor; big crisp square pixel clusters, not hundreds of tiny details. Upper-left highlights. All food stays inside its packaging. Genuine transparent background, centered, 10% clear margin. NO text, company badge, logo, stars, watermark, ground shadow, scenery, frame, second view or sprite sheet. No photographic texture, smooth gradients, glossy 3D or vector styling. Subject: One open squat mustard-yellow instant noodle cup, cream rim, visible broad golden cheese-covered noodle curls. Small pale rectangular blank label. Chunky simple noodles. Final inventory footprint: 32 × 32 pixels; design for readability at that size."
+  },
+  {
+    "key": "mushroom_noodles",
+    "width": 2,
+    "height": 2,
+    "source": "Assets/IconSources/food-v1.4/mushroom_noodles.png",
+    "tool": "built-in image_gen",
+    "transparent_background": true,
+    "prompt": "Use case: stylized-concept. Asset type: ONE inventory item sprite for Probably Stolen. Native game look: very low-resolution hand-pixelled 2D sprite, limited muted dusty colors, charcoal-purple one-pixel contour, 3-tone shading, strong simple silhouette, modest three-quarter top/front view. Think a literal 32-pixel retro inventory object enlarged with nearest-neighbor; big crisp square pixel clusters, not hundreds of tiny details. Upper-left highlights. All food stays inside its packaging. Genuine transparent background, centered, 10% clear margin. NO text, company badge, logo, stars, watermark, ground shadow, scenery, frame, second view or sprite sheet. No photographic texture, smooth gradients, glossy 3D or vector styling. Subject: One open squat sage-green instant noodle cup, cream rim, pale noodles and two distinct brown mushroom caps in broth. Simple chunky ingredients, blank packaging. Final inventory footprint: 32 × 32 pixels; design for readability at that size."
+  },
+  {
+    "key": "beer_stew_noodles",
+    "width": 2,
+    "height": 2,
+    "source": "Assets/IconSources/food-v1.4/beer_stew_noodles.png",
+    "tool": "built-in image_gen",
+    "transparent_background": true,
+    "prompt": "Use case: stylized-concept. Asset type: ONE inventory item sprite for Probably Stolen. Native game look: very low-resolution hand-pixelled 2D sprite, limited muted dusty colors, charcoal-purple one-pixel contour, 3-tone shading, strong simple silhouette, modest three-quarter top/front view. Think a literal 32-pixel retro inventory object enlarged with nearest-neighbor; big crisp square pixel clusters, not hundreds of tiny details. Upper-left highlights. All food stays inside its packaging. Genuine transparent background, centered, 10% clear margin. NO text, company badge, logo, stars, watermark, ground shadow, scenery, frame, second view or sprite sheet. No photographic texture, smooth gradients, glossy 3D or vector styling. Subject: One open squat rust-brown instant noodle cup, cream rim, yellow noodle curls under three dark beer-braised meat cubes and brown gravy. Plain tan packaging band. Final inventory footprint: 32 × 32 pixels; design for readability at that size."
+  },
+  {
+    "key": "fish_floss_noodles",
+    "width": 2,
+    "height": 2,
+    "source": "Assets/IconSources/food-v1.4/fish_floss_noodles.png",
+    "tool": "built-in image_gen",
+    "transparent_background": true,
+    "prompt": "Use case: stylized-concept. Asset type: ONE inventory item sprite for Probably Stolen. Native game look: very low-resolution hand-pixelled 2D sprite, limited muted dusty colors, charcoal-purple one-pixel contour, 3-tone shading, strong simple silhouette, modest three-quarter top/front view. Think a literal 32-pixel retro inventory object enlarged with nearest-neighbor; big crisp square pixel clusters, not hundreds of tiny details. Upper-left highlights. All food stays inside its packaging. Genuine transparent background, centered, 10% clear margin. NO text, company badge, logo, stars, watermark, ground shadow, scenery, frame, second view or sprite sheet. No photographic texture, smooth gradients, glossy 3D or vector styling. Subject: One open squat muted teal instant noodle cup, cream rim, pale noodles and a coarse golden mound of fish floss. No whole fish; packaging has a plain ivory band. Final inventory footprint: 32 × 32 pixels; design for readability at that size."
+  },
+  {
+    "key": "eel_cheese_noodles",
+    "width": 2,
+    "height": 2,
+    "source": "Assets/IconSources/food-v1.4/eel_cheese_noodles.png",
+    "tool": "built-in image_gen",
+    "transparent_background": true,
+    "prompt": "Use case: stylized-concept. Asset type: ONE inventory item sprite for Probably Stolen. Native game look: very low-resolution hand-pixelled 2D sprite, limited muted dusty colors, charcoal-purple one-pixel contour, 3-tone shading, strong simple silhouette, modest three-quarter top/front view. Think a literal 32-pixel retro inventory object enlarged with nearest-neighbor; big crisp square pixel clusters, not hundreds of tiny details. Upper-left highlights. All food stays inside its packaging. Genuine transparent background, centered, 10% clear margin. NO text, company badge, logo, stars, watermark, ground shadow, scenery, frame, second view or sprite sheet. No photographic texture, smooth gradients, glossy 3D or vector styling. Subject: One open squat dark navy premium noodle bowl, muted gold rim, yellow cheese noodles topped with two broad grilled brown eel slices with pale diagonal grill marks. Compact silhouette. Final inventory footprint: 32 × 32 pixels; design for readability at that size."
+  },
+  {
+    "key": "chocolate_energy_bites",
+    "width": 2,
+    "height": 1,
+    "source": "Assets/IconSources/food-v1.4/chocolate_energy_bites.png",
+    "tool": "built-in image_gen",
+    "transparent_background": true,
+    "prompt": "Use case: stylized-concept. Asset type: ONE inventory item sprite for Probably Stolen. Native game look: very low-resolution hand-pixelled 2D sprite, limited muted dusty colors, charcoal-purple one-pixel contour, 3-tone shading, strong simple silhouette, modest three-quarter top/front view. Think a literal 32-pixel retro inventory object enlarged with nearest-neighbor; big crisp square pixel clusters, not hundreds of tiny details. Upper-left highlights. All food stays inside its packaging. Genuine transparent background, centered, 10% clear margin. NO text, company badge, logo, stars, watermark, ground shadow, scenery, frame, second view or sprite sheet. No photographic texture, smooth gradients, glossy 3D or vector styling. Subject: A tiny horizontal opened dull copper foil snack packet holding three chunky dark chocolate energy balls, pale oat specks and cream torn wrapper ends. Wide 2:1 silhouette. Final inventory footprint: 32 × 16 pixels; design for readability at that size."
+  },
+  {
+    "key": "cheese_fiber_crackers",
+    "width": 2,
+    "height": 1,
+    "source": "Assets/IconSources/food-v1.4/cheese_fiber_crackers.png",
+    "tool": "built-in image_gen",
+    "transparent_background": true,
+    "prompt": "Use case: stylized-concept. Asset type: ONE inventory item sprite for Probably Stolen. Native game look: very low-resolution hand-pixelled 2D sprite, limited muted dusty colors, charcoal-purple one-pixel contour, 3-tone shading, strong simple silhouette, modest three-quarter top/front view. Think a literal 32-pixel retro inventory object enlarged with nearest-neighbor; big crisp square pixel clusters, not hundreds of tiny details. Upper-left highlights. All food stays inside its packaging. Genuine transparent background, centered, 10% clear margin. NO text, company badge, logo, stars, watermark, ground shadow, scenery, frame, second view or sprite sheet. No photographic texture, smooth gradients, glossy 3D or vector styling. Subject: Two overlapping small rectangular olive-gold fiber crackers with tiny dark green specks and a pale cheese layer, resting on a narrow plain tan paper sleeve. Wide 2:1 silhouette. Final inventory footprint: 32 × 16 pixels; design for readability at that size."
+  },
+  {
+    "key": "caviar_cheese_crackers",
+    "width": 2,
+    "height": 1,
+    "source": "Assets/IconSources/food-v1.4/caviar_cheese_crackers.png",
+    "tool": "built-in image_gen",
+    "transparent_background": true,
+    "prompt": "Use case: stylized-concept. Asset type: ONE inventory item sprite for Probably Stolen. Native game look: very low-resolution hand-pixelled 2D sprite, limited muted dusty colors, charcoal-purple one-pixel contour, 3-tone shading, strong simple silhouette, modest three-quarter top/front view. Think a literal 32-pixel retro inventory object enlarged with nearest-neighbor; big crisp square pixel clusters, not hundreds of tiny details. Upper-left highlights. All food stays inside its packaging. Genuine transparent background, centered, 10% clear margin. NO text, company badge, logo, stars, watermark, ground shadow, scenery, frame, second view or sprite sheet. No photographic texture, smooth gradients, glossy 3D or vector styling. Subject: Two small golden rectangular cheese crackers topped with ivory cream and clustered charcoal caviar dots, on a narrow dark navy paper tray. Wide 2:1 silhouette, luxurious but no decoration. Final inventory footprint: 32 × 16 pixels; design for readability at that size."
+  },
+  {
+    "key": "reserve_wine_chocolates",
+    "width": 2,
+    "height": 1,
+    "source": "Assets/IconSources/food-v1.4/reserve_wine_chocolates.png",
+    "tool": "built-in image_gen",
+    "transparent_background": true,
+    "prompt": "Use case: stylized-concept. Asset type: ONE inventory item sprite for Probably Stolen. Native game look: very low-resolution hand-pixelled 2D sprite, limited muted dusty colors, charcoal-purple one-pixel contour, 3-tone shading, strong simple silhouette, modest three-quarter top/front view. Think a literal 32-pixel retro inventory object enlarged with nearest-neighbor; big crisp square pixel clusters, not hundreds of tiny details. Upper-left highlights. All food stays inside its packaging. Genuine transparent background, centered, 10% clear margin. NO text, company badge, logo, stars, watermark, ground shadow, scenery, frame, second view or sprite sheet. No photographic texture, smooth gradients, glossy 3D or vector styling. Subject: One small open burgundy chocolate box holding three broad dark chocolate squares, one cut square showing a tiny muted wine-red center. Dull gold inner liner, wide 2:1 silhouette. Final inventory footprint: 32 × 16 pixels; design for readability at that size."
+  },
+  {
+    "key": "cheese_luncheon_meat",
+    "width": 2,
+    "height": 2,
+    "source": "Assets/IconSources/food-v1.4/cheese_luncheon_meat.png",
+    "tool": "built-in image_gen",
+    "transparent_background": true,
+    "prompt": "Use case: stylized-concept. Asset type: ONE inventory item sprite for Probably Stolen. Native game look: very low-resolution hand-pixelled 2D sprite, limited muted dusty colors, charcoal-purple one-pixel contour, 3-tone shading, strong simple silhouette, modest three-quarter top/front view. Think a literal 32-pixel retro inventory object enlarged with nearest-neighbor; big crisp square pixel clusters, not hundreds of tiny details. Upper-left highlights. All food stays inside its packaging. Genuine transparent background, centered, 10% clear margin. NO text, company badge, logo, stars, watermark, ground shadow, scenery, frame, second view or sprite sheet. No photographic texture, smooth gradients, glossy 3D or vector styling. Subject: One squat rectangular olive-gray luncheon meat tin with peeled-back dull metal lid, a visible pinkish brown meat loaf with a broad golden cheese layer. Muted yellow blank label band. Final inventory footprint: 32 × 32 pixels; design for readability at that size."
+  },
+  {
+    "key": "mushroom_meat_can",
+    "width": 2,
+    "height": 2,
+    "source": "Assets/IconSources/food-v1.4/mushroom_meat_can.png",
+    "tool": "built-in image_gen",
+    "transparent_background": true,
+    "prompt": "Use case: stylized-concept. Asset type: ONE inventory item sprite for Probably Stolen. Native game look: very low-resolution hand-pixelled 2D sprite, limited muted dusty colors, charcoal-purple one-pixel contour, 3-tone shading, strong simple silhouette, modest three-quarter top/front view. Think a literal 32-pixel retro inventory object enlarged with nearest-neighbor; big crisp square pixel clusters, not hundreds of tiny details. Upper-left highlights. All food stays inside its packaging. Genuine transparent background, centered, 10% clear margin. NO text, company badge, logo, stars, watermark, ground shadow, scenery, frame, second view or sprite sheet. No photographic texture, smooth gradients, glossy 3D or vector styling. Subject: One squat cylindrical dark olive food tin, partly open dull metal lid, visible coarse brown minced meat with two beige mushroom pieces. Tan blank rectangular label. Final inventory footprint: 32 × 32 pixels; design for readability at that size."
+  },
+  {
+    "key": "surf_turf_banquet_can",
+    "width": 2,
+    "height": 2,
+    "source": "Assets/IconSources/food-v1.4/surf_turf_banquet_can.png",
+    "tool": "built-in image_gen",
+    "transparent_background": true,
+    "prompt": "Use case: stylized-concept. Asset type: ONE inventory item sprite for Probably Stolen. Native game look: very low-resolution hand-pixelled 2D sprite, limited muted dusty colors, charcoal-purple one-pixel contour, 3-tone shading, strong simple silhouette, modest three-quarter top/front view. Think a literal 32-pixel retro inventory object enlarged with nearest-neighbor; big crisp square pixel clusters, not hundreds of tiny details. Upper-left highlights. All food stays inside its packaging. Genuine transparent background, centered, 10% clear margin. NO text, company badge, logo, stars, watermark, ground shadow, scenery, frame, second view or sprite sheet. No photographic texture, smooth gradients, glossy 3D or vector styling. Subject: One squat navy rectangular premium food tin with a muted brass rim and partly peeled lid, visible three distinct chunky pieces: dark braised meat, pale eel slice, beige mushroom cap. Restrained luxury. Final inventory footprint: 32 × 32 pixels; design for readability at that size."
+  },
+  {
+    "key": "nightshift_coffee",
+    "width": 1,
+    "height": 2,
+    "source": "Assets/IconSources/food-v1.4/nightshift_coffee.png",
+    "tool": "built-in image_gen",
+    "transparent_background": true,
+    "prompt": "Use case: stylized-concept. Asset type: ONE inventory item sprite for Probably Stolen. Native game look: very low-resolution hand-pixelled 2D sprite, limited muted dusty colors, charcoal-purple one-pixel contour, 3-tone shading, strong simple silhouette, modest three-quarter top/front view. Think a literal 32-pixel retro inventory object enlarged with nearest-neighbor; big crisp square pixel clusters, not hundreds of tiny details. Upper-left highlights. All food stays inside its packaging. Genuine transparent background, centered, 10% clear margin. NO text, company badge, logo, stars, watermark, ground shadow, scenery, frame, second view or sprite sheet. No photographic texture, smooth gradients, glossy 3D or vector styling. Subject: One tall narrow charcoal-blue coffee can with silver rim, bold muted ochre vertical stripe and a small ivory coffee-bean pictogram. Industrial strong-coffee packaging, simple 1:2 silhouette. Final inventory footprint: 16 × 32 pixels; design for readability at that size."
+  },
+  {
+    "key": "berry_spring_fizz",
+    "width": 1,
+    "height": 3,
+    "source": "Assets/IconSources/food-v1.4/berry_spring_fizz.png",
+    "tool": "built-in image_gen",
+    "transparent_background": true,
+    "prompt": "Use case: stylized-concept. Asset type: ONE inventory item sprite for Probably Stolen. Native game look: very low-resolution hand-pixelled 2D sprite, limited muted dusty colors, charcoal-purple one-pixel contour, 3-tone shading, strong simple silhouette, modest three-quarter top/front view. Think a literal 32-pixel retro inventory object enlarged with nearest-neighbor; big crisp square pixel clusters, not hundreds of tiny details. Upper-left highlights. All food stays inside its packaging. Genuine transparent background, centered, 10% clear margin. NO text, company badge, logo, stars, watermark, ground shadow, scenery, frame, second view or sprite sheet. No photographic texture, smooth gradients, glossy 3D or vector styling. Subject: One upright clear pale-blue bottle filled with muted lavender berry soda, silver cap, narrow cream label with a tiny purple berry cluster and simple blue water-drop pictogram. Tall 2:3 silhouette. Final inventory footprint: 32 × 48 pixels; design for readability at that size."
+  },
+  {
+    "key": "mushroom_energy_bar",
+    "width": 2,
+    "height": 1,
+    "source": "Assets/IconSources/food-v1.4/mushroom_energy_bar.png",
+    "tool": "built-in image_gen",
+    "transparent_background": true,
+    "prompt": "Use case: stylized-concept. Asset type: ONE inventory item sprite for Probably Stolen. Native game look: very low-resolution hand-pixelled 2D sprite, limited muted dusty colors, charcoal-purple one-pixel contour, 3-tone shading, strong simple silhouette, modest three-quarter top/front view. Think a literal 32-pixel retro inventory object enlarged with nearest-neighbor; big crisp square pixel clusters, not hundreds of tiny details. Upper-left highlights. All food stays inside its packaging. Genuine transparent background, centered, 10% clear margin. NO text, company badge, logo, stars, watermark, ground shadow, scenery, frame, second view or sprite sheet. No photographic texture, smooth gradients, glossy 3D or vector styling. Subject: One horizontal half-unwrapped savory energy bar, tan coarse rectangular bar with large brown mushroom flecks, faded olive foil wrapper and cream torn edge. Wide 2:1 silhouette. Final inventory footprint: 32 × 16 pixels; design for readability at that size."
+  },
+  {
+    "key": "spicy_meat_bites",
+    "width": 2,
+    "height": 1,
+    "source": "Assets/IconSources/food-v1.4/spicy_meat_bites.png",
+    "tool": "built-in image_gen",
+    "transparent_background": true,
+    "prompt": "Use case: stylized-concept. Asset type: ONE inventory item sprite for Probably Stolen. Native game look: very low-resolution hand-pixelled 2D sprite, limited muted dusty colors, charcoal-purple one-pixel contour, 3-tone shading, strong simple silhouette, modest three-quarter top/front view. Think a literal 32-pixel retro inventory object enlarged with nearest-neighbor; big crisp square pixel clusters, not hundreds of tiny details. Upper-left highlights. All food stays inside its packaging. Genuine transparent background, centered, 10% clear margin. NO text, company badge, logo, stars, watermark, ground shadow, scenery, frame, second view or sprite sheet. No photographic texture, smooth gradients, glossy 3D or vector styling. Subject: One shallow horizontal dark metal takeaway tray containing three chunky brown beer-braised meat pieces in amber-brown gravy. Muted cream rim. No chili, no skewer, no beer bottle. Wide 2:1 silhouette. This is Beer Stew. Final inventory footprint: 32 × 16 pixels; design for readability at that size."
+  }
+]

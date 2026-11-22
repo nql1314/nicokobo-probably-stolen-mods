@@ -1,0 +1,14 @@
+[h1]Automatisierte Logistik[/h1]
+
+Rüste Maschinen mit Nachfüll- und Auswurfmodulen aus. Sie ersetzen genau die verbrauchten Rohstoffe und leiten Produkte ins Ressourcennetz, in umliegende Behälter oder ins Hauptlager.
+
+[list]
+[*]Leerenbehälter lassen sich auf fünf Seiten ausbauen. Der Tank bewahrt die tatsächliche Flüssigkeitszusammensetzung; das gemeinsame Stromnetz speichert abgegebene Batterieladung. Maschinen benötigen weiterhin eine eigene Batterie.
+[*]Nachfüllen und Abholen sind einzeln schaltbar. Die erste Ladung legst du von Hand ein. Qualität, Gene und Flüssigkeiten bleiben erhalten; bei Platzmangel bleiben Produkte in der Maschine.
+[*]Unterstützt Öfen, Wasserreiniger, 3D-Drucker, Hydroponik und weitere Geräte. Erfasse bei Hydroponik zuerst die Nährlösung; beim Futterspender bestimmst du das Futter.
+[*]Mit H öffnest du das Netzterminal für Bestände, Wasser und Strom, Maschineneinstellungen und Wartegründe.
+[/list]
+
+Benötigt [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3831025262]NicoKobo Forge[/url]. Fertige die Module an der elektromechanischen Werkbank oder am Forge-Terminal. Mechcore Protocol und Lebensmittelverarbeitung sind optional; ihre Maschinen können eingebunden werden.
+
+Diese Mod wurde nach dem offiziellen Leitfaden entwickelt, hat mod-scan bestanden und benötigt keine zusätzlichen Berechtigungen. Bei Konflikten mit einer anderen Mod wende dich an deren Autor.

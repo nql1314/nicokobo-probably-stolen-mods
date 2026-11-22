@@ -1,0 +1,14 @@
+[h1]Logística automatizada[/h1]
+
+Instala módulos de reposición y expulsión en las máquinas. Reponen justo los materiales consumidos y envían los productos a la red de recursos, a los contenedores cercanos o al almacén principal.
+
+[list]
+[*]Los contenedores del vacío pueden ampliarse a cinco páginas. El depósito conserva la composición real de los líquidos y la red eléctrica guarda la carga cedida por las baterías. Las máquinas siguen necesitando su propia batería.
+[*]La reposición y la recogida se pueden controlar por separado. Carga el primer lote a mano. Se conservan la calidad, los genes y los líquidos; si falta espacio, los productos permanecen en la máquina.
+[*]Admite hornos, purificadores, impresoras 3D, hidroponía y otros equipos. Registra primero la solución de la hidroponía y elige a mano el alimento del dispensador.
+[*]Con el terminal de red en tu poder, pulsa H para consultar existencias, agua, electricidad, ajustes y motivos de espera.
+[/list]
+
+Requiere [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3831025262]NicoKobo Forge[/url]. Fabrica los módulos en el banco electromecánico o el terminal de Forge. Protocolo Mechcore y Procesamiento de alimentos son opcionales; sus máquinas se pueden conectar.
+
+Este mod sigue la guía oficial, ha superado la comprobación de mod-scan y no solicita permisos adicionales. Si entra en conflicto con otro mod, consulta con el autor de ese mod.

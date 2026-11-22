@@ -1,0 +1,1 @@
+namespace AugMechanicalAscension.Official; internal static class OfficialManufacturingTerminal { internal const string ItemId="nicokobo.forge.machines.universal_manufacturing_terminal", ChineseName="全域制造终端",EnglishName="Universal Manufacturing Terminal"; internal const int BaseValue=400; }

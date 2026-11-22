@@ -1,0 +1,159 @@
+2.2.3 - 2026-11-21
+
+[b]简体中文[/b]
+[list]
+[*]食品加工器新增简易医疗包、高级医疗包和管制医疗包。从对应原料池放入至少三种不同物品即可封装，同种物品的额外件也可一起装入。
+[*]直接刷出的三种医疗包和奥克莫吸护理包各含三种默认物品。双击可拆出包内物品。加工制作的包仍保留投入的原件及其状态。
+[/list]
+
+[b]English[/b]
+[list]
+[*]The Food Processor can make Basic, Advanced and Restricted Medical Kits. Add at least three different eligible items to pack a kit. Additional copies of eligible items can go in the same kit.
+[*]Spawned medical kits and Nomore Care Kits each contain three default items. Double-click to unpack them. Crafted kits retain the original items and their condition.
+[/list]
+
+2.2.2 - 2026-11-16
+
+[b]简体中文[/b]
+[list]
+[*]奥克莫吸护理包固定用双击拆包，兼容游戏的单击交互设置。
+[*]重绘芝士拌面、肉酱拌面、鱼松拌面和奥克莫吸护理包的图标。果味鱼肉冷餐和夜班果冻沿用原设计，改为正向图。
+[*]咖啡啤酒和码头气泡啤各占 1×2 格，莓果泉水汽泡占 1×3 格。旧存档载入时也使用新占格。
+[/list]
+
+[b]English[/b]
+[list]
+[*]Double-click the Nomore Care Kit to unpack it regardless of the single-click interaction setting.
+[*]Redrew the Cheese Noodles, Meat Sauce Noodles, Fish Floss Noodles and Nomore Care Kit icons. Fruit-Dressed Fish Salad and Night Shift Jelly keep their original designs and now face straight on.
+[*]Coffee Beer and Dockside Shandy now occupy 1×2 inventory cells. Berry Spring Fizz occupies 1×3. These sizes also apply to items loaded from older saves.
+[/list]
+
+2.2.1 - 2026-11-15
+
+[b]简体中文[/b]
+[list]
+[*]加工手册、配方选择、原料与产物提示会读取当前语言的翻译，包括语言扩展 Mod 提供的语言。缺少的词条会逐条回退到英语。
+[/list]
+
+[b]English[/b]
+[list]
+[*]The processing handbook, recipe picker, and ingredient and output labels use translations for the active language, including languages added by other mods. Missing entries fall back to English.
+[/list]
+
+2.2.0 - 2026-11-13
+
+[b]简体中文[/b]
+[list]
+[*]从 49 条扩充到 64 条配方。新增三条一星配方，可制作原版汽水、能量饮料和“泥炭”合成肉。另有 12 种新产物，每种都有独立图标。
+[*]小营养果可烘成果干，小鱼片可做浓汤，大鱼片和大营养果可做双人餐。新增荧光莓果酱、菌菇白酱肉排、咖啡因夜班果冻和消毒棉包。
+[*]使用奥克莫吸护理包可拆回原注射器、基础绷带和医用酒精，注射器保留原纯度。主库存放不下时，物品留在包内。
+[*]把金属锭拖到食品加工器或液体灌装器上，材料区和出货区各加一行。每台机器最多扩容四次，等级随机器保存。
+[*]一至三星的机器质量门槛现为 0、50、100。旧配方配置读取时会补齐新配方并保留已有的自定义数量。
+[/list]
+
+[b]English[/b]
+[list]
+[*]Expanded from 49 to 64 recipes. Three new one-star recipes make base-game Soda, Energy Drink and Peat. The other 12 produce new items with individual sprites.
+[*]Dry small Nutrifruit, turn small fillets into chowder or make a meal for two with a large fillet and large Nutrifruit. Also added BloomBerry Jam, Steak with Creamy Meal Caps, Night Shift Jelly made with caffeine pills, and Antiseptic Cotton Packs.
+[*]Unpack a Nomore Care Kit to recover its original injector, basic bandage and rubbing alcohol. The injector keeps its original purity. The kit stays packed if the main inventory has insufficient room.
+[*]Drop a Metal Ingot onto either machine to add one row to both the input and output grids. Each machine can be expanded four times, and its upgrade level is saved.
+[*]Machine quality requirements for one-, two- and three-star recipes are now 0, 50 and 100. Existing recipe configurations gain the new recipes on load and retain custom quantities.
+[/list]
+
+2.0.0 - 2026-11-12
+
+[b]简体中文[/b]
+[list]
+[*]扩充到 49 条配方、40 种自定义食品饮料。新增多种面食、罐头、零食、咖啡和汽水，重做啤酒炖肉与食品图标；配方覆盖原版奶酪、鱼饲料和医疗用品。
+[*]新增三星配方体系：机器质量达到 0／100／200 解锁对应星级，固定加工加价为 25%／50%／100%。自动模式按配方优先级加工；指定配方缺料时暂停。
+[*]重做加工手册与机器配方窗口。图标显示库存能否凑齐原料，手册可按星级筛选和关键词搜索；选定配方后可从可用库存一键补入一批所需的原料和水。
+[*]输出框可预览过夜加工的产物与总量；自动模式下可逐批切换查看，并检查实际投料、热量、用水和耗电。
+[*]加工品按实际原料分配营养和价值；牲畜血清、工业鱼饲料的加工价值随剩余用途或热量递减。兼容原版冰镇和冷冻。
+[*]保留既有物品、配方和机器存档。旧版配方配置读取时补齐新配方，并保留仍适用的自定义数量，不覆盖原文件。
+[/list]
+
+[b]English[/b]
+[list]
+[*]Expanded to 49 recipes and 40 custom foods and drinks. Added noodles, canned meals, snacks, coffees and sodas, updated Beer Stew and food icons, and kept recipes for native cheese, fish feed and medical supplies.
+[*]Added three recipe tiers. Machine quality of 0/100/200 unlocks the corresponding tier, with fixed markups of 25%/50%/100%. Automatic mode follows recipe priority; a selected recipe waits for its own ingredients.
+[*]Rebuilt the guide and recipe picker around item icons that show whether stock can cover the ingredients. Search or filter the guide by stars. Select a recipe to fill one batch's missing ingredients and water from available stock.
+[*]Preview overnight output and total quantities. In automatic mode, browse individual batches and check their inputs, calories, water and power.
+[*]Processed goods share nutrition and value from actual ingredients. The added value of livestock serums and industrial fish feed scales with remaining uses or calories. Compatible goods use native chilling and freezing.
+[*]Kept existing item and recipe identities and machine saves. Older recipe configs gain the new recipes on read, keep applicable custom quantities and are left intact on disk.
+[/list]
+
+1.0.4 - 2026-11-09
+
+[b]简体中文[/b]
+[list]
+[*]为食品、加工设备、食品加工手册、配方查询及机器生产提示加入九种语言。
+[/list]
+
+[b]English[/b]
+[list]
+[*]Added nine languages to foods, processing machines, the handbook, recipe lookup and machine status messages.
+[/list]
+
+1.0.3 - 2026-11-07
+
+[b]简体中文[/b]
+允许不同物种肉料混合加工，不再检查原料的额外化学成分；污染、染朊、腐败及配方专用条件继续生效。混合批次按实际原料保留营养，不标记为某一种物种。
+配方查询在原料前提示“污染、染朊或腐败的原料无法加工”，机器配方页、手册和机器提示同步更新。
+
+[b]English[/b]
+Allowed meat from different species in the same batch and removed additional chemical-component checks. Tainted, prion-infected and rotten inputs, plus recipe-specific conditions, are still rejected. Mixed batches retain actual input nutrition without claiming a single species.
+Recipe lookup now states before the ingredients that tainted, prion-infected or rotten inputs cannot be processed. Updated the machine recipe page, guide and machine tooltips to match.
+
+1.0.2 - 2026-11-05
+
+[b]简体中文[/b]
+修复自动加工时小块生肉×2被大肉干配方抢先消耗的问题：相同投料规模时优先匹配明确物品配方，小块生肉默认制作动物脂肪；指定大肉干时仍可使用小块生肉。
+食品加工器与液体灌装器改为完整3×3矩形鼠标命中，透明处也能选中、拖动。
+新增三条原生食材配方：小块生肉×2→动物脂肪×1；营养果×2＋食用帽菇×1→速食拉面×2；碳酸代乳×1＋普通酵母×1→合成奶酪×2。原有奶酪路线保留，营养与价值按实际投入分配，脂肪保留物种来源。
+旧schema 7配置在读取时补齐新增配方，保留原有数量及加价设置，不覆盖文件。
+星港气泡酒新增已发酵完成且可饮用的正品自酿酒作为酒基，保留实际酒精强度。空瓶、发酵中酒、失败酒和假酒不可投入。
+
+[b]English[/b]
+Fixed automatic processing choosing Large Jerky before Animal Fat for two small raw meat cuts. Explicit item recipes now take priority over tagged categories with the same workload. Selecting Large Jerky still allows small raw meat.
+Food Processor and Liquid Bottler now receive pointer hits across their full 3x3 rectangular footprints, including transparent sprite areas.
+Added three native ingredient recipes: two small raw meat cuts yield one animal fat; two Nutrifruits and one edible mushroom yield two instant ramen portions; one Pilk and one regular yeast yield two cheese portions. The existing cheese route remains. Calories and value follow actual inputs, and animal fat retains meat provenance.
+Existing schema-7 configurations gain the new defaults on read while retaining customized quantities and markups; files are not overwritten.
+Starport Fizz now accepts finished, drinkable, genuine homebrew wine as an alcohol base and retains its actual alcohol strength. Empty bottles, fermenting wine, failed wine and counterfeit wine are not accepted.
+
+1.0.1 - 2026-11-05
+
+[b]简体中文[/b]
+修复鱼子酱鳗鱼拼盘无法使用鲟鱼取卵获得的鱼子酱和自行切出的鳗鱼片制作的问题。鱼子酱仍按原规则检查原料状态。
+
+[b]English[/b]
+Fixed Caviar Eel Platter rejecting caviar harvested from sturgeon when used with hand-cut eel fillets. Caviar still follows the existing ingredient checks.
+
+1.0.0 - 2026-10-31
+
+[b]简体中文[/b]
+[list]
+[*]名称恢复为“食品加工 / Food Processing”，保持独立 Mod；物品来源标记同步恢复。
+[*]食品加工器与液体灌装器的模组舱改为原版未扩容布局，制造、商店供货和掉落均从初始容量开始，使用“模组舱扩充”分两次升级，读档沿用原版扩容等级。
+[*]配方查询仅在食品配方最前面统一提示一次“原料需可食、无污染、成分受支持”，各项原料保留名称、数量与专用条件；实际原料检查不变。
+[*]提供食品加工器与液体灌装器，两台设备共22条配方、16种自定义食品饮料，使用34个原生食品ID／合格食用变体。
+[*]料理包括肉酱面、肉干、口粮、鱼松、罐头、菌菇焗碗、香辣肉粒、蔬纤饼、果味鱼肉冷餐与高档海鲜拼盘；甜品饮品包括果汁、咖啡、营养液、繁星圣代、补给冻与气泡酒。
+[*]可制造原生奶酪与工业鱼饲料：奶酪保留实际营养，可用于料理和捕鼠笼；鱼饲料沿用原生热量计价、拆合与投喂效率。
+[*]保留两种牲畜血清、外用酒精与蓝血袋配方，沿用原生用途、剩余次数及计价。
+[*]食品营养按实际投入计算，多份产出准确分配热量与整批价值；肉料保留物种来源，气泡酒保留酒基强度。
+[*]机器支持自动或指定配方，手册与G查询显示原料条件及实际批次；自动化物流按所选配方补料，生产失败保留资源。
+[*]拼盘、冷餐与饮料支持原生冰镇；圣代、补给冻、蔬纤饼支持原生冷冻，沿用冰箱耗电与价值特征。
+[*]拒绝污染、染朊、腐败及未支持化学成分原料；配置支持配方数量、产量、条件与加工加价，正常保存实物营养及机器选择。
+[*]接入原生战利品、杰克逊夜间商店、额外顾客供货及新周目手册，提供六套本地化与配套像素图标，需要NicoKobo Forge。
+[/list]
+
+[b]English[/b]
+[list]
+[*]Restored Food Processing as the independent mod name, with matching item source labels.
+[*]Prepared the first full-release version with two machines, 22 recipes and 16 custom foods and drinks using native edible inputs, plus cheese, industrial fish feed and livestock medical supplies.
+[*]Nutrition and batch value come from actual inputs and are distributed across outputs, preserving species, alcohol strength, native uses and remaining charges.
+[*]Supports automatic or selected recipes, manuals and G lookup, plus selected-recipe logistics refills. Processing pauses for missing materials or power, invalid inputs or insufficient room for the complete output.
+[*]Rejects contaminated, infected, rotten and unsupported ingredients, with configurable quantities, yields, conditions and processing markup.
+[*]Compatible meals, desserts and drinks use native chilling or freezing; machines, nutrition, batches and selected recipes follow normal saves.
+[*]Both machines start with native unexpanded module bays and use the two native expansions. Recipe lookup states shared ingredient requirements once while preserving recipe-specific conditions.
+[*]Integrated loot, night shops, customer supplies and the opening manual, with icons and six localizations; requires NicoKobo Forge.
+[/list]

@@ -1,0 +1,40 @@
+{
+  "reference_game_build": 26525552,
+  "images": {
+    "basic_medical_kit.png": {
+      "tool": "built-in image_gen",
+      "transparent_background": true,
+      "prompt": "Stylized concept, game inventory sprite. Create a NEW Basic Medical Kit, taking the attached Nomore Care Kit sprite only as a visual reference for its straight-on view, chunky proportions, muted industrial palette and broad pixel-art-friendly shading. One closed, budget first-aid kit case, compact squarish silhouette, rounded corners, simple stepped dark blue-grey outer rim, muted ivory lid, a small muted dark teal latch on the bottom seam and one bold, clearly legible teal medical plus centered on a plain ivory inset panel. Matte utilitarian recycled molded plastic, a few broad shade steps, pixel-art-like clean hard edges suitable for downsampling to 32×32 pixels. Strict orthographic front elevation, object upright and centered, visually horizontal edges, absolutely no rotation, no visible top, bottom or side faces, no perspective or isometric angle. Different silhouette/details from the premium Nomore case. Entire sprite fully visible, tight transparent padding around the silhouette. Actual transparent background and clean alpha edges. One single object, no backdrop, no text, no characters, no extra objects, no projected shadows."
+    },
+    "advanced_medical_kit.png": {
+      "tool": "built-in image_gen",
+      "transparent_background": true,
+      "prompt": "Create one new 2D game inventory pixel-art sprite, using the attached Nomore Care Kit as a visual reference only for straight-on view and broad utilitarian shading. Strict orthographic front elevation, dead center, horizontal seam, no depth faces, angle, or tilt. Fully visible, on genuinely transparent alpha, no shadow, no typography or extra objects. High readability at 32 by 32, coarse crisp pixels, muted palette, large simple shapes, no photorealistic texture. Subject: Advanced Medical Kit. Compact squarish dark forest teal hard plastic clamshell with clipped corners, small squared side shoulders, two simple pale gray latches, broad warm-ivory horizontal inset label with a bold dark teal plus, plus a narrow light teal stripe across the lower half. Flat case, professional trauma kit appearance. Distinguishable from a basic cream-faced case at a glance."
+    },
+    "restricted_medical_kit.png": {
+      "tool": "built-in image_gen",
+      "transparent_background": true,
+      "prompt": "Create one new 2D game inventory pixel-art sprite, using the attached Nomore Care Kit as a visual reference only for straight-on view and broad utilitarian shading. Strict orthographic front elevation, dead center, horizontal seam, no depth faces, angle, or tilt. Fully visible, on genuinely transparent alpha, no shadow, no typography or extra objects. High readability at 32 by 32, coarse crisp pixels, muted palette, large simple shapes, no photorealistic texture. Subject: Restricted Medical Kit. Compact squarish dark charcoal slab-sided industrial security case with a narrow inset brick red-orange front plate, one simple pale ivory medical plus in the center, one recessed dark latch on the bottom seam, and a small two-band ochre warning stripe near the base. Clearly medical and visibly controlled, no printed or invented lettering. Distinguishable from light cream and teal kits at a glance."
+    }
+  },
+  "sprites": [
+    {
+      "key": "basic_medical_kit",
+      "width": 2,
+      "height": 2,
+      "source": "Assets/IconSources/food-medical-kits/basic_medical_kit.png"
+    },
+    {
+      "key": "advanced_medical_kit",
+      "width": 2,
+      "height": 2,
+      "source": "Assets/IconSources/food-medical-kits/advanced_medical_kit.png"
+    },
+    {
+      "key": "restricted_medical_kit",
+      "width": 2,
+      "height": 2,
+      "source": "Assets/IconSources/food-medical-kits/restricted_medical_kit.png"
+    }
+  ]
+}

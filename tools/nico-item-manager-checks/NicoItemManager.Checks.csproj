@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <ModLocalizationPackage>nico-item-manager</ModLocalizationPackage>
+    <GameDir Condition="'$(GameDir)' == ''">F:\SteamLibrary\steamapps\common\Probably Stolen</GameDir>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../../mods/shared/ModText.cs" Link="ModText.cs" />
+    <Compile Include="../shared/NativeLocalizationPort.cs" Link="NativeLocalizationPort.cs" />
+    <Compile Include="../../mods/nico-item-manager/Text.cs" Link="Text.cs" />
+    <Compile Include="../../mods/shared/ItemGraphCleanup.cs" Link="ItemGraphCleanup.cs" />
+    <Compile Include="../../mods/nico-item-manager/ItemSpawner.cs" Link="ItemSpawner.cs" />
+    <Compile Include="../../mods/nico-item-manager/ItemTags.cs" Link="ItemTags.cs" />
+    <Compile Include="../../mods/nico-item-manager/ItemTagDescriptions.cs" Link="ItemTagDescriptions.cs" />
+    <Compile Include="../../mods/nico-item-manager/ItemCatalog.cs" Link="ItemCatalog.cs" />
+    <Compile Include="../../mods/nico-item-manager/ItemNames.cs" Link="ItemNames.cs" />
+    <Compile Include="../../mods/nico-item-manager/ItemEditor.cs" Link="ItemEditor.cs" />
+    <Compile Include="../../mods/nico-item-manager/ItemPresets.cs" Link="ItemPresets.cs" />
+    <Compile Include="../../mods/nico-item-manager/ItemEditor.Existing.cs" Link="ItemEditor.Existing.cs" />
+    <Compile Include="../../mods/nico-item-manager/ExistingItems.cs" Link="ExistingItems.cs" />
+    <Compile Include="../../mods/nico-item-manager/ItemEditor.Properties.cs" Link="ItemEditor.Properties.cs" />
+    <Compile Include="../../mods/nico-item-manager/ModuleEditing.cs" Link="ModuleEditing.cs" />
+    <Compile Include="../../mods/nico-item-manager/CatalogFilterGroups.cs" Link="CatalogFilterGroups.cs" />
+    <Compile Include="../../mods/nico-item-manager/ItemTooltipText.cs" Link="ItemTooltipText.cs" />
+    <Reference Include="DseCecil"><HintPath>$(GameDir)\Probably Stolen_Data\Managed\DseCecil.dll</HintPath></Reference>
+    <Reference Include="Newtonsoft.Json"><HintPath>$(GameDir)\Probably Stolen_Data\Managed\Newtonsoft.Json.dll</HintPath></Reference>
+  </ItemGroup>
+  <Import Project="../../mods/shared/Localization.targets" />
+</Project>

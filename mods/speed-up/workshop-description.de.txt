@@ -1,0 +1,14 @@
+[h1]Beschleunigung[/h1]
+
+Passe die Geschwindigkeit von Dialogen, Kunden und Rollläden an. Abonniere und aktiviere die Mod, starte das Spiel neu und öffne die Einstellungen über das Zahnrad im Mods-Menü.
+
+[list]
+[*]Schreibtempo und Wartezeit zwischen Sätzen sind getrennt von 1× bis 32× einstellbar. Text kann sofort erscheinen.
+[*]Betreten und Öffnen sowie Verlassen und Schließen sind getrennt von 1× bis 8× einstellbar.
+[*]Die globale Spielgeschwindigkeit reicht von 0,5× bis 10× und ist standardmäßig aus. Sie wirkt zusammen mit den lokalen Faktoren; die Pause bleibt erhalten.
+[*]Alt+= und Alt+- ändern das Dialogtempo, = und - das Animationstempo. Strg+F8 wechselt die Voreinstellung, Strg+F9 schaltet das globale Tempo um, Strg+Pos1 stellt das Originaltempo wieder her. Alle Tasten sind änderbar.
+[/list]
+
+Nutze zum Fortsetzen eines Dialogs die Bedienung des Grundspiels.
+
+Diese Mod wurde nach dem offiziellen Leitfaden entwickelt, hat mod-scan bestanden und benötigt keine zusätzlichen Berechtigungen. Bei Konflikten mit einer anderen Mod wende dich an deren Autor.

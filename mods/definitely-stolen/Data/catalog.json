@@ -1,0 +1,2282 @@
+{
+  "Roles": [
+    {
+      "Id": "citizenHousehold",
+      "LocaleKey": "name_citizen",
+      "Source": "StoreClientListTier.CreateCitizen",
+      "Faction": "FACTION_LOWER_LEVEL",
+      "SpriteGroup": "lower",
+      "Tier": 1,
+      "Success": 0.9,
+      "Enabled": true,
+      "Items": [
+        "toothpaste",
+        "toilet_paper",
+        "paper_towel",
+        "shampoo",
+        "water_filter",
+        "caffeine_pill",
+        "cup_noodle",
+        "salve",
+        "scratcher",
+        "bottled_water",
+        "packet_red_cigarette"
+      ]
+    },
+    {
+      "Id": "youngSpacerHousehold",
+      "LocaleKey": "name_young_spacer",
+      "Source": "StoreClientListTier.CreateYoungSpacer",
+      "Faction": "FACTION_LOWER_LEVEL",
+      "SpriteGroup": "lower",
+      "Tier": 1,
+      "Success": 0.85,
+      "Enabled": true,
+      "Items": [
+        "cat_bar",
+        "soda_red",
+        "li_eat_snackbar",
+        "energy_drink",
+        "zerochew",
+        "red_beer",
+        "nudka",
+        "scratcher",
+        "small_bottled_water",
+        "energy_credit",
+        "packet_red_cigarette"
+      ]
+    },
+    {
+      "Id": "familyMother",
+      "LocaleKey": "name_lower_level_parent",
+      "Source": "StoreClientListTier.CreateFamilyMother",
+      "Faction": "FACTION_LOWER_LEVEL",
+      "SpriteGroup": "scav",
+      "Tier": 1,
+      "Success": 0.85,
+      "Enabled": true,
+      "Items": [
+        "processed_cheese",
+        "processed_milk",
+        "galaxy_blend",
+        "processed_meat",
+        "small_raw_meat",
+        "birth_control_pill",
+        "shampoo",
+        "water_ration",
+        "salve",
+        "nutrifruit",
+        "box_tampon"
+      ]
+    },
+    {
+      "Id": "cluelessTouristBuyer",
+      "LocaleKey": "name_tourist",
+      "Source": "StoreClientList.CreateCluelessTouristBuyer",
+      "Faction": "FACTION_TOURIST",
+      "SpriteGroup": "upper",
+      "Tier": 2,
+      "Success": 0.8,
+      "Enabled": true,
+      "Items": [
+        "beis_icecream",
+        "processed_juice",
+        "cup_noodle",
+        "water_ration_small",
+        "caffeine_pill",
+        "red_beer",
+        "salve",
+        "scratcher",
+        "energy_credit",
+        "mini_bottle",
+        "packet_red_cigarette"
+      ]
+    },
+    {
+      "Id": "upperLowerVisitorLuxury",
+      "LocaleKey": "name_upper_level_visitor",
+      "Source": "StoreClientList.CreateUpperLowerVisitorLuxury",
+      "Faction": "FACTION_UPPER_LEVEL",
+      "SpriteGroup": "upper",
+      "Tier": 3,
+      "Success": 0.65,
+      "Enabled": true,
+      "Items": [
+        "salve",
+        "nudka",
+        "beis_icecream",
+        "box_tampon",
+        "neuroactive_perfume",
+        "pheromone_perfume",
+        "bottled_water_premium",
+        "energy_credit_breeder",
+        "skincare_cream",
+        "packet_red_cigarette"
+      ]
+    },
+    {
+      "Id": "upperLevelHedonist",
+      "LocaleKey": "name_upper_level_hedonist",
+      "Source": "StoreClientListTierSubstance.CreateUpperLevelHedonist",
+      "Faction": "FACTION_UPPER_LEVEL",
+      "SpriteGroup": "upper",
+      "Tier": 3,
+      "Success": 0.6,
+      "Enabled": true,
+      "Items": [
+        "nudka",
+        "dream_dust",
+        "nightmare_dust",
+        "pink_injector",
+        "energy_drink",
+        "scratcher",
+        "neuroactive_perfume",
+        "pheromone_perfume",
+        "bottled_water_premium",
+        "energy_credit_breeder",
+        "skincare_cream"
+      ]
+    },
+    {
+      "Id": "lowerRepairman",
+      "LocaleKey": "name_lower_level_repairman",
+      "Source": "StoreClientListTier.CreateLowerRepairman",
+      "Faction": "FACTION_LOWER_LEVEL",
+      "SpriteGroup": "eng",
+      "Tier": 1,
+      "Success": 0.8,
+      "Enabled": true,
+      "Items": [
+        "screwdriver",
+        "wire_cutter",
+        "common_electronic",
+        "wire",
+        "nuts_metal",
+        "printer_plastic",
+        "turbo_booster",
+        "system_module_performance",
+        "welder",
+        "box_cutter",
+        "energy_credit_ext"
+      ]
+    },
+    {
+      "Id": "maintenanceWorker",
+      "LocaleKey": "name_maintenance_worker",
+      "Source": "StoreClientListTier.CreateMaintenanceWorker",
+      "Faction": "FACTION_LOWER_LEVEL",
+      "SpriteGroup": "eng",
+      "Tier": 1,
+      "Success": 0.75,
+      "Enabled": true,
+      "Items": [
+        "system_module_quality",
+        "water_filter",
+        "flashlight",
+        "common_electronic",
+        "wire",
+        "system_module_performance",
+        "wire_cutter",
+        "box_cutter",
+        "pipe_weapon",
+        "ser_keycard",
+        "system_module_eco",
+        "crypto_module_ser",
+        "system_module_streamlining",
+        "energy_credit",
+        "energy_credit_ext"
+      ]
+    },
+    {
+      "Id": "scavGeneral",
+      "LocaleKey": "name_scavenger",
+      "Source": "StoreClientList.CreateScavGeneral",
+      "Faction": "FACTION_LOWER_LEVEL",
+      "SpriteGroup": "scav",
+      "Tier": 1,
+      "Success": 0.7,
+      "Enabled": true,
+      "Items": [
+        "scrap_metal",
+        "common_ore",
+        "system_module_corrupt",
+        "system_module_ruined",
+        "common_electronic",
+        "nuts_metal",
+        "wire",
+        "crowbar",
+        "metal_ingot",
+        "glass_shard_shiv",
+        "pipe_weapon",
+        "scav_token",
+        "energy_credit",
+        "gutterflow_pellet"
+      ],
+      "CoreItems": [
+        "scrap_metal",
+        "common_ore",
+        "common_electronic"
+      ]
+    },
+    {
+      "Id": "miner",
+      "LocaleKey": "name_miner",
+      "Source": "StoreClientList.CreateMiner",
+      "Faction": "FACTION_LOWER_LEVEL",
+      "SpriteGroup": "eng",
+      "Tier": 1,
+      "Success": 0.75,
+      "Enabled": true,
+      "Items": [
+        "common_ore",
+        "flux_agent",
+        "turbo_booster",
+        "crowbar",
+        "welder",
+        "wire_cutter",
+        "metal_ingot",
+        "advanced_flux_agent",
+        "energy_credit_ext",
+        "energy_credit"
+      ]
+    },
+    {
+      "Id": "scrap_byer",
+      "LocaleKey": "name_scrap_buyer",
+      "Source": "StoreClientListTier.CreateScrapper",
+      "Faction": "FACTION_MIDDLE",
+      "SpriteGroup": "scav",
+      "Tier": 2,
+      "Success": 0.7,
+      "Enabled": true,
+      "Items": [
+        "scrap_metal",
+        "wire",
+        "common_electronic",
+        "metal_ingot",
+        "kotton_fabric",
+        "system_module_ruined",
+        "system_module_corrupt",
+        "system_module_quality",
+        "system_module_efficiancy",
+        "blank_module",
+        "box_cutter",
+        "glass_shard_shiv",
+        "node_medium",
+        "node_small",
+        "pipe_weapon",
+        "energy_credit_ext"
+      ]
+    },
+    {
+      "Id": "lowerInventor",
+      "LocaleKey": "name_lower_level_inventor",
+      "Source": "StoreClientListTier.CreateLowerInventor",
+      "Faction": "FACTION_LOWER_LEVEL",
+      "SpriteGroup": "sciFemale",
+      "Tier": 2,
+      "Success": 0.7,
+      "Enabled": true,
+      "Items": [
+        "printer_plastic",
+        "common_electronic",
+        "wire",
+        "system_module_performance",
+        "blank_module",
+        "node_medium",
+        "node_small",
+        "system_module_overclock",
+        "system_module_eco",
+        "system_module_fineness",
+        "energy_credit_breeder",
+        "system_module_streamlining",
+        "energy_credit",
+        "energy_credit_ext"
+      ]
+    },
+    {
+      "Id": "stationEngineer",
+      "LocaleKey": "name_station_engineer",
+      "Source": "StoreClientListTier.CreateStationEngineer",
+      "Faction": "FACTION_MIDDLE",
+      "SpriteGroup": "eng",
+      "Tier": 3,
+      "Success": 0.65,
+      "Enabled": true,
+      "Items": [
+        "system_module_performance",
+        "system_module_quality",
+        "common_electronic",
+        "blank_module",
+        "node_medium",
+        "system_module_fineness",
+        "system_module_overclock",
+        "energy_credit_breeder",
+        "crypto_module_eng",
+        "turbo_booster_adv",
+        "module_bay_expansion_kit",
+        "cmd_keycard",
+        "system_module_streamlining",
+        "energy_credit_ext",
+        "gun_part",
+        "printer_chip_gun_part"
+      ],
+      "CoreItems": [
+        "gun_part",
+        "common_electronic",
+        "system_module_performance",
+        "system_module_quality",
+        "system_module_fineness",
+        "system_module_overclock",
+        "system_module_streamlining"
+      ]
+    },
+    {
+      "Id": "aiEngineer",
+      "LocaleKey": "name_station_engineer",
+      "Source": "StoreClientListTier.CreateStationEngineer",
+      "Faction": "FACTION_MIDDLE",
+      "SpriteGroup": "eng",
+      "Tier": 3,
+      "Success": 0.6,
+      "Enabled": true,
+      "Items": [
+        "common_electronic",
+        "wire",
+        "system_module_efficiancy",
+        "blank_module",
+        "node_medium",
+        "node_small",
+        "system_module_eco",
+        "system_module_overclock",
+        "sci_keycard",
+        "energy_credit_breeder",
+        "crypto_module_cmd",
+        "system_capped_neural_core",
+        "system_module_streamlining",
+        "energy_credit"
+      ]
+    },
+    {
+      "Id": "salvagePilot",
+      "LocaleKey": "name_salvage_ship_pilot",
+      "Source": "StoreClientListMinor.CreateSalvagePilot",
+      "Faction": "FACTION_MIDDLE",
+      "SpriteGroup": "eng",
+      "Tier": 3,
+      "Success": 0.65,
+      "Enabled": true,
+      "Items": [
+        "turbo_booster",
+        "welder",
+        "wire_cutter",
+        "eng_keycard",
+        "flashlight",
+        "ser_keycard",
+        "sup_keycard",
+        "turbo_booster_adv",
+        "crypto_module_eng",
+        "crypto_module_sup",
+        "energy_credit_ext",
+        "energy_credit",
+        "bottled_water"
+      ]
+    },
+    {
+      "Id": "lowLevelDoctor",
+      "LocaleKey": "name_low_level_doctor",
+      "Source": "StoreClientListTier.CreateLowLevelDoctor",
+      "Faction": "FACTION_LOWER_LEVEL",
+      "SpriteGroup": "medMale",
+      "Tier": 2,
+      "Success": 0.75,
+      "Enabled": true,
+      "Items": [
+        "bandage_item",
+        "rubbing_alcohol",
+        "pink_injector",
+        "med_keycard",
+        "topical_bandage_item",
+        "hemostatic_bandage_item",
+        "blood_bag",
+        "common_medical",
+        "large_purple_injector",
+        "surgery_tool",
+        "serum_green",
+        "serum_red",
+        "phagimycin_pill",
+        "tilapia_skin_graft"
+      ],
+      "CoreItems": [
+        "phagimycin_pill",
+        "tilapia_skin_graft",
+        "bandage_item",
+        "topical_bandage_item",
+        "hemostatic_bandage_item",
+        "common_medical"
+      ]
+    },
+    {
+      "Id": "clinicNurse",
+      "LocaleKey": "name_mid_level_nurse",
+      "Source": "StoreClientListTier.CreateClinicNurse",
+      "Faction": "FACTION_MIDDLE",
+      "SpriteGroup": "medFemale",
+      "Tier": 2,
+      "Success": 0.8,
+      "Enabled": true,
+      "Items": [
+        "hemostatic_bandage_item",
+        "topical_bandage_item",
+        "blood_bag",
+        "common_medical",
+        "pure_white_injector",
+        "birth_control_pill",
+        "fanta_pill",
+        "caffeine_pill",
+        "salve",
+        "med_keycard",
+        "phagimycin_pill",
+        "tilapia_skin_graft"
+      ],
+      "CoreItems": [
+        "phagimycin_pill",
+        "tilapia_skin_graft",
+        "hemostatic_bandage_item",
+        "topical_bandage_item",
+        "blood_bag"
+      ]
+    },
+    {
+      "Id": "lowerLevelChemist",
+      "LocaleKey": "name_lower_level_chemist",
+      "Source": "StoreClientList.CreateLowerLevelChemist",
+      "Faction": "FACTION_LOWER_LEVEL",
+      "SpriteGroup": "sci",
+      "Tier": 2,
+      "Success": 0.7,
+      "Enabled": true,
+      "Items": [
+        "common_chemical",
+        "water_test_strip",
+        "water_tablet",
+        "common_medical",
+        "pink_alt_injector",
+        "rubbing_alcohol",
+        "dream_dust",
+        "nightmare_dust",
+        "wine_yeast_red",
+        "sci_keycard",
+        "advanced_flux_agent",
+        "serum_green",
+        "serum_red",
+        "unlicensed_phagimycin_pill"
+      ],
+      "CoreItems": [
+        "unlicensed_phagimycin_pill",
+        "common_chemical",
+        "water_test_strip"
+      ]
+    },
+    {
+      "Id": "shadyPharma",
+      "LocaleKey": "name_upper_levels_pharmacist",
+      "Source": "StoreClientList.CreateShadyPharmacist",
+      "Faction": "FACTION_UPPER_LEVEL",
+      "SpriteGroup": "upper",
+      "Tier": 3,
+      "Success": 0.6,
+      "Enabled": true,
+      "Items": [
+        "common_medical",
+        "pure_white_injector",
+        "pink_alt_injector",
+        "fanta_pill",
+        "nightmare_dust",
+        "rubbing_alcohol",
+        "wine_yeast_red",
+        "large_purple_injector",
+        "blue_blood_bag",
+        "black_injector",
+        "crypto_module_med",
+        "serum_green",
+        "serum_red",
+        "phagimycin_pill",
+        "unlicensed_phagimycin_pill"
+      ],
+      "CoreItems": [
+        "phagimycin_pill",
+        "unlicensed_phagimycin_pill",
+        "common_medical",
+        "pure_white_injector",
+        "pink_alt_injector",
+        "fanta_pill",
+        "nightmare_dust",
+        "large_purple_injector",
+        "blue_blood_bag",
+        "black_injector",
+        "serum_green",
+        "serum_red"
+      ]
+    },
+    {
+      "Id": "merchant",
+      "LocaleKey": "name_merchant",
+      "Source": "StoreClientList.CreateMerchant",
+      "Faction": "FACTION_MIDDLE",
+      "SpriteGroup": "merchant",
+      "Tier": 2,
+      "Success": 0.7,
+      "Enabled": true,
+      "Items": [
+        "common_chemical",
+        "common_medical",
+        "common_electronic",
+        "water_ration",
+        "cup_noodle",
+        "metal_ingot",
+        "system_module_efficiancy",
+        "system_module_quality",
+        "box_cutter",
+        "sup_keycard",
+        "crypto_module_ser",
+        "crypto_module_sup",
+        "packet_red_cigarette",
+        "energy_credit"
+      ]
+    },
+    {
+      "Id": "spacerChef",
+      "LocaleKey": "name_spacer_cook",
+      "Source": "StoreClientListTier.CreateSpacerChef",
+      "Faction": "FACTION_LOWER_LEVEL",
+      "SpriteGroup": "chef",
+      "Tier": 1,
+      "Success": 0.8,
+      "Enabled": true,
+      "Items": [
+        "wine_yeast",
+        "wine_berry",
+        "processed_meat",
+        "coffee_bean",
+        "kitchen_knife",
+        "bottle_hot_sauce",
+        "processed_milk",
+        "cup_noodle",
+        "small_raw_meat",
+        "nutrifruit",
+        "wine_yeast_red",
+        "skinning_knife"
+      ]
+    },
+    {
+      "Id": "privateChef",
+      "LocaleKey": "name_upper_private_chef",
+      "Source": "StoreClientListTier.CreateUpperPrivateChef",
+      "Faction": "FACTION_UPPER_LEVEL",
+      "SpriteGroup": "chef",
+      "Tier": 3,
+      "Success": 0.7,
+      "Enabled": true,
+      "Items": [
+        "wine_superyeast",
+        "processed_cheese",
+        "coffee_bean",
+        "kitchen_cleaver",
+        "nudka",
+        "bottle_hot_sauce",
+        "beis_icecream",
+        "nutrifruit",
+        "skinning_knife",
+        "raw_meat",
+        "bottled_water_premium"
+      ]
+    },
+    {
+      "Id": "upperMaid",
+      "LocaleKey": "name_upper_level_servant",
+      "Source": "StoreClientListTier.CreateUpperMaid",
+      "Faction": "FACTION_UPPER_LEVEL",
+      "SpriteGroup": "upperFemale",
+      "Tier": 2,
+      "Success": 0.75,
+      "Enabled": true,
+      "Items": [
+        "shampoo",
+        "toilet_paper",
+        "paper_towel",
+        "toothpaste",
+        "water_filter",
+        "water_tablet_container",
+        "common_chemical",
+        "mouse_trap",
+        "ser_keycard",
+        "box_tampon",
+        "energy_credit"
+      ]
+    },
+    {
+      "Id": "waterSeller",
+      "LocaleKey": "name_water_trader",
+      "Source": "StoreClientList.CreateWaterSeller",
+      "Faction": "FACTION_MIDDLE",
+      "SpriteGroup": "merchant",
+      "Tier": 3,
+      "Success": 0.6,
+      "Enabled": true,
+      "Items": [
+        "water_filter",
+        "water_tablet_container",
+        "water_test_container",
+        "water_filter_adv",
+        "portable_water_purifier",
+        "bottled_water_premium",
+        "energy_credit_breeder",
+        "bottled_water",
+        "large_bottled_water",
+        "energy_credit_ext"
+      ]
+    },
+    {
+      "Id": "retiredAquafarmer",
+      "LocaleKey": "name_retired_aquafarmer",
+      "Source": "StoreClientListSpec.CreateRetiredAquafarmer",
+      "Faction": "FACTION_LOWER_LEVEL",
+      "SpriteGroup": "farmer",
+      "Tier": 2,
+      "Success": 0.75,
+      "Enabled": true,
+      "Items": [
+        "tilapia",
+        "gutter_tilapia",
+        "graft_tilapia",
+        "eel",
+        "electric_eel",
+        "sturgeon",
+        "water_filter",
+        "water_test_container",
+        "water_tablet_container",
+        "industrial_fish_feed",
+        "gutterflow_pellet",
+        "tilapia_skin_graft"
+      ],
+      "CoreItems": [
+        "tilapia",
+        "gutter_tilapia",
+        "graft_tilapia",
+        "eel",
+        "electric_eel",
+        "sturgeon",
+        "industrial_fish_feed",
+        "gutterflow_pellet",
+        "tilapia_skin_graft"
+      ]
+    },
+    {
+      "Id": "streetCleaner",
+      "LocaleKey": "",
+      "Source": "DefinitelyStolen.SpecialNpcs.Sawyer",
+      "Faction": "FACTION_LOWER_LEVEL",
+      "SpriteGroup": "lower",
+      "Tier": 1,
+      "Success": 0.85,
+      "Enabled": true,
+      "Items": [
+        "shampoo",
+        "paper_towel",
+        "toilet_paper",
+        "water_filter",
+        "cup_noodle",
+        "bottled_water",
+        "caffeine_pill",
+        "salve",
+        "li_eat_snackbar"
+      ]
+    },
+    {
+      "Id": "offDutySecurity",
+      "LocaleKey": "",
+      "Source": "DefinitelyStolen.SpecialNpcs.OfficerRen",
+      "Faction": "FACTION_SECURITY",
+      "SpriteGroup": "secOff",
+      "Tier": 2,
+      "Success": 0.7,
+      "Enabled": true,
+      "Items": [
+        "cup_noodle",
+        "li_eat_snackbar",
+        "bottled_water",
+        "caffeine_pill",
+        "salve",
+        "paper_towel",
+        "small_bottled_water",
+        "energy_drink",
+        "cat_bar",
+        "dream_dust",
+        "pink_injector"
+      ]
+    },
+    {
+      "Id": "privateSecurityContractor",
+      "LocaleKey": "name_private_security_contractor",
+      "Source": "StoreClientListTierWeapon.CreatePrivateSecurityContractor",
+      "Faction": "FACTION_UPPER_LEVEL",
+      "SpriteGroup": "merc",
+      "Tier": 3,
+      "Success": 0.5,
+      "Enabled": false,
+      "Items": [
+        "common_electronic",
+        "flashlight",
+        "combat_knife",
+        "crowbar",
+        "water_ration_small",
+        "hemostatic_bandage_item",
+        "blank_keycard",
+        "sec_keycard",
+        "crypto_module_sec",
+        "energy_credit_ext"
+      ]
+    },
+    {
+      "Id": "aquacultureTechnician",
+      "LocaleKey": "",
+      "Source": "DefinitelyStolen",
+      "Faction": "FACTION_MIDDLE",
+      "SpriteGroup": "middle",
+      "Tier": 2,
+      "Success": 0.65,
+      "Enabled": true,
+      "OpeningAllowed": false,
+      "CoreItems": [
+        "industrial_fish_feed",
+        "tilapia_skin_graft",
+        "water_test_strip",
+        "water_tablet",
+        "aquascan"
+      ],
+      "Items": [
+        "industrial_fish_feed",
+        "tilapia_skin_graft",
+        "water_test_strip",
+        "water_tablet",
+        "aquascan",
+        "water_filter",
+        "water_test_container",
+        "water_tablet_container",
+        "common_electronic",
+        "energy_credit"
+      ]
+    },
+    {
+      "Id": "hydroponicGrower",
+      "LocaleKey": "",
+      "Source": "DefinitelyStolen",
+      "Faction": "FACTION_LOWER_LEVEL",
+      "SpriteGroup": "lower",
+      "Tier": 1,
+      "Success": 0.75,
+      "Enabled": true,
+      "OpeningAllowed": false,
+      "CoreItems": [
+        "nutrifruit_seed",
+        "kotton_seed",
+        "fillerweed_seed",
+        "hydroreed_seed",
+        "nutrifruit"
+      ],
+      "Items": [
+        "nutrifruit_seed",
+        "kotton_seed",
+        "fillerweed_seed",
+        "hydroreed_seed",
+        "nutrifruit",
+        "coffee_bean",
+        "water_filter",
+        "small_bottled_water",
+        "system_module_eco",
+        "farm_module_hydroreed_filter"
+      ]
+    },
+    {
+      "Id": "printTechnician",
+      "LocaleKey": "",
+      "Source": "DefinitelyStolen",
+      "Faction": "FACTION_MIDDLE",
+      "SpriteGroup": "middle",
+      "Tier": 2,
+      "Success": 0.65,
+      "Enabled": true,
+      "OpeningAllowed": false,
+      "CoreItems": [
+        "printer_plastic",
+        "metal_ingot",
+        "gun_part",
+        "printer_chip_box_cutter",
+        "printer_chip_gun_part"
+      ],
+      "Items": [
+        "printer_plastic",
+        "metal_ingot",
+        "gun_part",
+        "printer_chip_box_cutter",
+        "printer_chip_gun_part",
+        "common_electronic",
+        "wire",
+        "box_cutter",
+        "blank_module",
+        "system_module_quality",
+        "module_bay_expansion_kit"
+      ]
+    },
+    {
+      "Id": "waterQualityInspector",
+      "LocaleKey": "",
+      "Source": "DefinitelyStolen",
+      "Faction": "FACTION_MIDDLE",
+      "SpriteGroup": "middle",
+      "Tier": 2,
+      "Success": 0.65,
+      "Enabled": true,
+      "OpeningAllowed": false,
+      "CoreItems": [
+        "water_test_strip",
+        "water_test_container",
+        "hydroreed_filter",
+        "water_filter",
+        "aquascan"
+      ],
+      "Items": [
+        "water_test_strip",
+        "water_test_container",
+        "hydroreed_filter",
+        "water_filter",
+        "aquascan",
+        "water_filter_adv",
+        "water_tablet",
+        "water_tablet_container",
+        "bottled_water",
+        "large_bottled_water",
+        "common_chemical"
+      ]
+    },
+    {
+      "Id": "plantBreeder",
+      "LocaleKey": "",
+      "Source": "DefinitelyStolen",
+      "Faction": "FACTION_MIDDLE",
+      "SpriteGroup": "middle",
+      "Tier": 3,
+      "Success": 0.65,
+      "Enabled": true,
+      "OpeningAllowed": false,
+      "CoreItems": [
+        "nutrifruit_seed",
+        "kotton_seed",
+        "fillerweed_seed",
+        "hydroreed_seed",
+        "bloomberry_seed",
+        "plant_dna_disk",
+        "plant_analyser"
+      ],
+      "Items": [
+        "nutrifruit_seed",
+        "kotton_seed",
+        "fillerweed_seed",
+        "hydroreed_seed",
+        "bloomberry_seed",
+        "plant_dna_disk",
+        "plant_analyser",
+        "water_test_strip",
+        "small_bottled_water",
+        "farm_module_fillerweed_production"
+      ]
+    },
+    {
+      "Id": "clinicCourier",
+      "LocaleKey": "",
+      "Source": "DefinitelyStolen",
+      "Faction": "FACTION_MIDDLE",
+      "SpriteGroup": "lower",
+      "Tier": 1,
+      "Success": 0.65,
+      "Enabled": true,
+      "OpeningAllowed": false,
+      "CoreItems": [
+        "phagimycin_pill",
+        "tilapia_skin_graft",
+        "bandage_item",
+        "hemostatic_bandage_item",
+        "topical_bandage_item",
+        "common_medical"
+      ],
+      "Items": [
+        "phagimycin_pill",
+        "tilapia_skin_graft",
+        "bandage_item",
+        "hemostatic_bandage_item",
+        "topical_bandage_item",
+        "common_medical",
+        "blood_bag",
+        "rubbing_alcohol",
+        "small_bottled_water",
+        "energy_credit"
+      ]
+    }
+  ],
+  "Regions": [
+    {
+      "Id": 0,
+      "Roles": [
+        {
+          "Id": "citizenHousehold",
+          "Weight": 13
+        },
+        {
+          "Id": "youngSpacerHousehold",
+          "Weight": 10
+        },
+        {
+          "Id": "familyMother",
+          "Weight": 10
+        },
+        {
+          "Id": "lowerRepairman",
+          "Weight": 10
+        },
+        {
+          "Id": "maintenanceWorker",
+          "Weight": 8
+        },
+        {
+          "Id": "scavGeneral",
+          "Weight": 10
+        },
+        {
+          "Id": "miner",
+          "Weight": 6
+        },
+        {
+          "Id": "scrap_byer",
+          "Weight": 6
+        },
+        {
+          "Id": "lowLevelDoctor",
+          "Weight": 5
+        },
+        {
+          "Id": "clinicNurse",
+          "Weight": 3
+        },
+        {
+          "Id": "lowerLevelChemist",
+          "Weight": 4
+        },
+        {
+          "Id": "spacerChef",
+          "Weight": 4
+        },
+        {
+          "Id": "lowerInventor",
+          "Weight": 2
+        },
+        {
+          "Id": "retiredAquafarmer",
+          "Weight": 6
+        },
+        {
+          "Id": "streetCleaner",
+          "Weight": 3
+        },
+        {
+          "Id": "aquacultureTechnician",
+          "Weight": 6
+        },
+        {
+          "Id": "hydroponicGrower",
+          "Weight": 6
+        },
+        {
+          "Id": "waterQualityInspector",
+          "Weight": 4
+        },
+        {
+          "Id": "clinicCourier",
+          "Weight": 2
+        },
+        {
+          "Id": "merchant",
+          "Weight": 3
+        }
+      ]
+    },
+    {
+      "Id": 1,
+      "Roles": [
+        {
+          "Id": "maintenanceWorker",
+          "Weight": 10
+        },
+        {
+          "Id": "scavGeneral",
+          "Weight": 6
+        },
+        {
+          "Id": "merchant",
+          "Weight": 11
+        },
+        {
+          "Id": "cluelessTouristBuyer",
+          "Weight": 14
+        },
+        {
+          "Id": "miner",
+          "Weight": 5
+        },
+        {
+          "Id": "scrap_byer",
+          "Weight": 4
+        },
+        {
+          "Id": "stationEngineer",
+          "Weight": 11
+        },
+        {
+          "Id": "salvagePilot",
+          "Weight": 10
+        },
+        {
+          "Id": "lowLevelDoctor",
+          "Weight": 4
+        },
+        {
+          "Id": "clinicNurse",
+          "Weight": 5
+        },
+        {
+          "Id": "lowerLevelChemist",
+          "Weight": 4
+        },
+        {
+          "Id": "shadyPharma",
+          "Weight": 4
+        },
+        {
+          "Id": "aiEngineer",
+          "Weight": 3
+        },
+        {
+          "Id": "retiredAquafarmer",
+          "Weight": 6
+        },
+        {
+          "Id": "offDutySecurity",
+          "Weight": 3
+        },
+        {
+          "Id": "aquacultureTechnician",
+          "Weight": 4
+        },
+        {
+          "Id": "hydroponicGrower",
+          "Weight": 2
+        },
+        {
+          "Id": "printTechnician",
+          "Weight": 7
+        },
+        {
+          "Id": "waterQualityInspector",
+          "Weight": 4
+        },
+        {
+          "Id": "plantBreeder",
+          "Weight": 2
+        },
+        {
+          "Id": "clinicCourier",
+          "Weight": 4
+        }
+      ]
+    },
+    {
+      "Id": 2,
+      "Roles": [
+        {
+          "Id": "upperLowerVisitorLuxury",
+          "Weight": 20
+        },
+        {
+          "Id": "upperLevelHedonist",
+          "Weight": 14
+        },
+        {
+          "Id": "merchant",
+          "Weight": 9
+        },
+        {
+          "Id": "cluelessTouristBuyer",
+          "Weight": 7
+        },
+        {
+          "Id": "privateChef",
+          "Weight": 9
+        },
+        {
+          "Id": "upperMaid",
+          "Weight": 9
+        },
+        {
+          "Id": "waterSeller",
+          "Weight": 7
+        },
+        {
+          "Id": "stationEngineer",
+          "Weight": 8
+        },
+        {
+          "Id": "aiEngineer",
+          "Weight": 4
+        },
+        {
+          "Id": "shadyPharma",
+          "Weight": 4
+        },
+        {
+          "Id": "lowerInventor",
+          "Weight": 3
+        },
+        {
+          "Id": "clinicNurse",
+          "Weight": 3
+        },
+        {
+          "Id": "salvagePilot",
+          "Weight": 3
+        },
+        {
+          "Id": "printTechnician",
+          "Weight": 3
+        },
+        {
+          "Id": "waterQualityInspector",
+          "Weight": 3
+        },
+        {
+          "Id": "plantBreeder",
+          "Weight": 5
+        },
+        {
+          "Id": "clinicCourier",
+          "Weight": 2
+        }
+      ]
+    }
+  ],
+  "Items": [
+    {
+      "Id": "advanced_flux_agent",
+      "Sprite": "flux_agent_advanced",
+      "Atlas": "Items/items_material",
+      "HasImage": true,
+      "ReferenceValue": 300
+    },
+    {
+      "Id": "bandage_item",
+      "Sprite": "bandage_small",
+      "Atlas": "Items/items_medical",
+      "HasImage": true,
+      "ReferenceValue": 8
+    },
+    {
+      "Id": "beis_icecream",
+      "Sprite": "beis_icecream",
+      "Atlas": "Items/items_food",
+      "HasImage": true,
+      "ReferenceValue": 40
+    },
+    {
+      "Id": "birth_control_pill",
+      "Sprite": "items_medical_15",
+      "Atlas": "Items/items_medical",
+      "HasImage": true,
+      "ReferenceValue": 15
+    },
+    {
+      "Id": "black_injector",
+      "Sprite": "injector_black",
+      "Atlas": "Items/items_medical",
+      "HasImage": true,
+      "ReferenceValue": 350
+    },
+    {
+      "Id": "black_lamp",
+      "Sprite": "black_lamp",
+      "Atlas": "Items/items_sign",
+      "HasImage": true,
+      "ReferenceValue": 120
+    },
+    {
+      "Id": "blank_keycard",
+      "Sprite": "blank_card",
+      "Atlas": "Items/items_misc",
+      "HasImage": true,
+      "ReferenceValue": 15
+    },
+    {
+      "Id": "blank_module",
+      "Sprite": "module_white",
+      "Atlas": "Items/items_module",
+      "HasImage": true,
+      "ReferenceValue": 60
+    },
+    {
+      "Id": "blood_bag",
+      "Sprite": "blood_bag",
+      "Atlas": "Items/items_medical",
+      "HasImage": true,
+      "ReferenceValue": 33
+    },
+    {
+      "Id": "blue_blood_bag",
+      "Sprite": "blue_blood_bag",
+      "Atlas": "Items/items_medical",
+      "HasImage": true,
+      "ReferenceValue": 250
+    },
+    {
+      "Id": "bottle_hot_sauce",
+      "Sprite": "hot_sauce",
+      "Atlas": "Items/items_food",
+      "HasImage": true,
+      "ReferenceValue": 50
+    },
+    {
+      "Id": "bottled_water",
+      "Sprite": "normal",
+      "Atlas": "Items/water_container3",
+      "HasImage": true,
+      "ReferenceValue": 0
+    },
+    {
+      "Id": "bottled_water_premium",
+      "Sprite": "water_bottle_full_premium",
+      "Atlas": "Items/items_food",
+      "HasImage": true,
+      "ReferenceValue": 325
+    },
+    {
+      "Id": "box_cutter",
+      "Sprite": "box_cutter",
+      "Atlas": "Items/items_weapons_melee",
+      "HasImage": true,
+      "ReferenceValue": 28
+    },
+    {
+      "Id": "box_tampon",
+      "Sprite": "box_tampon",
+      "Atlas": "Items/items_amenities",
+      "HasImage": true,
+      "ReferenceValue": 100
+    },
+    {
+      "Id": "caffeine_pill",
+      "Sprite": "cafeine_pill",
+      "Atlas": "Items/items_medical",
+      "HasImage": true,
+      "ReferenceValue": 10
+    },
+    {
+      "Id": "cat_bar",
+      "Sprite": "cat_bar",
+      "Atlas": "Items/items_food",
+      "HasImage": true,
+      "ReferenceValue": 15
+    },
+    {
+      "Id": "cmd_keycard",
+      "Sprite": "command_keycard",
+      "Atlas": "Items/items_misc",
+      "HasImage": true,
+      "ReferenceValue": 125
+    },
+    {
+      "Id": "coffee_bean",
+      "Sprite": "coffee_bean",
+      "Atlas": "Items/items_hydroponic_plant",
+      "HasImage": true,
+      "ReferenceValue": 28
+    },
+    {
+      "Id": "combat_knife",
+      "Sprite": "combat_knife_2",
+      "Atlas": "Items/items_weapons_melee",
+      "HasImage": true,
+      "ReferenceValue": 75
+    },
+    {
+      "Id": "common_chemical",
+      "Sprite": "chemical1",
+      "Atlas": "Items/items_material",
+      "HasImage": true,
+      "ReferenceValue": 50
+    },
+    {
+      "Id": "common_electronic",
+      "Sprite": "electronic1",
+      "Atlas": "Items/items_material",
+      "HasImage": true,
+      "ReferenceValue": 33
+    },
+    {
+      "Id": "common_medical",
+      "Sprite": "med1",
+      "Atlas": "Items/items_material",
+      "HasImage": true,
+      "ReferenceValue": 40
+    },
+    {
+      "Id": "common_ore",
+      "Sprite": "ore1",
+      "Atlas": "Items/items_material",
+      "HasImage": true,
+      "ReferenceValue": 15
+    },
+    {
+      "Id": "crowbar",
+      "Sprite": "crowbar",
+      "Atlas": "Items/items_weapons_melee",
+      "HasImage": true,
+      "ReferenceValue": 75
+    },
+    {
+      "Id": "crypto_module_cmd",
+      "Sprite": "cmd_module",
+      "Atlas": "Items/items_tool",
+      "HasImage": true,
+      "ReferenceValue": 350
+    },
+    {
+      "Id": "crypto_module_eng",
+      "Sprite": "eng_module",
+      "Atlas": "Items/items_tool",
+      "HasImage": true,
+      "ReferenceValue": 250
+    },
+    {
+      "Id": "crypto_module_med",
+      "Sprite": "med_module",
+      "Atlas": "Items/items_tool",
+      "HasImage": true,
+      "ReferenceValue": 250
+    },
+    {
+      "Id": "crypto_module_sec",
+      "Sprite": "sec_module",
+      "Atlas": "Items/items_tool",
+      "HasImage": true,
+      "ReferenceValue": 300
+    },
+    {
+      "Id": "crypto_module_ser",
+      "Sprite": "ser_module",
+      "Atlas": "Items/items_tool",
+      "HasImage": true,
+      "ReferenceValue": 200
+    },
+    {
+      "Id": "crypto_module_sup",
+      "Sprite": "sup_module",
+      "Atlas": "Items/items_tool",
+      "HasImage": true,
+      "ReferenceValue": 200
+    },
+    {
+      "Id": "cup_noodle",
+      "Sprite": "cup_noodle",
+      "Atlas": "Items/items_food",
+      "HasImage": true,
+      "ReferenceValue": 20
+    },
+    {
+      "Id": "dream_dust",
+      "Sprite": "dream_dust",
+      "Atlas": "Items/items_medical",
+      "HasImage": true,
+      "ReferenceValue": 18
+    },
+    {
+      "Id": "eel",
+      "Sprite": "eel_small1",
+      "Atlas": "Items/items_aquaculture",
+      "HasImage": true,
+      "ReferenceValue": 0
+    },
+    {
+      "Id": "electric_eel",
+      "Sprite": "eel_small2",
+      "Atlas": "Items/items_aquaculture",
+      "HasImage": true,
+      "ReferenceValue": 0
+    },
+    {
+      "Id": "energy_credit",
+      "Sprite": "battery100",
+      "Atlas": "Items/items_tool",
+      "HasImage": true,
+      "ReferenceValue": 10
+    },
+    {
+      "Id": "energy_credit_breeder",
+      "Sprite": "sbattery100",
+      "Atlas": "Items/items_tool2",
+      "HasImage": true,
+      "ReferenceValue": 400
+    },
+    {
+      "Id": "energy_credit_ext",
+      "Sprite": "battery_ext100",
+      "Atlas": "Items/items_tool",
+      "HasImage": true,
+      "ReferenceValue": 30
+    },
+    {
+      "Id": "energy_drink",
+      "Sprite": "energy_drink",
+      "Atlas": "Items/items_food",
+      "HasImage": true,
+      "ReferenceValue": 18
+    },
+    {
+      "Id": "eng_keycard",
+      "Sprite": "eng_card",
+      "Atlas": "Items/items_misc",
+      "HasImage": true,
+      "ReferenceValue": 75
+    },
+    {
+      "Id": "fanny_pack",
+      "Sprite": "fanny_pack",
+      "Atlas": "Items/items_backpack2",
+      "HasImage": true,
+      "ReferenceValue": 50
+    },
+    {
+      "Id": "fanta_pill",
+      "Sprite": "oxycodone_pill",
+      "Atlas": "Items/items_medical",
+      "HasImage": true,
+      "ReferenceValue": 12
+    },
+    {
+      "Id": "flashlight",
+      "Sprite": "flashlight3",
+      "Atlas": "Items/items_misc",
+      "HasImage": true,
+      "ReferenceValue": 40
+    },
+    {
+      "Id": "flux_agent",
+      "Sprite": "flux_agent",
+      "Atlas": "Items/items_material",
+      "HasImage": true,
+      "ReferenceValue": 4
+    },
+    {
+      "Id": "galaxy_blend",
+      "Sprite": "juice_pouch",
+      "Atlas": "Items/items_food",
+      "HasImage": true,
+      "ReferenceValue": 25
+    },
+    {
+      "Id": "glass_shard_shiv",
+      "Sprite": "glass_shard_shiv",
+      "Atlas": "Items/items_weapons_melee",
+      "HasImage": true,
+      "ReferenceValue": 8
+    },
+    {
+      "Id": "graft_tilapia",
+      "Sprite": "tilapia_small2",
+      "Atlas": "Items/items_aquaculture",
+      "HasImage": true,
+      "ReferenceValue": 0
+    },
+    {
+      "Id": "gutter_tilapia",
+      "Sprite": "tilapia_small3",
+      "Atlas": "Items/items_aquaculture",
+      "HasImage": true,
+      "ReferenceValue": 0
+    },
+    {
+      "Id": "hemostatic_bandage_item",
+      "Sprite": "hemostatic_bandage_small",
+      "Atlas": "Items/items_medical",
+      "HasImage": true,
+      "ReferenceValue": 16
+    },
+    {
+      "Id": "kitchen_cleaver",
+      "Sprite": "kitchen_cleaver",
+      "Atlas": "Items/items_weapons_melee",
+      "HasImage": true,
+      "ReferenceValue": 50
+    },
+    {
+      "Id": "kitchen_knife",
+      "Sprite": "kitchen_knife",
+      "Atlas": "Items/items_weapons_melee",
+      "HasImage": true,
+      "ReferenceValue": 35
+    },
+    {
+      "Id": "kotton_fabric",
+      "Sprite": "kotton_fabric",
+      "Atlas": "Items/items_armor",
+      "HasImage": true,
+      "ReferenceValue": 40
+    },
+    {
+      "Id": "labeler",
+      "Sprite": "labeler",
+      "Atlas": "Items/items_tool",
+      "HasImage": true,
+      "ReferenceValue": 50
+    },
+    {
+      "Id": "large_bottled_water",
+      "Sprite": "large",
+      "Atlas": "Items/water_container3",
+      "HasImage": true,
+      "ReferenceValue": 0
+    },
+    {
+      "Id": "large_purple_injector",
+      "Sprite": "injector_purple_large",
+      "Atlas": "Items/items_medical",
+      "HasImage": true,
+      "ReferenceValue": 160
+    },
+    {
+      "Id": "li_eat_snackbar",
+      "Sprite": "li_eat_snackbar",
+      "Atlas": "Items/items_food",
+      "HasImage": true,
+      "ReferenceValue": 17
+    },
+    {
+      "Id": "magnifier",
+      "Sprite": "magnifier",
+      "Atlas": "Items/items_tool",
+      "HasImage": true,
+      "ReferenceValue": 50
+    },
+    {
+      "Id": "med_keycard",
+      "Sprite": "med_card",
+      "Atlas": "Items/items_misc",
+      "HasImage": true,
+      "ReferenceValue": 75
+    },
+    {
+      "Id": "metal_ingot",
+      "Sprite": "metal_ingot",
+      "Atlas": "Items/items_material",
+      "HasImage": true,
+      "ReferenceValue": 50
+    },
+    {
+      "Id": "mini_bottle",
+      "Sprite": "mini",
+      "Atlas": "Items/water_container3",
+      "HasImage": true,
+      "ReferenceValue": 0
+    },
+    {
+      "Id": "module_bay_expansion_kit",
+      "Sprite": "hydro_upgrade_kit",
+      "Atlas": "Items/items_module",
+      "HasImage": true,
+      "ReferenceValue": 150
+    },
+    {
+      "Id": "mouse_trap",
+      "Sprite": "mouse_trap",
+      "Atlas": "Items/items_husbandry",
+      "HasImage": true,
+      "ReferenceValue": 50
+    },
+    {
+      "Id": "neuroactive_perfume",
+      "Sprite": "perfume1",
+      "Atlas": "Items/items_amenities",
+      "HasImage": true,
+      "ReferenceValue": 150
+    },
+    {
+      "Id": "nightmare_dust",
+      "Sprite": "nightmare_dust",
+      "Atlas": "Items/items_medical",
+      "HasImage": true,
+      "ReferenceValue": 36
+    },
+    {
+      "Id": "node_medium",
+      "Sprite": "node_m",
+      "Atlas": "Items/items_module",
+      "HasImage": true,
+      "ReferenceValue": 50
+    },
+    {
+      "Id": "node_small",
+      "Sprite": "node_s",
+      "Atlas": "Items/items_module",
+      "HasImage": true,
+      "ReferenceValue": 50
+    },
+    {
+      "Id": "nudka",
+      "Sprite": "nudka",
+      "Atlas": "Items/items_food",
+      "HasImage": true,
+      "ReferenceValue": 85
+    },
+    {
+      "Id": "nutrifruit",
+      "Sprite": "nutrifruit",
+      "Atlas": "Items/items_hydroponic_plant",
+      "HasImage": true,
+      "ReferenceValue": 12
+    },
+    {
+      "Id": "nuts_metal",
+      "Sprite": "nuts_metal_pile",
+      "Atlas": "Items/items_construction",
+      "HasImage": true,
+      "ReferenceValue": 14
+    },
+    {
+      "Id": "packet_red_cigarette",
+      "Sprite": "cig_red",
+      "Atlas": "Items/items_amenities",
+      "HasImage": true,
+      "ReferenceValue": 80
+    },
+    {
+      "Id": "paper_towel",
+      "Sprite": "paper_towel",
+      "Atlas": "Items/items_amenities",
+      "HasImage": true,
+      "ReferenceValue": 35
+    },
+    {
+      "Id": "pheromone_perfume",
+      "Sprite": "perfume2",
+      "Atlas": "Items/items_amenities",
+      "HasImage": true,
+      "ReferenceValue": 200
+    },
+    {
+      "Id": "pink_alt_injector",
+      "Sprite": "injector_pink_alt",
+      "Atlas": "Items/items_medical",
+      "HasImage": true,
+      "ReferenceValue": 50
+    },
+    {
+      "Id": "pink_injector",
+      "Sprite": "injector_pink",
+      "Atlas": "Items/items_medical",
+      "HasImage": true,
+      "ReferenceValue": 50
+    },
+    {
+      "Id": "pipe_weapon",
+      "Sprite": "pipe",
+      "Atlas": "Items/items_weapons_melee",
+      "HasImage": true,
+      "ReferenceValue": 15
+    },
+    {
+      "Id": "portable_water_purifier",
+      "Sprite": "portable_water_purifier",
+      "Atlas": "Items/items_amenities",
+      "HasImage": true,
+      "ReferenceValue": 225
+    },
+    {
+      "Id": "printer_plastic",
+      "Sprite": "printer_plastic",
+      "Atlas": "Items/items_material",
+      "HasImage": true,
+      "ReferenceValue": 12
+    },
+    {
+      "Id": "processed_cheese",
+      "Sprite": "cheese",
+      "Atlas": "Items/items_food",
+      "HasImage": true,
+      "ReferenceValue": 20
+    },
+    {
+      "Id": "processed_juice",
+      "Sprite": "items_food_juice",
+      "Atlas": "Items/items_food",
+      "HasImage": true,
+      "ReferenceValue": 14
+    },
+    {
+      "Id": "processed_meat",
+      "Sprite": "processed_meat",
+      "Atlas": "Items/items_food",
+      "HasImage": true,
+      "ReferenceValue": 25
+    },
+    {
+      "Id": "processed_milk",
+      "Sprite": "items_food_pilk_alt",
+      "Atlas": "Items/items_food",
+      "HasImage": true,
+      "ReferenceValue": 16
+    },
+    {
+      "Id": "pure_white_injector",
+      "Sprite": "injector_pure_white_s",
+      "Atlas": "Items/items_medical",
+      "HasImage": true,
+      "ReferenceValue": 30
+    },
+    {
+      "Id": "raw_meat",
+      "Sprite": "raw_meat",
+      "Atlas": "Items/items_food",
+      "HasImage": true,
+      "ReferenceValue": 120
+    },
+    {
+      "Id": "red_beer",
+      "Sprite": "red_beer",
+      "Atlas": "Items/items_food",
+      "HasImage": true,
+      "ReferenceValue": 18
+    },
+    {
+      "Id": "rubbing_alcohol",
+      "Sprite": "black_bottle",
+      "Atlas": "Items/items_medical",
+      "HasImage": true,
+      "ReferenceValue": 35
+    },
+    {
+      "Id": "salve",
+      "Sprite": "salve",
+      "Atlas": "Items/items_medical",
+      "HasImage": true,
+      "ReferenceValue": 80
+    },
+    {
+      "Id": "scav_token",
+      "Sprite": "scav_medal",
+      "Atlas": "Items/itematlas",
+      "HasImage": true,
+      "ReferenceValue": 100
+    },
+    {
+      "Id": "sci_keycard",
+      "Sprite": "sci_card",
+      "Atlas": "Items/items_misc",
+      "HasImage": true,
+      "ReferenceValue": 100
+    },
+    {
+      "Id": "scrap_metal",
+      "Sprite": "scrap_metal",
+      "Atlas": "Items/items_material",
+      "HasImage": true,
+      "ReferenceValue": 10
+    },
+    {
+      "Id": "scratcher",
+      "Sprite": "scratch",
+      "Atlas": "Items/items_misc",
+      "HasImage": true,
+      "ReferenceValue": 20
+    },
+    {
+      "Id": "screwdriver",
+      "Sprite": "screwdriver_s",
+      "Atlas": "Items/items_tool",
+      "HasImage": true,
+      "ReferenceValue": 25
+    },
+    {
+      "Id": "sec_keycard",
+      "Sprite": "sec_keycard",
+      "Atlas": "Items/items_misc",
+      "HasImage": true,
+      "ReferenceValue": 100
+    },
+    {
+      "Id": "ser_keycard",
+      "Sprite": "ser_card",
+      "Atlas": "Items/items_misc",
+      "HasImage": true,
+      "ReferenceValue": 40
+    },
+    {
+      "Id": "serum_green",
+      "Sprite": "green_serum",
+      "Atlas": "Items/items_medical",
+      "HasImage": true,
+      "ReferenceValue": 100
+    },
+    {
+      "Id": "serum_red",
+      "Sprite": "red_serum",
+      "Atlas": "Items/items_medical",
+      "HasImage": true,
+      "ReferenceValue": 100
+    },
+    {
+      "Id": "shampoo",
+      "Sprite": "shampoo",
+      "Atlas": "Items/items_amenities",
+      "HasImage": true,
+      "ReferenceValue": 30
+    },
+    {
+      "Id": "skincare_cream",
+      "Sprite": "skincare_cream",
+      "Atlas": "Items/items_amenities",
+      "HasImage": true,
+      "ReferenceValue": 500
+    },
+    {
+      "Id": "skinning_knife",
+      "Sprite": "skinning_knife",
+      "Atlas": "Items/items_weapons_melee",
+      "HasImage": true,
+      "ReferenceValue": 100
+    },
+    {
+      "Id": "small_bottled_water",
+      "Sprite": "small",
+      "Atlas": "Items/water_container3",
+      "HasImage": true,
+      "ReferenceValue": 0
+    },
+    {
+      "Id": "small_raw_meat",
+      "Sprite": "small_raw_meat",
+      "Atlas": "Items/items_food",
+      "HasImage": true,
+      "ReferenceValue": 60
+    },
+    {
+      "Id": "soda_red",
+      "Sprite": "items_food_soda_red",
+      "Atlas": "Items/items_food",
+      "HasImage": true,
+      "ReferenceValue": 15
+    },
+    {
+      "Id": "sturgeon",
+      "Sprite": "sturgeon",
+      "Atlas": "Items/items_aquaculture",
+      "HasImage": true,
+      "ReferenceValue": 0
+    },
+    {
+      "Id": "sup_keycard",
+      "Sprite": "sup_card",
+      "Atlas": "Items/items_misc",
+      "HasImage": true,
+      "ReferenceValue": 40
+    },
+    {
+      "Id": "surgery_tool",
+      "Sprite": "surgery_toolkit",
+      "Atlas": "Items/items_tool",
+      "HasImage": true,
+      "ReferenceValue": 200
+    },
+    {
+      "Id": "system_capped_neural_core",
+      "Sprite": "module_black_4",
+      "Atlas": "Items/items_module",
+      "HasImage": true,
+      "ReferenceValue": 250
+    },
+    {
+      "Id": "system_module_corrupt",
+      "Sprite": "module_corrupt",
+      "Atlas": "Items/items_module",
+      "HasImage": true,
+      "ReferenceValue": 45
+    },
+    {
+      "Id": "system_module_eco",
+      "Sprite": "module_green_2",
+      "Atlas": "Items/items_module",
+      "HasImage": true,
+      "ReferenceValue": 100
+    },
+    {
+      "Id": "system_module_efficiancy",
+      "Sprite": "module_green",
+      "Atlas": "Items/items_module",
+      "HasImage": true,
+      "ReferenceValue": 70
+    },
+    {
+      "Id": "system_module_fineness",
+      "Sprite": "module_yellow_2",
+      "Atlas": "Items/items_module",
+      "HasImage": true,
+      "ReferenceValue": 100
+    },
+    {
+      "Id": "system_module_overclock",
+      "Sprite": "module_red_2",
+      "Atlas": "Items/items_module",
+      "HasImage": true,
+      "ReferenceValue": 100
+    },
+    {
+      "Id": "system_module_performance",
+      "Sprite": "module_red",
+      "Atlas": "Items/items_module",
+      "HasImage": true,
+      "ReferenceValue": 70
+    },
+    {
+      "Id": "system_module_quality",
+      "Sprite": "module_yellow",
+      "Atlas": "Items/items_module",
+      "HasImage": true,
+      "ReferenceValue": 70
+    },
+    {
+      "Id": "system_module_ruined",
+      "Sprite": "module_ruined",
+      "Atlas": "Items/items_module",
+      "HasImage": true,
+      "ReferenceValue": 30
+    },
+    {
+      "Id": "system_module_streamlining",
+      "Sprite": "module_green_3",
+      "Atlas": "Items/items_module",
+      "HasImage": true,
+      "ReferenceValue": 125
+    },
+    {
+      "Id": "tilapia",
+      "Sprite": "tilapia_small1",
+      "Atlas": "Items/items_aquaculture",
+      "HasImage": true,
+      "ReferenceValue": 0
+    },
+    {
+      "Id": "toilet_paper",
+      "Sprite": "toilet_paper",
+      "Atlas": "Items/items_amenities",
+      "HasImage": true,
+      "ReferenceValue": 25
+    },
+    {
+      "Id": "toothpaste",
+      "Sprite": "toothpaste",
+      "Atlas": "Items/items_amenities",
+      "HasImage": true,
+      "ReferenceValue": 15
+    },
+    {
+      "Id": "topical_bandage_item",
+      "Sprite": "topical_bandage_small",
+      "Atlas": "Items/items_medical",
+      "HasImage": true,
+      "ReferenceValue": 16
+    },
+    {
+      "Id": "turbo_booster",
+      "Sprite": "turbo_booster",
+      "Atlas": "Items/items_tool",
+      "HasImage": true,
+      "ReferenceValue": 35
+    },
+    {
+      "Id": "turbo_booster_adv",
+      "Sprite": "turbo_booster_adv",
+      "Atlas": "Items/items_tool",
+      "HasImage": true,
+      "ReferenceValue": 300
+    },
+    {
+      "Id": "water_filter",
+      "Sprite": "water_filter",
+      "Atlas": "Items/items_amenities",
+      "HasImage": true,
+      "ReferenceValue": 25
+    },
+    {
+      "Id": "water_filter_adv",
+      "Sprite": "water_filter_adv",
+      "Atlas": "Items/items_amenities",
+      "HasImage": true,
+      "ReferenceValue": 250
+    },
+    {
+      "Id": "water_ration",
+      "Sprite": "water_ration",
+      "Atlas": "Items/items_food",
+      "HasImage": true,
+      "ReferenceValue": 30
+    },
+    {
+      "Id": "water_ration_small",
+      "Sprite": "water_ration_small",
+      "Atlas": "Items/items_food",
+      "HasImage": true,
+      "ReferenceValue": 15
+    },
+    {
+      "Id": "water_tablet",
+      "Sprite": "water_tablet",
+      "Atlas": "Items/items_amenities",
+      "HasImage": true,
+      "ReferenceValue": 6
+    },
+    {
+      "Id": "water_tablet_container",
+      "Sprite": "water_tablet_container",
+      "Atlas": "Items/items_amenities",
+      "HasImage": true,
+      "ReferenceValue": 1
+    },
+    {
+      "Id": "water_test_container",
+      "Sprite": "water_test_container",
+      "Atlas": "Items/items_amenities",
+      "HasImage": true,
+      "ReferenceValue": 1
+    },
+    {
+      "Id": "water_test_strip",
+      "Sprite": "strip_new",
+      "Atlas": "Items/items_amenities",
+      "HasImage": true,
+      "ReferenceValue": 3
+    },
+    {
+      "Id": "welder",
+      "Sprite": "welder_s",
+      "Atlas": "Items/items_tool",
+      "HasImage": true,
+      "ReferenceValue": 80
+    },
+    {
+      "Id": "wine_berry",
+      "Sprite": "wine_berry",
+      "Atlas": "Items/items_winemaking",
+      "HasImage": true,
+      "ReferenceValue": 14
+    },
+    {
+      "Id": "wine_superyeast",
+      "Sprite": "superyeast",
+      "Atlas": "Items/items_winemaking",
+      "HasImage": true,
+      "ReferenceValue": 20
+    },
+    {
+      "Id": "wine_yeast",
+      "Sprite": "yeast",
+      "Atlas": "Items/items_winemaking",
+      "HasImage": true,
+      "ReferenceValue": 10
+    },
+    {
+      "Id": "wine_yeast_red",
+      "Sprite": "illegal_yeast",
+      "Atlas": "Items/items_winemaking",
+      "HasImage": true,
+      "ReferenceValue": 8
+    },
+    {
+      "Id": "wire",
+      "Sprite": "wire",
+      "Atlas": "Items/items_construction",
+      "HasImage": true,
+      "ReferenceValue": 16
+    },
+    {
+      "Id": "wire_cutter",
+      "Sprite": "wirecutter",
+      "Atlas": "Items/items_tool",
+      "HasImage": true,
+      "ReferenceValue": 40
+    },
+    {
+      "Id": "zerochew",
+      "Sprite": "zerochew",
+      "Atlas": "Items/items_medical",
+      "HasImage": true,
+      "ReferenceValue": 8
+    },
+    {
+      "Id": "phagimycin_pill",
+      "Sprite": "pill1",
+      "Atlas": "Items/items_medical",
+      "HasImage": true,
+      "OpeningAllowed": false,
+      "ReferenceValue": 25
+    },
+    {
+      "Id": "unlicensed_phagimycin_pill",
+      "Sprite": "pill2",
+      "Atlas": "Items/items_medical",
+      "HasImage": true,
+      "OpeningAllowed": false,
+      "ReferenceValue": 5
+    },
+    {
+      "Id": "tilapia_skin_graft",
+      "Sprite": "bandage_fish",
+      "Atlas": "Items/items_medical",
+      "HasImage": true,
+      "OpeningAllowed": false,
+      "ReferenceValue": 24
+    },
+    {
+      "Id": "industrial_fish_feed",
+      "Sprite": "fish_food2",
+      "Atlas": "Items/items_aquaculture",
+      "HasImage": true,
+      "OpeningAllowed": false,
+      "ReferenceValue": 100
+    },
+    {
+      "Id": "gutterflow_pellet",
+      "Sprite": "fish_food",
+      "Atlas": "Items/items_aquaculture",
+      "HasImage": true,
+      "OpeningAllowed": false,
+      "ReferenceValue": 40
+    },
+    {
+      "Id": "aquascan",
+      "Sprite": "aquascan",
+      "Atlas": "Items/items_amenities",
+      "HasImage": true,
+      "OpeningAllowed": false,
+      "ReferenceValue": 200
+    },
+    {
+      "Id": "hydroreed_filter",
+      "Sprite": "hydroreed_filter",
+      "Atlas": "Items/items_hydroponic_plant",
+      "HasImage": true,
+      "OpeningAllowed": false,
+      "ReferenceValue": 20
+    },
+    {
+      "Id": "gun_part",
+      "Sprite": "gun_part",
+      "Atlas": "Items/items_material",
+      "HasImage": true,
+      "OpeningAllowed": false,
+      "ReferenceValue": 25
+    },
+    {
+      "Id": "printer_chip_box_cutter",
+      "Sprite": "printer_chip6",
+      "Atlas": "Items/items_tool",
+      "HasImage": true,
+      "OpeningAllowed": false,
+      "ReferenceValue": 150
+    },
+    {
+      "Id": "printer_chip_gun_part",
+      "Sprite": "printer_chip_pistol",
+      "Atlas": "Items/items_tool",
+      "HasImage": true,
+      "OpeningAllowed": false,
+      "ReferenceValue": 300
+    },
+    {
+      "Id": "nutrifruit_seed",
+      "Sprite": "nutrifruit_seed",
+      "Atlas": "Items/items_hydroponic_plant",
+      "HasImage": true,
+      "OpeningAllowed": false,
+      "ReferenceValue": 40
+    },
+    {
+      "Id": "kotton_seed",
+      "Sprite": "kotton_plant_seed",
+      "Atlas": "Items/items_hydroponic_plant",
+      "HasImage": true,
+      "OpeningAllowed": false,
+      "ReferenceValue": 20
+    },
+    {
+      "Id": "fillerweed_seed",
+      "Sprite": "fillerweed_seed",
+      "Atlas": "Items/items_hydroponic_plant",
+      "HasImage": true,
+      "OpeningAllowed": false,
+      "ReferenceValue": 9
+    },
+    {
+      "Id": "hydroreed_seed",
+      "Sprite": "hydroreed_seed",
+      "Atlas": "Items/items_hydroponic_plant",
+      "HasImage": true,
+      "OpeningAllowed": false,
+      "ReferenceValue": 20
+    },
+    {
+      "Id": "bloomberry_seed",
+      "Sprite": "bloomberry_seed",
+      "Atlas": "Items/items_hydroponic_plant",
+      "HasImage": true,
+      "OpeningAllowed": false,
+      "ReferenceValue": 40
+    },
+    {
+      "Id": "plant_analyser",
+      "Sprite": "plant_analyser",
+      "Atlas": "Items/items_hydroponic_plant",
+      "HasImage": true,
+      "OpeningAllowed": false,
+      "ReferenceValue": 200
+    },
+    {
+      "Id": "plant_dna_disk",
+      "Sprite": "dna_disk_black_empty",
+      "Atlas": "Items/items_hydroponic_plant",
+      "HasImage": true,
+      "OpeningAllowed": false,
+      "ReferenceValue": 140
+    },
+    {
+      "Id": "farm_module_hydroreed_filter",
+      "Sprite": "farm_module_l6",
+      "Atlas": "Items/items_module",
+      "HasImage": true,
+      "OpeningAllowed": false,
+      "ReferenceValue": 105
+    },
+    {
+      "Id": "farm_module_fillerweed_production",
+      "Sprite": "farm_module_l5",
+      "Atlas": "Items/items_module",
+      "HasImage": true,
+      "OpeningAllowed": false,
+      "ReferenceValue": 115
+    }
+  ]
+}

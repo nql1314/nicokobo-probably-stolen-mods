@@ -1,0 +1,14 @@
+[h1]Accélération[/h1]
+
+Réglez la vitesse des dialogues, des clients et du rideau métallique. Abonnez-vous au mod, activez-le dans le menu Mods, relancez le jeu et ouvrez ses réglages avec la roue dentée.
+
+[list]
+[*]La vitesse d’écriture et l’attente entre les répliques se règlent séparément de 1× à 32×. L’affichage instantané est disponible.
+[*]L’entrée et l’ouverture, puis la sortie et la fermeture, se règlent séparément de 1× à 8×.
+[*]Le multiplicateur global va de 0,5× à 10× et est désactivé par défaut. Il s’ajoute aux réglages individuels et respecte la pause.
+[*]Alt+= et Alt+- règlent les dialogues, = et - règlent les animations. Ctrl+F8 change de préréglage, Ctrl+F9 active ou désactive le multiplicateur global et Ctrl+Début rétablit la vitesse d’origine. Les raccourcis sont configurables.
+[/list]
+
+Pour avancer dans les dialogues, utilisez les commandes du jeu de base.
+
+Ce mod suit le guide officiel, a passé le contrôle mod-scan et ne demande aucune autorisation supplémentaire. En cas de conflit avec un autre mod, contactez son auteur.

@@ -1,0 +1,11 @@
+[
+  {
+    "key": "fish_fiber_salad",
+    "source": "%USERPROFILE%\\.codex\\generated_images\\01a186ae-c1c8-7da2-95de-39454f92ccac\\exec-2cd649d9-ea79-4996-ad73-4b2eac9e8b5b.png",
+    "width": 32,
+    "height": 32,
+    "tool": "built-in image_gen",
+    "transparent_background": true,
+    "prompt": "Use case: stylized-concept. Asset type: tiny inventory sprite for the pixel-art game Probably Stolen, matching a coherent low-resolution food icon set. Subject: one compact shallow square dark-gray takeaway bowl containing pale cooked fish flakes over shredded muted-green vegetable fibers, dressed with a few small amber-purple fruit dressing highlights. One small wedge of white fish visible on top, simple readable arrangement, no garnish outside the bowl. Three-quarter overhead view. Style: authentic low-resolution 2D pixel-art inventory icon, dark near-black pixel outline, hard crisp clustered pixels, muted warm earthy palette, quiet highlights, simple shading. Must remain recognizable at a final size of 32 by 32 pixels; avoid tiny busy details, painting, 3D rendering or anti-aliased illustration. Single isolated bowl centered with generous genuine transparent margin. No ground, no cast shadow, no scenery, no UI frame, no text, no watermark."
+  }
+]

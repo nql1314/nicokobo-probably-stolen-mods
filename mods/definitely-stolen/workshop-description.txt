@@ -1,0 +1,5 @@
+[h1]Definitely Stolen[/h1]
+
+Start as a pickpocket or gain access through a trait, visit three night locations and steal from a range of occupations. Includes proficiency, intel and six night events. Each thief stock refresh has a 5% chance to include one native Smoke Grenade. When carried outside, a Smoke Grenade is automatically consumed on discovery to retain tonight's loot and end theft for the night; reputation, XP and heat penalties still apply, and its native uses remain available. Existing Escape Smoke Grenades retain their effects but are no longer added to stock or loot pools. Requires [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3831025262]NicoKobo Forge[/url]; enable both mods and restart the game.
+
+This mod was developed following the official guide and has passed mod-scan checks. It requests no additional permissions, including external reflection access. Beyond the changes described on this page, it should generally leave base-game features unaffected. If a conflict occurs when using it alongside a third-party mod, please contact that mod's author first for help investigating.

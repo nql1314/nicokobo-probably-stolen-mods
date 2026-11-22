@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod>
+  <ID>nicokobo.food_processing</ID>
+  <Name>食品加工 / Food Processing</Name>
+  <Author>NicoKobo</Author>
+  <ModVersion>2.2.3</ModVersion>
+  <Description>用食品加工器和液体灌装器制作料理、饮料和医疗补给，共 67 条配方。小果可烘成果干，小鱼片可做浓汤，大鱼片和大果可做双人餐。双击奥克莫吸护理包或简易、高级、管制医疗包可取回原件。二星和三星配方在机器质量达到 50 和 100 时解锁。拖入金属锭可扩容，最多四次。可从库存补料并预览过夜产量。需要 NicoKobo Forge。
+Make meals, drinks and medical supplies with 67 recipes across the Food Processor and Liquid Bottler. Dry small fruit, turn small fillets into chowder or make a dinner for two with a large fillet and large fruit. Double-click the Nomore Care Kit or a basic, advanced or restricted medical kit to recover its original contents. Machine quality of 50 and 100 unlocks two- and three-star recipes. Expand storage up to four times with metal ingots, fill from stock and preview overnight output. Requires NicoKobo Forge.</Description>
+  <GameVersions><Version>0.46D</Version></GameVersions>
+  <Assemblies><Assembly>Nicokobo.FoodProcessing.dll</Assembly></Assemblies>
+  <Prerequisites><Mod>nicokobo.forge</Mod></Prerequisites>
+  <Capabilities />
+</Mod>

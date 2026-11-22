@@ -1,0 +1,14 @@
+[h1]Automatyczna logistyka[/h1]
+
+Załóż na maszyny moduły uzupełniania i wyrzutu. Zastępują dokładnie tyle surowców, ile zużyła maszyna, i wysyłają produkty do sieci zasobów, pobliskich pojemników lub głównego magazynu.
+
+[list]
+[*]Pojemniki próżniowe można powiększyć do pięciu stron. Zbiornik zachowuje rzeczywisty skład cieczy, a wspólna sieć przechowuje energię oddaną przez baterie. Maszyny nadal potrzebują własnej baterii.
+[*]Uzupełnianie i odbiór włącza się osobno. Pierwszą partię włóż ręcznie. Jakość, geny i ciecze pozostają bez zmian; gdy zabraknie miejsca, produkty zostają w maszynie.
+[*]Obsługuje piece, oczyszczarki wody, drukarki 3D, hydroponikę i inne urządzenia. W hydroponice najpierw zapisz skład pożywki, a w podajniku ręcznie wybierz karmę.
+[*]Mając terminal, naciśnij H, aby sprawdzić zapasy, wodę, zasilanie, ustawienia i powody oczekiwania maszyn.
+[/list]
+
+Wymaga [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3831025262]NicoKobo Forge[/url]. Moduły wytworzysz na stole elektromechanicznym lub w terminalu Forge. Protokół Mechcore i Przetwórstwo żywności są opcjonalne; ich maszyny można podłączyć do sieci.
+
+Mod powstał zgodnie z oficjalnym poradnikiem, przeszedł kontrolę mod-scan i nie wymaga dodatkowych uprawnień. W razie konfliktu z innym modem skontaktuj się z jego autorem.

@@ -1,0 +1,14 @@
+[h1]Przyspieszenie[/h1]
+
+Dostosuj szybkość dialogów, klientów i rolety. Zasubskrybuj mod, włącz go w menu Mods, uruchom ponownie grę i otwórz ustawienia ikoną koła zębatego.
+
+[list]
+[*]Tempo wyświetlania liter i przerwy między zdaniami ustawisz osobno od 1× do 32×. Tekst może też pojawiać się od razu.
+[*]Wejście i otwieranie oraz wyjście i zamykanie można przyspieszyć osobno od 1× do 8×.
+[*]Globalne tempo rozgrywki wynosi od 0,5× do 10× i jest domyślnie wyłączone. Łączy się z ustawieniami poszczególnych elementów i zachowuje pauzę.
+[*]Alt+= i Alt+- zmieniają tempo dialogów, a = i - tempo animacji. Ctrl+F8 zmienia ustawienie wstępne, Ctrl+F9 przełącza tempo globalne, a Ctrl+Home przywraca pierwotną prędkość. Skróty można zmieniać.
+[/list]
+
+Do przewijania dialogów używaj sterowania z gry podstawowej.
+
+Mod powstał zgodnie z oficjalnym poradnikiem, przeszedł kontrolę mod-scan i nie wymaga dodatkowych uprawnień. W razie konfliktu z innym modem skontaktuj się z jego autorem.

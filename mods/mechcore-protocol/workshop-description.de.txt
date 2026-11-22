@@ -1,0 +1,14 @@
+[h1]Mechcore-Protokoll: Aufstieg eines Augs[/h1]
+
+Synthese, Modulmatrix und mechanischer Aufstieg in einer Mod. Baue eine Industrie auf, entwickle Maschinenmodule, fertige Implantate und betreibe als Aug einen Laden, während du den Briefen aus dem Fundbüro nachgehst.
+
+[list]
+[*]Drei Industriemaschinen, Material- und Glasrecycling, sechs Implantate, Roboter, ein tragbarer Bohrer und ein Rezeptbuch.
+[*]18 Module und Knoten, sechs Platzierungseffekte, fortlaufende Verbesserungen, Maschinenfähigkeiten, das K02-Upgrade und die Kognitionsturbine.
+[*]Eigener Spielstart, Gesundheit und Enttarnungsrisiko, Medizin, elektronische Regeneration, sieben selbst herstellbare Implantate, 13 Werkstatterfolge, Grayline-Lieferungen und vier Enden.
+[*]Glas wird im Materialveredler recycelt. Das S26-Chargenbrennmodul ist deaktiviert und wird nicht mehr angeboten; vorhandene Exemplare bleiben in alten Spielständen. Rezeptsuche mit G, Nico-Werkstatt mit N oder per Telefon unter 1016.
+[/list]
+
+Benötigt [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3831025262]NicoKobo Forge[/url]. Lebensmittelverarbeitung und Automatisierte Logistik sind optional. Deaktiviere die drei früheren Einzelmods, aktiviere Forge und diese Mod und starte das Spiel neu.
+
+Diese Mod wurde nach dem offiziellen Leitfaden entwickelt, hat mod-scan bestanden und benötigt keine zusätzlichen Berechtigungen. Bei Konflikten mit einer anderen Mod wende dich an deren Autor.

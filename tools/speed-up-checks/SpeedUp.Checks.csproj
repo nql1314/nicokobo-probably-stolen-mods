@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <CheckEolTargetFramework>false</CheckEolTargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../../mods/speed-up/Patches.cs" Link="Patches.cs" />
+    <Compile Include="../../mods/speed-up/ClientAnimPatches.cs" Link="ClientAnimPatches.cs" />
+    <Compile Include="../../mods/speed-up/GlobalSpeedRules.cs" Link="GlobalSpeedRules.cs" />
+    <Compile Include="../../mods/speed-up/SpeedUpSettings.cs" Link="SpeedUpSettings.cs" />
+    <Compile Include="../../mods/speed-up/Text.cs" Link="Text.cs" />
+    <Compile Include="../../mods/shared/ModText.cs" Link="ModText.cs" />
+    <Compile Include="../shared/NativeLocalizationPort.cs" Link="NativeLocalizationPort.cs" />
+    <Compile Include="../../mods/speed-up/KeyCombination.cs" Link="KeyCombination.cs" />
+    <Compile Include="../../mods/speed-up/TextInputFocus.cs" Link="TextInputFocus.cs" />
+    <Compile Include="../../mods/speed-up/HotkeyHandler.cs" Link="HotkeyHandler.cs" />
+  </ItemGroup>
+</Project>

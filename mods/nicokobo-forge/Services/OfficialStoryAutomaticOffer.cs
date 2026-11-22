@@ -1,0 +1,79 @@
+
+
+namespace Nicokobo.ContentInterop;
+
+internal static partial class OfficialStoryPresentation
+{
+    private sealed class AutomaticOffer(Dialogue menu, Dialogue choice, double delaySeconds)
+    {
+        internal readonly Dialogue Menu = menu, Choice = choice;
+        internal readonly OfficialStoryConversationAutomaticSelection Selection = new(delaySeconds);
+    }
+
+    private static AutomaticOffer? CurrentAutomaticOffer(DialogUIManager dialog)
+    {
+        if (Visits.Count == 0) return null;
+        foreach (var visit in Visits.ToArray())
+            if (visit.Automatic is { } automatic && automatic.Selection.Pending && IsCurrent(visit) &&
+                NativeObject.Handle(dialog.currentDialog) == NativeObject.Handle(automatic.Menu))
+                return automatic;
+        return null;
+    }
+
+    private static void AfterChoicesDisplayed(DialogUIManager __instance)
+    {
+        try
+        {
+            var automatic = CurrentAutomaticOffer(__instance);
+            if (automatic != null && VisibleAutomaticChoice(__instance, automatic) >= 0)
+                automatic.Selection.Displayed(DateTime.UtcNow);
+        }
+        catch (Exception ex) { Log(ex); }
+    }
+
+    private static bool BeforeAutomaticChoiceInput(DialogUIManager __instance, int __0)
+    {
+        // Disabled choices hold only their own input. An automatic page holds all
+        // input until its timer spends the gate and invokes native SelectChoice.
+        try
+        {
+            var menu = __instance.currentDialog;
+            if (menu != null && __0 >= 0 && __0 < menu.choices.Count && menu.choices[__0].Item2 is { } choice &&
+                Visits.Any(v => IsCurrent(v) && v.DisabledChoices.Contains(NativeObject.Handle(choice)))) return false;
+            return CurrentAutomaticOffer(__instance) == null;
+        }
+        catch (Exception ex) { Log(ex); return true; }
+    }
+
+    private static int VisibleAutomaticChoice(DialogUIManager dialog, AutomaticOffer automatic)
+    {
+        // Native DisplayChoice exposes live buttons without setting isConversationActiveFlag.
+        // Match the owned page and its visible button instead of that unused field.
+        if (NativeObject.Handle(dialog.currentDialog) != NativeObject.Handle(automatic.Menu) ||
+            dialog.dialogChoiceBubbles == null || OfficialWorkshopApi.IsVisible || OfficialStoryUi.AnyVisible) return -1;
+        var reader = HandnoteUIManager.Instance;
+        var calendar = AdvCalendarUIManager.Instance;
+        if (reader != null && reader.panel != null && reader.panel.activeInHierarchy ||
+            calendar != null && calendar.UIPanel != null && calendar.UIPanel.activeInHierarchy) return -1;
+        for (int i = 0; i < automatic.Menu.choices.Count && i < dialog.dialogChoiceBubbles.Count; i++)
+            if (NativeObject.Handle(automatic.Menu.choices[i].Item2) == NativeObject.Handle(automatic.Choice) &&
+                dialog.dialogChoiceBubbles[i] != null && dialog.dialogChoiceBubbles[i].gameObject.activeInHierarchy)
+                return i;
+        return -1;
+    }
+
+    private static void UpdateAutomaticOffers()
+    {
+        if (!Visits.Any(visit => visit.Automatic?.Selection.Pending == true)) return;
+        var dialog = DialogUIManager.Instance;
+        foreach (var visit in Visits.ToArray())
+        {
+            if (visit.Automatic is not { } automatic || !automatic.Selection.Pending) continue;
+            int index = dialog != null && IsCurrent(visit) ? VisibleAutomaticChoice(dialog, automatic) : -1;
+            if (!automatic.Selection.TryEnter(index >= 0, DateTime.UtcNow)) continue;
+            // Native selection owns navigation and calls the same once-only Purchase
+            // callback as a click. Resource checks and persistence stay with content.
+            dialog!.SelectChoice(index);
+        }
+    }
+}

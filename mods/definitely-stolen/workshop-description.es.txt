@@ -1,0 +1,13 @@
+[h1]Seguro que es robado[/h1]
+
+Empieza como carterista o desbloquea el hurto mediante un rasgo. De noche, busca objetivos en tres lugares, roba a personajes de 31 profesiones y lleva el botín a la casa de empeños.
+
+[list]
+[*]Hurto manual o automático, pericia, alerta, información y seis eventos nocturnos.
+[*]Cada reposición del ladrón tiene un 5 % de probabilidad de incluir una granada de humo del juego base. Si te descubren, se consume una granada que lleves encima: conservas el botín y terminan los hurtos de esa noche. Se mantienen las consecuencias sobre reputación, experiencia y notoriedad.
+[*]Organiza el botín en el inventario habitual de las salidas. Las antiguas granadas de escape conservan su efecto, pero ya no se venden ni aparecen como botín.
+[/list]
+
+Requiere [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3831025262]NicoKobo Forge[/url]. Activa ambos mods y reinicia el juego.
+
+Este mod sigue la guía oficial, ha superado la comprobación de mod-scan y no solicita permisos adicionales. Si entra en conflicto con otro mod, consulta con el autor de ese mod.

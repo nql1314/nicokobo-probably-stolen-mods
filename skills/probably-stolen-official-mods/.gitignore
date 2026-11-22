@@ -1,0 +1,23 @@
+/packages/
+
+# 构建输出
+[Bb]in/
+[Oo]bj/
+/[Ll]ibrary/
+
+# 用户/IDE 本地文件
+.vs/
+.idea/
+.vscode/
+*.user
+*.suo
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 日志
+*.log
+
+# 迁移前仓库元数据不属于统一仓库
+/.git-retained/

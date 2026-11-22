@@ -1,0 +1,14 @@
+[h1]Nicos Gegenstandsverwaltung[/h1]
+
+Katalog, Editor und Gegenstandsgenerator für Probably Stolen. Suche nach Name, ID oder Kategorie, auch in geladenen Mods. Öffne und schließe die Oberfläche mit Home (Pos1); die Taste ist frei belegbar.
+
+[list]
+[*]Bearbeite Preise, Werte und Tags wie Metallreinheit, Module, Ladung, Haltbarkeit, Kalorien und Frische. Der Flüssigkeitseditor bietet 47 Optionen; bei Mengenänderungen bleibt das Mischverhältnis erhalten.
+[*]Erzeuge Gegenstände einzeln oder zu fünft. Sie landen zuerst auf deinem Tisch, bei Platzmangel im Rucksack. Benannte Vorlagen bleiben nach einem Neustart und über Spielstände hinweg verfügbar.
+[*]Klicke mit der rechten Maustaste auf einen eigenen Gegenstand auf dem Tisch oder im Rucksack und wähle „Gegenstand verwalten“. Du kannst auch mit dem Mauszeiger auf den Gegenstand zeigen und Ende drücken. Leere Behälter vor dem Kopieren oder Löschen. Das Löschen erfordert eine Bestätigung.
+[*]Vorschau für Aussehen, Platzbedarf und Schätzwert; Katalogexport als Markdown oder JSON.
+[/list]
+
+Abonniere die Mod, aktiviere sie im Mods-Menü und starte das Spiel neu.
+
+Diese Mod wurde nach dem offiziellen Leitfaden entwickelt, hat mod-scan bestanden und benötigt keine zusätzlichen Berechtigungen. Bei Konflikten mit einer anderen Mod wende dich an deren Autor.

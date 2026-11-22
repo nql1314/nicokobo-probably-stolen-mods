@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType><TargetFramework>net6.0</TargetFramework><LangVersion>latest</LangVersion>
+    <ImplicitUsings>enable</ImplicitUsings><Nullable>enable</Nullable><CheckEolTargetFramework>false</CheckEolTargetFramework>
+    <GameManaged>F:\SteamLibrary\steamapps\common\Probably Stolen\Probably Stolen_Data\Managed</GameManaged>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\..\mods\shared\ItemGraphCleanup.cs" Link="Interop\ItemGraphCleanup.cs" />
+    <Compile Include="..\..\mods\shared\Nicokobo.ContentInterop\SupplyCatalog.cs" Link="Interop\SupplyCatalog.cs" />
+    <Compile Include="..\..\mods\shared\Nicokobo.ContentInterop\SupplyPolicy.cs" Link="Interop\SupplyPolicy.cs" />
+    <Compile Include="..\..\mods\shared\Nicokobo.ContentInterop\NativeSupplyHooks.cs" Link="Interop\NativeSupplyHooks.cs" />
+    <Reference Include="0Harmony"><HintPath>$(GameManaged)\0Harmony.dll</HintPath></Reference>
+    <Reference Include="DseCecil"><HintPath>$(GameManaged)\DseCecil.dll</HintPath></Reference>
+  </ItemGroup>
+<ItemGroup><Compile Include="..\..\mods\shared\Nicokobo.Forge.Contracts\Supply.cs" Link="Contracts\%(Filename)%(Extension)" /></ItemGroup>
+</Project>

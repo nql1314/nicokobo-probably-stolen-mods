@@ -1,0 +1,50 @@
+{
+  "initialCredits": 500,
+  "initialRent": 250,
+  "initialSecurityReputation": -15,
+  "initialBatteryCount": 1,
+  "initialMedicalCount": 1,
+  "initialElectronicCount": 1,
+  "dailyHealthLoss": 10,
+  "dailyExposureGain": 5,
+  "exposureGraceDays": 0,
+  "neuralModuleTestPrice": 100,
+  "cyberneticPrices": {
+    "artificialAnkle": 300,
+    "infraredVision": 350,
+    "communicationReceiver": 300,
+    "syntheticVocalCords": 350,
+    "artificialHeart": 600,
+    "mimeticSkin": 500,
+    "unlockMaterials": {
+      "artificialHeart": "common_electronic",
+      "mimeticSkin": "common_electronic",
+      "artificialAnkle": "common_electronic",
+      "infraredVision": "common_electronic",
+      "communicationReceiver": "common_electronic",
+      "syntheticVocalCords": "common_electronic",
+      "mechanicalAscension": "common_electronic"
+    },
+    "unlockRecipes": {
+      "artificialHeart": [
+        {
+          "itemId": "common_electronic",
+          "quantity": 2
+        },
+        {
+          "itemId": "metal_ingot",
+          "quantity": 1
+        }
+      ]
+    },
+    "sleepExtraNightActions": 1,
+    "ankleExtraScavAttempts": 3,
+    "infraredWoundChanceMultiplierBp": 7500,
+    "machineEfficiencyBonusBp": 5000,
+    "machinePerformanceBonusBp": 5000,
+    "machineQualityBonusBp": 5000,
+    "exposureThresholdShift": 20,
+    "artificialHeartHealthLossMultiplierBp": 5000,
+    "skinDailyExposureReduction": 3
+  }
+}

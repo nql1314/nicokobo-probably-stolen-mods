@@ -1,0 +1,28 @@
+[h1]Transformation des aliments 2.0[/h1]
+
+Transformez vos poissons, vos viandes et vos récoltes hydroponiques en nouveaux produits pour la boutique. Deux machines travaillent la nuit et proposent [b]64 recettes, 50 nouveaux aliments et boissons et 2 nouveaux articles médicaux[/b].
+
+[b]Nécessite [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3831025262]NicoKobo Forge[/url].[/b] Abonnez-vous aux deux mods, activez-les et relancez le jeu. Le guide est remis au début d’une nouvelle partie. Vous pouvez aussi le trouver avec les machines à la boutique de nuit de Jackson.
+
+[h2]Deux machines, trois niveaux de recettes[/h2]
+
+[list]
+[*][b]Machine de transformation alimentaire · 33 recettes[/b]. Faites sécher les petits fruits nutritifs ou préparez un repas pour deux avec un grand filet de poisson et un gros fruit. Vous pouvez aussi fabriquer la viande synthétique, la graisse animale et la nourriture industrielle pour poissons du jeu de base.
+[*][b]Embouteilleuse · 31 recettes[/b]. Préparez une soupe crémeuse avec de petits filets ou une gelée pour le travail de nuit avec un comprimé de caféine. Les sodas et boissons énergisantes du jeu de base sont aussi au menu. Ouvrez le kit Nomore pour récupérer l’injecteur, le bandage et l’alcool médical d’origine. L’injecteur conserve sa pureté.
+[*]Une qualité de machine de 0, 50 ou 100 débloque les recettes ★, ★★ ou ★★★, respectivement. Les majorations fixes sont de 25 %, 50 % et 100 %. Chaque tranche de 100 points de performance ajoute un lot. Une meilleure efficacité réduit la consommation électrique.
+[*][b]Agrandissement du stockage[/b]. Déposez un lingot de métal sur l’une des machines pour ajouter une rangée aux bacs d’entrée et de sortie. Chaque machine accepte jusqu’à quatre extensions, conservées dans la sauvegarde.
+[/list]
+
+[h2]Consultez les stocks, chargez la machine, prévoyez la production[/h2]
+
+Le guide sépare les recettes par machine et réserve un onglet aux fournitures médicales. Recherchez un produit, un ingrédient, une catégorie ou une marque et filtrez par étoiles. Les icônes allumées signalent que le stock peut fournir les ingrédients d’un lot. Sélectionnez une recette sur la machine, puis cliquez sur [b]Compléter les ingrédients[/b] pour charger les ingrédients et l’eau appropriée qui manquent pour un lot.
+
+Le mode automatique suit l’ordre de priorité. Une recette choisie reste active et attend si les ingrédients, le courant ou la place manquent. La case de sortie affiche les produits et les quantités prévus pour la nuit. En mode automatique, vous pouvez parcourir chaque lot et consulter ses ingrédients, ses calories ainsi que ses besoins en eau et en courant.
+
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3831045864]Logistique automatisée[/url] est facultatif et peut réapprovisionner la recette sélectionnée.
+
+[h2]Nutrition, valeur et réfrigération[/h2]
+
+Les portions se partagent les calories et la valeur des ingrédients réellement utilisés. Les recettes au vin reprennent le degré d’alcool du vin employé. Le fromage, la nourriture pour poissons et les articles médicaux gardent leurs usages habituels. La plus-value du sérum ou de la nourriture diminue au fil des utilisations ou des calories consommées. Réfrigérez les plats et boissons compatibles ou congelez certains desserts pour modifier leur prix. Les ingrédients contaminés, infectés par des prions ou avariés sont refusés.
+
+Ce mod suit le guide officiel et a été vérifié avec mod-scan. Il ne demande aucune permission supplémentaire, y compris pour la réflexion sur du code externe. En dehors des changements décrits, le jeu de base fonctionne généralement comme avant. En cas de conflit avec un autre mod, contactez d’abord son auteur.

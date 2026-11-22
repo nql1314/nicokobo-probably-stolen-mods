@@ -1,0 +1,7 @@
+[h1]NicoKobo Forge[/h1]
+
+NicoKobo Forge is a shared framework for content mods. It provides machine and recipe catalogs, batch transactions, actual consumption and water-use receipts, machine logistics, shared power, stock integration, fixed module abilities and G-key recipe lookup. It also provides shared workshop, phone, visitor dialogue and reader interfaces.
+
+Forge includes a universal manufacturing terminal, a workshop access card, ten base-game achievements with per-run completion and claim records, a victory reward that doubles NPC purchase budgets, and expanded native document storage. Install and enable it separately alongside mods that require it, then restart the game.
+
+This mod was developed following the official guide and has passed mod-scan checks. It requests no additional permissions, including external reflection access. Beyond the changes described on this page, it should generally leave base-game features unaffected. If a conflict occurs when using it alongside a third-party mod, please contact that mod's author first for help investigating.

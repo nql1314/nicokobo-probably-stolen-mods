@@ -1,0 +1,36 @@
+Twemoji graphics by Twitter, Inc. and other contributors.
+Licensed under CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
+Source: https://github.com/jdecked/twemoji/tree/v17.0.3/assets/72x72
+The original PNG images are unmodified; only filenames are changed.
+
+Paper/filter_all.png = https://raw.githubusercontent.com/jdecked/twemoji/v17.0.3/assets/72x72/1f5c2.png
+Paper/filter_production.png = https://raw.githubusercontent.com/jdecked/twemoji/v17.0.3/assets/72x72/1f3ed.png
+Paper/filter_equipment.png = https://raw.githubusercontent.com/jdecked/twemoji/v17.0.3/assets/72x72/2694.png
+Paper/filter_supplies.png = https://raw.githubusercontent.com/jdecked/twemoji/v17.0.3/assets/72x72/1f9fa.png
+Paper/filter_trade.png = https://raw.githubusercontent.com/jdecked/twemoji/v17.0.3/assets/72x72/1f48e.png
+Paper/filter_machine.png = https://raw.githubusercontent.com/jdecked/twemoji/v17.0.3/assets/72x72/2699.png
+Paper/filter_module.png = https://raw.githubusercontent.com/jdecked/twemoji/v17.0.3/assets/72x72/1f9e9.png
+Paper/filter_tool.png = https://raw.githubusercontent.com/jdecked/twemoji/v17.0.3/assets/72x72/1f6e0.png
+Paper/filter_material.png = https://raw.githubusercontent.com/jdecked/twemoji/v17.0.3/assets/72x72/1f9f1.png
+Paper/filter_energy.png = https://raw.githubusercontent.com/jdecked/twemoji/v17.0.3/assets/72x72/1f50b.png
+Paper/filter_hydroponic.png = https://raw.githubusercontent.com/jdecked/twemoji/v17.0.3/assets/72x72/1f331.png
+Paper/filter_wine.png = https://raw.githubusercontent.com/jdecked/twemoji/v17.0.3/assets/72x72/1f37a.png
+Paper/filter_chemical.png = https://raw.githubusercontent.com/jdecked/twemoji/v17.0.3/assets/72x72/1f9ea.png
+Paper/filter_husbandry.png = https://raw.githubusercontent.com/jdecked/twemoji/v17.0.3/assets/72x72/1f43e.png
+Paper/filter_weapon.png = https://raw.githubusercontent.com/jdecked/twemoji/v17.0.3/assets/72x72/1f52b.png
+Paper/filter_ammo.png = https://raw.githubusercontent.com/jdecked/twemoji/v17.0.3/assets/72x72/1f4a5.png
+Paper/filter_part.png = https://raw.githubusercontent.com/jdecked/twemoji/v17.0.3/assets/72x72/1f527.png
+Paper/filter_armor.png = https://raw.githubusercontent.com/jdecked/twemoji/v17.0.3/assets/72x72/1f6e1.png
+Paper/filter_backpack.png = https://raw.githubusercontent.com/jdecked/twemoji/v17.0.3/assets/72x72/1f392.png
+Paper/filter_food.png = https://raw.githubusercontent.com/jdecked/twemoji/v17.0.3/assets/72x72/1f34e.png
+Paper/filter_medical.png = https://raw.githubusercontent.com/jdecked/twemoji/v17.0.3/assets/72x72/1f48a.png
+Paper/filter_water.png = https://raw.githubusercontent.com/jdecked/twemoji/v17.0.3/assets/72x72/1f4a7.png
+Paper/filter_household.png = https://raw.githubusercontent.com/jdecked/twemoji/v17.0.3/assets/72x72/1f9fb.png
+Paper/filter_container.png = https://raw.githubusercontent.com/jdecked/twemoji/v17.0.3/assets/72x72/1f4e6.png
+Paper/filter_document.png = https://raw.githubusercontent.com/jdecked/twemoji/v17.0.3/assets/72x72/1f4c4.png
+Paper/filter_valuable.png = https://raw.githubusercontent.com/jdecked/twemoji/v17.0.3/assets/72x72/1f48e.png
+Paper/filter_special.png = https://raw.githubusercontent.com/jdecked/twemoji/v17.0.3/assets/72x72/26a0.png
+Paper/filter_junk.png = https://raw.githubusercontent.com/jdecked/twemoji/v17.0.3/assets/72x72/267b.png
+Paper/filter_misc.png = https://raw.githubusercontent.com/jdecked/twemoji/v17.0.3/assets/72x72/1f5c3.png
+Paper/filter_other.png = https://raw.githubusercontent.com/jdecked/twemoji/v17.0.3/assets/72x72/2754.png
+Paper/control_down.png = https://raw.githubusercontent.com/jdecked/twemoji/v17.0.3/assets/72x72/1f53d.png

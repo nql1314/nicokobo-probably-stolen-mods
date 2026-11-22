@@ -1,0 +1,56 @@
+[
+  {
+    "key": "mushroom_bake",
+    "source": "%USERPROFILE%\\.codex\\generated_images\\01a186ae-c1c8-7da2-95de-39454f92ccac\\exec-bc963db8-3e73-4420-acce-5bdcf1e7321d.png",
+    "width": 48,
+    "height": 32,
+    "tool": "built-in image_gen",
+    "transparent_background": true,
+    "prompt": "Use case: stylized-concept. Asset type: tiny inventory sprite for the pixel-art game Probably Stolen, part of a coherent food icon set. A shallow dark metal takeaway bowl of creamy roasted beige mushrooms, pale golden melted topping and small brown mushroom caps. Three-quarter top-down view, horizontally wide silhouette. Style: authentic hand-drawn low-resolution 2D pixel-art inventory icon, dark near-black pixel outline, muted warm earthy colors with restrained highlights, hard crisp clustered pixels, simple readable shading, no anti-aliased painting, no 3D render. Design must remain recognizable at 32 to 48 pixels across. Single isolated item, centered with generous transparent margin, genuine transparent background. No ground, no cast shadow, no surrounding decoration, no UI frame, no text, no watermark. The other icons in this set are small bowls and food packets with the same quiet retro style."
+  },
+  {
+    "key": "spicy_meat_bites",
+    "source": "%USERPROFILE%\\.codex\\generated_images\\01a186ae-c1c8-7da2-95de-39454f92ccac\\exec-a9986236-67d5-4f8f-8114-cc31c5e3fe4c.png",
+    "width": 32,
+    "height": 16,
+    "tool": "built-in image_gen",
+    "transparent_background": true,
+    "prompt": "Use case: stylized-concept. Asset type: tiny inventory sprite for the pixel-art game Probably Stolen, part of a coherent food icon set. A small horizontal skewer of four glossy red-brown spicy meat cubes, short wooden skewer, a few amber chili flecks. Compact horizontal silhouette. Style: authentic hand-drawn low-resolution 2D pixel-art inventory icon, dark near-black pixel outline, muted warm earthy colors with restrained highlights, hard crisp clustered pixels, simple readable shading, no anti-aliased painting, no 3D render. Design must remain recognizable at 32 to 48 pixels across. Single isolated item, centered with generous transparent margin, genuine transparent background. No ground, no cast shadow, no surrounding decoration, no UI frame, no text, no watermark. The other icons in this set are small bowls and food packets with the same quiet retro style."
+  },
+  {
+    "key": "galaxy_sundae",
+    "source": "%USERPROFILE%\\.codex\\generated_images\\01a186ae-c1c8-7da2-95de-39454f92ccac\\exec-6d121f3c-2a9b-4826-83bc-1887dc1876eb.png",
+    "width": 32,
+    "height": 32,
+    "tool": "built-in image_gen",
+    "transparent_background": true,
+    "prompt": "Use case: stylized-concept. Asset type: tiny inventory sprite for the pixel-art game Probably Stolen, part of a coherent food icon set. A small squat blue-gray sundae tub with a generous cream-colored vanilla ice cream swirl, violet galaxy fruit sauce and two tiny dark chocolate shards. Wide tub, no text. Style: authentic hand-drawn low-resolution 2D pixel-art inventory icon, dark near-black pixel outline, muted warm earthy colors with restrained highlights, hard crisp clustered pixels, simple readable shading, no anti-aliased painting, no 3D render. Design must remain recognizable at 32 to 48 pixels across. Single isolated item, centered with generous transparent margin, genuine transparent background. No ground, no cast shadow, no surrounding decoration, no UI frame, no text, no watermark. The other icons in this set are small bowls and food packets with the same quiet retro style."
+  },
+  {
+    "key": "roe_fiber_patty",
+    "source": "%USERPROFILE%\\.codex\\generated_images\\01a186ae-c1c8-7da2-95de-39454f92ccac\\exec-6ff2230f-2fe4-4fbf-ac9f-f744a1b24cfd.png",
+    "width": 32,
+    "height": 16,
+    "tool": "built-in image_gen",
+    "transparent_background": true,
+    "prompt": "Use case: stylized-concept. Asset type: tiny inventory sprite for the pixel-art game Probably Stolen, part of a coherent food icon set. One small flat oval golden-green vegetable fiber patty with a few visible orange fish-roe dots and pale cheese filling, lightly browned crispy edge. Horizontal silhouette. Style: authentic hand-drawn low-resolution 2D pixel-art inventory icon, dark near-black pixel outline, muted warm earthy colors with restrained highlights, hard crisp clustered pixels, simple readable shading, no anti-aliased painting, no 3D render. Design must remain recognizable at 32 to 48 pixels across. Single isolated item, centered with generous transparent margin, genuine transparent background. No ground, no cast shadow, no surrounding decoration, no UI frame, no text, no watermark. The other icons in this set are small bowls and food packets with the same quiet retro style."
+  },
+  {
+    "key": "supply_jelly",
+    "source": "%USERPROFILE%\\.codex\\generated_images\\01a186ae-c1c8-7da2-95de-39454f92ccac\\exec-f7c729bc-1cc4-429f-9f6b-7382926f45f7.png",
+    "width": 16,
+    "height": 32,
+    "tool": "built-in image_gen",
+    "transparent_background": true,
+    "prompt": "Use case: stylized-concept. Asset type: tiny inventory sprite for the pixel-art game Probably Stolen, part of a coherent food icon set. One small vertical transparent soft foil squeeze pouch of amber-purple nutritional jelly, blue-gray sealed rim and plain small rectangular label without any letters or symbols. Style: authentic hand-drawn low-resolution 2D pixel-art inventory icon, dark near-black pixel outline, muted warm earthy colors with restrained highlights, hard crisp clustered pixels, simple readable shading, no anti-aliased painting, no 3D render. Design must remain recognizable at 32 to 48 pixels across. Single isolated item, centered with generous transparent margin, genuine transparent background. No ground, no cast shadow, no surrounding decoration, no UI frame, no text, no watermark. The other icons in this set are small bowls and food packets with the same quiet retro style."
+  },
+  {
+    "key": "starport_fizz",
+    "source": "%USERPROFILE%\\.codex\\generated_images\\01a186ae-c1c8-7da2-95de-39454f92ccac\\exec-904643d7-514f-4c9a-9ccf-91a319e31cab.png",
+    "width": 32,
+    "height": 32,
+    "tool": "built-in image_gen",
+    "transparent_background": true,
+    "prompt": "Use case: stylized-concept. Asset type: tiny inventory sprite for the pixel-art game Probably Stolen, part of a coherent food icon set. One squat clear square-sided bottle of vivid violet-magenta sparkling berry cocktail, dark cork, a couple of small bright bubbles inside, tiny teal collar. No label text. Style: authentic hand-drawn low-resolution 2D pixel-art inventory icon, dark near-black pixel outline, muted warm earthy colors with restrained highlights, hard crisp clustered pixels, simple readable shading, no anti-aliased painting, no 3D render. Design must remain recognizable at 32 to 48 pixels across. Single isolated item, centered with generous transparent margin, genuine transparent background. No ground, no cast shadow, no surrounding decoration, no UI frame, no text, no watermark. The other icons in this set are small bowls and food packets with the same quiet retro style."
+  }
+]

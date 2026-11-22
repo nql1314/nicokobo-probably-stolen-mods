@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType><TargetFramework>net8.0</TargetFramework><LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable><ImplicitUsings>enable</ImplicitUsings>
+    <LogisticsSource Condition="'$(LogisticsSource)' == ''">..\..\mods\automated-logistics</LogisticsSource>
+    <GameDir Condition="'$(GameDir)' == ''">F:\SteamLibrary\steamapps\common\Probably Stolen</GameDir>
+    <GameManaged>$(GameDir)\Probably Stolen_Data\Managed</GameManaged>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../../mods/shared/Nicokobo.ContentInterop/MachineSchedule.cs" Link="Forge/MachineSchedule.cs" />
+    <Compile Include="../../mods/shared/Nicokobo.Forge.Contracts/RunData.cs" Link="Forge/RunData.cs" />
+    <Compile Include="../../mods/nicokobo-forge/Services/RunDataGate.cs" Link="Forge/RunDataGate.cs" />
+    <Compile Include="$(LogisticsSource)\Domain\*.cs" Link="Domain\%(Filename)%(Extension)" />
+    <Compile Include="$(LogisticsSource)\AutomatedLogisticsNumbers.cs" Link="Numbers.cs" />
+    <Compile Include="..\..\mods\shared\Nicokobo.Forge.Contracts\NativeLiquidTypes.cs" Link="Native\NativeLiquidTypes.cs" />
+    <Compile Include="..\..\mods\shared\Nicokobo.Forge.Contracts\NativeLiquidCompositionMath.cs" Link="Native\NativeLiquidCompositionMath.cs" />
+    <Compile Include="..\..\mods\shared\Nicokobo.Forge.Contracts\MachineBatchMath.cs" Link="Native\MachineBatchMath.cs" />
+    <Compile Include="..\..\mods\nicokobo-forge\Services\MachineTransaction.cs" Link="Native\MachineTransaction.cs" />
+    <Compile Include="..\..\mods\nicokobo-forge\Services\LiquidValueLedger.cs" Link="Native\LiquidValueLedger.cs" />
+    <Compile Include="..\..\mods\nicokobo-forge\Services\NativeProductionOrder.cs" Link="Native\NativeProductionOrder.cs" />
+    <Compile Include="..\..\mods\nicokobo-forge\Services\NativeMachines.cs;..\..\mods\nicokobo-forge\Services\ForgePower.cs;..\..\mods\nicokobo-forge\Services\RuntimeSupport.cs" Link="Native\%(Filename)%(Extension)" />
+    <Compile Include="..\..\mods\shared\Nicokobo.ContentInterop\DevicePower.cs;..\..\mods\shared\Nicokobo.ContentInterop\PowerConsumers.cs;..\..\mods\shared\Nicokobo.Forge.Contracts\MachineInventory.cs" Link="Native\%(Filename)%(Extension)" />
+    <Compile Include="$(LogisticsSource)\Native\NativeRunData.cs" Link="Native\NativeRunData.cs" />
+    <Compile Include="..\..\mods\shared\Nicokobo.Forge.Contracts\WindowInputCapture.cs" Link="Native\NativeWindowInputCapture.cs" />
+    <Reference Include="Newtonsoft.Json"><HintPath>$(GameManaged)\Newtonsoft.Json.dll</HintPath></Reference>
+    <Reference Include="0Harmony"><HintPath>$(GameManaged)\0Harmony.dll</HintPath></Reference>
+    <Reference Include="DseCecil"><HintPath>$(GameManaged)\DseCecil.dll</HintPath></Reference>
+  </ItemGroup>
+</Project>

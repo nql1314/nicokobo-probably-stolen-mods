@@ -1,0 +1,13 @@
+[h1]NicoKobo Forge[/h1]
+
+La base común para los mods de contenido de Probably Stolen. Forge también incluye un terminal de fabricación universal, la tarjeta del taller de Nico, diez logros basados en el juego original y una recompensa de presupuesto al completar una partida. Abre el taller con N, con un doble clic en la tarjeta o llamando al 1016.
+
+[list]
+[*]Catálogos compartidos de máquinas y recetas, producción por lotes y registro del consumo real de materiales y agua.
+[*]Servicios de logística, red eléctrica, existencias adicionales de clientes y consulta de recetas con G.
+[*]Taller, teléfono, diálogos y ventanas compartidos. El progreso y los premios reclamados se guardan por partida.
+[/list]
+
+Suscríbete a Forge y a los mods de contenido que quieras usar, actívalos en el menú Mods y reinicia el juego.
+
+Este mod sigue la guía oficial, ha superado la comprobación de mod-scan y no solicita permisos adicionales. Si entra en conflicto con otro mod, consulta con el autor de ese mod.

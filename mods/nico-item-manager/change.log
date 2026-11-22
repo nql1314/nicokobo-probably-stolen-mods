@@ -1,0 +1,223 @@
+1.3.9 - 2026-11-16
+
+[b]简体中文[/b]
+[list]
+[*]右键自有物品并选择「物品管理」可打开实物编辑。新增悬停后按 End 的快捷入口，可在 Mod 设置中改键。
+[*]修复「物品管理」按钮在菜单刷新时漂移的问题。菜单弹出前确定按钮尺寸，悬停时只更新高亮颜色。
+[/list]
+
+[b]English[/b]
+[list]
+[*]Right-click an owned item and choose Manage item to edit it. You can also hover over the item and press End, which you can change in the mod settings.
+[*]Fixed the Manage item row shifting as the menu refreshes. The row is sized before the menu opens. Hovering updates its highlight color.
+[/list]
+
+1.3.8 - 2026-11-15
+
+[b]简体中文[/b]
+[list]
+[*]物品管理器界面支持语言扩展 Mod 提供的语言。图鉴可识别地区语言和不完整的翻译表，逐条补齐缺少的物品名。
+[/list]
+
+[b]English[/b]
+[list]
+[*]Item Manager supports languages added by other mods. The catalog recognizes regional language codes and resolves item names one entry at a time in partial translation tables.
+[/list]
+
+1.3.7 - 2026-11-09
+
+[b]简体中文[/b]
+[list]
+[*]为物品图鉴、属性与标签编辑、生成、自定义配置和现有物品操作加入九种语言。图鉴与物品详情优先显示游戏当前语言的物品名称。
+[/list]
+
+[b]English[/b]
+[list]
+[*]Added nine languages to the item catalog, property and tag editors, spawning, presets and inventory actions. The catalog and item details use names from the active game language.
+[/list]
+
+1.3.6 - 2026-11-07
+
+[b]简体中文[/b]
+[list]
+[*]实物编辑页新增「复制指定数量／复制整叠」，可选择桌面优先或仅背包，沿用原生接收与堆叠规则。
+[*]复制实物当前的标签、鉴定特征、价值、文字与外观，为副本保留独立身份和窗口；未应用的编辑须先应用，非空容器须先取空。
+[/list]
+
+[b]English[/b]
+[list]
+[*]Added Copy quantity and Copy stack to existing-item details, with desktop-first or backpack-only placement using native receiving and stacking rules.
+[*]Copies retain the actual item's tags, appraisal features, values, text and appearance with independent identities and windows. Apply pending edits first; empty containers before copying.
+[/list]
+
+1.3.5 - 2026-11-03
+
+[b]简体中文[/b]
+[list]
+[*]生成后保留物品编辑配置；返回图鉴、切换物品或重新打开面板时恢复本次游戏会话中上次的配置，列表生成也使用这些属性。重置编辑可恢复原生默认值。
+[*]新增「自定义物品」页，可命名保存多套物品配置，按保存属性生成、编辑、覆盖或另存，并确认删除。配置独立存盘，可在重启后读取，包含模块形状、效果、等级、数值及标签。
+[*]液体注入保留原有混合预设，新增纯酒精、酸、碱及全部原生液体成分的 100% 填充选项，包含化学萃取液和反应试剂；按容器容量填满，并可保存为自定义物品配置。
+[/list]
+
+[b]English[/b]
+[list]
+[*]Retain item settings after spawning, returning to the catalog, switching items or reopening the panel in the current game session. Catalog spawning also uses these settings. Reset edits restores native defaults.
+[*]Added Custom items for named presets, spawning with saved attributes, editing, updating, saving copies and confirmed deletion. Presets persist across restarts, including module shapes, effects, tiers, values and tags.
+[*]Liquid injection retains existing mixtures and adds 100% fills for pure alcohol, acid, base and all native liquid components, including chemical extracts and reagents. Fills to the container capacity and can be saved in custom item presets.
+[/list]
+
+1.3.4 - 2026-11-02
+
+[b]简体中文[/b]
+[list]
+[*]右键背包或自己桌面的自有物品可打开「物品管理」，从实物当前状态建立独立草稿，复用专用字段、单价与标签编辑。
+[*]修复右键菜单刷新时反复自动计算行高，可能导致菜单持续向下变长的问题。
+[*]「应用修改」只写回改过的字段，保留原物品身份、位置、内部内容与未编辑的运行状态；取消、关闭或 Esc 丢弃未应用的草稿。
+[*]新增指定数量与整叠删除，确认框显示物品名称和数量；非空容器须先取空，装备、容器内部和工作槽中的物品须先移至背包或自己的桌面。
+[*]删除遵守原生移除限制并清理空容器窗口；现有物品暂不开放形状及所有权编辑。
+[/list]
+
+[b]English[/b]
+[list]
+[*]Right-click an owned item in your backpack or on your desktop and choose Manage item. Edit an independent draft of its current state using specialized fields, unit value and tags.
+[*]Fixed repeated automatic row-height calculation during context-menu refreshes, which could make the menu keep growing vertically.
+[*]Apply changes writes only edited fields back to the original instance, preserving identity, placement, contents and untouched runtime state. Cancel, close or Escape discards unapplied edits.
+[*]Delete a chosen quantity or the whole stack after confirming its name and quantity. Empty containers first; move equipment and items in containers or working slots to your backpack or desktop.
+[*]Deletion respects native removal restrictions and cleans up empty container windows. Shape and ownership editing are unavailable for existing items.
+[/list]
+
+1.3.3 - 2026-10-31
+
+[b]简体中文[/b]
+[list]
+[*]新增「桌面优先／背包」生成位置选择，默认先放自己的桌面，放不下再尝试背包；列表和编辑页共用此选择。
+[*]保留每份物品的工厂默认数量、编辑配置、原生接收与堆叠规则；目标无法完整接收时停止。
+[*]移除启用阶段的同步语言读取，自动语言检查延后至进入店铺，避免提前触发 Unity 本地化初始化。玩家反馈的语言异常尚未确认修复。
+[*]修复基础食品券缺少原生真伪特征，导致双击兑换报空引用的问题；预览和新生成物品均补齐正版特征，保留已有真伪状态。此前的异常券需重新生成。
+[*]补充食品券双语参数说明，正确读取值为 0 的整数图案编号，并拒绝越界编号及错误类型。印章 -1 表示不显示，低面额正版本就无印章。
+[*]修复扫描、预览或生成垃圾箱时影响原生垃圾箱库存引用的问题。
+[/list]
+
+[b]English[/b]
+[list]
+[*]Added a shared Desktop first / Backpack spawn destination selector for the list and editor. The default tries your side of the counter first, then your backpack if it has no room.
+[*]Preserves factory quantities, edits, and native receiving and stacking rules; stops when no permitted destination can receive the complete item.
+[*]Removed synchronous locale reads during enable and deferred automatic locale checks until entering the store, avoiding early Unity localization initialization. The reported game language issue is not yet confirmed resolved.
+[*]Fixed missing native authenticity on base food stamps, which caused a null reference during redemption. Previews and new spawns receive the native genuine feature while existing authenticity is preserved. Previously affected stamps must be regenerated.
+[*]Added bilingual food stamp parameter descriptions, integer handling for zero appearance indices, and validation against out-of-range indices or incorrect types. A seal value of -1 hides the seal and is normal for lower-value genuine stamps.
+[*]Fixed catalog scans, previews and spawning of trash cans affecting the native trash-can inventory reference.
+[/list]
+
+1.3.2 - 2026-10-30
+
+[b]简体中文[/b]
+[list]
+[*]新增浮点数（float）和双精度（double）编辑，支持小数、负数和科学计数法；保留读取精度，修改同步到预览和生成物品。
+[*]物品详情默认显示「物品数值」，按当前物品已有且启用的数据提供整数、浮点数和双精度输入，保留原有类型。
+[*]继续使用模块、液体、耐久、电池等专用控件及校验，不重复显示这些字段；拒绝无效文本、NaN、无穷大和超出对应类型范围的数值。
+[*]外层数值与高级标签按物品或类型匹配中英文名称和说明，悬停查看双语名称、已核实的单位与原始 tag。
+[*]覆盖养殖、水产、水培、枪械配件、机器、电源、次数、陈化、化学、换流器和冰箱等常见字段，支持动物基因后缀及原版植物特性等级。
+[*]区分枪械基础属性与配件修正、普通鱼龄与鱼卵发育天数；未确认的标签保留原键。
+[*]高级标签保留新增、移除、启用状态和类型等操作，已有外层数值同步显示为只读，避免重复编辑。
+[*]修复高级标签连续编辑后改回初值时，输入显示已恢复、实际物品却仍保留上次值的问题；覆盖字符串、布尔值和禁用的数值标签。
+[/list]
+
+[b]English[/b]
+[list]
+[*]Added float and double editing with decimals, negative values, scientific notation and round-trip precision. Edits carry through to previews and spawned items.
+[*]Item details now show Item values by default for the selected item's existing enabled integer, float and double data, preserving each value's type.
+[*]Modules, liquids, durability, batteries and other specialized controls retain their validation and are not duplicated. Invalid text, NaN, infinity and values outside the selected type's range are rejected.
+[*]Outer values and Advanced tags show Chinese and English names and descriptions matched by item or type. Tooltips include bilingual names, verified units and original tag keys.
+[*]Covers common animal, fish, plant, firearm attachment, machine, power, uses, aging, chemistry, converter and fridge fields, including animal gene suffixes and native plant trait ranks.
+[*]Distinguishes firearm base attributes from attachment modifiers, and fish age from roe development. Unverified meanings retain raw keys.
+[*]Advanced tags retains additions, removals, enabled states and type changes. Numeric values edited above appear as synchronized read-only values there.
+[*]Fixed advanced tag edits returning to their initial value while the item retained the previous edit. Applies to strings, booleans and disabled numeric tags.
+[/list]
+
+1.3.1 - 2026-10-29
+
+[b]简体中文[/b]
+[list]
+[*]物品列表合并为当前游戏语言的单列名称，调整列宽并更新搜索提示。
+[*]Markdown 图鉴导出改用当前语言的表头、物品名称和类别；JSON 继续保留中英文名称。
+[*]整理中英双语 Mod 名称与简介，中文在前、英文在后。
+[/list]
+
+[b]English[/b]
+[list]
+[*]The item list now uses one name column in the current game language, with revised column widths and search hints.
+[*]Markdown exports now use localized headings, item names and categories. JSON exports retain both Chinese and English names.
+[*]Updated the bilingual mod name and description, with Chinese before English.
+[/list]
+
+1.3.0 - 2026-10-29
+
+[b]简体中文[/b]
+[list]
+[*]筛选改为顶部平铺的两层用途合集与分类，显示去重数量，切换合集会重置分类。
+[*]改用游戏原生机械主题、Noto Sans 字体与独立表情图片；调整输入框、列表和选中态配色。
+[*]移除“重新扫描”按钮，保留自动读取与首屏优先策略。
+[*]补齐护甲、能源电池、日用品、贵重收藏等分类，拆分武器、弹药和配件，模块名称统一为“模块”。
+[*]新增模块、液体容器、电池、耐久、护甲、枪械、使用次数和食物专用编辑，编辑后实时预览。
+[*]点击物品只查看和编辑，通过独立“生成”按钮创建物品，移除生成配置开关。
+[*]修复预览说明直接显示颜色、粗体标签的问题；保留正常比较符号和换行。
+[*]封面替换为新版界面的游戏截图，并压缩图片体积。
+[/list]
+
+[b]English[/b]
+[list]
+[*]Flattened browsing into usage collections and child categories, with unique item counts. Changing a collection resets its category.
+[*]Switched to the native Machinery theme, Noto Sans and emoji image assets, with updated fields, rows and selection colors.
+[*]Removed the Rescan button while retaining automatic loading and visible-page priority.
+[*]Added missing armor, energy cell, household and valuable categories; separated weapons, ammunition and parts.
+[*]Added dedicated module, liquid, battery, durability, armor, firearm, use-count and food editors with live previews.
+[*]Item clicks open the editor. Separate Spawn buttons create items, without a spawning configuration toggle.
+[*]Fixed raw color and bold tags in preview descriptions while preserving comparison signs and line breaks.
+[*]Replaced the cover with a compressed screenshot of the new interface.
+[/list]
+
+1.2.0 - 2026-10-29
+
+[list]
+[*]新增电池电量、容量、输出功率及充满／放空。
+[*]新增真实／表观耐久、耐久上限与完全修复，同步原生显示和估价特征。
+[*]新增当前／最大护甲、保护、减伤及护甲修复。
+[*]新增枪械品相、基础火力、精度、可靠性，实时刷新并显示实际属性。
+[*]新增剩余／最大使用次数及补满，按原生规则更新自动估价。
+[*]新增食物热量；原生带新鲜度状态的物品支持数值和五档预设。
+[*]生成时重新应用关联特征与刷新逻辑，保留空电量、零次数和耗尽护甲；预览显示原生基础估值。
+[/list]
+
+1.1.1 - 2026-10-29
+
+[list]
+[*]移除“允许生成物品”配置开关及对应的浏览模式限制，生成按钮直接可用。
+[*]点击物品仍只查看和编辑，生成仅通过独立按钮触发；保留库存完整接收检查。
+[/list]
+
+1.1.0 - 2026-10-29
+
+[list]
+[*]物品点击统一为查看和编辑，生成改用独立按钮；保留默认关闭的生成开关。
+[*]新增模块属性、等级、价值、双效果及已有形状编辑，处理效果类型、互斥、创建与移除回调和临时属性刷新。
+[*]新增液体容器容量、含量、清空和 12 种预设；调整含量保留混合比例，预设清空后填充。
+[*]编辑后实时更新图标、附加图层、占格、价值与原生物品说明。
+[*]预览使用原型创建；批量生成保留派生标签、学习上限和空液体状态，并逐份克隆标签。
+[*]目录先显示 ID，优先读取可见页；翻页复用列表控件，完整扫描后再开放导出。
+[*]扩展针对性离线检查；未进行游戏内、保存重载或性能验收。
+[/list]
+
+1.0.0 - 2026-10-29
+
+初始版本。
+
+[list]
+[*]中英物品图鉴、名称与 ID 搜索、类别筛选。
+[*]原型标签编辑、金属锭纯度预设及可选物品生成。
+[*]Markdown／JSON 图鉴导出。
+[*]原生游戏界面，支持自定义组合快捷键。
+[*]支持界面整体比例缩放，默认 1 对应设计基准尺寸的 75%。
+[*]面板打开及关闭时处理双击与快捷键输入，减少操作穿透。
+[*]物品读取取消每帧最多 8 个的限制，改为按耗时预算推进：后台约 2 毫秒／帧，打开面板时约 6 毫秒／帧；单个物品工厂调用可能超过预算。
+[*]F8 日志新增物品扫描的总耗时和帧数，便于检查加载速度。
+[/list]

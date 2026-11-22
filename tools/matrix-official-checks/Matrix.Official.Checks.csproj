@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType><TargetFramework>net6.0</TargetFramework><LangVersion>latest</LangVersion>
+    <ImplicitUsings>enable</ImplicitUsings><Nullable>enable</Nullable><CheckEolTargetFramework>false</CheckEolTargetFramework>
+    <GameManaged>F:\SteamLibrary\steamapps\common\Probably Stolen\Probably Stolen_Data\Managed</GameManaged>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../shared/ModLocalizationChecks.cs" Link="ModLocalizationChecks.cs" />
+    <Compile Include="../../mods/mechcore-protocol/MechcorePackage.cs" Link="MechcorePackage.cs" />
+    <Compile Include="../shared/ItemGraphCleanupPorts.cs" Link="Ports/ItemGraphCleanupPorts.cs" />
+    <Compile Include="../../mods/shared/ItemGraphCleanup.cs" Link="Shared/ItemGraphCleanup.cs" />
+    <Compile Include="../shared/NativeLocalizationPort.cs" Link="Ports/NativeLocalizationPort.cs" />
+    <Compile Include="../../mods/shared/ModText.cs" Link="Mod/ModText.cs" />
+    <Compile Include="../../mods/nicokobo-forge/Services/NightShop.cs" Link="Forge/NightShop.cs" />
+    <Compile Include="..\..\mods\nicokobo-forge\FixedModuleAbilities.cs" Link="Interop\FixedModuleAbilities.cs" />
+    <Compile Include="..\..\mods\shared\Nicokobo.ContentInterop\*.cs" Exclude="..\..\mods\shared\Nicokobo.ContentInterop\RecipeQuery.cs;..\..\mods\shared\Nicokobo.ContentInterop\NativeSupplyHooks.cs" Link="Interop\%(Filename)%(Extension)" />
+    <Compile Include="..\shared\NativeSupplyHookPort.cs" Link="Interop\NativeSupplyHookPort.cs" />
+    <Compile Include="..\..\mods\mechcore-protocol-module-matrix\*.cs" Link="Matrix\%(Filename)%(Extension)" />
+    <Compile Include="..\..\mods\mechcore-protocol-module-matrix\Definitions\*.cs" Link="Matrix\Definitions\%(Filename)%(Extension)" />
+    <Compile Include="..\..\mods\mechcore-protocol-module-matrix\Domain\*.cs" Link="Matrix\Domain\%(Filename)%(Extension)" />
+    <Compile Include="..\..\mods\mechcore-protocol-synthesis-expansion\Definitions\SynthesisDefinitions.cs" Link="Synthesis\SynthesisDefinitions.cs" />
+    <Compile Include="..\..\mods\mechcore-protocol-synthesis-expansion\SynthesisNumbers.cs" Link="Synthesis\SynthesisNumbers.cs" />
+    <Reference Include="Newtonsoft.Json"><HintPath>$(GameManaged)\Newtonsoft.Json.dll</HintPath></Reference>
+    <Reference Include="0Harmony"><HintPath>$(GameManaged)\0Harmony.dll</HintPath></Reference>
+    <Reference Include="DseCecil"><HintPath>$(GameManaged)\DseCecil.dll</HintPath></Reference>
+  </ItemGroup>
+<ItemGroup><Compile Include="..\..\mods\shared\Nicokobo.Forge.Contracts\*.cs" Link="Contracts\%(Filename)%(Extension)" /><Compile Include="..\shared\ForgeActivationPort.cs" Link="Ports\ForgeActivationPort.cs" /></ItemGroup>
+  <PropertyGroup><ModLocalizationPackage>mechcore-protocol</ModLocalizationPackage><CopyModLocalization>true</CopyModLocalization></PropertyGroup>
+  <Import Project="../../mods/shared/Localization.targets" />
+</Project>

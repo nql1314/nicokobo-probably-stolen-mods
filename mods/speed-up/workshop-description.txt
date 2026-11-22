@@ -1,0 +1,35 @@
+[h1]Speed Up[/h1]
+
+Adjust dialogue, customer arrival/departure and shutter animation speeds in Probably Stolen. Also supports a global speed multiplier during play.
+
+After subscribing, enable the mod in the main menu's Mods panel and restart the game. Open this mod's settings using its gear button.
+
+[h2]Features[/h2]
+
+[list]
+[*]Dialogue speed: Adjust typing speed and pauses between lines separately from 1× to 32×, with an instant-text option. Defaults: 4× typing speed and 1× pauses.
+[*]Animation speed: Adjust arrival/opening and departure/closing speeds separately from 1× to 8×. Both default to 3×.
+[*]Global speed: Set a 0.5×–10× multiplier during a run. It combines with the individual speed settings and preserves the game's pause state. Disabled by default. If another source changes the game speed, this mod yields control; toggle global speed off and on to resume.
+[*]Quick adjustments: Switch between Original, Balanced and Fast presets for the individual speed settings, restore all speeds to normal, and display current multipliers.
+[/list]
+
+[h2]Default Hotkeys[/h2]
+
+[table]
+[tr][th]Action[/th][th]Hotkey[/th][/tr]
+[tr][td]Increase dialogue speed by 0.5×[/td][td]Alt+=[/td][/tr]
+[tr][td]Decrease dialogue speed by 0.5×[/td][td]Alt+-[/td][/tr]
+[tr][td]Increase animation speed by 0.5×[/td][td]=[/td][/tr]
+[tr][td]Decrease animation speed by 0.5×[/td][td]-[/td][/tr]
+[tr][td]Restore all speeds to normal and disable global speed[/td][td]Ctrl+Home[/td][/tr]
+[tr][td]Cycle Original / Balanced / Fast presets[/td][td]Ctrl+F8[/td][/tr]
+[tr][td]Toggle global speed[/td][td]Ctrl+F9[/td][/tr]
+[tr][td]Increase the global multiplier by 0.5 and enable global speed[/td][td]Ctrl+PageUp[/td][/tr]
+[tr][td]Decrease the global multiplier by 0.5 and enable global speed[/td][td]Ctrl+PageDown[/td][/tr]
+[/table]
+
+Numpad + and - also adjust animation speed. Increasing dialogue speed beyond 32× enables instant text; decreasing it from instant text returns to 32× first.
+
+All hotkeys can be changed. Set a binding to None to disable it. Hotkeys work only during gameplay and are ignored while typing, during native key binding capture, and on the frame capture ends.
+
+This mod was developed following the official guide and has passed mod-scan checks. It requests no additional permissions, including external reflection access. Beyond the changes described on this page, it should generally leave base-game features unaffected. If a conflict occurs when using it alongside a third-party mod, please contact that mod's author first for help investigating.

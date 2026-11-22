@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod>
+  <ID>nicokobo.stock-reroll</ID>
+  <Name>商品刷新 / Stock Reroll</Name>
+  <Author>NicoKobo</Author>
+  <ModVersion>1.0.8</ModVersion>
+  <Description>刷新当前顾客及杰克逊博士夜间商店的未购买商品，支持自定义快捷键和交易保护。
+Reroll unpurchased customer and Dr. Jackson night-shop stock, with configurable hotkeys and transaction protection.</Description>
+  <GameVersions><Version>0.46D</Version></GameVersions>
+  <Prerequisites />
+  <Assemblies><Assembly>StockReroll.dll</Assembly></Assemblies>
+  <Capabilities />
+</Mod>

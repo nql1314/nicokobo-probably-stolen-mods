@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod>
+  <ID>nicokobo.content_native_probe</ID>
+  <Name>NicoKobo Content Native Probe (explicit test only)</Name>
+  <Author>NicoKobo</Author><ModVersion>1.0.5</ModVersion>
+  <Description>Disposable official Mono test runner. Inert without --nicokobo-native-test. Reads loaded candidate metadata, writes explicit evidence files, and calls real production entries only inside an independently isolated test clone.</Description>
+  <GameVersions><Version>0.46D</Version></GameVersions>
+  <Prerequisites />
+  <Assemblies><Assembly>Nicokobo.ContentNativeProbe.dll</Assembly></Assemblies>
+  <Capabilities><Capability>files</Capability><Capability>reflection-external</Capability></Capabilities>
+</Mod>

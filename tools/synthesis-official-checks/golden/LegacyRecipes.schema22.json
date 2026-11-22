@@ -1,0 +1,955 @@
+{
+  "SchemaVersion": 22,
+  "Recipes": [
+    {
+      "Code": "F01",
+      "Id": "nicokobo.mechcore.synthesis.recipe.meat_from_raw_meat",
+      "MachineId": "nicokobo.mechcore.synthesis.food_processor",
+      "Requirements": [
+        {
+          "Kind": "Item",
+          "ResourceId": "raw_meat",
+          "Amount": 1,
+          "Basis": "PerBatch",
+          "Conditions": []
+        }
+      ],
+      "OutputItemId": "processed_meat",
+      "BaseOutputCount": 1,
+      "OutputRule": "MeatValue"
+    },
+    {
+      "Code": "F02",
+      "Id": "nicokobo.mechcore.synthesis.recipe.meat_from_small_meat",
+      "MachineId": "nicokobo.mechcore.synthesis.food_processor",
+      "Requirements": [
+        {
+          "Kind": "Item",
+          "ResourceId": "small_raw_meat",
+          "Amount": 1,
+          "Basis": "PerBatch",
+          "Conditions": []
+        }
+      ],
+      "OutputItemId": "processed_meat",
+      "BaseOutputCount": 1,
+      "OutputRule": "MeatValue"
+    },
+    {
+      "Code": "F03",
+      "Id": "nicokobo.mechcore.synthesis.recipe.nutrifruit_juice",
+      "MachineId": "nicokobo.mechcore.synthesis.liquid_infusion_tower",
+      "Requirements": [
+        {
+          "Kind": "Item",
+          "ResourceId": "nutrifruit",
+          "Amount": 3,
+          "Basis": "PerBatch",
+          "Conditions": []
+        },
+        {
+          "Kind": "Liquid",
+          "ResourceId": "water",
+          "Amount": 500,
+          "Basis": "PerBatch",
+          "Conditions": []
+        }
+      ],
+      "OutputItemId": "nicokobo.mechcore.synthesis.nutrifruit_juice",
+      "BaseOutputCount": 1,
+      "OutputRule": "Fixed"
+    },
+    {
+      "Code": "F04",
+      "Id": "nicokobo.mechcore.synthesis.recipe.meat_sauce_noodles",
+      "MachineId": "nicokobo.mechcore.synthesis.food_processor",
+      "Requirements": [
+        {
+          "Kind": "Item",
+          "ResourceId": "cup_noodle",
+          "Amount": 1,
+          "Basis": "PerBatch",
+          "Conditions": []
+        },
+        {
+          "Kind": "Item",
+          "ResourceId": "processed_meat",
+          "Amount": 1,
+          "Basis": "PerBatch",
+          "Conditions": []
+        }
+      ],
+      "OutputItemId": "nicokobo.mechcore.synthesis.meat_sauce_noodles",
+      "BaseOutputCount": 1,
+      "OutputRule": "Fixed"
+    },
+    {
+      "Code": "F05",
+      "Id": "nicokobo.mechcore.synthesis.recipe.chocolate_nutrition_bar",
+      "MachineId": "nicokobo.mechcore.synthesis.food_processor",
+      "Requirements": [
+        {
+          "Kind": "Item",
+          "ResourceId": "cat_bar",
+          "Amount": 1,
+          "Basis": "PerBatch",
+          "Conditions": []
+        },
+        {
+          "Kind": "Item",
+          "ResourceId": "li_eat_snackbar",
+          "Amount": 1,
+          "Basis": "PerBatch",
+          "Conditions": []
+        }
+      ],
+      "OutputItemId": "nicokobo.mechcore.synthesis.chocolate_nutrition_bar",
+      "BaseOutputCount": 1,
+      "OutputRule": "Fixed"
+    },
+    {
+      "Code": "F06",
+      "Id": "nicokobo.mechcore.synthesis.recipe.canned_coffee",
+      "MachineId": "nicokobo.mechcore.synthesis.liquid_infusion_tower",
+      "Requirements": [
+        {
+          "Kind": "Item",
+          "ResourceId": "coffee_bean",
+          "Amount": 1,
+          "Basis": "PerBatch",
+          "Conditions": []
+        },
+        {
+          "Kind": "Liquid",
+          "ResourceId": "water",
+          "Amount": 250,
+          "Basis": "PerBatch",
+          "Conditions": []
+        }
+      ],
+      "OutputItemId": "nicokobo.mechcore.synthesis.canned_coffee",
+      "BaseOutputCount": 1,
+      "OutputRule": "Fixed"
+    },
+    {
+      "Code": "F07",
+      "Id": "nicokobo.mechcore.synthesis.recipe.nutrifruit_milk",
+      "MachineId": "nicokobo.mechcore.synthesis.liquid_infusion_tower",
+      "Requirements": [
+        {
+          "Kind": "Item",
+          "ResourceId": "nutrifruit",
+          "Amount": 2,
+          "Basis": "PerBatch",
+          "Conditions": []
+        },
+        {
+          "Kind": "Item",
+          "ResourceId": "processed_milk",
+          "Amount": 1,
+          "Basis": "PerBatch",
+          "Conditions": []
+        }
+      ],
+      "OutputItemId": "nicokobo.mechcore.synthesis.nutrifruit_milk",
+      "BaseOutputCount": 1,
+      "OutputRule": "Fixed"
+    },
+    {
+      "Code": "F08",
+      "Id": "nicokobo.mechcore.synthesis.recipe.chocolate_milk",
+      "MachineId": "nicokobo.mechcore.synthesis.liquid_infusion_tower",
+      "Requirements": [
+        {
+          "Kind": "Item",
+          "ResourceId": "cat_bar",
+          "Amount": 1,
+          "Basis": "PerBatch",
+          "Conditions": []
+        },
+        {
+          "Kind": "Item",
+          "ResourceId": "processed_milk",
+          "Amount": 1,
+          "Basis": "PerBatch",
+          "Conditions": []
+        }
+      ],
+      "OutputItemId": "nicokobo.mechcore.synthesis.chocolate_milk",
+      "BaseOutputCount": 1,
+      "OutputRule": "Fixed"
+    },
+    {
+      "Code": "F09",
+      "Id": "nicokobo.mechcore.synthesis.recipe.vanilla_fruit_shake",
+      "MachineId": "nicokobo.mechcore.synthesis.liquid_infusion_tower",
+      "Requirements": [
+        {
+          "Kind": "Item",
+          "ResourceId": "beis_icecream",
+          "Amount": 1,
+          "Basis": "PerBatch",
+          "Conditions": []
+        },
+        {
+          "Kind": "Item",
+          "ResourceId": "nutrifruit",
+          "Amount": 2,
+          "Basis": "PerBatch",
+          "Conditions": []
+        }
+      ],
+      "OutputItemId": "nicokobo.mechcore.synthesis.vanilla_fruit_shake",
+      "BaseOutputCount": 1,
+      "OutputRule": "Fixed"
+    },
+    {
+      "Code": "F10",
+      "Id": "nicokobo.mechcore.synthesis.recipe.cheese_noodles",
+      "MachineId": "nicokobo.mechcore.synthesis.food_processor",
+      "Requirements": [
+        {
+          "Kind": "Item",
+          "ResourceId": "processed_cheese",
+          "Amount": 1,
+          "Basis": "PerBatch",
+          "Conditions": []
+        },
+        {
+          "Kind": "Item",
+          "ResourceId": "cup_noodle",
+          "Amount": 1,
+          "Basis": "PerBatch",
+          "Conditions": []
+        }
+      ],
+      "OutputItemId": "nicokobo.mechcore.synthesis.cheese_noodles",
+      "BaseOutputCount": 1,
+      "OutputRule": "Fixed"
+    },
+    {
+      "Code": "F11",
+      "Id": "nicokobo.mechcore.synthesis.recipe.cheese_meat_patty",
+      "MachineId": "nicokobo.mechcore.synthesis.food_processor",
+      "Requirements": [
+        {
+          "Kind": "Item",
+          "ResourceId": "processed_cheese",
+          "Amount": 1,
+          "Basis": "PerBatch",
+          "Conditions": []
+        },
+        {
+          "Kind": "Item",
+          "ResourceId": "processed_meat",
+          "Amount": 1,
+          "Basis": "PerBatch",
+          "Conditions": []
+        }
+      ],
+      "OutputItemId": "nicokobo.mechcore.synthesis.cheese_meat_patty",
+      "BaseOutputCount": 1,
+      "OutputRule": "Fixed"
+    },
+    {
+      "Code": "P01",
+      "Id": "nicokobo.mechcore.synthesis.recipe.silicon",
+      "MachineId": "nicokobo.mechcore.synthesis.material_refiner",
+      "Requirements": [
+        {
+          "Kind": "Item",
+          "ResourceId": "nicokobo.mechcore.synthesis.quartz",
+          "Amount": 2,
+          "Basis": "PerBatch",
+          "Conditions": []
+        }
+      ],
+      "OutputItemId": "nicokobo.mechcore.synthesis.silicon",
+      "BaseOutputCount": 1,
+      "OutputRule": "Fixed"
+    },
+    {
+      "Code": "P02",
+      "Id": "nicokobo.mechcore.synthesis.recipe.titanium_alloy",
+      "MachineId": "nicokobo.mechcore.synthesis.material_refiner",
+      "Requirements": [
+        {
+          "Kind": "Item",
+          "ResourceId": "nicokobo.mechcore.synthesis.titanium_ore",
+          "Amount": 1,
+          "Basis": "PerBatch",
+          "Conditions": []
+        },
+        {
+          "Kind": "Item",
+          "ResourceId": "metal_ingot",
+          "Amount": 1,
+          "Basis": "PerBatch",
+          "Conditions": [
+            {
+              "Property": "MetalPurity",
+              "MinimumValue": 8
+            }
+          ]
+        }
+      ],
+      "OutputItemId": "nicokobo.mechcore.synthesis.titanium_alloy",
+      "BaseOutputCount": 1,
+      "OutputRule": "Fixed"
+    },
+    {
+      "Code": "P03",
+      "Id": "nicokobo.mechcore.synthesis.recipe.precision_parts",
+      "MachineId": "nicokobo.mechcore.synthesis.synthesizer",
+      "Requirements": [
+        {
+          "Kind": "Item",
+          "ResourceId": "metal_ingot",
+          "Amount": 2,
+          "Basis": "PerBatch",
+          "Conditions": [
+            {
+              "Property": "MetalPurity",
+              "MinimumValue": 8
+            }
+          ]
+        }
+      ],
+      "OutputItemId": "nicokobo.mechcore.synthesis.precision_parts",
+      "BaseOutputCount": 1,
+      "OutputRule": "Fixed"
+    },
+    {
+      "Code": "P04",
+      "Id": "nicokobo.mechcore.synthesis.recipe.advanced_circuit",
+      "MachineId": "nicokobo.mechcore.synthesis.synthesizer",
+      "Requirements": [
+        {
+          "Kind": "Item",
+          "ResourceId": "nicokobo.mechcore.synthesis.silicon",
+          "Amount": 1,
+          "Basis": "PerBatch",
+          "Conditions": [
+            {
+              "Property": "MetalPurity",
+              "MinimumValue": 8
+            }
+          ]
+        },
+        {
+          "Kind": "Item",
+          "ResourceId": "common_electronic",
+          "Amount": 2,
+          "Basis": "PerBatch",
+          "Conditions": []
+        }
+      ],
+      "OutputItemId": "nicokobo.mechcore.synthesis.advanced_circuit",
+      "BaseOutputCount": 1,
+      "OutputRule": "Fixed"
+    },
+    {
+      "Code": "P15",
+      "Id": "nicokobo.mechcore.synthesis.recipe.common_electronic",
+      "MachineId": "nicokobo.mechcore.synthesis.synthesizer",
+      "Requirements": [
+        {
+          "Kind": "Item",
+          "ResourceId": "wire",
+          "Amount": 1,
+          "Basis": "PerBatch",
+          "Conditions": []
+        },
+        {
+          "Kind": "Item",
+          "ResourceId": "printer_plastic",
+          "Amount": 1,
+          "Basis": "PerBatch",
+          "Conditions": []
+        }
+      ],
+      "OutputItemId": "common_electronic",
+      "BaseOutputCount": 1,
+      "OutputRule": "Fixed"
+    },
+    {
+      "Code": "P16",
+      "Id": "nicokobo.mechcore.synthesis.recipe.mouse_trap",
+      "MachineId": "nicokobo.mechcore.synthesis.synthesizer",
+      "Requirements": [
+        {
+          "Kind": "Item",
+          "ResourceId": "metal_ingot",
+          "Amount": 1,
+          "Basis": "PerBatch",
+          "Conditions": []
+        },
+        {
+          "Kind": "Item",
+          "ResourceId": "wire",
+          "Amount": 1,
+          "Basis": "PerBatch",
+          "Conditions": []
+        }
+      ],
+      "OutputItemId": "mouse_trap",
+      "BaseOutputCount": 1,
+      "OutputRule": "Fixed"
+    },
+    {
+      "Code": "P10",
+      "Id": "nicokobo.mechcore.synthesis.recipe.blue_blood_bag",
+      "MachineId": "nicokobo.mechcore.synthesis.liquid_infusion_tower",
+      "Requirements": [
+        {
+          "Kind": "Item",
+          "ResourceId": "blood_bag",
+          "Amount": 1,
+          "Basis": "PerBatch",
+          "Conditions": []
+        },
+        {
+          "Kind": "Item",
+          "ResourceId": "large_purple_injector",
+          "Amount": 1,
+          "Basis": "PerBatch",
+          "Conditions": [
+            {
+              "Property": "GenuineInjector",
+              "MinimumValue": 1
+            }
+          ]
+        }
+      ],
+      "OutputItemId": "blue_blood_bag",
+      "BaseOutputCount": 1,
+      "OutputRule": "Fixed"
+    },
+    {
+      "Code": "P06",
+      "Id": "nicokobo.mechcore.synthesis.recipe.control_chip",
+      "MachineId": "nicokobo.mechcore.synthesis.precision_assembler",
+      "Requirements": [
+        {
+          "Kind": "Item",
+          "ResourceId": "nicokobo.mechcore.synthesis.advanced_circuit",
+          "Amount": 1,
+          "Basis": "PerBatch",
+          "Conditions": []
+        },
+        {
+          "Kind": "Item",
+          "ResourceId": "nicokobo.mechcore.synthesis.precision_parts",
+          "Amount": 1,
+          "Basis": "PerBatch",
+          "Conditions": []
+        }
+      ],
+      "OutputItemId": "nicokobo.mechcore.synthesis.control_chip",
+      "BaseOutputCount": 1,
+      "OutputRule": "Fixed"
+    },
+    {
+      "Code": "P09",
+      "Id": "nicokobo.mechcore.synthesis.recipe.power_regulator",
+      "MachineId": "nicokobo.mechcore.synthesis.precision_assembler",
+      "Requirements": [
+        {
+          "Kind": "Item",
+          "ResourceId": "nicokobo.mechcore.synthesis.precision_parts",
+          "Amount": 1,
+          "Basis": "PerBatch",
+          "Conditions": []
+        },
+        {
+          "Kind": "Item",
+          "ResourceId": "nicokobo.mechcore.synthesis.titanium_alloy",
+          "Amount": 1,
+          "Basis": "PerBatch",
+          "Conditions": []
+        }
+      ],
+      "OutputItemId": "nicokobo.mechcore.synthesis.power_regulator",
+      "BaseOutputCount": 1,
+      "OutputRule": "Fixed"
+    },
+    {
+      "Code": "P14",
+      "Id": "nicokobo.mechcore.synthesis.recipe.mechanical_core",
+      "MachineId": "nicokobo.mechcore.synthesis.precision_assembler",
+      "Requirements": [
+        {
+          "Kind": "Item",
+          "ResourceId": "nicokobo.mechcore.synthesis.control_chip",
+          "Amount": 1,
+          "Basis": "PerBatch",
+          "Conditions": []
+        },
+        {
+          "Kind": "Item",
+          "ResourceId": "nicokobo.mechcore.synthesis.power_regulator",
+          "Amount": 1,
+          "Basis": "PerBatch",
+          "Conditions": []
+        },
+        {
+          "Kind": "Item",
+          "ResourceId": "nicokobo.mechcore.synthesis.titanium_alloy",
+          "Amount": 1,
+          "Basis": "PerBatch",
+          "Conditions": []
+        }
+      ],
+      "OutputItemId": "nicokobo.mechcore.synthesis.mechanical_core",
+      "BaseOutputCount": 1,
+      "OutputRule": "Fixed"
+    },
+    {
+      "Code": "P11",
+      "Id": "nicokobo.mechcore.synthesis.recipe.neon_berry_soda",
+      "MachineId": "nicokobo.mechcore.synthesis.liquid_infusion_tower",
+      "Requirements": [
+        {
+          "Kind": "Item",
+          "ResourceId": "soda_red",
+          "Amount": 1,
+          "Basis": "PerBatch",
+          "Conditions": []
+        },
+        {
+          "Kind": "Item",
+          "ResourceId": "wine_berry",
+          "Amount": 1,
+          "Basis": "PerBatch",
+          "Conditions": [
+            {
+              "Property": "UsableGlowberry",
+              "MinimumValue": 1
+            }
+          ]
+        }
+      ],
+      "OutputItemId": "nicokobo.mechcore.synthesis.neon_berry_soda",
+      "BaseOutputCount": 1,
+      "OutputRule": "Fixed"
+    },
+    {
+      "Code": "P12",
+      "Id": "nicokobo.mechcore.synthesis.recipe.compressed_nutrient_liquid",
+      "MachineId": "nicokobo.mechcore.synthesis.liquid_infusion_tower",
+      "Requirements": [
+        {
+          "Kind": "Item",
+          "ResourceId": "nutrifruit",
+          "Amount": 3,
+          "Basis": "PerBatch",
+          "Conditions": []
+        },
+        {
+          "Kind": "Item",
+          "ResourceId": "processed_juice",
+          "Amount": 1,
+          "Basis": "PerBatch",
+          "Conditions": []
+        },
+        {
+          "Kind": "Item",
+          "ResourceId": "empty_beer_bottle",
+          "Amount": 1,
+          "Basis": "PerBatch",
+          "Conditions": []
+        }
+      ],
+      "OutputItemId": "nicokobo.mechcore.synthesis.compressed_nutrient_liquid",
+      "BaseOutputCount": 1,
+      "OutputRule": "Fixed"
+    },
+    {
+      "Code": "P13",
+      "Id": "nicokobo.mechcore.synthesis.recipe.glowberry_special",
+      "MachineId": "nicokobo.mechcore.synthesis.liquid_infusion_tower",
+      "Requirements": [
+        {
+          "Kind": "Item",
+          "ResourceId": "wine_berry",
+          "Amount": 1,
+          "Basis": "PerBatch",
+          "Conditions": [
+            {
+              "Property": "UsableGlowberry",
+              "MinimumValue": 1
+            }
+          ]
+        },
+        {
+          "Kind": "Item",
+          "ResourceId": "red_beer",
+          "Amount": 1,
+          "Basis": "PerBatch",
+          "Conditions": []
+        }
+      ],
+      "OutputItemId": "nicokobo.mechcore.synthesis.glowberry_special",
+      "BaseOutputCount": 1,
+      "OutputRule": "Fixed"
+    },
+    {
+      "Code": "M01",
+      "Id": "nicokobo.mechcore.synthesis.recipe.cyber_eye",
+      "MachineId": "nicokobo.forge.machines.universal_manufacturing_terminal",
+      "Requirements": [
+        {
+          "Kind": "Item",
+          "ResourceId": "nicokobo.mechcore.synthesis.mechanical_core",
+          "Amount": 1,
+          "Basis": "PerBatch",
+          "Conditions": []
+        },
+        {
+          "Kind": "Item",
+          "ResourceId": "nicokobo.mechcore.synthesis.power_regulator",
+          "Amount": 1,
+          "Basis": "PerBatch",
+          "Conditions": []
+        },
+        {
+          "Kind": "Item",
+          "ResourceId": "magnifier",
+          "Amount": 1,
+          "Basis": "PerBatch",
+          "Conditions": []
+        }
+      ],
+      "OutputItemId": "nicokobo.mechcore.synthesis.cyber_eye",
+      "BaseOutputCount": 1,
+      "OutputRule": "Fixed"
+    },
+    {
+      "Code": "M02",
+      "Id": "nicokobo.mechcore.synthesis.recipe.ai_core",
+      "MachineId": "nicokobo.forge.machines.universal_manufacturing_terminal",
+      "Requirements": [
+        {
+          "Kind": "Item",
+          "ResourceId": "nicokobo.mechcore.synthesis.mechanical_core",
+          "Amount": 1,
+          "Basis": "PerBatch",
+          "Conditions": []
+        },
+        {
+          "Kind": "Item",
+          "ResourceId": "nicokobo.mechcore.synthesis.advanced_circuit",
+          "Amount": 1,
+          "Basis": "PerBatch",
+          "Conditions": []
+        },
+        {
+          "Kind": "Item",
+          "ResourceId": "system_capped_neural_core",
+          "Amount": 1,
+          "Basis": "PerBatch",
+          "Conditions": []
+        }
+      ],
+      "OutputItemId": "nicokobo.mechcore.synthesis.ai_core",
+      "BaseOutputCount": 1,
+      "OutputRule": "Fixed"
+    },
+    {
+      "Code": "M03",
+      "Id": "nicokobo.mechcore.synthesis.recipe.sleep_compression_module",
+      "MachineId": "nicokobo.forge.machines.universal_manufacturing_terminal",
+      "Requirements": [
+        {
+          "Kind": "Item",
+          "ResourceId": "nicokobo.mechcore.synthesis.control_chip",
+          "Amount": 1,
+          "Basis": "PerBatch",
+          "Conditions": []
+        },
+        {
+          "Kind": "Item",
+          "ResourceId": "nicokobo.mechcore.synthesis.advanced_circuit",
+          "Amount": 1,
+          "Basis": "PerBatch",
+          "Conditions": []
+        },
+        {
+          "Kind": "Item",
+          "ResourceId": "caffeine_pill",
+          "Amount": 2,
+          "Basis": "PerBatch",
+          "Conditions": []
+        }
+      ],
+      "OutputItemId": "nicokobo.mechcore.synthesis.sleep_compression_module",
+      "BaseOutputCount": 1,
+      "OutputRule": "Fixed"
+    },
+    {
+      "Code": "M04",
+      "Id": "nicokobo.mechcore.synthesis.recipe.kinetic_recovery",
+      "MachineId": "nicokobo.forge.machines.universal_manufacturing_terminal",
+      "Requirements": [
+        {
+          "Kind": "Item",
+          "ResourceId": "nicokobo.mechcore.synthesis.power_regulator",
+          "Amount": 1,
+          "Basis": "PerBatch",
+          "Conditions": []
+        },
+        {
+          "Kind": "Item",
+          "ResourceId": "energy_credit_ext",
+          "Amount": 1,
+          "Basis": "PerBatch",
+          "Conditions": []
+        },
+        {
+          "Kind": "Item",
+          "ResourceId": "nicokobo.mechcore_protocol.module_matrix.continuous_efficiency_module",
+          "Amount": 1,
+          "Basis": "PerBatch",
+          "Conditions": []
+        }
+      ],
+      "OutputItemId": "nicokobo.mechcore.synthesis.kinetic_recovery",
+      "BaseOutputCount": 1,
+      "OutputRule": "Fixed"
+    },
+    {
+      "Code": "M05",
+      "Id": "nicokobo.mechcore.synthesis.recipe.titanium_exoskeleton",
+      "MachineId": "nicokobo.forge.machines.universal_manufacturing_terminal",
+      "Requirements": [
+        {
+          "Kind": "Item",
+          "ResourceId": "nicokobo.mechcore.synthesis.titanium_alloy",
+          "Amount": 1,
+          "Basis": "PerBatch",
+          "Conditions": []
+        },
+        {
+          "Kind": "Item",
+          "ResourceId": "nicokobo.mechcore.synthesis.precision_parts",
+          "Amount": 2,
+          "Basis": "PerBatch",
+          "Conditions": []
+        },
+        {
+          "Kind": "Item",
+          "ResourceId": "nicokobo.mechcore_protocol.module_matrix.continuous_acceleration_module",
+          "Amount": 1,
+          "Basis": "PerBatch",
+          "Conditions": []
+        }
+      ],
+      "OutputItemId": "nicokobo.mechcore.synthesis.titanium_exoskeleton",
+      "BaseOutputCount": 1,
+      "OutputRule": "Fixed"
+    },
+    {
+      "Code": "M06",
+      "Id": "nicokobo.mechcore.synthesis.recipe.fine_motor_assistant",
+      "MachineId": "nicokobo.forge.machines.universal_manufacturing_terminal",
+      "Requirements": [
+        {
+          "Kind": "Item",
+          "ResourceId": "nicokobo.mechcore.synthesis.mechanical_core",
+          "Amount": 1,
+          "Basis": "PerBatch",
+          "Conditions": []
+        },
+        {
+          "Kind": "Item",
+          "ResourceId": "nicokobo.mechcore.synthesis.precision_parts",
+          "Amount": 2,
+          "Basis": "PerBatch",
+          "Conditions": []
+        },
+        {
+          "Kind": "Item",
+          "ResourceId": "nicokobo.mechcore_protocol.module_matrix.continuous_calibration_module",
+          "Amount": 1,
+          "Basis": "PerBatch",
+          "Conditions": []
+        }
+      ],
+      "OutputItemId": "nicokobo.mechcore.synthesis.fine_motor_assistant",
+      "BaseOutputCount": 1,
+      "OutputRule": "Fixed"
+    },
+    {
+      "Code": "M07",
+      "Id": "nicokobo.mechcore.synthesis.recipe.robot_cat",
+      "MachineId": "nicokobo.forge.machines.universal_manufacturing_terminal",
+      "Requirements": [
+        {
+          "Kind": "Item",
+          "ResourceId": "nicokobo.mechcore.synthesis.ai_core",
+          "Amount": 1,
+          "Basis": "PerBatch",
+          "Conditions": []
+        },
+        {
+          "Kind": "Item",
+          "ResourceId": "nicokobo.mechcore.synthesis.precision_parts",
+          "Amount": 1,
+          "Basis": "PerBatch",
+          "Conditions": []
+        },
+        {
+          "Kind": "Item",
+          "ResourceId": "nicokobo.mechcore.synthesis.titanium_alloy",
+          "Amount": 1,
+          "Basis": "PerBatch",
+          "Conditions": []
+        }
+      ],
+      "OutputItemId": "nicokobo.mechcore.synthesis.robot_cat",
+      "BaseOutputCount": 1,
+      "OutputRule": "Fixed"
+    },
+    {
+      "Code": "M08",
+      "Id": "nicokobo.mechcore.synthesis.recipe.cybernetic_storage_box",
+      "MachineId": "nicokobo.forge.machines.universal_manufacturing_terminal",
+      "Requirements": [
+        {
+          "Kind": "Item",
+          "ResourceId": "nicokobo.mechcore.synthesis.titanium_alloy",
+          "Amount": 2,
+          "Basis": "PerBatch",
+          "Conditions": []
+        },
+        {
+          "Kind": "Item",
+          "ResourceId": "nicokobo.mechcore.synthesis.precision_parts",
+          "Amount": 2,
+          "Basis": "PerBatch",
+          "Conditions": []
+        }
+      ],
+      "OutputItemId": "nicokobo.mechcore.synthesis.cybernetic_storage_box",
+      "BaseOutputCount": 1,
+      "OutputRule": "Fixed"
+    },
+    {
+      "Code": "M09",
+      "Id": "nicokobo.mechcore.synthesis.recipe.scavenging_robot",
+      "MachineId": "nicokobo.forge.machines.universal_manufacturing_terminal",
+      "Requirements": [
+        {
+          "Kind": "Item",
+          "ResourceId": "nicokobo.mechcore.synthesis.mechanical_core",
+          "Amount": 1,
+          "Basis": "PerBatch",
+          "Conditions": []
+        },
+        {
+          "Kind": "Item",
+          "ResourceId": "metal_scanner",
+          "Amount": 1,
+          "Basis": "PerBatch",
+          "Conditions": [
+            {
+              "Property": "ScavScannerLevel",
+              "MinimumValue": 15
+            }
+          ]
+        },
+        {
+          "Kind": "TaggedItem",
+          "ResourceId": "CONTAINER_TAG",
+          "Amount": 1,
+          "Basis": "PerBatch",
+          "Conditions": [
+            {
+              "Property": "EmptyStorage",
+              "MinimumValue": 1
+            }
+          ]
+        }
+      ],
+      "OutputItemId": "nicokobo.mechcore.synthesis.scavenging_robot",
+      "BaseOutputCount": 1,
+      "OutputRule": "Fixed"
+    },
+    {
+      "Code": "furnace_glass_bottle",
+      "Id": "nicokobo.mechcore.synthesis.recipe.furnace_glass_bottle",
+      "MachineId": "furnace",
+      "Requirements": [
+        {
+          "Kind": "Item",
+          "ResourceId": "empty_beer_bottle",
+          "Amount": 1,
+          "Basis": "PerBatch",
+          "Conditions": []
+        }
+      ],
+      "OutputItemId": "nicokobo.mechcore.synthesis.quartz",
+      "BaseOutputCount": 1,
+      "OutputRule": "Fixed"
+    },
+    {
+      "Code": "furnace_glass_shiv",
+      "Id": "nicokobo.mechcore.synthesis.recipe.furnace_glass_shiv",
+      "MachineId": "furnace",
+      "Requirements": [
+        {
+          "Kind": "Item",
+          "ResourceId": "glass_shard_shiv",
+          "Amount": 2,
+          "Basis": "PerBatch",
+          "Conditions": []
+        }
+      ],
+      "OutputItemId": "nicokobo.mechcore.synthesis.quartz",
+      "BaseOutputCount": 1,
+      "OutputRule": "Fixed"
+    },
+    {
+      "Code": "furnace_glass_shard",
+      "Id": "nicokobo.mechcore.synthesis.recipe.furnace_glass_shard",
+      "MachineId": "furnace",
+      "Requirements": [
+        {
+          "Kind": "Item",
+          "ResourceId": "glass_shard",
+          "Amount": 2,
+          "Basis": "PerBatch",
+          "Conditions": []
+        }
+      ],
+      "OutputItemId": "nicokobo.mechcore.synthesis.quartz",
+      "BaseOutputCount": 1,
+      "OutputRule": "Fixed"
+    },
+    {
+      "Code": "furnace_wine_bottle",
+      "Id": "nicokobo.mechcore.synthesis.recipe.furnace_wine_bottle",
+      "MachineId": "furnace",
+      "Requirements": [
+        {
+          "Kind": "Item",
+          "ResourceId": "wine_bottle",
+          "Amount": 1,
+          "Basis": "PerBatch",
+          "Conditions": []
+        }
+      ],
+      "OutputItemId": "nicokobo.mechcore.synthesis.quartz",
+      "BaseOutputCount": 1,
+      "OutputRule": "Fixed"
+    }
+  ],
+  "ProductionMarkups": {
+    "K01": 50,
+    "K02": 25,
+    "K03": 25,
+    "K04": 25,
+    "K05": 15,
+    "K06": 0
+  }
+}

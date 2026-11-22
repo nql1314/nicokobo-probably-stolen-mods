@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType><TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings><Nullable>enable</Nullable>
+    <GameDir Condition="'$(GameDir)' == ''">F:\SteamLibrary\steamapps\common\Probably Stolen</GameDir>
+    <ForgeSource>..\..\..\mods\nicokobo-forge\Services</ForgeSource>
+    <Contracts>..\..\..\mods\shared\Nicokobo.Forge.Contracts</Contracts>
+    <ModLocalizationPackage>nicokobo-forge</ModLocalizationPackage>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(ForgeSource)\NativeWorkshop.cs;$(ForgeSource)\AchievementRules.cs;$(ForgeSource)\RunDataGate.cs" Link="Production\%(Filename)%(Extension)" />
+    <Compile Include="$(ForgeSource)\NativeLiquidValueRuntime.cs;$(ForgeSource)\NativeLiquidApi.cs;$(ForgeSource)\LiquidValueLedger.cs" Link="Production\%(Filename)%(Extension)" />
+    <Compile Include="$(ForgeSource)\ForgeText.cs;../../../mods/shared/ModText.cs;../../../mods/shared/NativeItemText.cs" Link="Production\%(Filename)%(Extension)" />
+    <Compile Include="../../shared/NativeLocalizationPort.cs" Link="Ports/NativeLocalizationPort.cs" />
+    <Compile Include="$(Contracts)\NativeLiquidTypes.cs;$(Contracts)\MachineBatchMath.cs;$(Contracts)\NativeLiquidCompositionMath.cs;$(Contracts)\RunData.cs;$(Contracts)\Workshop.cs" Link="Contracts\%(Filename)%(Extension)" />
+    <Reference Include="Newtonsoft.Json"><HintPath>$(GameDir)\Probably Stolen_Data\Managed\Newtonsoft.Json.dll</HintPath></Reference>
+  </ItemGroup>
+  <Import Project="../../../mods/shared/Localization.targets" />
+</Project>

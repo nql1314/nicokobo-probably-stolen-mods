@@ -1,0 +1,13 @@
+[h1]Garantiert geklaut[/h1]
+
+Beginne als Taschendieb oder schalte Taschendiebstahl über ein Talent frei. Suche nachts an drei Orten nach Zielen, bestiehl Personen aus 31 Berufen und bring die Beute ins Pfandhaus zurück.
+
+[list]
+[*]Manueller und automatischer Diebstahl, Fertigkeit, Wachsamkeit, Hinweise und sechs Nachtereignisse.
+[*]Bei jeder neuen Lieferung des Diebes besteht eine Chance von 5 % auf eine Rauchgranate aus dem Grundspiel. Bei Entdeckung wird eine mitgeführte Granate verbraucht: Die Beute bleibt erhalten und die Diebestour endet. Folgen für Ruf, Erfahrung und Fahndungsdruck bleiben bestehen.
+[*]Verwalte die Beute im regulären Ausflugsinventar. Alte Fluchtrauchgranaten behalten ihren Effekt, tauchen aber nicht mehr in Angebot oder Beute auf.
+[/list]
+
+Benötigt [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3831025262]NicoKobo Forge[/url]. Aktiviere beide Mods und starte das Spiel neu.
+
+Diese Mod wurde nach dem offiziellen Leitfaden entwickelt, hat mod-scan bestanden und benötigt keine zusätzlichen Berechtigungen. Bei Konflikten mit einer anderen Mod wende dich an deren Autor.

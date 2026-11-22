@@ -1,0 +1,197 @@
+﻿1.0.11 - 2026-11-21
+
+[b]简体中文[/b]
+[list]
+[*]伪人飞升开局的资金和物品发放会保留所选开局天赋带来的资金调整和额外物品。
+[*]材料精炼器混用矿石和废金属时，会把废金属分配到各批次，减少前几批因废金属比例过高而降级的情况。
+[*]拾荒机器人的搜索次数不再因玩家选择残疾开局天赋而减少。
+[/list]
+
+[b]English[/b]
+[list]
+[*]The Aug Ascension opening grant preserves the cash adjustments and extra items from your chosen starting perk.
+[*]When refining ore and scrap together, the Material Refiner spreads scrap across batches to reduce quality loss from using too much scrap early.
+[*]The Maimed starting perk no longer reduces Scavenging Robot search attempts.
+[/list]
+
+1.0.10 - 2026-11-16
+
+[b]简体中文[/b]
+[list]
+[*]拾荒机器人配方只接受空的储藏区或储藏区（扩建），并在配方中列出这两种原料。
+[/list]
+
+[b]English[/b]
+[list]
+[*]The Scavenging Robot recipe lists both eligible ingredients: an empty Storage Bay or Storage Bay (Extended).
+[/list]
+
+1.0.9 - 2026-11-15
+
+[b]简体中文[/b]
+[list]
+[*]开局、工坊、配方、灰线供货和设置会读取当前语言的翻译，包括语言扩展 Mod 提供的语言。
+[*]韩语识别 ko 和 ko-KR，两种翻译文件可互补词条。缺少的词条最终回退到英语。
+[/list]
+
+[b]English[/b]
+[list]
+[*]Starting scenarios, Workshop panels, recipes, Grayline stock and settings use translations for the active language, including languages added by other mods.
+[*]Korean uses both ko and ko-KR, so either translation file can fill missing entries in the other. Entries without a translation fall back to English.
+[/list]
+
+1.0.8 - 2026-11-09
+
+[b]简体中文[/b]
+[list]
+[*]更名为「机核协议：伪人飞升」，并更新工坊封面。
+[*]为合成制造、模组矩阵及机械飞升的物品、设备、开局、剧情和工坊界面加入九种语言。
+[/list]
+
+[b]English[/b]
+[list]
+[*]Renamed the mod to Mechcore Protocol: Aug Ascension and updated its Workshop cover.
+[*]Added nine languages to the items, machines, starting scenarios, story and Workshop interfaces across all three parts of the mod.
+[/list]
+
+1.0.7 - 2026-11-07
+
+[b]简体中文[/b]
+[list]
+[*]补齐五种节点的物品自身说明，修复创建、读档和切换语言后的描述空白；与 Forge 的附加效果提示去重。
+[*]移除原版熔炉的专用加工补丁和配方扩展，四条玻璃回收配方改由材料精炼机加工；手册、物品说明和配方查询同步更新。
+[*]配方配置升级至 schema 26，保留旧玻璃配方 ID、自定义用量及产量，仅迁移目标机器。
+[*]仅移除 S26 批量烧制功能，模组不再生效或供货，已有物品保留供旧档读取；原有连续加工及连续加速、节能、校准模组保留。
+[/list]
+
+[b]English[/b]
+[list]
+[*]Added standalone descriptions for all five nodes and refreshed them after loading or changing language. Forge avoids repeating the same description in its ability block.
+[*]Removed Mechcore's native-furnace processing patches and recipe contributions. The Material Refiner now handles all four glass recycling recipes, with updated guides, descriptions and recipe queries.
+[*]Recipe schema 26 preserves existing glass recipe IDs and customized quantities while changing their target machine.
+[*]Removed only S26 Batch Smelting. The module is retired and no longer stocked; existing items remain readable in saved games. Existing multi-batch processing and the Continuous Acceleration, Efficiency and Calibration modules are preserved.
+[/list]
+
+1.0.6 - 2026-11-05
+
+[b]简体中文[/b]
+[list]
+[*]灰线购买发生异常或交易结果无法确认时，仅暂停本次来访；送客后按原计划安排后续来访，读档时不会重做未完成的交易。
+[*]移除灰线、剧情、领奖和周目重绑等流程对原生存档的主动拦截，避免游戏继续运行却跳过保存。
+[*]建议同时更新 NicoKobo Forge 至 1.0.6。
+[/list]
+
+[b]English[/b]
+[list]
+[*]An exception or unconfirmed Grayline purchase now pauses only the current visit. Later visits follow the usual schedule after dismissal, and unfinished purchases are not replayed on load.
+[*]Removed active blocks on native saving from Grayline, story, reward and run-rebinding flows, preventing the game from continuing while saves are skipped.
+[*]Update NicoKobo Forge to 1.0.6 at the same time.
+[/list]
+
+1.0.5 - 2026-11-04
+
+[b]简体中文[/b]
+[list]
+[*]合成和冶炼手册有内容时才会在新周目发放或加入杰克逊供货。已有手册仍可保留，有内容时可阅读。
+[*]建议同时更新 NicoKobo Forge 至 1.0.5，以使用新版配方查询。
+[/list]
+
+[b]English[/b]
+[list]
+[*]Synthesis and refining guides are given at the start of a run or stocked by Jackson only when they have content. Existing guides are kept and can be read when they have content.
+[*]Update NicoKobo Forge to 1.0.5 for the updated recipe lookup.
+[/list]
+
+1.0.4 - 2026-11-04
+
+[b]简体中文[/b]
+[list]
+[*]修复与「霓虹旧货：电子产品」一起使用时，生成组件打印机（ce_3d_printer）可能触发数组越界的问题。
+[*]石英等合成材料可从图标占用格内的透明像素处拖起。
+[/list]
+
+[b]English[/b]
+[list]
+[*]Fixes an array index error that could occur when spawning the Component Printer (ce_3d_printer) with Electronics Expansion enabled.
+[*]Quartz and other synthesis materials can now be dragged from transparent pixels within their occupied inventory cells.
+[/list]
+
+1.0.3 - 2026-11-03
+
+[b]简体中文[/b]
+[list]
+[*]修复灰线离店后，当天无法再预约时仍反复估价造成的周期性卡顿。
+[*]新货单每批只查询一次可供货模组，保留原生估价及现有价格规则。游戏日志分别记录供货查询和估价耗时。
+[*]模组矩阵在机械本地化表加载完成后安装相关效果补丁。
+[/list]
+
+[b]English[/b]
+[list]
+[*]Fixes periodic stutter after Grayline leaves by skipping valuation when another visit cannot be booked that day.
+[*]Each new shipment queries eligible modules once and keeps native valuation and the existing pricing rules. The game log reports eligibility and valuation timings separately.
+[*]Module Matrix installs its related effect patches after the Mechanic localization table has loaded.
+[/list]
+
+1.0.2 - 2026-11-03
+
+[b]简体中文[/b]
+[list]
+[*]修复批量烧制模组在“空电池＋电网有电”时过夜只加工一批的问题。
+[*]每批沿用真实熔炉加工，并独立完成补料、扣电与出料；材料、电力或输出空间不足时停止，同类模组不叠加。
+[*]需要同时更新 NicoKobo Forge 至 1.0.3。
+[/list]
+
+[b]English[/b]
+[list]
+[*]Fixes the Batch Smelting Module processing only one batch overnight with an empty local battery and a powered shared grid.
+[*]Each batch uses the real furnace cycle with separate restocking, power settlement and output collection. Processing stops when materials, power or output space run out; duplicate modules do not stack.
+[*]Update NicoKobo Forge to 1.0.3 at the same time.
+[/list]
+
+1.0.1 - 2026-11-03
+
+[b]简体中文[/b]
+[list]
+[*]请同时更新 NicoKobo Forge 至 1.0.2。
+[*]机器加成和柜台估价改为查询相关物品索引，避免状态不变时反复遍历整个库存；数量和归属仍实时读取，库存挂接变化、换档和新周目会刷新索引。
+[*]脑机接口的定时检查只读取接口候选；基础属性确有变化时再查找并重算已安装接口的机器。
+[*]已排队、当日已请求或商店未营业的剧情来访检查提前返回，减少无效库存查询。
+[/list]
+
+[b]English[/b]
+[list]
+[*]Update NicoKobo Forge to 1.0.2 at the same time.
+[*]Machine bonuses and counter pricing use a relevant-item index instead of repeatedly traversing unchanged inventories. Quantity and ownership stay live; graph attachment, slot and run changes refresh the index.
+[*]Periodic neural checks read interface candidates and only search installed machines when their base stats need updating.
+[*]Story visitor polling skips inventory queries when the visit is queued, already requested that day, or the store is closed.
+[/list]
+
+1.0.0 - 2026-10-31
+
+[b]简体中文[/b]
+[list]
+[*]将合成扩展、模组矩阵和伪人：机械飞升整合为“机核协议”，统一入口、资源、本地化和启停；旧组件不再单独发布。
+[*]熔炉使用单一组合钩子，明确合成加工、矩阵整批容量检查和Forge补出料的接线顺序，不再依赖三个旧包的补丁owner排序。
+[*]保留材料加工、三台自有工业机器、Forge K05 配方、30 条固定配方、六件合成义体、机器人与功能设备。
+[*]保留19件模组／节点、六种摆放效果、连续成长、固定能力、K02升级与认知涡轮；保留扩舱重算、净水上限、原生价格和整批容量修复。
+[*]保留伪人开局、生存、脑机接口、七件自产义体、13项Nico工坊成就、灰线供货及“失物招领”四结局剧情。工坊支持物品双击、N键和电话1016。
+[*]保留原物品、配方、效果、开局与存档键；原配方和周目配置数据目录继续使用。矩阵和剧情开关集中到机核协议设置，首次采用原组件的已保存值。
+[*]新实物统一使用合包图集；读图时将三个旧正式版图集owner映射到新包。此项仍需合包后的原生存读档验收。
+[*]食品加工保持独立可选，未安装时不登记K04修补胶配方并过滤相关灰线商品；常规医疗修补、工坊与主线可独立使用。
+[*]结局信件使用本地系统用户名并清理控制字符，不请求Steam权限。
+[*]仅依赖独立NicoKobo Forge，使用正式版内置ModLoader。旧三包与合包不能同时启用；检测到冲突时停止初始化并记录原因。
+[/list]
+
+[b]English[/b]
+[list]
+[*]Combined Mechcore Synthesis, Module Matrix and Aug: Mechanical Ascension into Mechcore Protocol with one entry assembly, resource set and lifecycle.
+[*]A single combined furnace hook orders synthesis processing and the Matrix batch-capacity guard before Forge refill/ejection, replacing ordering by the old package owners.
+[*]Includes material processing, three industrial machines, Forge K05 recipes, 30 fixed recipes, six manufactured cybernetics, robots and utility devices.
+[*]Includes 19 modules and nodes, six placement effects, continuous growth, fixed abilities, K02 upgrades and cognitive turbo integration, retaining the machine-capacity, purity and native-price fixes.
+[*]Includes the Aug start, survival, brain-computer interface, seven cybernetics, 13 workshop achievements, Grayline supply and all four Lost and Found endings. Open the workshop by double-clicking its item, pressing N or dialing 1016.
+[*]Retains content IDs, save keys and existing data paths. Matrix and story switches appear under the combined mod and initially use saved component settings.
+[*]New items use the combined atlas; sprite loading maps the three previous full-release atlas owners to the combined package. Native save/reload acceptance for the combined build remains pending.
+[*]Food Processing remains optional. Without it, K04 repair-gel recipes and related Grayline stock are unavailable; native medical repairs, the workshop and main story remain usable.
+[*]Ending letters use the sanitized local system username and request no Steam capability.
+[*]Requires only NicoKobo Forge as a separate prerequisite. Initialization stops with a log message if any replaced package remains enabled.
+[/list]

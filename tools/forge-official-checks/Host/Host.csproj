@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><TargetFramework>net10.0</TargetFramework><ImplicitUsings>enable</ImplicitUsings><Nullable>enable</Nullable></PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GamePorts\GamePorts.csproj" />
+    <Compile Include="..\..\..\mods\nicokobo-forge\ForgeMod.cs" Link="ForgeMod.cs" />
+    <Compile Include="..\..\..\mods\nicokobo-forge\FixedModuleAbilities.cs" Link="FixedModuleAbilities.cs" />
+    <Compile Include="../../../mods/shared/MechanicLocalizedPatches.cs" Link="MechanicLocalizedPatches.cs" />
+    <Compile Include="..\..\..\mods\shared\Nicokobo.Forge.Contracts\Recipes.cs;..\..\..\mods\shared\Nicokobo.Forge.Contracts\Production.cs;..\..\..\mods\shared\Nicokobo.Forge.Contracts\Supply.cs;..\..\..\mods\shared\Nicokobo.Forge.Contracts\Wire.cs" Link="Contracts\%(Filename)%(Extension)" />
+    <Compile Include="..\..\..\mods\shared\Nicokobo.ContentInterop\*.cs" Exclude="..\..\..\mods\shared\Nicokobo.ContentInterop\RecipeQuery.cs;..\..\..\mods\shared\Nicokobo.ContentInterop\NativeSupplyHooks.cs;..\..\..\mods\shared\Nicokobo.ContentInterop\SupplyPolicy.cs" Link="Core\%(Filename)%(Extension)" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,12 @@
+<Project>
+  <ItemGroup>
+    <Reference Include="Unity.Localization" Condition="!@(Reference->AnyHaveMetadataValue('Identity', 'Unity.Localization'))">
+      <HintPath>$(GameManaged)/Unity.Localization.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Unity.ResourceManager" Condition="!@(Reference->AnyHaveMetadataValue('Identity', 'Unity.ResourceManager'))">
+      <HintPath>$(GameManaged)/Unity.ResourceManager.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+</Project>

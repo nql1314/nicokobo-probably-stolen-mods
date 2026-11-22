@@ -1,0 +1,46 @@
+1.0.0 - 2026-10-31
+
+[b]简体中文[/b]
+[list]
+[*]提供固定与连续模组、节点、机器模组以及六种摆放效果。
+[*]连续模组支持工序成长、闲置回落和学习节点；固定能力使用 Forge 私有能力表。
+[*]支持与合成扩展的 K02 升级及机械飞升的认知涡轮联动；需要独立的 NicoKobo Forge 前置。
+[*]原生两次扩舱成功后立即重算位置效果，保留物品坐标与节点顺序；蒸发器沿用已有有效工作与重载链。
+[*]S24 与基础净水共用当前质量对应的原生总纯度上限，按全部液体组分取整；零实际去污不耗电、不成长，中英能力说明同步。
+[*]停止改写原生商品价格；旧实例仅按本 Mod 价格来源标签撤销自己的差额，保留品质和其他价值，自家商品独立定价。
+[*]熔炉高炉与废品处理预检整批成品空间，按实际消耗处理成长与补货，避免空间不足时扣料或丢失成品。
+[/list]
+
+[b]English[/b]
+[list]
+[*]Prepared the first full-release version with 19 fixed, continuous, node and machine modules and six positional effects.
+[*]Continuous modules support processing growth, idle decay and learning nodes; fixed abilities use the private Forge directory while preserving item, ability and saved-slot identities.
+[*]Native expansion, movement and rearrangement recalculate positional effects while retaining node order, growth and native quality.
+[*]Purification respects the native cap for current quality across all components, with no energy cost or growth when nothing is actually removed.
+[*]Blast-furnace and scrap batches check room for the complete output and use real consumption for growth and refills, preventing resource loss on insufficient space.
+[*]Supports K02 rare upgrades through Synthesis and Cognitive Turbo cooperation, while preserving native pricing for vanilla goods and removing only this mod's old price adjustment.
+[*]Uses the built-in full-release ModLoader and requires standalone NicoKobo Forge.
+[/list]
+
+1.1.1 - 2026-10-29（历史开发候选，未发布）
+- 使用独立 NicoKobo Forge 的固定能力 API；固定节点改用前置私有能力表，保留原物品、效果 ID 和已保存槽位。
+- 删除原版随机候选列表 IL 补丁及 dynamic-code；布局随机词缀开启时沿用原生规则，关闭时保留旧词缀显示但不加入随机池。
+- Release 编译及 304 项矩阵离线检查通过，实际 DLL 官方扫描未检测到额外能力；尚未打包、安装或原生验收。
+
+1.1.0 - 2026-10-29（历史开发候选：K02、额外供货与认知涡轮接口，未发布）
+- 现有 19 件模组／节点接入 Thief／Inventor 额外供货，同池所有已接入内容共享总 Mod 相对权重预算 0.25；保留夜店额外两个不同品种。
+- 向 K02 提供任意基础模组／节点×2升级随机稀有×1的跨 Mod 配方和手册信息，默认实际可用池为 13 种；排除功能性、特殊核心、损坏品和封顶核心。
+- 接入真实认知涡轮 ID：连续模组总上限提高 50%，原生自学习使用单件原上限×1.5向下取整，保留原生上限标签。
+- 实际加速器工序按使用前快照补足成长，支持学习加速节点组合，多批不重复增长；失去植入物保留已有成长并继续正常闲置回落。
+- 公开原生熔炉条件配方、实物库存槽和生产事务回执；普通与 S26 加工均支持逐批真实补料／弹出，同机嵌套不重复回调。自动化物流、机械飞升本体尚未迁移，不注册占位植入物。
+- manifest 声明主 IMod DLL 与 Nicokobo.ContentInterop.dll；共享库独立版本为 1.0.0。reflection-external 用于定位游戏顾客供货回调，dynamic-code 用于 Harmony 指令补丁，未修改扫描或信任规则。
+- 正式版 0.46D / Build 26274380 Release 编译 0 警告、0 错误，275 项离线检查通过，实际 DLL 通过当前扫描器源码的离线检查；未打包、安装或原生游戏验收。
+
+历史开发候选 1.0.0 - 2026-10-29（历史开发候选，未发布）
+- 迁移六件固定模组、三件连续模组、五件节点、五件机器模组及六种位置效果，保留19个物品ID与原图标。
+- 改用官方IMod、配置、资源、掉落与夜店事件，无Forge／MelonLoader／Il2Cpp依赖。
+- 补齐合成扩展M04–M06所需连续模组的正式版材料提供者。
+- 保留连续成长与闲置回落、节点顺序、几何邻接、位置词条取整、机器专用能力及原价格标签；新增闲置结算去重标签。
+- 批量烧制沿用原熔炉回调，预检高炉／废品处理整批容量，拒绝加工或无消耗时停止。
+- 正式版0.46D / Build26274380 Release编译0警告0错误，232项离线检查通过。
+- K02稀有升级配方、额外白天供货、认知涡轮与物流联动后续迁移；未打包、安装或原生验收。

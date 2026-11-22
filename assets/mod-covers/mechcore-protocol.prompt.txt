@@ -1,0 +1,10 @@
+Generated with the built-in image_gen tool.
+Background: %USERPROFILE%/Pictures/Camera Roll/机核协议.png
+Transparent title source: mechcore-protocol-title.png
+Final source: mechcore-protocol.png; packaged cover: mods/mechcore-protocol/preview.png
+
+Title-generation prompt:
+
+Use case: compositing / logo-brand. Create one transparent title overlay for the supplied Probably Stolen gameplay screenshot. The screenshot is ONLY a pixel-art style and palette reference; do NOT reproduce, redraw, crop, or add the screenshot to the output. The output must be an actual transparent PNG containing only the isolated foreground lettering and tiny ornaments, with clean alpha; no solid or semitransparent rectangular panel, no frame, no scene. This overlay will be placed over the LEFT portion of the untouched screenshot. Make the typography very bold, legible and space-filling in a compact near-square block. Exact Chinese title in two large stacked rows, verbatim: first row ‘机核协议：’, second row ‘伪人飞升’. Chinese letters are the clear dominant element. Underneath, put a much smaller but clearly readable two-line English subtitle, spelled EXACTLY: ‘MECHCORE PROTOCOL:’ then ‘AUG ASCENSION’. These are the ONLY words or symbols that resemble text. Bold Chinese block lettering, warm ivory metal, dark thick pixel outlines and subtle cyan circuitry highlights matching the screenshot's cybernetic machinery. Introduce a modest pseudo-human/cybernetic motif directly into the title design: a small pixel-art humanlike robotic half-face or cybernetic eye plus a few neat circuit details; do not add a large character or obscure any title letters. Dense and well-filled, with tight margins, polished cohesive pixel-art game cover treatment. No additional words, no watermark. Absolutely transparent background; no pixels of the reference image in the output.
+
+Composition: preserve the full 1436 x 1063 screenshot at its native dimensions. Scale the transparent title to 510 x 466 pixels and composite at (0, 20); leave the rest of the screenshot untouched. The final image and packaged preview are identical PNGs.
