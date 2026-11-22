@@ -26,3 +26,7 @@ Tryb automatyczny działa według priorytetu przepisów. Wybrany ręcznie przepi
 Kalorie i wartość zależą od rzeczywiście zużytych składników i są dzielone między porcje. Przepisy z winem uwzględniają jego faktyczną zawartość alkoholu. Ser, karma dla ryb i artykuły medyczne mają zwykłe zastosowania. Dodatkowa wartość przetworzonej karmy i surowic maleje w miarę zużywania kalorii lub dawek. Schłodzenie odpowiednich napojów i dań lub zamrożenie wybranych deserów w lodówce wpływa na ich cenę. Skażone, zakażone prionami i zepsute składniki są odrzucane.
 
 Mod powstał zgodnie z oficjalnym poradnikiem i został sprawdzony przez mod-scan. Nie wymaga dodatkowych uprawnień, także dostępu przez refleksję do zewnętrznego kodu. Poza opisanymi zmianami podstawowa gra zwykle działa tak jak wcześniej. W razie konfliktu z innym modem skontaktuj się najpierw z jego autorem.
+
+[h2]Utrzymanie przez społeczność[/h2]
+
+Dalszym utrzymaniem tego moda zajmie się społeczność. [url=https://github.com/nql1314/nicokobo-probably-stolen-mods]Kod źródłowy jest dostępny na GitHubie[/url]. Błędy i sugestie zgłaszaj w [url=https://github.com/nql1314/nicokobo-probably-stolen-mods/issues/new]GitHub Issues[/url]. Aby dodać poprawkę, tłumaczenie lub zmianę w dokumentacji, utwórz fork repozytorium i otwórz [url=https://github.com/nql1314/nicokobo-probably-stolen-mods/pulls]pull request[/url].

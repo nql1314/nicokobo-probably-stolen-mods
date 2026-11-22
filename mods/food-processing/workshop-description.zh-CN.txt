@@ -27,4 +27,8 @@
 
 本 Mod 按照官方指南开发，已通过 mod-scan 扫描，未申请额外权限（包括外部反射访问权限）。除本页列出的调整外，通常不会影响原版功能。如与第三方 Mod 冲突，请优先联系对应作者协助排查。
 
+[h2]开源与社区维护[/h2]
+
+本 Mod 后续由社区维护。[url=https://github.com/nql1314/nicokobo-probably-stolen-mods]GitHub 开源仓库[/url]。反馈问题或建议请[url=https://github.com/nql1314/nicokobo-probably-stolen-mods/issues/new]新建 Issue[/url]。提交修复、翻译或文档时，请先 Fork 仓库，再[url=https://github.com/nql1314/nicokobo-probably-stolen-mods/pulls]提交 Pull Request（PR）[/url]。
+
 [b]交流群 3 群：192285479[/b]

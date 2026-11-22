@@ -26,3 +26,7 @@ El modo automático sigue el orden de prioridad. Una receta seleccionada espera 
 Las raciones se reparten las calorías y el valor de los ingredientes que se usaron. Las recetas con vino conservan su graduación real. El queso, el pienso y los suministros médicos conservan los usos del juego base. El valor añadido del pienso procesado y de los sueros baja al consumir sus calorías o sus usos. Refrigera las bebidas y platos compatibles o congela ciertos postres en el frigorífico para modificar su precio. No se pueden procesar ingredientes contaminados, con priones o en mal estado.
 
 Este mod sigue la guía oficial y se ha comprobado con mod-scan. No solicita permisos adicionales, incluido el acceso por reflexión a código externo. Fuera de los cambios descritos, el juego base suele funcionar igual. Si hay un conflicto con otro mod, consulta primero con su autor.
+
+[h2]Mantenimiento comunitario[/h2]
+
+La comunidad se encargará del mantenimiento de este mod. El [url=https://github.com/nql1314/nicokobo-probably-stolen-mods]código fuente está en GitHub[/url]. Informa de errores o propone mejoras en una [url=https://github.com/nql1314/nicokobo-probably-stolen-mods/issues/new]incidencia de GitHub[/url]. Para aportar correcciones, traducciones o documentación, crea un fork del repositorio y abre una [url=https://github.com/nql1314/nicokobo-probably-stolen-mods/pulls]pull request[/url].

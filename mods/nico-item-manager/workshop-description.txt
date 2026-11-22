@@ -23,3 +23,7 @@ Find items, edit their attributes, spawn copies, and manage owned items in your 
 [/list]
 
 Developed following the official guide and checked with mod-scan. No additional permissions are requested, including external reflection access. Beyond the features above, base-game behavior should generally remain unchanged. For conflicts with third-party mods, contact their authors first for help investigating.
+
+[h2]Community maintenance[/h2]
+
+This mod is moving to community maintenance. The [url=https://github.com/nql1314/nicokobo-probably-stolen-mods]source code is on GitHub[/url]. Report bugs or suggest changes in a [url=https://github.com/nql1314/nicokobo-probably-stolen-mods/issues/new]GitHub Issue[/url]. To contribute a fix, translation, or documentation change, fork the repository and open a [url=https://github.com/nql1314/nicokobo-probably-stolen-mods/pulls]pull request[/url].

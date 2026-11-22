@@ -12,3 +12,7 @@
 Требуется [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3831025262]NicoKobo Forge[/url]. Модули можно изготовить на электромеханическом верстаке или терминале Forge. Mechcore Protocol и пищевая переработка необязательны; их машины тоже можно подключить.
 
 Мод разработан по официальному руководству, прошёл проверку mod-scan и не запрашивает дополнительных разрешений. При конфликте со сторонним модом обратитесь к его автору.
+
+[h2]Поддержка сообществом[/h2]
+
+Дальнейшей поддержкой мода займётся сообщество. [url=https://github.com/nql1314/nicokobo-probably-stolen-mods]Исходный код открыт на GitHub[/url]. Сообщайте об ошибках и оставляйте предложения в [url=https://github.com/nql1314/nicokobo-probably-stolen-mods/issues/new]GitHub Issues[/url]. Чтобы предложить исправление, перевод или правку документации, создайте форк репозитория и откройте [url=https://github.com/nql1314/nicokobo-probably-stolen-mods/pulls]pull request[/url].

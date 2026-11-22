@@ -62,3 +62,9 @@ Forge 包包含 `manifest.xml`、`Nicokobo.Forge.dll`、共用终端／名片图
 Forge 独立打包、独立发布和安装，不随内容包自动构建或附送。明确需要时，从仓库根目录执行 `Build-Mods.ps1 -Mod nicokobo-forge -NoInstall`；安装时去掉 `-NoInstall`。普通 `Build-Mods.ps1` 默认不选择 Forge，`-Mod` 选择内容包也不会自动加入前置。
 
 当前四个内容包各自声明 `nicokobo.forge` 依赖，由用户单独添加前置。合成、矩阵和伪人已合为[机核协议](../mechcore-protocol/README.md)；食品加工、物流和肯定是偷的仍分别分发。旧内置公共 DLL 的内容包须更新为依赖版后再与新前置一起启用。更新内容包时按旧 manifest 清理被替代的公共 DLL；配置、启用状态、信任和存档不变。
+
+## 社区维护 / Community maintenance
+
+本 Mod 后续由社区维护。遇到问题或有建议，请提交 Issue。修复、翻译和文档改动可先 Fork 仓库，再向主分支提交 Pull Request。[开源仓库](https://github.com/nql1314/nicokobo-probably-stolen-mods) · [新建 Issue](https://github.com/nql1314/nicokobo-probably-stolen-mods/issues/new) · [提交指南](https://github.com/nql1314/nicokobo-probably-stolen-mods#社区维护)
+
+This mod is moving to community maintenance. Open an Issue for bugs or suggestions. To contribute fixes, translations, or docs, fork the repository and open a pull request against the main branch. [Source code](https://github.com/nql1314/nicokobo-probably-stolen-mods) · [New Issue](https://github.com/nql1314/nicokobo-probably-stolen-mods/issues/new) · [Contribution guide](https://github.com/nql1314/nicokobo-probably-stolen-mods#社区维护)

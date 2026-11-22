@@ -99,6 +99,12 @@ dotnet run --project .\tools\logistics-official-checks\Logistics.Official.Checks
 
 已有 Release 编译和 139,007 项定向离线检查通过。尚未打包、安装或进行游戏内验收；离线检查不能证明扫描激活、窗口布局、完整生产和跨进程重载。实施依据见[正式版调整记录](../../docs/design/AUTOMATED_LOGISTICS.md)。
 
+## 社区维护
+
+本 Mod 后续由社区维护。遇到问题或有建议，请提交 Issue。修复、翻译和文档改动可先 Fork 仓库，再向主分支提交 Pull Request。[开源仓库](https://github.com/nql1314/nicokobo-probably-stolen-mods) · [新建 Issue](https://github.com/nql1314/nicokobo-probably-stolen-mods/issues/new) · [提交指南](https://github.com/nql1314/nicokobo-probably-stolen-mods#社区维护)
+
 ## English
+
+This mod is moving to community maintenance. Open an Issue for bugs or suggestions. To contribute fixes, translations, or docs, fork the repository and open a pull request against the main branch. [Source code](https://github.com/nql1314/nicokobo-probably-stolen-mods) · [New Issue](https://github.com/nql1314/nicokobo-probably-stolen-mods/issues/new) · [Contribution guide](https://github.com/nql1314/nicokobo-probably-stolen-mods#社区维护)
 
 Automated Logistics uses the full release's built-in ModLoader and requires NicoKobo Forge. Restock consumed materials, collect finished products and manage real inventories, liquids and shared power through the H-key terminal. Supports native machines and optional Synthesis Expansion / Food Processing integrations. Printers retain their chips, progress and final quality; evaporators collect distillate only; hydroponic feed uses a recorded specification without automatic planting; DNA collection is limited to the native eject slot. Local batteries, physical capacity and Hypertech output limits remain in effect. For full player instructions, see [the Workshop description](workshop-description.txt).

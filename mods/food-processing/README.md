@@ -186,3 +186,9 @@ F42–F53 的 12 张图标原图和提示词保存在 `Assets/IconSources/food-v
 - 双语更新记录：[change.log](change.log)。
 - 历史设计与实现依据（当前配方以上表为准）：[正式版设计记录](../../docs/design/FOOD_PROCESSING.md)。
 - 图标来源与提示词：[料理饮品图标](Assets/IconSources/food-v1.2-prompts.json)、[冷餐图标](Assets/IconSources/food-v1.3-prompts.json)、[F42–F53 图标](Assets/IconSources/food-v2.1/prompts.json)。
+
+## 社区维护 / Community maintenance
+
+本 Mod 后续由社区维护。遇到问题或有建议，请提交 Issue。修复、翻译和文档改动可先 Fork 仓库，再向主分支提交 Pull Request。[开源仓库](https://github.com/nql1314/nicokobo-probably-stolen-mods) · [新建 Issue](https://github.com/nql1314/nicokobo-probably-stolen-mods/issues/new) · [提交指南](https://github.com/nql1314/nicokobo-probably-stolen-mods#社区维护)
+
+This mod is moving to community maintenance. Open an Issue for bugs or suggestions. To contribute fixes, translations, or docs, fork the repository and open a pull request against the main branch. [Source code](https://github.com/nql1314/nicokobo-probably-stolen-mods) · [New Issue](https://github.com/nql1314/nicokobo-probably-stolen-mods/issues/new) · [Contribution guide](https://github.com/nql1314/nicokobo-probably-stolen-mods#社区维护)

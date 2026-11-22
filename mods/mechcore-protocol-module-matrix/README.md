@@ -75,3 +75,9 @@ dotnet run --project .\tools\matrix-official-checks\Matrix.Official.Checks.cspro
 包契约检查使用目标 Build 的游戏扫描器源码，核对 Forge 及四个内容包的入口、前置和能力声明。执行方式与验证范围见[离线检查索引](../../tools/README.md#离线检查)。
 
 这些检查不启动 Unity，不证明游戏扫描启用、鼠键拖放、视觉提示、其他 Mod 同进程组合或跨进程 ES3 保存重载。接口维护参考[官方中文指南](https://github.com/dragonpan2/probably-stolen-modding/blob/main/ModdingGuide.zh-CN.md)，以本机游戏程序集为准。
+
+## 社区维护 / Community maintenance
+
+本 Mod 后续由社区维护。遇到问题或有建议，请提交 Issue。修复、翻译和文档改动可先 Fork 仓库，再向主分支提交 Pull Request。[开源仓库](https://github.com/nql1314/nicokobo-probably-stolen-mods) · [新建 Issue](https://github.com/nql1314/nicokobo-probably-stolen-mods/issues/new) · [提交指南](https://github.com/nql1314/nicokobo-probably-stolen-mods#社区维护)
+
+This mod is moving to community maintenance. Open an Issue for bugs or suggestions. To contribute fixes, translations, or docs, fork the repository and open a pull request against the main branch. [Source code](https://github.com/nql1314/nicokobo-probably-stolen-mods) · [New Issue](https://github.com/nql1314/nicokobo-probably-stolen-mods/issues/new) · [Contribution guide](https://github.com/nql1314/nicokobo-probably-stolen-mods#社区维护)

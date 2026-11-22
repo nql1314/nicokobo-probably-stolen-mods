@@ -2,6 +2,17 @@
 
 本仓库维护深空当铺正式版的 NicoKobo Mod，包括前置框架、玩法扩展和工具。各 Mod 的 README 说明功能、依赖和验证范围，版本以各自的 `manifest.xml` 和 `change.log` 为准。
 
+## 社区维护
+
+这些 Mod 后续由社区维护。源码和开发文档都在 [GitHub 开源仓库](https://github.com/nql1314/nicokobo-probably-stolen-mods)。
+
+- **反馈问题或提出建议**。先在 [Issues](https://github.com/nql1314/nicokobo-probably-stolen-mods/issues) 查找已有讨论。新建 Issue 时，请写明 Mod 名称、Mod 版本和游戏版本，附上复现步骤和相关 F8 日志。[新建 Issue](https://github.com/nql1314/nicokobo-probably-stolen-mods/issues/new)
+- **提交修复、翻译或文档**。先 [Fork 仓库](https://github.com/nql1314/nicokobo-probably-stolen-mods/fork)，在自己的分支完成改动，再向本仓库的主分支提交 Pull Request。说明改动范围和验证结果。[提交 Pull Request](https://github.com/nql1314/nicokobo-probably-stolen-mods/pulls)
+
+### Community maintenance
+
+These mods are moving to community maintenance. Use an Issue to report a bug or suggest a change. Include the mod name, mod and game versions, and steps to reproduce when applicable. To contribute a fix, translation, or documentation change, fork the repository, make the change on a branch, and open a pull request against the main branch. [Source code](https://github.com/nql1314/nicokobo-probably-stolen-mods) · [New Issue](https://github.com/nql1314/nicokobo-probably-stolen-mods/issues/new) · [Pull Requests](https://github.com/nql1314/nicokobo-probably-stolen-mods/pulls)
+
 ## 正式版 Mod
 
 | 工具与前置 | 内容与联动 |

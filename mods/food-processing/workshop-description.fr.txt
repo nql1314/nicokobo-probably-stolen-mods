@@ -26,3 +26,7 @@ Le mode automatique suit l’ordre de priorité. Une recette choisie reste activ
 Les portions se partagent les calories et la valeur des ingrédients réellement utilisés. Les recettes au vin reprennent le degré d’alcool du vin employé. Le fromage, la nourriture pour poissons et les articles médicaux gardent leurs usages habituels. La plus-value du sérum ou de la nourriture diminue au fil des utilisations ou des calories consommées. Réfrigérez les plats et boissons compatibles ou congelez certains desserts pour modifier leur prix. Les ingrédients contaminés, infectés par des prions ou avariés sont refusés.
 
 Ce mod suit le guide officiel et a été vérifié avec mod-scan. Il ne demande aucune permission supplémentaire, y compris pour la réflexion sur du code externe. En dehors des changements décrits, le jeu de base fonctionne généralement comme avant. En cas de conflit avec un autre mod, contactez d’abord son auteur.
+
+[h2]Maintenance communautaire[/h2]
+
+La communauté prendra en charge la maintenance de ce mod. Le [url=https://github.com/nql1314/nicokobo-probably-stolen-mods]code source est sur GitHub[/url]. Signalez un bug ou proposez une amélioration en [url=https://github.com/nql1314/nicokobo-probably-stolen-mods/issues/new]ouvrant une issue[/url]. Pour proposer une correction, une traduction ou une modification de la documentation, créez un fork du dépôt et ouvrez une [url=https://github.com/nql1314/nicokobo-probably-stolen-mods/pulls]pull request[/url].

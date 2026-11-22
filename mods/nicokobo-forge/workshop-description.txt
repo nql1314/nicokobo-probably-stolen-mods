@@ -5,3 +5,7 @@ NicoKobo Forge is a shared framework for content mods. It provides machine and r
 Forge includes a universal manufacturing terminal, a workshop access card, ten base-game achievements with per-run completion and claim records, a victory reward that doubles NPC purchase budgets, and expanded native document storage. Install and enable it separately alongside mods that require it, then restart the game.
 
 This mod was developed following the official guide and has passed mod-scan checks. It requests no additional permissions, including external reflection access. Beyond the changes described on this page, it should generally leave base-game features unaffected. If a conflict occurs when using it alongside a third-party mod, please contact that mod's author first for help investigating.
+
+[h2]Community maintenance[/h2]
+
+This mod is moving to community maintenance. The [url=https://github.com/nql1314/nicokobo-probably-stolen-mods]source code is on GitHub[/url]. Report bugs or suggest changes in a [url=https://github.com/nql1314/nicokobo-probably-stolen-mods/issues/new]GitHub Issue[/url]. To contribute a fix, translation, or documentation change, fork the repository and open a [url=https://github.com/nql1314/nicokobo-probably-stolen-mods/pulls]pull request[/url].

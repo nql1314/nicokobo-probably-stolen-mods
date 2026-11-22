@@ -10,3 +10,7 @@ Renouvelez les articles non achetés du client actuel et de la boutique nocturne
 Abonnez-vous au mod, activez-le dans le menu Mods, puis relancez le jeu.
 
 Ce mod suit le guide officiel, a passé le contrôle mod-scan et ne demande aucune autorisation supplémentaire. En cas de conflit avec un autre mod, contactez son auteur.
+
+[h2]Maintenance communautaire[/h2]
+
+La communauté prendra en charge la maintenance de ce mod. Le [url=https://github.com/nql1314/nicokobo-probably-stolen-mods]code source est sur GitHub[/url]. Signalez un bug ou proposez une amélioration en [url=https://github.com/nql1314/nicokobo-probably-stolen-mods/issues/new]ouvrant une issue[/url]. Pour proposer une correction, une traduction ou une modification de la documentation, créez un fork du dépôt et ouvrez une [url=https://github.com/nql1314/nicokobo-probably-stolen-mods/pulls]pull request[/url].

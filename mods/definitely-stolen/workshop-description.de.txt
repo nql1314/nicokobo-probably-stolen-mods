@@ -11,3 +11,7 @@ Beginne als Taschendieb oder schalte Taschendiebstahl über ein Talent frei. Suc
 Benötigt [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3831025262]NicoKobo Forge[/url]. Aktiviere beide Mods und starte das Spiel neu.
 
 Diese Mod wurde nach dem offiziellen Leitfaden entwickelt, hat mod-scan bestanden und benötigt keine zusätzlichen Berechtigungen. Bei Konflikten mit einer anderen Mod wende dich an deren Autor.
+
+[h2]Community-Wartung[/h2]
+
+Die Community übernimmt die weitere Pflege dieses Mods. Der [url=https://github.com/nql1314/nicokobo-probably-stolen-mods]Quellcode liegt auf GitHub[/url]. Melde Fehler oder Vorschläge in einem [url=https://github.com/nql1314/nicokobo-probably-stolen-mods/issues/new]GitHub-Issue[/url]. Erstelle für Korrekturen, Übersetzungen oder Dokumentation einen Fork und öffne einen [url=https://github.com/nql1314/nicokobo-probably-stolen-mods/pulls]Pull Request[/url].

@@ -12,3 +12,7 @@ Installez des modules de réapprovisionnement et d’éjection sur vos machines.
 Nécessite [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3831025262]NicoKobo Forge[/url]. Fabriquez les modules à l’établi électromécanique ou au terminal de Forge. Protocole Mechcore et Transformation des aliments sont facultatifs ; leurs machines peuvent rejoindre le réseau.
 
 Ce mod suit le guide officiel, a passé le contrôle mod-scan et ne demande aucune autorisation supplémentaire. En cas de conflit avec un autre mod, contactez son auteur.
+
+[h2]Maintenance communautaire[/h2]
+
+La communauté prendra en charge la maintenance de ce mod. Le [url=https://github.com/nql1314/nicokobo-probably-stolen-mods]code source est sur GitHub[/url]. Signalez un bug ou proposez une amélioration en [url=https://github.com/nql1314/nicokobo-probably-stolen-mods/issues/new]ouvrant une issue[/url]. Pour proposer une correction, une traduction ou une modification de la documentation, créez un fork du dépôt et ouvrez une [url=https://github.com/nql1314/nicokobo-probably-stolen-mods/pulls]pull request[/url].

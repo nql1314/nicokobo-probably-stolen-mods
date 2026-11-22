@@ -11,3 +11,7 @@ Press G for recipe lookup. Open Nico Workshop by double-clicking its item, press
 [b]Requires [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3831025262]NicoKobo Forge[/url], installed and enabled separately.[/b] Food Processing and Automated Logistics are optional. Disable the three replaced component packages before enabling this mod, then restart.
 
 This mod was developed following the official guide and has passed mod-scan checks. It requests no additional permissions, including external reflection access. Beyond the changes described on this page, it should generally leave base-game features unaffected. If a conflict occurs when using it alongside a third-party mod, please contact that mod's author first for help investigating.
+
+[h2]Community maintenance[/h2]
+
+This mod is moving to community maintenance. The [url=https://github.com/nql1314/nicokobo-probably-stolen-mods]source code is on GitHub[/url]. Report bugs or suggest changes in a [url=https://github.com/nql1314/nicokobo-probably-stolen-mods/issues/new]GitHub Issue[/url]. To contribute a fix, translation, or documentation change, fork the repository and open a [url=https://github.com/nql1314/nicokobo-probably-stolen-mods/pulls]pull request[/url].

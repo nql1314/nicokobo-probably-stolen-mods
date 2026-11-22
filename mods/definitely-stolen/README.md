@@ -92,3 +92,9 @@ dotnet run --project .\tools\theft-official-checks\Theft.Official.Checks.csproj 
 离线检查覆盖领域规则、旧 schema、候选图保存、动态区间、情报／开局收据、开局隔离、职业核心权重、事件快照／风险、复制槽身份、烟幕弹、所有立绘与背景，以及 20 个补丁目标签名。编译和离线检查不证明玩家扫描激活、Unity UI、原生种子回调、实物携带或跨进程保存重载；地区收益也尚未进行游戏内平衡验收。本轮不直接操作游戏 Mods、配置、信任、存档或启用状态。
 
 新增立绘使用内置 imagegen 生成；[提示词与来源](Assets/Portraits/new-occupations.json)及统一导出入口 `python tools/assets/export-theft-portraits.py` 保留在源码侧，导出生成 384×576 PNG 和对应脚底锚点。当前立绘预览（本地采集工作区 `output/theft-1.2.0/new-occupations-preview.jpg`）仅用于美术核对。
+
+## 社区维护 / Community maintenance
+
+本 Mod 后续由社区维护。遇到问题或有建议，请提交 Issue。修复、翻译和文档改动可先 Fork 仓库，再向主分支提交 Pull Request。[开源仓库](https://github.com/nql1314/nicokobo-probably-stolen-mods) · [新建 Issue](https://github.com/nql1314/nicokobo-probably-stolen-mods/issues/new) · [提交指南](https://github.com/nql1314/nicokobo-probably-stolen-mods#社区维护)
+
+This mod is moving to community maintenance. Open an Issue for bugs or suggestions. To contribute fixes, translations, or docs, fork the repository and open a pull request against the main branch. [Source code](https://github.com/nql1314/nicokobo-probably-stolen-mods) · [New Issue](https://github.com/nql1314/nicokobo-probably-stolen-mods/issues/new) · [Contribution guide](https://github.com/nql1314/nicokobo-probably-stolen-mods#社区维护)

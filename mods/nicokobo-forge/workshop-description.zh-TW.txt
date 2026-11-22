@@ -13,4 +13,8 @@ NicoKobo Forge 是正式版內容 Mod 的公共前置，為各內容包提供共
 
 本 Mod 按照官方指南開發，並已通過 mod-scan 掃描，未申請額外權限（包括外部反射訪問權限）。除本頁介紹中列明的功能調整外，通常不會影響原版功能。如與第三方 Mod 一同使用時出現衝突，請優先聯絡對應第三方 Mod 作者協助排查。
 
+[h2]開源與社群維護[/h2]
+
+本 Mod 後續由社群維護。[url=https://github.com/nql1314/nicokobo-probably-stolen-mods]GitHub 開源儲存庫[/url]。回報問題或提出建議，請[url=https://github.com/nql1314/nicokobo-probably-stolen-mods/issues/new]建立 Issue[/url]。若要貢獻修正、翻譯或文件，請先 Fork 儲存庫，再[url=https://github.com/nql1314/nicokobo-probably-stolen-mods/pulls]送出 Pull Request（PR）[/url]。
+
 [b]交流群 3 群：192285479[/b]

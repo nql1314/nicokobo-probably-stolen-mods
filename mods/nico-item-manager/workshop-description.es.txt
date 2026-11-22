@@ -12,3 +12,7 @@ Catálogo, editor y generador de objetos para Probably Stolen. Busca por nombre,
 Suscríbete, activa el mod en el menú Mods y reinicia el juego.
 
 Este mod sigue la guía oficial, ha superado la comprobación de mod-scan y no solicita permisos adicionales. Si entra en conflicto con otro mod, consulta con el autor de ese mod.
+
+[h2]Mantenimiento comunitario[/h2]
+
+La comunidad se encargará del mantenimiento de este mod. El [url=https://github.com/nql1314/nicokobo-probably-stolen-mods]código fuente está en GitHub[/url]. Informa de errores o propone mejoras en una [url=https://github.com/nql1314/nicokobo-probably-stolen-mods/issues/new]incidencia de GitHub[/url]. Para aportar correcciones, traducciones o documentación, crea un fork del repositorio y abre una [url=https://github.com/nql1314/nicokobo-probably-stolen-mods/pulls]pull request[/url].

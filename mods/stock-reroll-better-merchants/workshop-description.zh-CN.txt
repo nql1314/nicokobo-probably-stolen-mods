@@ -3,3 +3,7 @@
 在 Better Merchants 的夜间店铺按商品刷新快捷键（默认 F5）即可刷新库存。各店铺沿用原有供货、价格和当晚事件规则，每次到访均应用商品刷新的收费和成交保护设置。
 
 请订阅并启用[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3828934641]商品刷新 1.0.8[/url]、[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3834518042]Better Merchants 2.0.1[/url]和本补丁。
+
+[h2]开源与社区维护[/h2]
+
+本 Mod 后续由社区维护。[url=https://github.com/nql1314/nicokobo-probably-stolen-mods]GitHub 开源仓库[/url]。反馈问题或建议请[url=https://github.com/nql1314/nicokobo-probably-stolen-mods/issues/new]新建 Issue[/url]。提交修复、翻译或文档时，请先 Fork 仓库，再[url=https://github.com/nql1314/nicokobo-probably-stolen-mods/pulls]提交 Pull Request（PR）[/url]。

@@ -32,7 +32,13 @@ Mods 配置新增 **允许其他 Mod 回调刷新（有风险）**（`AllowModCa
 - 在 Mods 配置的 **Hotkey** 中修改，支持 Ctrl、Alt、Shift 组合键，例如 **Ctrl+R**；设为 **None** 可禁用。
 - 交易或议价窗口打开时不能刷新；文字输入、原生改键捕获及捕获完成当帧不响应刷新快捷键。
 
+## 社区维护
+
+本 Mod 后续由社区维护。遇到问题或有建议，请提交 Issue。修复、翻译和文档改动可先 Fork 仓库，再向主分支提交 Pull Request。[开源仓库](https://github.com/nql1314/nicokobo-probably-stolen-mods) · [新建 Issue](https://github.com/nql1314/nicokobo-probably-stolen-mods/issues/new) · [提交指南](https://github.com/nql1314/nicokobo-probably-stolen-mods#社区维护)
+
 ## English
+
+This mod is moving to community maintenance. Open an Issue for bugs or suggestions. To contribute fixes, translations, or docs, fork the repository and open a pull request against the main branch. [Source code](https://github.com/nql1314/nicokobo-probably-stolen-mods) · [New Issue](https://github.com/nql1314/nicokobo-probably-stolen-mods/issues/new) · [Contribution guide](https://github.com/nql1314/nicokobo-probably-stolen-mods#社区维护)
 
 Reroll unpurchased goods from the current customer or Dr. Jackson's night shop while keeping the visitor, trade terms and purchased items. Rerolls are blocked after a transaction by default; this can be changed in the in-game Mods settings. If a reroll cannot be performed safely, the original goods are kept.
 

@@ -26,3 +26,7 @@ Choose automatic processing to follow recipe priority, or select a recipe and ke
 Portions share the calories and processing value of the actual ingredients. Wine-based recipes carry over the alcohol strength of the wine used. Native cheese, feed and medical items keep their usual uses; the added value of processed feed and serums falls as calories or charges are used. Chill compatible drinks and meals or freeze selected desserts in the base-game fridge to change their sale value. Processing rejects contaminated, prion-infected and spoiled ingredients.
 
 Developed following the official guide and checked with mod-scan. This mod requests no additional permissions, including external reflection access. It generally leaves base-game features outside the changes above unaffected. If it conflicts with a third-party mod, please contact that mod’s author first.
+
+[h2]Community maintenance[/h2]
+
+This mod is moving to community maintenance. The [url=https://github.com/nql1314/nicokobo-probably-stolen-mods]source code is on GitHub[/url]. Report bugs or suggest changes in a [url=https://github.com/nql1314/nicokobo-probably-stolen-mods/issues/new]GitHub Issue[/url]. To contribute a fix, translation, or documentation change, fork the repository and open a [url=https://github.com/nql1314/nicokobo-probably-stolen-mods/pulls]pull request[/url].

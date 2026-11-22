@@ -123,3 +123,9 @@ Steam 描述位于 `workshop-description.txt`，按功能和快捷键整理。�
 此命令不登录或上传。1.3.4 已完成 Release 编译、201 项针对性离线检查和安全扫描，并于 2026-11-02 上传工坊；本次未安装到游戏或执行原生测试。生成位置与启动语言读取调整的较早 135 项离线检查记录保留原有验证范围。
 
 此前发布的 1.3.2 基线通过了正式版 Build 26284217 的隔离原生测试：普通审核与逐包 Developer mode、独立中英文菜单语言、标签显示与双语悬停说明、数值编辑、独立生成及跨进程保存重载。中英文保存各 429 项通过、1 项可选未测，读档各 380 项通过；详细范围与证据见Git 历史。输入拦截的全部组合和实际性能未完成专项验收。扫描按耗时预算分帧推进，后台预算约 2 毫秒，打开面板时约 6 毫秒；单个物品工厂调用无法中途暂停，可能超过预算。实际扫描耗时和帧数可在 F8 日志中查看。
+
+## 社区维护 / Community maintenance
+
+本 Mod 后续由社区维护。遇到问题或有建议，请提交 Issue。修复、翻译和文档改动可先 Fork 仓库，再向主分支提交 Pull Request。[开源仓库](https://github.com/nql1314/nicokobo-probably-stolen-mods) · [新建 Issue](https://github.com/nql1314/nicokobo-probably-stolen-mods/issues/new) · [提交指南](https://github.com/nql1314/nicokobo-probably-stolen-mods#社区维护)
+
+This mod is moving to community maintenance. Open an Issue for bugs or suggestions. To contribute fixes, translations, or docs, fork the repository and open a pull request against the main branch. [Source code](https://github.com/nql1314/nicokobo-probably-stolen-mods) · [New Issue](https://github.com/nql1314/nicokobo-probably-stolen-mods/issues/new) · [Contribution guide](https://github.com/nql1314/nicokobo-probably-stolen-mods#社区维护)

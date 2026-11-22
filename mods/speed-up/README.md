@@ -32,3 +32,9 @@ Version **1.0.9** fixes Georgio's farewell firing twice with dialogue speed-up. 
 | 全局倍率降低 0.5 并开启全局倍速 | Ctrl+PageDown |
 
 动画加减速也支持小键盘 +／-。对话加速到 32 倍后进入瞬显，减速先回到 32 倍。所有快捷键均可修改，填入 None 可取消绑定；仅在局内响应，文字输入、原生改键捕获及捕获完成当帧不响应。
+
+## 社区维护 / Community maintenance
+
+本 Mod 后续由社区维护。遇到问题或有建议，请提交 Issue。修复、翻译和文档改动可先 Fork 仓库，再向主分支提交 Pull Request。[开源仓库](https://github.com/nql1314/nicokobo-probably-stolen-mods) · [新建 Issue](https://github.com/nql1314/nicokobo-probably-stolen-mods/issues/new) · [提交指南](https://github.com/nql1314/nicokobo-probably-stolen-mods#社区维护)
+
+This mod is moving to community maintenance. Open an Issue for bugs or suggestions. To contribute fixes, translations, or docs, fork the repository and open a pull request against the main branch. [Source code](https://github.com/nql1314/nicokobo-probably-stolen-mods) · [New Issue](https://github.com/nql1314/nicokobo-probably-stolen-mods/issues/new) · [Contribution guide](https://github.com/nql1314/nicokobo-probably-stolen-mods#社区维护)

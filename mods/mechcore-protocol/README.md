@@ -44,3 +44,9 @@ dotnet build .\mods\mechcore-protocol\MechcoreProtocol.csproj -c Release
 ## 验证
 
 离线检查覆盖[合成](../../tools/synthesis-official-checks/)、[矩阵](../../tools/matrix-official-checks/)和[机械飞升](../../tools/aug-official-checks/)。游戏内加载、操作与跨进程读档按[原生回归要求](../../docs/testing/NATIVE_REGRESSION_RULES.md)验证。
+
+## 社区维护 / Community maintenance
+
+本 Mod 后续由社区维护。遇到问题或有建议，请提交 Issue。修复、翻译和文档改动可先 Fork 仓库，再向主分支提交 Pull Request。[开源仓库](https://github.com/nql1314/nicokobo-probably-stolen-mods) · [新建 Issue](https://github.com/nql1314/nicokobo-probably-stolen-mods/issues/new) · [提交指南](https://github.com/nql1314/nicokobo-probably-stolen-mods#社区维护)
+
+This mod is moving to community maintenance. Open an Issue for bugs or suggestions. To contribute fixes, translations, or docs, fork the repository and open a pull request against the main branch. [Source code](https://github.com/nql1314/nicokobo-probably-stolen-mods) · [New Issue](https://github.com/nql1314/nicokobo-probably-stolen-mods/issues/new) · [Contribution guide](https://github.com/nql1314/nicokobo-probably-stolen-mods#社区维护)

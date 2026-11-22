@@ -26,3 +26,7 @@ Die Automatik folgt der Rezeptpriorität. Ein fest gewähltes Rezept wartet auf 
 Kalorien und Verarbeitungswert werden nach den tatsächlich verbrauchten Zutaten auf die Portionen verteilt. Weinbasierte Rezepte übernehmen den Alkoholgehalt des verwendeten Weins. Käse, Fischfutter und medizinische Artikel behalten ihre üblichen Funktionen. Der Mehrwert von verarbeitetem Futter und Serum sinkt mit den verbleibenden Kalorien bzw. Anwendungen. Geeignete Gerichte und Getränke lassen sich im Kühlschrank kühlen, manche Desserts einfrieren. Das wirkt sich auf den Verkaufspreis aus. Verunreinigte, mit Prionen infizierte und verdorbene Zutaten sind ausgeschlossen.
 
 Die Mod wurde nach dem offiziellen Leitfaden entwickelt und mit mod-scan geprüft. Sie benötigt keine zusätzlichen Berechtigungen, auch keinen externen Reflexionszugriff. Abseits der beschriebenen Änderungen bleibt das Grundspiel in der Regel unverändert. Bei Konflikten mit einer anderen Mod wende dich bitte zuerst an deren Autor.
+
+[h2]Community-Wartung[/h2]
+
+Die Community übernimmt die weitere Pflege dieses Mods. Der [url=https://github.com/nql1314/nicokobo-probably-stolen-mods]Quellcode liegt auf GitHub[/url]. Melde Fehler oder Vorschläge in einem [url=https://github.com/nql1314/nicokobo-probably-stolen-mods/issues/new]GitHub-Issue[/url]. Erstelle für Korrekturen, Übersetzungen oder Dokumentation einen Fork und öffne einen [url=https://github.com/nql1314/nicokobo-probably-stolen-mods/pulls]Pull Request[/url].

@@ -12,3 +12,7 @@
 [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3831025262]NicoKobo Forge[/url] が必要です。食品加工と自動物流は任意です。旧 3 Mod を無効にし、Forge と本 Mod を有効にしてから再起動してください。
 
 公式ガイドに沿って開発し、mod-scan の検査に合格しています。追加の権限は不要です。他の Mod との競合は、その Mod の作者にご相談ください。
+
+[h2]コミュニティによるメンテナンス[/h2]
+
+今後、このModはコミュニティがメンテナンスします。[url=https://github.com/nql1314/nicokobo-probably-stolen-mods]ソースコードはGitHubで公開しています[/url]。不具合の報告や改善の提案は[url=https://github.com/nql1314/nicokobo-probably-stolen-mods/issues/new]Issue[/url]へお願いします。修正・翻訳・ドキュメントの変更は、リポジトリをフォークして[url=https://github.com/nql1314/nicokobo-probably-stolen-mods/pulls]プルリクエスト[/url]を送ってください。
