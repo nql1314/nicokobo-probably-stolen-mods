@@ -36,4 +36,6 @@ dotnet build ./mods/speed-up/SpeedUp.csproj -c Release
 | [skills/](skills/probably-stolen-official-mods/SKILL.md) | 正式版 Mod 开发与研究技能 |
 | [config/](config/README.md) | 配置模板。真实配置和账号状态存放在本地 `.local/` |
 
-[开源准备状态](docs/OPEN_SOURCE.md)
+## 许可证
+
+本仓库的自有源码、工具和文档采用 [MIT License](LICENSE)。第三方素材及相关授权说明见[开源与素材授权](docs/OPEN_SOURCE.md)。
