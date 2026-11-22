@@ -352,7 +352,7 @@ internal static class FoodReleaseChecks
             check(full == 100, "Full manufactured serum lost its native value floor");
             serum.GetTagReadonly("CURRENT_USE_COUNT_INT").SetInt(5);
             serum.state = JsonConvert.DeserializeObject<TagSystem>(JsonConvert.SerializeObject(serum.state))!;
-            serum.unitValue = 999; FoodProduction.RestoreBasis(serum);
+            serum.unitValue = 999; FoodStateValue.RestoreBasis(serum);
             check(serum.unitValue == full / 2 && !serum.IsTag(FoodProduction.BasisTag), "Serum load restored full-bottle value");
             var target = DirectoryMaster.Item(recipe.OutputItemId); target.GetTagReadonly("CURRENT_USE_COUNT_INT").SetInt(8); target.unitValue = 80;
             var from = FoodStateValue.Read(serum); var to = FoodStateValue.Read(target);
@@ -360,7 +360,7 @@ internal static class FoodReleaseChecks
             FoodStateValue.Transfer(serum, target, 5, 8, from, to);
             check(serum.unitValue == (long)(full * 3m / 10) && target.unitValue == (long)(80 + full * 2m / 10),
                 "Serum transfer failed to carry the transferred uses' manufactured value");
-            serum.GetTagReadonly("CURRENT_USE_COUNT_INT").SetInt(0); FoodProduction.RestoreBasis(serum);
+            serum.GetTagReadonly("CURRENT_USE_COUNT_INT").SetInt(0); FoodStateValue.RestoreBasis(serum);
             check(serum.unitValue == 0, "Empty manufactured serum retained full value");
         }
         {
@@ -938,7 +938,7 @@ internal static class FoodReleaseChecks
                 "Recombined cheese lost native food / rat-bait identity");
             var cheese = s.Output.childItems[0];
             cheese.state = JsonConvert.DeserializeObject<TagSystem>(JsonConvert.SerializeObject(cheese.state))!;
-            cheese.unitValue = 999; FoodProduction.RestoreBasis(cheese);
+            cheese.unitValue = 999; FoodStateValue.RestoreBasis(cheese);
             check(cheese.unitValue == 25 && cheese.GetTagReadonly("CALORIE_VALUE_TAG").GetInt() == 613,
                 "Native cheese did not preserve its manufactured basis and calories");
         }
@@ -957,7 +957,7 @@ internal static class FoodReleaseChecks
             var feed = s.Output.childItems.Single();
             check(feed.unitValue == IndustrialFishFeedHelper.ReturnedValue && FoodStateValue.HasRate(feed) && !feed.IsTag(FoodProduction.BasisTag),
                 "Feed did not receive its manufactured value");
-            feed.GetTagReadonly("CALORIE_VALUE_TAG").SetInt(expected / 2); feed.unitValue = 999; FoodProduction.RestoreBasis(feed);
+            feed.GetTagReadonly("CALORIE_VALUE_TAG").SetInt(expected / 2); feed.unitValue = 999; FoodStateValue.RestoreBasis(feed);
             check(feed.unitValue == IndustrialFishFeedHelper.ReturnedValue / 2, "Remaining feed regained its full manufactured value");
         }
         {

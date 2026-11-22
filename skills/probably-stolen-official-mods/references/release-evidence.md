@@ -18,10 +18,10 @@
 - `items.json`、`items_full_list.csv`、`item_values.json` 提供静态物品注册、工厂来源和可确定的基础值，包含未用内容。可获得性、运行时倍率和实际成交价另查实际机制。
 - `item_icons.csv` 和 `game-assets/manifest.csv` 提供物品与图片关联、图集和裁剪来源。
 
-剧情整理和完整提取流程分别见主仓库的 `docs/vanilla-story/README.md` 和 `docs/UNPACKING.md`。重新提取时显式使用版本目录与 `--locales en zh`。
+剧情整理和完整提取流程分别见游戏资料工作区 probably-stolen-tool 的 `docs/vanilla-story/README.md` 和 `docs/UNPACKING.md`。重新提取时显式使用版本目录与 `--locales en zh`。
 
 ## 开发者文档与验证边界
 
 本轮同步采用开发者 2026-11-08 的 `ae16103` 提交。官方计划在 2026-12-10 的游戏更新中启用新拒绝规则。当前快照 `ModScanner.REFUSE_UNSCANNABLE_CAPABILITIES` 和 `ModTrustList.WORKSHOP_VERIFIED_ONLY_CAPABILITIES` 均为 `false`。参见[官方中文指南](https://github.com/dragonpan2/probably-stolen-modding/blob/ae161038c6cfed6725f66cfbc5d6b05406975068/ModdingGuide.zh-CN.md)、[API 变更](https://github.com/dragonpan2/probably-stolen-modding/blob/ae161038c6cfed6725f66cfbc5d6b05406975068/APIChanges.zh-CN.md)和[Steam Rev13 公告](https://steamcommunity.com/ogg/4348910/announcements/detail/676262871030563153)。
 
-本轮证据为官方文档、安装版程序集元数据和已有解包的方法体。普通启用、实际游戏效果、保存重载及工坊分发需各自在目标 Build 验证。本地构建、安装与发布查主仓库 `docs/DEVELOPMENT.md`、`Build-Mods.ps1` 和 `docs/STEAM_PUBLISHING.md`。
+本轮证据为官方文档、安装版程序集元数据和已有解包的方法体。普通启用、实际游戏效果、保存重载及工坊分发需各自在目标 Build 验证。本地构建、安装与发布见[开发说明](../../../docs/DEVELOPMENT.md)和[Steam 发布说明](../../../docs/STEAM_PUBLISHING.md)。

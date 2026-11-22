@@ -12,7 +12,7 @@
 
 ## 使用现有发布脚本
 
-在 `D:\workzone\probably-stolen` 的 PowerShell 7 执行，示例 Mod 名替换为 `mods/` 下的实际目录：
+从本 Mod 仓库根目录的 PowerShell 执行，示例 Mod 名替换为 `mods/` 下的实际目录：
 
 ```powershell
 # 只编译、打包并生成待上传 VDF

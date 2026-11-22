@@ -125,7 +125,7 @@ void OnDisable();
 
 ## 打包与发布
 
-在 `D:\workzone\probably-stolen` 用户明确要求打包时，从根目录使用 `Build-Mods.ps1 -Mod <目录>`；本地只出包使用 `-NoInstall`，默认模式还会安装，执行前核对当前 `AGENTS.md` 和脚本参数。在其他工程沿用其已核实的打包入口。包只含 manifest、入口 DLL、必要依赖与资源，不附带游戏 DLL，不调用旧 Demo 发布脚本。
+用户明确要求打包时，从本 Mod 仓库根目录使用 `Build-Mods.ps1 -Mod <目录>`；本地只出包使用 `-NoInstall`，默认模式还会安装，执行前核对当前 `AGENTS.md` 和脚本参数。在其他工程沿用其已核实的打包入口。包只含 manifest、入口 DLL、必要依赖与资源，不附带游戏 DLL，不调用旧 Demo 发布脚本。
 
 本地与 Workshop 使用同一种包，根部都是 manifest；同 ID 的本地包优先于 Workshop 包，来源变化可能要求重新批准。正式版 Workshop AppID `4348910`。
 

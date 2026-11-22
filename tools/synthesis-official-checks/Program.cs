@@ -8,7 +8,7 @@ using MechcoreProtocol.SynthesisExpansion;
 using MechcoreProtocol.SynthesisExpansion.Definitions;
 using MechcoreProtocol.SynthesisExpansion.Domain;
 using FoodDefinitions = Nicokobo.FoodProcessing.Definitions.FoodDefinitions;
-using FoodProduction = Nicokobo.FoodProcessing.FoodProduction;
+using FoodStateValue = Nicokobo.FoodProcessing.FoodStateValue;
 
 int checks = 0;
 void Check(bool condition, string message)
@@ -88,12 +88,12 @@ GameItem Add(GameGridInventory inventory, string id, int count = 1, long value =
     var product = s.Output.childItems.Single();
     Check(IngotPurityHelper.GetPurity(product) == "INGOT_PURITY_VERY_HIGH" && NativeValue(product) == 850,
         "Zero-Quality machining amplified or discarded input value");
-    long basis = product.unitValue; FoodProduction.RestoreBasis(product); SynthesisProduction.RestoreBasis(product);
+    long basis = product.unitValue; FoodStateValue.RestoreBasis(product); SynthesisProduction.RestoreBasis(product);
     Check(product.unitValue == basis && NativeValue(product) == 850, "Food and synthesis price patches conflict");
     var reloaded = new GameItem { identifier = product.identifier, unitValue = 999,
         state = JsonConvert.DeserializeObject<TagSystem>(JsonConvert.SerializeObject(product.state))!,
         itemFeatures = JsonConvert.DeserializeObject<List<ItemFeature>>(JsonConvert.SerializeObject(product.itemFeatures))! };
-    SynthesisQuality.Restore(reloaded); SynthesisQuality.Restore(reloaded); FoodProduction.RestoreBasis(reloaded);
+    SynthesisQuality.Restore(reloaded); SynthesisQuality.Restore(reloaded); FoodStateValue.RestoreBasis(reloaded);
     Check(reloaded.unitValue == basis && NativeValue(reloaded) == 850, "Repeated save/reload compounded purity pricing");
 }
 {
@@ -135,7 +135,7 @@ foreach (int quality in new[] { 0, 100, 200, 999 })
     var product = s.Output.childItems.Single();
     Check(product.itemFeatures.Single(feature => feature.identifier == ComponentQualityRules.GradeTag).GetActualValueModifier() ==
         ComponentQualityRules.ValueBonusPercent(ComponentQualityRules.FromQuality(quality)), "Wrong circuit grade");
-    long value = NativeValue(product); SynthesisQuality.Restore(product); FoodProduction.RestoreBasis(product);
+    long value = NativeValue(product); SynthesisQuality.Restore(product); FoodStateValue.RestoreBasis(product);
     Check(NativeValue(product) == value, "Circuit grade compounded during restoration");
 }
 foreach (bool blast in new[] { false, true })

@@ -6,7 +6,7 @@ Forge 与内容包分别发布。`-Mod nicokobo-forge` 只处理前置；选择�
 
 ## 一次性准备
 
-- 安装 PowerShell 7、项目需要的 .NET SDK，并保留正式版游戏 Managed 程序集。
+- 准备[仓库要求的构建环境](../README.md#编译)，并保留正式版游戏 Managed 程序集。
 - 从 [Valve 下载 SteamCMD](https://steamcdn-a.akamaihd.net/client/installer/steamcmd.zip)，解压到 `.local/steamcmd/`。也可通过 `-SteamCmdPath '其他位置\steamcmd.exe'` 指定，或将其加入 PATH。
 - 使用拥有游戏和相应工坊条目权限的 Steam 账号。脚本仅保存登录名，密码和 Steam Guard 交给 SteamCMD 交互输入；首次运行可能需要更新 SteamCMD。需要验证时不能完全无人值守。
 

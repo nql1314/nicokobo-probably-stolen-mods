@@ -1,4 +1,5 @@
 using System.Globalization;
+using Nicokobo.ContentInterop;
 using Nicokobo.FoodProcessing.Definitions;
 
 namespace Nicokobo.FoodProcessing;
@@ -27,6 +28,12 @@ internal static class FoodStateValue
         Refresh(item);
     }
     internal static void SetBasis(GameItem item, long value) => Write(item, new(value, Units(item)));
+    internal static void RestoreBasis(GameItem item)
+    {
+        ProductionValue.RestoreBasis(item);
+        Refresh(item);
+    }
+
     internal static void Refresh(GameItem item)
     {
         if (Supported(item) && HasRate(item)) item.unitValue = (long)decimal.Floor(Read(item).ForUnits(Units(item)));

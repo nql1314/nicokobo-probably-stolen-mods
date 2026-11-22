@@ -311,6 +311,5 @@ internal static class FoodProduction
 
     internal static decimal InputValue(GameItem item) { FoodStateValue.Refresh(item); return ProductionValue.InputValue(item); }
     internal static void SetBasis(GameItem item, long basis) => ProductionValue.SetBasis(item, basis);
-    internal static void RestoreBasis(GameItem item) { ProductionValue.RestoreBasis(item); FoodStateValue.Refresh(item); }
     private static decimal InnateFactor(GameItem item) => ProductionValue.InnateFactor(item);
 }

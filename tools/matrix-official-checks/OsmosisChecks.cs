@@ -49,16 +49,24 @@ internal static class OsmosisChecks
         var allComponents = Prepare(0, 1, 98900, 100, permanent: 1000);
         check(MatrixMachines.Purify(allComponents.Machine, allComponents.Water) == 25 &&
             WaterHelper.GetTotalVolume(allComponents.Water) == 100000, "S24 cap excluded an unremovable liquid component");
-        var shared = Prepare(0, 3, 98998, 400, 2, 600);
+        int baseCap = MachinePurifier.GetMaxPurityCap(0);
+        int atBaseCap = baseCap * 10;
+        int permanent = 100_000 - (atBaseCap - 2) - 400 - 2;
+        var shared = Prepare(0, 3, atBaseCap - 2, 400, 2, permanent);
         check(MatrixMachines.Purify(shared.Machine, shared.Water) == 2 &&
-            shared.Water.GetTagReadonly("liquid:fine").GetInt() == 2 && shared.Water.GetTagReadonly("liquid:permanent").GetInt() == 600 &&
-            WaterHelper.GetTotalVolume(shared.Water) == 100000, "Each contaminant spent the same remaining purity allowance");
-        var rounding = Prepare(0, 3, 98, 3);
+            shared.Water.GetTagReadonly("liquid:dirt").GetInt() == 398 &&
+            shared.Water.GetTagReadonly("liquid:fine").GetInt() == 2 &&
+            shared.Water.GetTagReadonly("liquid:permanent").GetInt() == permanent &&
+            WaterHelper.GetTotalVolume(shared.Water) == 100_000, "Each contaminant spent the same remaining purity allowance");
+        // At volume 102 on this Build, the native floor is one part of contaminant.
+        var rounding = Prepare(0, 3, 99, 3);
         check(MatrixMachines.Purify(rounding.Machine, rounding.Water) == 2 &&
-            rounding.Water.GetTagReadonly("liquid:water").GetInt() == 100 && WaterHelper.GetTotalVolume(rounding.Water) == 101 &&
+            rounding.Water.GetTagReadonly("liquid:water").GetInt() == 101 && WaterHelper.GetTotalVolume(rounding.Water) == 102 &&
             MatrixMachines.Purify(rounding.Machine, rounding.Water) == 0, "S24 differs from native total-volume integer rounding");
-        var large = Prepare(0, 1, 1583999999, 16000001);
-        check(MatrixMachines.Purify(large.Machine, large.Water) == 1 && WaterHelper.GetTotalVolume(large.Water) == 1600000000,
+        const int largeVolume = 1_600_000_000;
+        int largeWater = largeVolume / 10_000 * baseCap - 1;
+        var large = Prepare(0, 1, largeWater, largeVolume - largeWater);
+        check(MatrixMachines.Purify(large.Machine, large.Water) == 1 && WaterHelper.GetTotalVolume(large.Water) == largeVolume,
             "S24 purity allowance overflowed on a large container");
         var unsupported = Prepare(200, 3, 60000, 0, permanent: 40000);
         check(MatrixMachines.Purify(unsupported.Machine, unsupported.Water) == 0,
@@ -67,15 +75,15 @@ internal static class OsmosisChecks
         check(MatrixMachines.Purify(dry.Machine, dry.Water) == 0, "S24 created water in a container without water");
         var absent = Prepare(0, 0, 200, 600);
         check(MatrixMachines.Purify(absent.Machine, absent.Water) == 0, "Purifier without S24 received extra removal");
-        var charged = Prepare(0, 1, 98900, 1100);
+        var charged = Prepare(0, 1, atBaseCap - 100, 100_100 - atBaseCap);
         object?[] extra = { charged.Machine, charged.Water, false, 17 };
         Ports.Hook(typeof(MatrixOsmosisPatch), "Postfix", extra);
-        check((int)extra[3]! == 117 && charged.Water.GetTagReadonly("liquid:water").GetInt() == 99000,
+        check((int)extra[3]! == 117 && charged.Water.GetTagReadonly("liquid:water").GetInt() == atBaseCap,
             "S24 did not return actual removal to native billing and work callbacks");
         object?[] noWork = { charged.Machine, charged.Water, false, 0 };
         Ports.Hook(typeof(MatrixOsmosisPatch), "Postfix", noWork);
         check((int)noWork[3]! == 0, "At-cap S24 reported phantom removal to billing and growth");
-        var ignored = Prepare(200, 3, 99000, 1000);
+        var ignored = Prepare(200, 3, atBaseCap, 100_000 - atBaseCap);
         object?[] noBonus = { ignored.Machine, ignored.Water, true, 0 };
         Ports.Hook(typeof(MatrixOsmosisPatch), "Postfix", noBonus);
         check((int)noBonus[3]! == 0, "S24 ignored the native ignoreBonus purity cap");

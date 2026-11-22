@@ -21,7 +21,6 @@ public sealed class ItemWindow : PixelWindow
     public List<GameInventory> Inventories = new();
     public ItemWindow(params MachineryPanel[] panels)
     { Inventories = panels.Select(panel => panel.Element).OfType<GameInventory>().ToList(); childElement = panels.FirstOrDefault()?.Element; }
-    public void Validate() { }
 }
 public sealed class MachineryButton
 {

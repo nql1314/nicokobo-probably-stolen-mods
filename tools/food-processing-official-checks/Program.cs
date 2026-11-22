@@ -90,7 +90,7 @@ foreach (bool cleanAvailable in new[] { false, true })
     Check(s.Output.childItems.Single().unitValue == 80, "Production pricing ignores the configured recipe markup");
     var product = s.Output.childItems[0]; string state = JsonConvert.SerializeObject(product.state);
     product.state = JsonConvert.DeserializeObject<TagSystem>(state)!; product.unitValue = 999;
-    FoodProduction.RestoreBasis(product);
+    FoodStateValue.RestoreBasis(product);
     Check(product.unitValue == 80, "Production basis did not survive JSON save/reload");
     Check(s.Output.mayInventoryAddItemFunc!(new(), s.Output) == false, "Output admission left open");
 }
@@ -278,7 +278,7 @@ foreach (string failure in new[] { "none", "quality", "capacity", "power", "tain
         Check(product.unitValue == (failure == "quality" ? 65 : 50) && graft.Destroyed && bandage.Destroyed &&
             s.Battery.childItem!.GetTagReadonly("energy").GetInt() == 90, "Graft recipe lost actual costs or its one debit");
         product.unitValue = 999;
-        FoodProduction.RestoreBasis(product);
+        FoodStateValue.RestoreBasis(product);
         Check(product.unitValue == (failure == "quality" ? 65 : 50), "Graft product lost its persisted production basis");
     }
     else Check(graft.parentInventory == s.Input && graft.unitCount == 1 && bandage.parentInventory == s.Input &&

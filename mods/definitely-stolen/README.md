@@ -78,14 +78,14 @@ schema 1/2/3/4 按原规则迁至 schema 5。已生成的旧夜晚不补事件�
 
 ## 构建与验证
 
-从仓库根目录只编译：
+从仓库根目录执行。游戏安装在其他目录时，先按[构建说明](../../README.md#编译)设置 PROBABLY_STOLEN_GAME_DIR。
 
 ```powershell
 dotnet build .\mods\definitely-stolen\DefinitelyStolen.csproj -c Release -p:NuGetAudit=false
 dotnet run --project .\tools\theft-official-checks\Theft.Official.Checks.csproj -c Release -p:NuGetAudit=false -- .\mods\definitely-stolen .\mods\definitely-stolen\bin\Release\netstandard2.1\DefinitelyStolen.dll
 ```
 
-包内只有一个 IMod 入口；加载器自动安装入口程序集的 20 个精确 Harmony 补丁类，不重复 `PatchAll`。通过轻量客户端接入独立的 NicoKobo Forge 前置，包内不附带 `Nicokobo.ContentInterop.dll`。`Capabilities` 为空；外出恢复只定位明确的 `MapUIManager` 游戏方法，原版烟雾弹供货追加在小偷第二段对白的原生供货回调之后。
+包内只有一个 IMod 入口；加载器自动安装入口程序集的 20 个玩法补丁和共享设置本地化补丁。通过轻量客户端接入独立的 NicoKobo Forge 前置，包内不附带 `Nicokobo.ContentInterop.dll`。`Capabilities` 为空；外出恢复只定位明确的 `MapUIManager` 游戏方法，原版烟雾弹供货追加在小偷第二段对白的原生供货回调之后。
 
 正式版缺少即时恢复保存外出的公开入口，因此 `Native.RestoreOutside` 精确调用 Build 26274380 的 `MapUIManager.OnGoingOutside(AfterhourLocation)`、`ShowStage`、`OpenLocationPanel` 并恢复 Current，避免重放新访问次数。此处随游戏更新需重新核对。普通进出地区始终走官方地点和返回流程。
 

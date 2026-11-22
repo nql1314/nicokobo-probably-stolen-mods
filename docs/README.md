@@ -8,7 +8,7 @@
 | 工坊绑定、打包、更新与多语言详情 | [Steam 发布](STEAM_PUBLISHING.md) |
 | 自制正式版 Mod 的 Nexus 文件与页面 | [Nexus 发布](NEXUS_PUBLISHING.md) |
 | 脚本入口与本地配置 | [工具索引](../tools/README.md)、[配置模板](../config/README.md) |
-| 源码授权、资产来源与 Git 历史 | [开源准备状态](OPEN_SOURCE.md) |
+| 源码授权、资产来源与 Git 历史 | [开源与素材授权](OPEN_SOURCE.md) |
 | 开局图标 | [原图与导出规范](STARTING_ICON_STYLE_GUIDE.md) |
 
 ## Mod 设计

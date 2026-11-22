@@ -5,6 +5,11 @@ $repo = [IO.Path]::GetFullPath((Join-Path $PSScriptRoot '../..'))
 $bundle = Join-Path $repo 'mods/mechcore-protocol'
 $sources = @('mechcore-protocol-synthesis-expansion', 'mechcore-protocol-module-matrix', 'aug-mechanical-ascension')
 $assets = @{}
+function Test-SameResource([IO.FileInfo]$Source, [IO.FileInfo]$Destination) {
+    return $Destination.Exists -and $Source.Length -eq $Destination.Length -and [Linq.Enumerable]::SequenceEqual[byte](
+        [IO.File]::ReadAllBytes($Source.FullName), [IO.File]::ReadAllBytes($Destination.FullName))
+}
+
 foreach ($name in $sources) {
     $source = Join-Path $repo ('mods/' + $name)
     $textures = Join-Path $source 'Textures'
@@ -12,30 +17,27 @@ foreach ($name in $sources) {
         foreach ($file in Get-ChildItem -LiteralPath $textures -Recurse -File) {
             if ($file.Name -in @('README', 'README.md', 'README.txt', 'change.log')) { continue }
             $relative = 'Textures/' + [IO.Path]::GetRelativePath($textures, $file.FullName).Replace('\', '/')
-            if ($assets.ContainsKey($relative) -and ![Collections.StructuralComparisons]::StructuralEqualityComparer.Equals(
-                [IO.File]::ReadAllBytes($assets[$relative]), [IO.File]::ReadAllBytes($file.FullName))) {
+            if ($assets.ContainsKey($relative) -and !(Test-SameResource $assets[$relative] $file)) {
                 throw "Conflicting component resource: $relative"
             }
-            $assets[$relative] = $file.FullName
+            $assets[$relative] = $file
         }
     }
 }
 $expected = @{}
-function Resolve-GeneratedFile([string]$Relative) {
-    $target = [IO.Path]::GetFullPath((Join-Path $bundle $Relative))
-    $boundary = [IO.Path]::GetFullPath($bundle).TrimEnd('\', '/') + [IO.Path]::DirectorySeparatorChar
-    if (!$target.StartsWith($boundary, [StringComparison]::OrdinalIgnoreCase)) { throw 'Resource target escapes the bundle' }
-    $null = New-Item -ItemType Directory -Path (Split-Path $target) -Force
-    $expected[$target] = $true
-    return $target
-}
+$boundary = [IO.Path]::GetFullPath($bundle).TrimEnd('\', '/') + [IO.Path]::DirectorySeparatorChar
 foreach ($relative in ($assets.Keys | Sort-Object)) {
-    $target = Resolve-GeneratedFile $relative
-    Copy-Item -LiteralPath $assets[$relative] -Destination $target -Force
+    $target = [IO.Path]::GetFullPath((Join-Path $bundle $relative))
+    if (!$target.StartsWith($boundary, [StringComparison]::OrdinalIgnoreCase)) { throw 'Resource target escapes the bundle' }
+    $expected[$target] = $true
+    $file = [IO.FileInfo]::new($target)
+    if (!(Test-SameResource $assets[$relative] $file)) {
+        $file.Directory.Create()
+        Copy-Item -LiteralPath $assets[$relative].FullName -Destination $target -Force
+    }
 }
 # Bundle textures are generated. Source assets remain in the components.
 $generated = [IO.Path]::GetFullPath((Join-Path $bundle 'Textures'))
-$boundary = [IO.Path]::GetFullPath($bundle).TrimEnd('\', '/') + [IO.Path]::DirectorySeparatorChar
 if (!$generated.StartsWith($boundary, [StringComparison]::OrdinalIgnoreCase)) { throw 'Unexpected generated directory' }
 if (Test-Path -LiteralPath $generated) {
     foreach ($file in Get-ChildItem -LiteralPath $generated -Recurse -File) {

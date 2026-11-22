@@ -13,9 +13,9 @@
 
 ## 编译
 
-需要 Windows、PowerShell 7、.NET SDK 和 Steam 安装的 Probably Stolen 正式版。开发工具从游戏安装读取 `Probably Stolen_Data/Managed/`。
+构建需要 Windows、PowerShell 7.4 或更新的 7.x 版本、.NET SDK，以及 Steam 安装的 Probably Stolen 正式版。仓库使用 .NET 10 SDK 验证。项目引用游戏安装目录下的 `Probably Stolen_Data/Managed/`。离线检查的运行时要求见[工具索引](tools/README.md#离线检查)。
 
-从仓库根目录在 PowerShell 7 运行，路径换成自己的游戏安装目录。
+从仓库根目录运行，路径换成自己的游戏安装目录。
 
 ```powershell
 $env:PROBABLY_STOLEN_GAME_DIR = 'C:\SteamLibrary\steamapps\common\Probably Stolen'
@@ -32,7 +32,6 @@ dotnet build ./mods/speed-up/SpeedUp.csproj -c Release
 | [tools/](tools/README.md) | 构建、发布、Mod 素材生成和离线检查 |
 | [docs/](docs/README.md) | Mod 开发、玩法设计和验证说明 |
 | [assets/](assets/) | Mod 封面和开局图标的源素材 |
-| [prototypes/](prototypes/) | 独立试作 |
 | [skills/](skills/probably-stolen-official-mods/SKILL.md) | 正式版 Mod 开发与研究技能 |
 | [config/](config/README.md) | 配置模板。真实配置和账号状态存放在本地 `.local/` |
 

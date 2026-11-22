@@ -56,7 +56,7 @@ internal static class FoodItems
                     (loaded.shape.width != definition.Width || loaded.shape.height != definition.Height))
                     loaded.SetShape(footprint);
                 AssignText(loaded, definition);
-                FoodProduction.RestoreBasis(loaded);
+                FoodStateValue.RestoreBasis(loaded);
             };
             if (definition.Kind == ItemKind.Guide)
             {

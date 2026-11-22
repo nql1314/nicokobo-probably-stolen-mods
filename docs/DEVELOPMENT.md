@@ -2,7 +2,7 @@
 
 ## 正式版游戏内翻译
 
-在 [正式版翻译表](../mods/Localization.csv) 中维护游戏内自有文案。每行由包目录、稳定的文案键和各语言译文组成。新增语言时直接使用语言代码作为列名，未完成的词条可以留空。使用 `{0}`、`{1}` 等占位符插入变量，用 `\n` 表示换行。原版物品名、人物名和机制术语通过游戏本地化 API 读取，再作为参数插入。
+在 [正式版翻译表](../mods/Localization.csv) 中维护游戏内自有文案。每行由包目录、稳定的文案键和各语言译文组成。九种必填语言为 en、zh、ru、de、ja、fr、es、pl、zh-TW。新增语言时使用语言代码作为列名，新增列的未完成词条可以留空。使用 `{0}`、`{1}` 等占位符插入变量，用 `\n` 表示换行。原版物品名、人物名和机制术语通过游戏本地化 API 读取，再作为参数插入。
 
 编译会从同一张表生成程序集使用的词条和游戏加载器读取的 `Localization/*.csv`。机核协议的合成扩展、模组矩阵和机械飞升共用 `mechcore-protocol` 包名。
 
@@ -44,7 +44,7 @@ Adjust dialogue, customer and shutter speeds, with an optional global speed mult
 
 合成扩展、模组矩阵和机械飞升统一编译 [`MechcoreProtocol.csproj`](../mods/mechcore-protocol/MechcoreProtocol.csproj)。
 
-构建包契约检查和 Forge 离线扫描器时，用 `-p:GameCodeDir=<快照>/code/Assembly-CSharp` 指定目标 Build 的源码目录。游戏不在默认目录时，同时用 `-p:GameManaged=<同一 Build 的 Managed 目录>` 指定程序集路径。解包步骤见采集工作区的 `docs/UNPACKING.md`。
+构建包契约检查和 Forge 离线扫描器时，用 `-p:GameCodeDir=<快照>/code/Assembly-CSharp` 指定目标 Build 的源码目录。游戏不在默认目录时，同时用 `-p:GameManaged=<同一 Build 的 Managed 目录>` 指定程序集路径。解包步骤见游戏资料工作区中 probably-stolen-tool 的 `docs/UNPACKING.md`。
 
 明确要求打包时，使用仓库根目录的统一入口：
 
@@ -67,7 +67,7 @@ Demo 源码、构建配置和专用检查可在 Git 提交 `ece7bcb5` 查阅。�
 
 按所属项目运行与改动相关的检查。打包入口的验证包括 manifest、实际程序集版本、ZIP 内容及安装文件一致性；这些结果不代表游戏内扫描、授权、加载或交互已经通过。
 
-Python 图鉴回归、图标校验和游戏验证按本次改动所需范围执行。游戏数据与带日期的历史验证记录保留，不将旧版的检查结果扩大为正式版已通过。
+各项目的离线入口及运行时要求见[工具索引](../tools/README.md#离线检查)。记录检查对应的 Mod 版本和 Steam Build，便于区分当前结果与历史验证。
 
 ## 核对游戏版本与契约
 

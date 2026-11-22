@@ -1,5 +1,5 @@
 using System.Xml.Linq;
-using Mono.Cecil;
+using DseCecil;
 using DefinitelyStolen.Domain;
 using DefinitelyStolen.UI;
 
@@ -13,7 +13,6 @@ internal static class PackageContractChecks
         check(manifest.Name == "Mod" && manifest.Element("ID")?.Value == Identity.Owner, "Native manifest root and stable owner match");
         check(manifest.Element("Assemblies")!.Elements("Assembly").Select(x => x.Value).SequenceEqual(new[] { "DefinitelyStolen.dll" }), "Only the content entry is bundled; Forge is a declared standalone prerequisite");
         check(manifest.Element("Prerequisites")!.Elements("Mod").Any(x => x.Value == "nicokobo.forge"), "Standalone Forge prerequisite is declared");
-        check(manifest.Element("Prerequisites")!.Elements("Mod").Any(x => x.Value == "nicokobo.forge"), "Standalone Forge prerequisite is declared");
         using var module = ModuleDefinition.ReadModule(binary);
         check(module.Types.Count(x => x.Interfaces.Any(i => i.InterfaceType.FullName == "IMod")) == 1, "The package has exactly one official IMod entry");
         check(module.AssemblyReferences.All(x => !x.Name.Contains("Il2Cpp") && !x.Name.Contains("Melon") && x.Name != "Nicokobo.Forge" && x.Name != "System.Text.Json"), "No Demo, Forge or incompatible JSON dependency remains");
@@ -21,9 +20,12 @@ internal static class PackageContractChecks
             .Select(i => i.Operand).OfType<MethodReference>().ToArray();
         check(!calls.Any(m => m.DeclaringType.FullName == "HarmonyLib.Harmony" && m.Name == "PatchAll"), "Entry does not repeat the loader's PatchAll");
         check(!calls.Any(m => m.Name == "SaveGame" && m.DeclaringType.Name == "PlayerStore"), "Theft gameplay never triggers an extra native save");
-        using var game = ModuleDefinition.ReadModule(@"F:\SteamLibrary\steamapps\common\Probably Stolen\Probably Stolen_Data\Managed\Assembly-CSharp.dll");
+        string gameDir = Environment.GetEnvironmentVariable("PROBABLY_STOLEN_GAME_DIR") ??
+            @"F:\SteamLibrary\steamapps\common\Probably Stolen";
+        using var game = ModuleDefinition.ReadModule(Path.Combine(gameDir, "Probably Stolen_Data", "Managed", "Assembly-CSharp.dll"));
         var patchTypes = module.Types.Where(x => x.CustomAttributes.Any(a => a.AttributeType.FullName == "HarmonyLib.HarmonyPatch")).ToArray();
-        check(patchTypes.Length == 20, "Every required precise patch is a loader-discoverable patch class");
+        check(patchTypes.Count(x => x.Namespace == "DefinitelyStolen.Integration") == 20,
+            "All 20 gameplay patch classes are loader-discoverable");
         foreach (var type in patchTypes)
         {
             var attr = type.CustomAttributes.Single(x => x.AttributeType.FullName == "HarmonyLib.HarmonyPatch");

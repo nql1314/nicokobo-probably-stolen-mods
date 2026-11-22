@@ -37,7 +37,7 @@ Version **1.0.11** lists both eligible storage bays in the Scavenging Robot reci
 dotnet build .\mods\mechcore-protocol\MechcoreProtocol.csproj -c Release
 ```
 
-编译前自动执行 [Sync-MechcoreResources.ps1](../../tools/build/Sync-MechcoreResources.ps1)，从三个组件合并 `Textures` 和 `Localization`。同名不同内容会报错；生成目录不手改、不纳入源码，修改对应组件资源后重新编译。
+编译前自动执行 [Sync-MechcoreResources.ps1](../../tools/build/Sync-MechcoreResources.ps1)，合并三个组件的纹理。同路径的纹理内容有冲突时会报错，内容一致的现有纹理会保留。游戏内文案从 [Localization.csv](../Localization.csv) 的 mechcore-protocol 行生成。修改组件中的原图或翻译表后重新编译。
 
 需要打包时使用仓库 [Build-Mods.ps1](../../Build-Mods.ps1) 的 `-Mod mechcore-protocol`；打包和安装不由普通编译自动触发。完整首发说明见 [change.log](change.log)。
 

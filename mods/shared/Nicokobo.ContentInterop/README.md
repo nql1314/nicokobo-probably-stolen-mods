@@ -1,6 +1,6 @@
 # NicoKobo Forge 正式版公共层
 
-公共实现已拆入独立前置 **NicoKobo Forge 1.0.0**（`nicokobo.forge`，服务协议 1），入口工程为 [NicokoboForge.csproj](../../nicokobo-forge/NicokoboForge.csproj)，运行包只分发 `Nicokobo.Forge.dll`。本目录保留由前置工程直接编译的机器互操作源码；固定模组能力位于前置工程。四个内容包不再引用或分发 `Nicokobo.ContentInterop.dll`，本目录不再提供独立库工程。
+公共实现已拆入独立前置 **NicoKobo Forge**（`nicokobo.forge`，服务协议 1），入口工程为 [NicokoboForge.csproj](../../nicokobo-forge/NicokoboForge.csproj)，运行包只分发 `Nicokobo.Forge.dll`。本目录保留由前置工程直接编译的机器互操作源码；固定模组能力位于前置工程。四个内容包不再引用或分发 `Nicokobo.ContentInterop.dll`，本目录不再提供独立库工程。
 
 内容包通过 [轻量客户端](../Nicokobo.Forge.Client/) 和共享视图源文件调用前置。标准 `IServiceProvider` 提供只含 BCL／原生游戏类型的委托协议；静态目录、生产队列、G 窗口和供货补丁只在前置中维护。不同内容版本可共用兼容协议，避免同名不同版本 DLL 混载。前置缺失或协议不匹配时停止内容激活。
 
@@ -32,7 +32,7 @@
 
 共享库本身不需要额外能力。顾客供货使用官方 `OnGenerateCustomerVeryLate` 接入现有对话，不扫描或补丁编译器生成的方法。掉落改用官方 `OnLootRolled`，通过公开 `GetTableEntries` 取得快照后应用原有供货权重，不修改注册表。没有额外供货条目且不需过滤时保留原结果，不增加抽取；保留此前回调提供的表外结果。
 
-共享供货仅保留四处限定到游戏类型的补丁：发明家／普通供应商作用域、统一 `ItemSpawner.Spawn` 和柜台入库。`SpawnFromTable`／`SpawnFromTableGroup` 本来就调用 `Spawn`，不再重复补丁这两个包装入口。矩阵及机械飞升已删除随机候选表的 IL 补丁，固定能力通过前置自己的表解析；Forge 和四包的 `Capabilities` 均为空。`Prerequisites` 不能代替 manifest DLL 声明或提供初始化排序。库不修改加载器、扫描器、信任、启用状态或 Developer mode。
+共享供货仅保留四处限定到游戏类型的补丁：发明家／普通供应商作用域、统一 `ItemSpawner.Spawn` 和柜台入库。`SpawnFromTable`／`SpawnFromTableGroup` 本来就调用 `Spawn`，不再重复补丁这两个包装入口。矩阵及机械飞升已删除随机候选表的 IL 补丁，固定能力通过前置自己的表解析；Forge 和四包的 `Capabilities` 均为空。内容包通过 `Prerequisites` 声明 Forge 前置，并在资源加载阶段确认服务可用和协议兼容。库不修改加载器、扫描器、信任、启用状态或 Developer mode。
 
 ## 机器、配方及 G 查询
 
@@ -40,9 +40,9 @@
 - `MachinePorts` 提供投料、产物及可选模组、电源、水容器库存。`Recipes(machine)` 会应用机器模式过滤；查询目录不执行生产。
 - `IngredientView.Matches(item)` 是扣料条件，展示 ID 不能代替它。`WaterParts` 使用原生单位，1 ml = 1000 parts。
 - `ExtraRecipes.Register` 发布动态配方；可用性每次读取，`ResolveOutputId` 在真正生产时选产物，`OutputCount` 支持真实多件产出。detach 后立即移除该 owner。
-- G 查询窗口可搜索物品、机器、材料和配方 ID，并分页显示；名称／图标原型缓存不分配 UID，语言变化时清缓存。全六包共用一个窗口和按键绑定。
+- G 查询窗口可搜索物品、机器、材料和配方 ID，并分页显示；名称／图标原型缓存不分配 UID，语言变化时清缓存。已接入的内容共用 Forge 提供的窗口和按键绑定。
 
-矩阵 K02 配方 ID 为 `nicokobo.mechcore_protocol.module_matrix.recipe.rare_module_upgrade`，任意两个基础模组／节点可混用，生成一个当前可用的随机稀有模组／节点。它复用合成扩展实际生产事务，不写入 schema 25 固定配方配置。K05 通用终端由 Forge 提供，合成扩展、机械飞升和物流登记各自的附加配方。
+矩阵 K02 配方 ID 为 `nicokobo.mechcore_protocol.module_matrix.recipe.rare_module_upgrade`，任意两个基础模组／节点可混用，生成一个当前可用的随机稀有模组／节点。它复用合成扩展实际生产事务，通过动态配方目录登记。K05 通用终端由 Forge 提供，合成扩展、机械飞升和物流登记各自的附加配方。
 
 ## 生产回执及物流
 
@@ -50,7 +50,7 @@
 
 回执只包含物流需要的实际扣除物品、跨堆叠数量和水量差。删除仅被检查工具消费的 `WorkResult.Products`／`ProducedItem`，不再为此扫描并复制产出库存；出料直接读取原生库存。同机嵌套共用一次前后回调，每次真实批次独立结算，避免熔炉批量及玻璃回收重复记账。After 观察者异常记录后继续其他观察者；Before 异常向生产方传播。
 
-当前连接食品两台机器、合成四台机器，以及物流适配的原生加工路径。物流移动真实库存，遵守原生容量、锁定、UID 及电源计费。夜间只排队原生实际产生的机会，在普通生产循环结束、第二阶段进料斗之前按序执行，保留当次 `CurrentConverterHelper.isNightCycle`；不凭空补跑批次。
+当前接入路径包括食品加工、合成设备和物流适配的原生机器。物流移动真实库存，遵守原生容量、锁定、UID 及电源计费。夜间只排队原生实际产生的机会，在普通生产循环结束、第二阶段进料斗之前按序执行，保留当次 `CurrentConverterHelper.isNightCycle`；不凭空补跑批次。
 
 Forge 不再通过机器或目录工厂包装 `onCycleEndSlotItemFunc`。原版夜间、加速器及调试加工的调用处进入统一边界，保留原回调和 Target。手动加工通过客户端 `NativeMachineAccess.Process(machine)` 进入同一边界；直接调用物品回调不执行 Forge 的原生机器物流和电力补偿。此接口新增服务操作 `native.process`，自动化物流需与对应 Forge 一起更新。当前编译及离线检查不代表组合游戏验收。
 
@@ -64,6 +64,6 @@ Forge 不再通过机器或目录工厂包装 `onCycleEndSlotItemFunc`。原版�
 
 ## 验证
 
-本次精简后六包统一 Release 编译通过，0 警告、0 错误；六包离线扫描无 HardFlags 或漏报能力，共享 DLL 一致。142 项供货定向检查及 154 项食品生产检查通过；合成／矩阵关联检查工程完成编译，未扩大运行完整套件。同步移除检查工具对产出镜像的依赖，改读实际产出库存，并更新旧权限断言。
+独立前置拆分前的六包历史基线完成 Release 编译，0 警告、0 错误；六包离线扫描无 HardFlags 或漏报能力，共享 DLL 一致。142 项供货定向检查及 154 项食品生产检查通过；合成／矩阵关联检查工程完成编译，未扩大运行完整套件。同步移除检查工具对产出镜像的依赖，改读实际产出库存，并更新旧权限断言。
 
-此前这项共享库检查未启动游戏、打包或安装。最小原生场景覆盖开局七类物品和工坊 13 项奖励，不能代表新共享库已完成原生验收；旧 `dist` 包也不代表新源码。详见Git 历史。
+当前离线入口见[工具索引](../../../tools/README.md#离线检查)。最小原生场景覆盖开局七类物品和工坊 13 项奖励，不能代表新共享库已完成原生验收；旧 `dist` 包也不代表新源码。详见Git 历史。
