@@ -13,6 +13,7 @@ internal sealed class TheftPanel
     private readonly RunController _run;
     private readonly Catalog _catalog;
     private CustomUIWindow? _window, _debug;
+    private CustomUIElement? _district, _switchRegion;
     private CustomUIElement? _stats, _events, _details, _message, _legend, _clock, _action, _mode, _loot, _drop, _return;
     private const float BarWidth = 360;
     private GameObject? _stage;
@@ -51,9 +52,10 @@ internal sealed class TheftPanel
             return _stage;
         }
     }
-    internal void Arrive(int region)
+    internal void ShowRegion(int region)
     {
         _region = region; _position = -1; _practice = null; _practiceResult = null; _dirty = true;
+        _viewSize = Vector2.zero;
         _layout = SceneLayout.Create(_run.State!.RunId, _run.State.Night!, region);
         _background!.sprite = Art.Get(SceneLayout.SceneName(region, _layout.Background));
     }
@@ -102,7 +104,8 @@ internal sealed class TheftPanel
         }
         builder.BeginPanel(400, 1000, TextAnchor.UpperLeft, padding: 16, spacing: 6, id: "theft.controls");
         _controls = builder.CurrentContainer;
-        builder.AddHeader(Locations.Title(region)); builder.Last.text.fontSize = 24;
+        builder.AddHeader(Locations.Title(region)); _district = builder.Last; _district.text.fontSize = 24;
+        builder.AddButton(Native.Localize("switch_region"), SwitchRegion, "theft.switch_region"); _switchRegion = builder.Last;
         builder.AddLabel("", "theft.events"); _events = builder.Last; _events.text.fontSize = 15; _events.SetPreferredSize(BarWidth, 54);
         builder.AddLabel("", "theft.stats"); _stats = builder.Last; _stats.text.fontSize = 17; _stats.SetPreferredSize(BarWidth, 52);
         builder.AddLabel("", "theft.details"); _details = builder.Last; _details.text.fontSize = 18; _details.SetPreferredSize(BarWidth, 138);
@@ -129,7 +132,21 @@ internal sealed class TheftPanel
         { int selected = _loot!.GetIndex(); if (selected >= 0 && selected < _lootIds.Length) _run.Abandon(int.Parse(_lootIds[selected])); }, "theft.abandon"); _drop = builder.Last;
         builder.AddButton(LocHelper.GetLocalizedUI("afterhour_return_action"), _run.Return, "theft.return"); _return = builder.Last;
         builder.End();
-        _viewSize = Vector2.zero; LayoutScene(); _dirty = true; Refresh();
+        LayoutScene(); _dirty = true; Refresh();
+    }
+
+    private int? NextRegion() => _practice == null && _run.CanBrowseOtherRegions &&
+        MapUIManager.Instance is { IsInTransit: false } map && Locations.IsOwn(map.Current?.Id)
+        ? Locations.NextOpenRegion(_region) : null;
+
+    private void SwitchRegion()
+    {
+        if (NextRegion() is not int region) return;
+        // All three previews share the existing outing and its native inventory.
+        ShowRegion(region);
+        RefreshPortraits();
+        LayoutScene();
+        Refresh();
     }
 
     private void LayoutScene()
@@ -254,6 +271,10 @@ internal sealed class TheftPanel
         _stats?.SetText(Native.Localize("run_stats", level, _run.State.Experience, TheftRules.Threshold(Math.Min(10, level + 1)),
             _run.State.Wind, TheftRules.Remaining(_run.State)));
         bool running = _practice != null || night.Timing != null;
+        int? nextRegion = NextRegion();
+        _district?.SetText(Locations.Title(_region));
+        _switchRegion?.SetInteractable(nextRegion.HasValue)
+            .SetTooltip(nextRegion is int region ? Native.Localize($"region.{region}.name") : "");
         _mode?.SetBool(night.Mode == TheftMode.Probability).SetInteractable(!running && !night.Ended && !night.Escaped);
         for (int i = 0; i < 3; i++)
         {
@@ -302,10 +323,15 @@ internal sealed class TheftPanel
         _position = -1; _practiceResult = null;
         _layout = SceneLayout.Create(_run.State!.RunId, _run.State.Night!, _region);
         _viewSize = Vector2.zero;
+        RefreshPortraits();
+    }
+    private void RefreshPortraits()
+    {
+        var state = _run.State!;
         for (int i = 0; i < 3; i++)
         {
-            var npc = _run.State.Night!.Npcs.Single(x => x.Region == _region && x.Position == i);
-            _people[i]?.SetSprite(Art.Get(SceneLayout.PortraitName(_run.State.RunId, npc)));
+            var npc = state.Night!.Npcs.Single(x => x.Region == _region && x.Position == i);
+            _people[i]?.SetSprite(Art.Get(SceneLayout.PortraitName(state.RunId, npc)));
         }
     }
     internal void ToggleDebug()

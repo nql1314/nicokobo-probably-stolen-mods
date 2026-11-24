@@ -1,5 +1,6 @@
 using DefinitelyStolen.Domain;
 using DefinitelyStolen.Persistence;
+using Nicokobo.ContentInterop;
 using Nicokobo.ModUtilities;
 
 namespace DefinitelyStolen.Integration;
@@ -48,8 +49,20 @@ internal static class NativeCarry
         }
         return false;
     }
-    internal static List<CarryState> Snapshot() => Inventories().SelectMany(x => x.Inventory.childItems.ToArray()
-        .Select(item => new CarryState { UniqueId = item.GetUniqueID(), Graph = NativeGraph.Encode(item), Inventory = x.Key })).DistinctBy(x => x.UniqueId).ToList();
+    internal static List<CarryState> Snapshot(Action<string>? warn = null)
+    {
+        var saved = new List<CarryState>();
+        foreach (var pair in Inventories())
+            foreach (var item in pair.Inventory.childItems.ToArray())
+            {
+                try
+                {
+                    saved.Add(new CarryState { UniqueId = item.GetUniqueID(), Graph = NativeGraph.Encode(item), Inventory = pair.Key });
+                }
+                catch (Exception ex) when (warn != null) { warn($"Could not capture carry item {item.uniqueId}: {ex.Message}"); }
+            }
+        return saved.DistinctBy(x => x.UniqueId).ToList();
+    }
     internal static Action CaptureRollback()
     {
         // Keep live handles, whole stacks and exact slots. Native returning and
@@ -126,5 +139,55 @@ internal static class NativeCarry
                 }
         }
         catch { foreach (var item in inserted.AsEnumerable().Reverse()) { NativeItems.Detach(item); ItemGraphCleanup.Destroy(item); } throw; }
+    }
+
+    internal static void RecoverToStore(List<CarryState> pending, PlayerStore store, Action<string> warn)
+    {
+        var entry = EmporiumEntry.Instance;
+        var live = NativeGraph.RunItems(store).Where(item => item.uniqueId > 0).ToLookup(item => item.uniqueId);
+        var ids = live.Select(group => group.Key).ToHashSet();
+        foreach (var saved in pending.ToArray())
+        {
+            GameItem? item = null;
+            IReadOnlyDictionary<int, (string Id, int Units)>? nodes = null;
+            try
+            {
+                nodes = GraphIdentity.Nodes(saved.Graph);
+                if (!nodes.ContainsKey(saved.UniqueId)) throw new InvalidDataException("Missing recovery carry root");
+                int highest = nodes.Keys.Max();
+                if (highest == int.MaxValue) throw new InvalidDataException("Carry UID leaves no room for native allocation");
+                store.currentUniqueId = Math.Max(store.currentUniqueId, highest + 1);
+                if (nodes.Keys.Any(ids.Contains))
+                {
+                    var existing = live[saved.UniqueId].Take(2).ToArray();
+                    if (existing.Length == 1 && existing[0].identifier == nodes[saved.UniqueId].Id)
+                        existing[0].state.DisableTag(Identity.CustodyTag);
+                    else
+                        warn($"Reset carry record {saved.UniqueId} because its UID overlaps live inventory");
+                    pending.Remove(saved);
+                    continue;
+                }
+
+                item = NativeGraph.Decode(saved.Graph, ids);
+                if (item.uniqueId != saved.UniqueId) throw new InvalidDataException("Recovery carry root changed");
+                foreach (var grid in new[] { entry.backInvinvElement, entry.invElement, entry.showcaseElement })
+                {
+                    if (InventoryPlacement.PlanWholeStacks(grid, new[] { item }) is not { Count: 1 } plan) continue;
+                    RestorePlacement(item, grid, plan[0].Shape, item.unitCount);
+                    item.state.DisableTag(Identity.CustodyTag);
+                    pending.Remove(saved);
+                    break;
+                }
+            }
+            catch (Exception ex) { warn($"Could not restore carry item {saved.UniqueId}: {ex.Message}"); }
+            finally
+            {
+                if (Native.Alive(item))
+                {
+                    if (item!.parentInventory == null) ItemGraphCleanup.Destroy(item);
+                    else ids.UnionWith(nodes!.Keys);
+                }
+            }
+        }
     }
 }

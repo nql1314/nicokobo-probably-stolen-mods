@@ -22,7 +22,6 @@ internal sealed class RunController(Catalog catalog, Action<string> log, Action<
     internal string Message { get; private set; } = "";
     internal event Action? Changed;
     internal event Action? BeforeReturn;
-    private string? _json;
     private PlayerStore? _store;
     private readonly Dictionary<string, long> _errorTimes = new(StringComparer.Ordinal);
     private bool _errorNotificationPending;
@@ -33,6 +32,8 @@ internal sealed class RunController(Catalog catalog, Action<string> log, Action<
     internal double? StoppedPosition => State?.Night?.Timing is { } timing
         ? timing.StopPosition ?? (_stopInput is { } input && input.Start == timing.StartedUtcTicks ? input.Position : null) : null;
     internal bool Qualified => Perks.CanSteal(State);
+    internal bool CanBrowseOtherRegions => ReadyAction() && Browsing && Qualified && Native.Night &&
+        State?.Night is { Started: false, Ended: false, Timing: null } night && night.Day == Native.Day && _store!.visitLeftTonight > 0;
     internal bool OwnCareer => _store != null && Native.IsCareer(_store);
     internal void Notify(string message)
     {
@@ -45,14 +46,14 @@ internal sealed class RunController(Catalog catalog, Action<string> log, Action<
     }
     internal void Reset()
     {
-        Tuning = new(); State = null; _store = null; _json = null; Busy = DebugEnabled = Infinite = Browsing = _initial = false;
+        Tuning = new(); State = null; _store = null; Busy = DebugEnabled = Infinite = Browsing = _initial = false;
         _stopInput = null; _spaceKey = null; Message = ""; Changed?.Invoke();
     }
     private static bool HasPerk(PlayerStore store, string id) => store.startingPerks != null && store.startingPerks.ToArray().Any(x => x.id == id);
-    private static RunState Fresh(PlayerStore store, bool newRun = false)
+    private static RunState Fresh(PlayerStore store)
     {
-        bool career = newRun && Native.IsCareer(store);
-        bool qualified = newRun && (career || HasPerk(store, Identity.Streetwise));
+        bool career = Native.IsCareer(store);
+        bool qualified = career || HasPerk(store, Identity.Streetwise);
         var state = new RunState { RunId = store.runID, SlotId = store.saveSlotId, Qualified = qualified,
             QualificationSource = career ? "career" : qualified ? "perk" : "none",
             RandomState = BitConverter.ToUInt64(Guid.NewGuid().ToByteArray(), 0) | 1UL };
@@ -64,7 +65,7 @@ internal sealed class RunController(Catalog catalog, Action<string> log, Action<
     internal void BeginInitial(PlayerStore store)
     {
         _initial = true; _store = store;
-        State = Fresh(store, newRun: true); _json = null;
+        State = Fresh(store);
         if (!OwnCareer) return;
         try { GrantOpening(store); }
         catch (Exception ex) { ReportError("Opening rewards failed; theft eligibility retained", ex); }
@@ -139,35 +140,47 @@ internal sealed class RunController(Catalog catalog, Action<string> log, Action<
     internal void Load(PlayerStore store)
     {
         Reset(); _store = store;
-        var read = RunData.Read(store);
-        if (read.Status == RunReadStatus.Missing)
-        { State = Fresh(store); EnsureNight(); return; }
-        if (read.Status != RunReadStatus.Present || read.Json == null) { ReportError("Owned run data unavailable: " + read.Status); return; }
+        var fresh = Fresh(store);
+        var loaded = RunData.Read(store, fresh, catalog, RecoveryWarning);
+        State = loaded;
+        if (loaded.QualificationSource == "career" && !OwnCareer)
+        {
+            loaded.Qualified = fresh.Qualified;
+            loaded.QualificationSource = fresh.QualificationSource;
+            loaded.Habitual = fresh.Habitual;
+            RecoveryWarning("Restored theft eligibility from the current character");
+        }
+        Perks.ApplyTheftAccess(loaded);
         try
         {
-            var loaded = RunData.DecodeLoaded(read.Json, store, catalog);
-            if (loaded.QualificationSource == "career" && !OwnCareer) throw new InvalidDataException("Career qualification has a different native carrier");
-            var physicalIds = CaptureItems().Where(x => x.uniqueId > 0).Select(x => x.uniqueId).ToHashSet();
-            if (loaded.Night != null && loaded.Night.Npcs.SelectMany(x => x.Items).SelectMany(CandidateState.Ids).Any(physicalIds.Contains))
-                throw new InvalidDataException("NPC custody already exists in player inventory");
-            if (loaded.Night is { Outside: true, Ended: false } outside && outside.Day != Native.Day)
-                throw new InvalidDataException("Unsettled outing belongs to another day");
-            State = loaded; _json = read.Json;
-            Perks.ApplyTheftAccess(State);
-            if (State.QualificationSource == "career") Perks.EnsureBuiltIn(store);
-            ReserveUniqueIds();
-            if (State.Night is { Outside: true, Ended: false } night)
+            if (loaded.Night is { } night)
             {
-                RestoreCarry(night); Browsing = true;
+                if (night.Day != Native.Day && (night.Outside || night.Day > Native.Day))
+                    throw new InvalidDataException("Saved outing belongs to another day");
+                var physicalIds = CaptureItems().Where(x => x.uniqueId > 0).Select(x => x.uniqueId).ToHashSet();
+                if (night.Npcs.SelectMany(x => x.Items).SelectMany(CandidateState.Ids).Any(physicalIds.Contains))
+                    throw new InvalidDataException("Saved target already exists in player inventory");
+                ReserveUniqueIds();
+                if (night.Outside) { RestoreCarry(night); Browsing = true; }
             }
-            EnsureNight(); Changed?.Invoke();
         }
-        catch (Exception ex) { ReportError("Load rejected", ex); }
+        catch (Exception ex)
+        {
+            RunRecovery.ResetNight(loaded);
+            RecoveryWarning("Reset saved theft night: " + ex.Message);
+            if (Locations.IsOwn(MapUIManager.Instance?.Current?.Id)) ReturnNative();
+        }
+        if (loaded.QualificationSource == "career")
+        {
+            try { Perks.EnsureBuiltIn(store); }
+            catch (Exception ex) { RecoveryWarning("Could not restore Streetwise perk: " + ex.Message); }
+        }
+        RecoverPendingCarry();
+        EnsureNight(); Changed?.Invoke();
     }
     private void ReserveUniqueIds()
     {
-        var night = State?.Night;
-        if (night == null) return;
+        var night = State!.Night!;
         int largest = 0;
         foreach (var item in night.Npcs.SelectMany(x => x.Items))
             foreach (int id in CandidateState.Ids(item)) largest = Math.Max(largest, id);
@@ -182,22 +195,40 @@ internal sealed class RunController(Catalog catalog, Action<string> log, Action<
     {
         var map = MapUIManager.Instance;
         if (map == null) throw new InvalidOperationException("Native outside UI unavailable");
+        if (map.isOutside && !Locations.IsOwn(map.Current?.Id))
+            throw new InvalidOperationException("Another location owns the outside inventory");
         if (!map.isOutside) Native.RestoreOutside(night.LockedRegion ?? 0);
         NativeCarry.Restore(night.Carry, _store!);
-        var actual = NativeCarry.IndexIdentifiedItems(CaptureItems());
-        foreach (var loot in night.Loot)
-            if (!actual.ContainsKey(loot.UniqueId)) throw new InvalidDataException("Missing saved loot");
+    }
+    private void RecoveryWarning(string message) => log("[WARN] " + message);
+    private void RecoverPendingCarry()
+    {
+        if (State?.RecoveryCarry is not { Count: > 0 } pending || MapUIManager.Instance is not { IsOutside: false, IsInTransit: false }) return;
+        try { NativeCarry.RecoverToStore(pending, _store!, RecoveryWarning); }
+        catch (Exception ex) { RecoveryWarning("Carry recovery remains pending: " + ex.Message); }
+        if (pending.Count == 0) State.RecoveryCarry = null;
     }
     internal bool EnsureNight()
     {
         if (!Qualified) return false;
-        if (_initial || State == null || _store == null || Busy || State.Night?.Day == Native.Day) return State?.Night != null;
-        if (State.Night is { Started: true, Ended: false }) { ReportError("Previous outing was not settled"); return false; }
+        if (State!.Night?.Day == Native.Day) return true;
+        if (_initial || !ReadyAction()) return false;
+        if (State.Night is { Started: true, Ended: false } || State.Night?.Day > Native.Day)
+        {
+            RunRecovery.ResetNight(State);
+            RecoveryWarning("Reset unfinished theft night after the date changed");
+            RecoverPendingCarry();
+        }
         try
         {
-            var next = StateCodec.Clone(State);
-            next.Night = GenerationRules.Night(next, Native.Day, catalog, Items.CreateCandidate, Items.Portrait, NightEventBridge.Capture()); next.Revision++;
-            return Commit(next, () => { }, () => { }, () => { Message = ""; });
+            RegionEventState[]? events = null;
+            try { events = NightEventBridge.Capture(); }
+            catch (Exception ex) { RecoveryWarning("Reset regional event modifiers: " + ex.Message); }
+            var skipped = new HashSet<string>(StringComparer.Ordinal);
+            State.Night = GenerationRules.Night(State, Native.Day, catalog, Items.CreateCandidate, Items.Portrait, events,
+                (id, ex) => { if (skipped.Add(id)) RecoveryWarning($"Skipped theft candidate {id}: {ex.Message}"); });
+            State.Revision++; Message = ""; Changed?.Invoke();
+            return true;
         }
         catch (Exception ex) { ReportError("Night generation failed", ex); return false; }
     }
@@ -384,21 +415,33 @@ internal sealed class RunController(Catalog catalog, Action<string> log, Action<
     }
     internal void Return()
     {
-        if (!ReadyAction() || State?.Night?.Timing != null) return;
+        if (Busy || State?.Night?.Timing != null) return;
         ModHelper.ReturnFromAfterhour();
     }
     internal bool PrepareLeave()
     {
         if (State?.Night == null || !Browsing) return true;
-        if (!ReadyAction() || State.Night.Timing != null) return false;
-        var next = StateCodec.Clone(State);
-        var returnedIds = NativeCarry.EquippedItems().SelectMany(NativeGraph.Items).Select(x => x.uniqueId).Where(x => x > 0).ToHashSet();
-        CustodyRules.FinishReturn(next.Night!, returnedIds); next.Revision++;
-        var loot = CaptureItems().Where(x => next.Night!.Loot.Any(s => s.UniqueId == x.uniqueId)).ToArray();
-        bool wasBrowsing = Browsing; Browsing = false;
-        return Commit(next, () => { foreach (var item in loot) item.state.DisableTag(Identity.CustodyTag); },
-            () => { Browsing = wasBrowsing; foreach (var item in loot) item.state.EnableTag(Identity.CustodyTag); },
-            () => { BeforeReturn?.Invoke(); Browsing = false; _stopInput = null; Message = ""; });
+        if (Busy || State.Night.Timing != null) return false;
+        try
+        {
+            var next = StateCodec.Clone(State);
+            var returnedIds = NativeCarry.EquippedItems().SelectMany(NativeGraph.Items).Select(x => x.uniqueId).Where(x => x > 0).ToHashSet();
+            CustodyRules.FinishReturn(next.Night!, returnedIds); next.Revision++;
+            var loot = CaptureItems().Where(x => next.Night!.Loot.Any(s => s.UniqueId == x.uniqueId)).ToArray();
+            Browsing = false;
+            if (Commit(next, () => { foreach (var item in loot) item.state.DisableTag(Identity.CustodyTag); },
+                () => { Browsing = true; foreach (var item in loot) item.state.EnableTag(Identity.CustodyTag); },
+                () => { BeforeReturn?.Invoke(); _stopInput = null; Message = ""; },
+                ex => RecoveryWarning("Theft return bookkeeping failed: " + ex.Message))) return true;
+            RecoveryWarning("Reset theft night after return could not be committed");
+        }
+        catch (Exception ex) { RecoveryWarning("Reset theft night before returning: " + ex.Message); }
+        // Native return still owns live inventory. The old snapshot may no
+        // longer describe it and must never be reissued to the player.
+        State.Night?.Carry.Clear();
+        RunRecovery.ResetNight(State);
+        Browsing = false; _stopInput = null; Message = "";
+        return true;
     }
     private void ReturnNative() { Browsing = false; ModHelper.ReturnFromAfterhour(false); }
     internal string ReputationPenaltyPreview(string? target, int region)
@@ -426,19 +469,22 @@ internal sealed class RunController(Catalog catalog, Action<string> log, Action<
         var next = StateCodec.Clone(State); var removed = next.Night!.Loot.Single(x => x.UniqueId == id); next.Night.Loot.Remove(removed); next.Night.Abandoned.Add(removed); next.Revision++;
         Commit(next, () => NativeItems.Detach(item), () => { item.modifiedShape = shape; parent!.UncheckedAccept(item); }, () => ItemGraphCleanup.Destroy(item));
     }
-    internal bool Settle()
+    internal void Settle()
     {
-        if (Busy) return false;
-        if (State == null || _store == null) return true;
-        if (Browsing) return false;
-        var next = StateCodec.Clone(State); TheftRules.Settle(next, Native.Day);
-        if (next.Revision != State.Revision)
+        if (!ReadyAction() || Browsing) return;
+        try
         {
-            string text = WindText(next.Wind); int count = _store.nightLogs.Count;
-            bool committed = Commit(next, () => _store.AddNightLog(text), () => { while (_store.nightLogs.Count > count) _store.nightLogs.RemoveAt(_store.nightLogs.Count - 1); }, () => { });
-            return committed;
+            var next = StateCodec.Clone(State!);
+            if (!TheftRules.Settle(next, Native.Day)) return;
+            string text = WindText(next.Wind);
+            int count = _store!.nightLogs.Count;
+            if (Commit(next, () => _store.AddNightLog(text),
+                () => { while (_store.nightLogs.Count > count) _store.nightLogs.RemoveAt(_store.nightLogs.Count - 1); }, () => { },
+                ex => RecoveryWarning("Theft settlement bookkeeping failed: " + ex.Message))) return;
+            RecoveryWarning("Reset theft night after settlement could not be committed");
         }
-        return true;
+        catch (Exception ex) { RecoveryWarning("Reset theft night after settlement failed: " + ex.Message); }
+        RunRecovery.ResetNight(State!);
     }
     private static string WindText(int wind) => wind switch
     {
@@ -499,35 +545,51 @@ internal sealed class RunController(Catalog catalog, Action<string> log, Action<
             destinationParents, carryDestination, emptyDestination);
     internal IReadOnlyList<GameItem> CaptureItems() => NativeGraph.RunItems(_store!);
     private bool ReadyAction() => State != null && _store != null && !Busy && _store.runID == State.RunId && _store.saveSlotId == State.SlotId;
-    private void SnapshotCarry(RunState next)
+    private void SnapshotCarry(RunState next, bool recover = false)
     {
         if (next.Night is not { Ended: false } night || !Browsing || MapUIManager.Instance == null || !MapUIManager.Instance.isOutside) return;
-        night.Outside = true; night.Carry = NativeCarry.Snapshot();
-        var physical = NativeCarry.IndexIdentifiedItems(CaptureItems());
+        bool incomplete = false;
+        night.Outside = true;
+        if (recover) night.Carry.Clear();
+        night.Carry = NativeCarry.Snapshot(recover ? message => { incomplete = true; RecoveryWarning(message); } : null);
+        var lootIds = night.Loot.Select(loot => loot.UniqueId).ToHashSet();
+        if (incomplete) throw new InvalidDataException("Incomplete carry snapshot");
+        if (lootIds.Count == 0) return;
+        var physical = NativeCarry.IndexIdentifiedItems(CaptureItems().Where(item => lootIds.Contains(item.uniqueId)));
         foreach (var loot in night.Loot)
             if (physical.TryGetValue(loot.UniqueId, out var item)) loot.Graph = NativeGraph.Encode(item);
             else throw new InvalidDataException("Custody item missing from carry");
     }
     internal void BeforeNativeSave(PlayerStore store)
     {
-        if (Busy || State == null || _store == null || !ReferenceEquals(store, _store)) return;
+        if (Busy || State == null || !ReferenceEquals(store, _store) || string.IsNullOrWhiteSpace(store.runID) || store.saveSlotId < 0) return;
         try
         {
-            var next = StateCodec.Clone(State);
-            if (_initial)
+            RecoverPendingCarry();
+            var next = _initial || State.RunId == store.runID ? StateCodec.Clone(State) : Fresh(store);
+            next.RunId = store.runID;
+            next.SlotId = store.saveSlotId;
+            try { SnapshotCarry(next, recover: true); }
+            catch (Exception ex)
             {
-                if (string.IsNullOrWhiteSpace(store.runID) || store.saveSlotId < 0) return;
-                next.RunId = store.runID; next.SlotId = store.saveSlotId;
+                RecoveryWarning("Reset saved theft night: " + ex.Message);
+                RunRecovery.ResetNight(next);
             }
-            SnapshotCarry(next); StateCodec.TrimReceipts(next); StateCodec.Validate(next, catalog);
-            // Only prepare the in-memory payload. The game has already chosen
-            // to save and remains responsible for writing the native save.
-            _json = RunData.Stage(store, _json, next);
-            State = next; _initial = false;
+            try { StateCodec.TrimReceipts(next); StateCodec.Validate(next, catalog); }
+            catch (Exception ex)
+            {
+                RecoveryWarning("Repairing theft data before save: " + ex.Message);
+                next = RunRecovery.Decode(JObject.FromObject(next), Fresh(store), catalog, RecoveryWarning);
+            }
+            RunData.Stage(store, next);
+            // The native save can recover the snapshot independently. Keep
+            // the live outing open so the player can still sort and return.
+            if (!Browsing || next.Night != null) State = next;
+            _initial = false;
         }
         catch (Exception ex) { ReportError("Run data preparation failed", ex); }
     }
-    private bool Commit(RunState next, Action apply, Action undo, Action finish)
+    private bool Commit(RunState next, Action apply, Action undo, Action finish, Action<Exception>? onFailure = null)
     {
         if (!ReadyAction()) return false;
         Busy = true;
@@ -536,7 +598,7 @@ internal sealed class RunController(Catalog catalog, Action<string> log, Action<
             var result = CommitRules.Execute(apply, () =>
             {
                 SnapshotCarry(next); StateCodec.Validate(next, catalog);
-            }, undo, () => { State = next; finish(); }, ex => ReportError("Theft operation failed", ex));
+            }, undo, () => { State = next; finish(); }, onFailure ?? (ex => ReportError("Theft operation failed", ex)));
             return result == CommitResult.Committed;
         }
         finally { Busy = false; Changed?.Invoke(); }

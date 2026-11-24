@@ -9,7 +9,6 @@ internal static class NativeHooks
 
     internal static void Save(PlayerStore __instance) => Run?.BeforeNativeSave(__instance);
     internal static void Initial(PlayerStore __instance) => Run?.FinishInitial(__instance, true);
-    internal static bool Settle() => Run?.Settle() ?? true;
 
     internal static bool CanReturn(MapUIManager __instance) => !Locations.IsOwn(__instance.Current?.Id) || Run?.State?.Night?.Timing == null;
     internal static bool ReturnNow(MapUIManager __instance) => !Locations.IsOwn(__instance.Current?.Id) || Run?.PrepareLeave() != false;
@@ -78,12 +77,6 @@ internal static class InitialPatch
 {
     private static void Prefix(PlayerStore __instance) { if (Plugin.Active?.Enabled == true) Plugin.Active.BeginNativeInitial(__instance); }
     private static void Postfix(PlayerStore __instance) => NativeHooks.Initial(__instance);
-}
-
-[HarmonyPatch(typeof(PlayerStore), "EndNight")]
-internal static class SettlePatch
-{
-    private static bool Prefix() => NativeHooks.Settle();
 }
 
 [HarmonyPatch(typeof(MapUIManager), "Return")]

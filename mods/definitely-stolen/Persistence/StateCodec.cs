@@ -8,14 +8,6 @@ internal static class StateCodec
 {
     private static readonly JsonSerializerSettings Options = new() { TypeNameHandling = TypeNameHandling.None, FloatParseHandling = FloatParseHandling.Double };
     internal static string Encode(RunState state) => JsonConvert.SerializeObject(state, Options);
-    internal static string RebindFork(string json, string sourceRun, int sourceSlot, string destinationRun, int destinationSlot, Catalog catalog)
-    {
-        var state = Decode(json, sourceRun, sourceSlot, catalog);
-        if (string.IsNullOrWhiteSpace(destinationRun) || destinationSlot < 0) throw new InvalidDataException("Invalid fork destination");
-        state.RunId = destinationRun; state.SlotId = destinationSlot;
-        Validate(state, catalog);
-        return Encode(state);
-    }
     internal static RunState Clone(RunState state)
     {
         var copy = JsonConvert.DeserializeObject<RunState>(Encode(state), Options)!;
@@ -23,7 +15,7 @@ internal static class StateCodec
         return copy;
     }
     internal static void Validate(RunState state, Catalog catalog) => Decode(Encode(state), state.RunId, state.SlotId, catalog);
-    internal static RunState Decode(string json, string runId, int slotId, Catalog catalog)
+    internal static RunState Decode(string json, string runId, int slotId, Catalog catalog, Action<string>? repairNight = null)
     {
         RequireUnique(json);
         var state = JsonConvert.DeserializeObject<RunState>(json, Options) ?? throw new InvalidDataException("Missing state");
@@ -58,9 +50,13 @@ internal static class StateCodec
         {
             // A previously generated night has no event effects, including an
             // unfinished attempt. Only a later night's generation uses events.
-            if (state.Schema < 5)
-                night.RegionEvents = Enumerable.Range(0, 3).Select(region => new RegionEventState { Region = region }).ToList();
-            NightEvents.Validate(night.RegionEvents, catalog);
+            if (state.Schema < 5) night.RegionEvents = NoEvents();
+            try { NightEvents.Validate(night.RegionEvents, catalog); }
+            catch (Exception ex) when (repairNight != null)
+            {
+                night.RegionEvents = NoEvents();
+                repairNight("Reset saved night event modifiers: " + ex.Message);
+            }
             if (!Enum.IsDefined(typeof(TheftMode), night.Mode) || night.Day < 0 || night.GenerationLevel is < 0 or > 10 || night.RandomState == 0 ||
                 night.Attempts < 0 || night.SpentActions < 0 || night.SpentActions > night.Attempts ||
                 night.SpentActions > TheftRules.Actions(TheftRules.Level(state.Experience)) ||
@@ -104,7 +100,11 @@ internal static class StateCodec
                 !Numbers.Finite(timing.AutomaticSuccess) || timing.AutomaticSuccess is < 0 or > 1 ||
                 !Numbers.Finite(timing.AutomaticExposure) || timing.AutomaticExposure is < 0 or > 1 ||
                 timing.StopPosition is double stop && (!Numbers.Finite(stop) || stop is < 0 or > 1)))
-                throw new InvalidDataException("Invalid timing attempt");
+            {
+                if (repairNight == null) throw new InvalidDataException("Invalid timing attempt");
+                night.Timing = null;
+                repairNight("Reset invalid saved timing attempt");
+            }
             var items = night.Npcs.SelectMany(x => x.Items).Concat(night.Loot).Concat(night.Abandoned).ToArray();
             if (items.Select(x => x.UniqueId).Distinct().Count() != items.Length)
                 throw new InvalidDataException("Duplicate custody");
@@ -151,6 +151,8 @@ internal static class StateCodec
         TrimReceipts(state);
         return state;
     }
+    private static List<RegionEventState> NoEvents() =>
+        Enumerable.Range(0, 3).Select(region => new RegionEventState { Region = region }).ToList();
     internal static void TrimReceipts(RunState state)
     {
         // These items are already owned by native inventories. Keep receipt

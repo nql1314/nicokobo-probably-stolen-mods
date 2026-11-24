@@ -2,7 +2,7 @@
 
 ## 当前版本与发布说明
 
-当前版本 **1.0.4**，沿用原有 Steam 创意工坊条目。开局、行动面板和夜间提示可读取社区语言的翻译。发布包基于正式版 **0.46D / Steam Build 26525552**。[Steam 创意工坊条目](https://steamcommunity.com/sharedfiles/filedetails/?id=3831046095)
+当前版本 **1.0.5**，沿用原有 Steam 创意工坊条目。发布包基于正式版 **0.46D / Steam Build 26525552**。[Steam 创意工坊条目](https://steamcommunity.com/sharedfiles/filedetails/?id=3831046095)
 
 - 成功、失手未暴露、暴露增加的风声分别为 2、1、10 点。
 - 暴露时安保声望固定扣 1 点，目标所属阵营按地点另扣；随身携带的当晚赃物按价值计入原版罪案记录。
@@ -10,7 +10,7 @@
 
 完整变更见 [change.log](change.log)。
 
-See the bilingual release notes for **1.0.4**. [change.log](change.log)
+See the bilingual release notes for **1.0.5**. [change.log](change.log)
 
 原版烟雾弹（`smoke_grenade`）保留游戏原有用途，并加入扒窃自动脱身效果。中英文物品提示保留“浓烟呛得人睁不开眼，再稳的枪口也容易偏了准头。”，同时说明随身携带时暴露会自动消耗一枚、保留赃物并结束当晚偷窃。
 
@@ -74,7 +74,9 @@ schema 1/2/3/4 按原规则迁至 schema 5。已生成的旧夜晚不补事件�
 
 实物和携带图保留原生 SaveItemNode、容器节点与 `forgeItemFeatures` 字段，使用游戏 ES3 的内存序列化保留私有特性，不引入运行期文件读写。开局与已送达纸条只保留收据身份，不重复保存完整图。
 
-原生复制槽保留 runID、改目标槽：仅当 payload 的源 runID 与游戏真实 runID 一致、目标槽与 `NewGameData.saveSlot` 一致时重绑 SlotId，保留奖励、RNG、NPC 和物品 UID。历史日期读取沿用该历史记录本身。不同 runID、未知 schema 或互相冲突的旧/新键会报错，不当作空新局。此机制不自动搬运或修改玩家 Demo 存档。
+读档以当前原生存档槽为准。同一周目复制到新槽时保留偷窃进度与目标。新旧键同时存在时优先读取官方键，官方数据无法读取时尝试同一周目的旧键。无可用记录时按原版开局、天赋和 Mod 配置恢复资格。损坏的夜间事件、判定、开局收据或情报分别清理，无法恢复的目标会随当晚状态重建。因夜晚重置待归还的携带物会尝试放回店内，暂时无法放置的物品保留待归还记录。
+
+The current native slot determines the save destination. Copying a slot within the same run keeps its theft progress and targets. Loading prefers the official key and can fall back to the same run's legacy key if the official data cannot be read. Missing data restores eligibility from the native start, perks and mod settings. Damaged events, attempts, opening receipts and intel are repaired separately. A roster that cannot be recovered is rebuilt for the night. Recoverable carry is returned to the shop or kept pending until it can be placed.
 
 ## 构建与验证
 

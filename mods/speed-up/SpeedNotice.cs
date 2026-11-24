@@ -21,7 +21,7 @@ namespace SpeedUp
         {
             if (Event.current.type != EventType.Repaint) return;
             bool notice = !string.IsNullOrEmpty(message) && Time.unscaledTime < until;
-            if (!notice && !SpeedUpSettings.ShowSpeedStatus && !GlobalSpeed.Active) return;
+            if (!notice && !SpeedUpSettings.ShowSpeedStatus) return;
             if (labelStyle == null)
             {
                 labelStyle = new GUIStyle(GUI.skin.label)
@@ -35,9 +35,8 @@ namespace SpeedUp
             }
             float width = Mathf.Min(1000f, Screen.width - 16f);
             float x = (Screen.width - width) * .5f;
-            string text = notice ? message : GlobalSpeed.Active && !SpeedUpSettings.ShowSpeedStatus
-                ? GlobalSpeed.Status : SpeedUpSettings.SpeedSummary();
-            if (GlobalSpeed.Active && (notice || SpeedUpSettings.ShowSpeedStatus)) text += "\n" + GlobalSpeed.Status;
+            string text = notice ? message : SpeedUpSettings.SpeedSummary();
+            if (GlobalSpeed.Active) text += "\n" + GlobalSpeed.Status;
             shadowStyle.Draw(new Rect(x + 1f, 57f, width, 64f), new GUIContent(text), false, false, false, false);
             labelStyle.Draw(new Rect(x, 56f, width, 64f), new GUIContent(text), false, false, false, false);
         }

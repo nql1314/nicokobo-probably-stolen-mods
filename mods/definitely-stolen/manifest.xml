@@ -3,7 +3,7 @@
   <ID>nicokobo.definitely_stolen</ID>
   <Name>肯定是偷的 / Definitely Stolen</Name>
   <Author>Nicokobo</Author>
-  <ModVersion>1.0.4</ModVersion>
+  <ModVersion>1.0.5</ModVersion>
   <Description>摸包客开局，包含 31 种目标职业、6 种夜间事件，以及熟练度、情报和逃跑烟幕弹。
 A pickpocket starting scenario with 31 target roles, six night events, proficiency, intel and escape smoke grenades.</Description>
   <GameVersions><Version>0.46D</Version></GameVersions>

@@ -5,11 +5,13 @@ internal delegate ItemState ItemFactory(string id, int tier, StableRandom random
 internal static class GenerationRules
 {
     internal static NightState Night(RunState run, int day, Catalog catalog, ItemFactory factory,
-        Func<RoleDefinition, StableRandom, string> portrait, IReadOnlyList<RegionEventState>? events = null)
+        Func<RoleDefinition, StableRandom, string> portrait, IReadOnlyList<RegionEventState>? events = null,
+        Action<string, Exception>? onCandidateFailure = null)
     {
         int level = TheftRules.Level(run.Experience);
         var random = new StableRandom(run.RandomState);
-        var night = new NightState { Mode = run.PreferredMode, Day = day, GenerationLevel = level, WindPenalty = TheftRules.WindPenalty(run.Wind) };
+        var night = new NightState { Mode = run.PreferredMode, Day = day, GenerationLevel = level,
+            WindPenalty = TheftRules.WindPenalty(run.Wind), NoteRolled = run.Notes.Any(note => note.Day == day) };
         night.RegionEvents = (events ?? Enumerable.Range(0, 3).Select(region => NightEvents.Snapshot(region, Array.Empty<string>())).ToArray())
             .Select(x => new RegionEventState { Region = x.Region, RuleVersion = x.RuleVersion, EventIds = x.EventIds.ToList(),
                 RoleBonuses = new Dictionary<string, double>(x.RoleBonuses, StringComparer.Ordinal), ExposurePercent = x.ExposurePercent }).ToList();
@@ -22,7 +24,7 @@ internal static class GenerationRules
                 var chosen = random.Weighted(remaining, x => NightEvents.Weight(night, region.Id, x));
                 remaining.Remove(chosen);
                 var role = catalog.Role(chosen.Id);
-                night.Npcs.Add(Npc(run.RunId, day, region.Id, position, level, role, random, factory, portrait));
+                night.Npcs.Add(Npc(run.RunId, day, region.Id, position, level, role, random, factory, portrait, onCandidateFailure));
             }
         }
         night.RandomState = random.Next();
@@ -31,18 +33,27 @@ internal static class GenerationRules
     }
 
     internal static NpcState Npc(string runId, int day, int region, int position, int level, RoleDefinition role,
-        StableRandom random, ItemFactory factory, Func<RoleDefinition, StableRandom, string> portrait)
+        StableRandom random, ItemFactory factory, Func<RoleDefinition, StableRandom, string> portrait,
+        Action<string, Exception>? onCandidateFailure = null)
     {
         if (!role.Enabled) throw new InvalidOperationException("Disabled identity");
         var npc = new NpcState { Key = $"{day}:{region}:{position}", Region = region, Position = position,
             RoleId = role.Id, Faction = role.Faction, Background = role.Background, Sprite = portrait(role, random) };
         if (role.Id == "scavGeneral")
         { npc.TokenAdmission = TheftRules.TokenAdmission[level]; npc.TokenEligible = random.Unit() < npc.TokenAdmission; }
-        var candidates = SpecialNpcs.Items(runId, npc, role).Where(id => id != "scav_token" || npc.TokenEligible)
-            .Select(id => factory(id, role.Tier, random)).ToList();
-        foreach (var item in candidates) TheftRules.Classify(item);
+        var candidates = new List<ItemState>();
+        foreach (string id in SpecialNpcs.Items(runId, npc, role).Where(id => id != "scav_token" || npc.TokenEligible))
+        {
+            try
+            {
+                var item = factory(id, role.Tier, random);
+                TheftRules.Classify(item);
+                candidates.Add(item);
+            }
+            catch (Exception ex) when (onCandidateFailure != null) { onCandidateFailure(id, ex); }
+        }
         var core = role.CoreItems.ToHashSet(StringComparer.Ordinal);
-        for (int n = 0; n < TheftRules.InitialItems; n++)
+        for (int n = 0; n < TheftRules.InitialItems && candidates.Count > 0; n++)
         {
             var item = TheftRules.Draw(candidates, role.Tier, level, random, TheftRules.RegionFactors(region).Rare, core);
             candidates.Remove(item); npc.Items.Add(item);
@@ -56,14 +67,13 @@ internal static class GenerationRules
         if (night.NoteRolled) return null;
         night.NoteRolled = true;
         var random = new StableRandom(night.RandomState);
-        night.NoteWon = random.Unit() < .5;
+        night.NoteWon = random.Unit() < .5 && night.Npcs.Any(npc => npc.Items.Any(item => item.Available));
         NoteState? note = null;
         if (night.NoteWon)
         {
             var pairs = night.Npcs.Where(x => x.Items.Any(item => item.Available)).Select(npc =>
                 (Npc: npc, Item: npc.Items.Where(item => item.Available).OrderByDescending(x => x.Value).ThenBy(x => x.UniqueId).First(), Tie: random.Next()))
                 .OrderByDescending(x => x.Item.Value).ThenBy(x => x.Tie).Take(3).ToArray();
-            if (pairs.Length == 0) throw new InvalidDataException("Intelligence has no actual target");
             var chosen = pairs[random.Index(pairs.Length)];
             var role = catalog.Role(chosen.Npc.RoleId); var region = catalog.Regions.Single(x => x.Id == chosen.Npc.Region);
             note = new NoteState { Day = night.Day, Target = chosen.Npc.Key, ItemUniqueId = chosen.Item.UniqueId,

@@ -34,6 +34,9 @@ internal sealed class RunState
     public int? OpeningCashDelta { get; set; }
     public List<ItemState> OpeningItems { get; set; } = new();
     public NightState? Night { get; set; }
+    // An invalid outing can be reset before there is room to return its items.
+    [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
+    public List<CarryState>? RecoveryCarry { get; set; }
     // Animation feedback belongs to this session; durable outcomes live in Night.
     [JsonIgnore]
     public ActionReceipt? LastAction { get; set; }

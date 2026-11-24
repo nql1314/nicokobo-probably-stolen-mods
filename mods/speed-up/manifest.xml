@@ -3,7 +3,7 @@
   <ID>nicokobo.speed-up</ID>
   <Name>加速 / Speed Up</Name>
   <Author>NicoKobo</Author>
-  <ModVersion>1.0.9</ModVersion>
+  <ModVersion>1.0.10</ModVersion>
   <Description>调整对话、顾客和卷帘门速度，支持局内全局倍速。
 Adjust dialogue, customer and shutter speeds, with an optional global speed multiplier during play.</Description>
   <GameVersions><Version>0.46D</Version></GameVersions>

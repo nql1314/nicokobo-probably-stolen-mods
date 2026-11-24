@@ -50,6 +50,7 @@ public sealed class Plugin : IMod
             ModHook.OnNewGameStarted += NewRun;
             ModHook.OnGameLoadedInit += Loading;
             ModHook.OnGameLoadedLate += Loaded;
+            ModHook.OnGoingSleepEarly += Run.Settle;
             ModHook.OnAfterhourLeaveEarly += NativeHooks.Leaving;
             Perks.Register(() => _allowTheftWithoutPerk.Value); Locations.Register(Run, Panel); NightEventBridge.Register(Run, _catalog);
             ModHelper.AddStartingScenario(Identity.Owner, Identity.StartId,
@@ -71,6 +72,7 @@ public sealed class Plugin : IMod
         Enabled = false;
         ModHook.OnModItemDirectoryInit -= Items;
         ModHook.OnNewGameStarted -= NewRun; ModHook.OnGameLoadedInit -= Loading; ModHook.OnGameLoadedLate -= Loaded;
+        ModHook.OnGoingSleepEarly -= Run.Settle;
         ModHook.OnAfterhourLeaveEarly -= NativeHooks.Leaving; NativeHooks.Reset();
         ModHook.OnCreateTooltipEarly -= Tooltip;
         Panel?.Close(); Run?.Reset(); Art.Clear(); ContentRuntime.Detach(Identity.Owner);

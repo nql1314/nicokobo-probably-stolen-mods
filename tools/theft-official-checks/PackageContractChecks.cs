@@ -24,8 +24,11 @@ internal static class PackageContractChecks
             @"F:\SteamLibrary\steamapps\common\Probably Stolen";
         using var game = ModuleDefinition.ReadModule(Path.Combine(gameDir, "Probably Stolen_Data", "Managed", "Assembly-CSharp.dll"));
         var patchTypes = module.Types.Where(x => x.CustomAttributes.Any(a => a.AttributeType.FullName == "HarmonyLib.HarmonyPatch")).ToArray();
-        check(patchTypes.Count(x => x.Namespace == "DefinitelyStolen.Integration") == 20,
-            "All 20 gameplay patch classes are loader-discoverable");
+        check(patchTypes.Count(x => x.Namespace == "DefinitelyStolen.Integration") == 19,
+            "All 19 remaining gameplay patch classes are loader-discoverable");
+        check(!patchTypes.SelectMany(x => x.CustomAttributes).Any(attr =>
+            attr.AttributeType.FullName == "HarmonyLib.HarmonyPatch" && (string)attr.ConstructorArguments[1].Value == "EndNight"),
+            "The theft mod leaves native overnight execution to the game's own hook");
         foreach (var type in patchTypes)
         {
             var attr = type.CustomAttributes.Single(x => x.AttributeType.FullName == "HarmonyLib.HarmonyPatch");

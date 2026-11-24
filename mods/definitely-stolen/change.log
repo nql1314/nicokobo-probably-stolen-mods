@@ -1,3 +1,19 @@
+1.0.5 - 2026-11-23
+
+[b]简体中文[/b]
+[list]
+[*]偷窃面板新增“切换区域”。首次偷取前可直接查看三区目标，无需返店，也不消耗外出机会。开始偷取后，当晚锁定在选定区域。
+[*]读档和保存时分段恢复偷窃数据。损坏的夜间记录可单独重置，保留仍可读取的熟练度和风声。能恢复的携带物会放回店内，空间不足时保留待归还记录。
+[*]生成目标时会跳过无法生成的候选物品。上一晚未结算时可以重建当晚目标，偷窃结算出错也不会拦住原版过夜。
+[/list]
+
+[b]English[/b]
+[list]
+[*]The theft panel now has a Switch District button. Browse targets in all three districts before your first attempt without returning to the shop or spending an outing. Your first attempt locks the selected district for the night.
+[*]Loading and saving now recover theft data in sections. Damaged nightly records can be reset while keeping readable proficiency and heat. Recoverable carried items return to the shop or remain queued if there is no room.
+[*]Target generation skips individual items it cannot create. An unfinished outing from a previous day can be reset, and a theft settlement error no longer blocks the base game's overnight sequence.
+[/list]
+
 1.0.4 - 2026-11-15
 
 [b]简体中文[/b]

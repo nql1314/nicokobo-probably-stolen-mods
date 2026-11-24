@@ -69,6 +69,21 @@ internal static class NightContentChecks
             check(StateCodec.Encode(loaded) == StateCodec.Encode(state), "Event snapshots and RNG round trip without a reroll: " + definition.Suffix);
         }
 
+        var recovering = create(2, 882233);
+        string? brokenId = null;
+        var skipped = new List<string>();
+        recovering.Night = GenerationRules.Night(recovering, 2, catalog, (id, tier, random) =>
+        {
+            brokenId ??= id;
+            if (id == brokenId) throw new InvalidDataException("Candidate factory failed");
+            return factory(id, tier, random);
+        }, (role, _) => role.Id, onCandidateFailure: (id, _) => skipped.Add(id));
+        var rebuilt = StateCodec.Decode(StateCodec.Encode(recovering), recovering.RunId, recovering.SlotId, catalog);
+        check(skipped.Count > 0 && rebuilt.Night!.Npcs.Count == 9 &&
+            rebuilt.Night.Npcs.Any(npc => npc.Items.Count > 0) &&
+            rebuilt.Night.Npcs.All(npc => npc.Items.All(item => item.Id != brokenId)),
+            "A failing candidate leaves a usable, persistable roster with the other candidates");
+
         var weighted = create(0, 54321);
         weighted.Night!.RegionEvents = Enumerable.Range(0, 3).Select(region => NightEvents.Snapshot(region, NightEvents.All.Select(e => e.Id))).ToList();
         check(NightEvents.Weight(weighted.Night, 0, catalog.Regions[0].Roles.Single(x => x.Id == "merchant")) == 4.5 &&
